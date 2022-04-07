@@ -32,12 +32,20 @@ function Navbar() {
   return (
     /* TODO: add max-width of inner container with responsive breakpoints*/
     <nav
-      className={`${
-        scrolledDown ? "navbar-gradient shadow-md" : "bg-transparent"
-      } fixed w-full h-16 md:h-20 border-b-sky-200 flex flex-row items-center justify-between`}
+      className={`fixed w-full h-16 md:h-20 flex flex-row items-center justify-between transition-all duration-300 ease-in`}
     >
-      {/* TODO: add animation of bg gradient when scrolling down*/}
-      <div className="flex flex-row items-center justify-between w-full p-4">
+      <div
+        className={`${
+          scrolledDown
+            ? "opacity-100 h-[4.875rem]"
+            : "opacity-0 h-[3.75rem] md:h-20"
+        } absolute top-0 navbar-gradient w-screen -z-10 transition-all duration-300 ease-in`}
+      ></div>
+      <div
+        className={`${
+          scrolledDown ? "translate-y-2 md:translate-y-0" : "md:translate-y-3"
+        } flex flex-row items-center justify-between w-full p-4 transition-all duration-300 ease-in`}
+      >
         <img
           className="h-9 md:h-12 object-contain"
           src="/images/logo.png"
@@ -62,7 +70,11 @@ function Navbar() {
           </button>
         )}
       </div>
-      <div className="hidden md:block">
+      <div
+        className={`${
+          scrolledDown ? "translate-y-0" : "translate-y-3"
+        } hidden md:block transition-all duration-300 ease-in`}
+      >
         <ul className="flex flex-row items-center justify-end">
           {/* TODO: add the indicator for the current section as an underline*/}
           {navigationData.map((item) => (
