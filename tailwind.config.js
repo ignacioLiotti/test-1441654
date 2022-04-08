@@ -11,6 +11,9 @@ module.exports = {
     },
     fontFamily: {
       'body': ['"Open Sans"']
+    },
+    backgroundPosition: {
+      'center-bottom': 'center bottom'
     }
   },
   plugins: [],
