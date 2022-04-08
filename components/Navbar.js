@@ -81,7 +81,7 @@ function Navbar() {
             {navigationData.map((item) => (
               <li key={item.id}>
                 <a
-                  className="block whitespace-nowrap w-auto py-5 px-4 text-sm md:text-md text-white font-body"
+                  className="block whitespace-nowrap w-auto py-5 px-4 text-sm md:text-md text-white font-open-sans"
                   href={item.path}
                 >
                   {item.name}
@@ -90,7 +90,7 @@ function Navbar() {
             ))}
             {/* TODO: this is a dropdown component that switches languages */}
             <li>
-              <span className="block whitespace-nowrap w-auto py-5 px-4 text-sm md:text-md text-white font-body">
+              <span className="block whitespace-nowrap w-auto py-5 px-4 text-sm md:text-md text-white font-open-sans">
                 EN
               </span>
             </li>
@@ -112,7 +112,7 @@ function Navbar() {
             {navigationData.map((item) => (
               <li key={item.id}>
                 <a
-                  className="block whitespace-nowrap w-auto py-4 px-4 text-white font-body"
+                  className="block whitespace-nowrap w-auto py-4 px-4 text-white font-open-sans"
                   href={item.path}
                 >
                   {item.name}
@@ -121,7 +121,7 @@ function Navbar() {
             ))}
             {/* TODO: this is a dropdown component that switches languages */}
             <li className="w-2/3">
-              <span className="block whitespace-nowrap py-5 px-4 text-white font-body">
+              <span className="block whitespace-nowrap py-5 px-4 text-white font-open-sans">
                 EN
               </span>
             </li>

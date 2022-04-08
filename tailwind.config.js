@@ -6,11 +6,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'nav-blue': '#132739'
+        'nav-blue': '#132739',
+        'icon-blue': '#5c93ce'
       }
     },
     fontFamily: {
-      'body': ['"Open Sans"']
+      'open-sans': ['"Open Sans"']
     },
     backgroundPosition: {
       'center-bottom': 'center bottom'
