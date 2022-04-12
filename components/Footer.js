@@ -3,10 +3,10 @@ import React from 'react'
 function Footer() {
   return (
     <footer className={`bg-[url('/images/footer-bg.png')] w-full bg-no-repeat bg-center-bottom py-16`} >
-      <div className='container-width flex flex-col md:flex-row items-center'>
+      <div className='container-width h-[46rem] flex flex-col md:flex-row items-center justify-between'>
 
         {/* First column: Contact info */}
-        <div className='flex flex-col items-start px-4 md:px-0 md:w-1/3 gap-6 max-w-[270px]'>
+        <div className='flex flex-col items-start px-4 md:px-4 h-full md:w-4/12 gap-6 order-1'>
           <img
             className="h-9 md:h-12 object-contain mb-3"
             src="/images/logo-white.png"
@@ -39,8 +39,7 @@ function Footer() {
               </div>
             </li>
           </ul>
-
-          <div className="flex flex-col items-center gap-8">
+          <div className="flex flex-col self-center md:self-start items-center gap-8 max-w-[270px]">
             <a href="https://clutch.co/profile/devlights?utm_source=widget&amp;utm_medium=widget_2&amp;utm_campaign=widget&amp;utm_content=logo">
               <img src="/images/clutch-1.svg" className="w-52" alt="rated 5 stars on clutch" />
             </a>
@@ -52,10 +51,41 @@ function Footer() {
             </div>
           </div>
         </div>
-
+        {/* Second column: links and social */}
+        <div className='contact-form flex flex-col items-start justify-start px-4 md:px-4 h-full md:w-3/12 gap-6 order-3 md:order-2'>
+          <h4 className='text-lg text-white font-bold font-open-sans uppercase mb-6'>Links</h4>
+          <ul>
+            <li className='mb-6'>
+              <a className='text-white text-sm font-medium font-open-sans' href='/#'>About us</a>
+            </li>
+            <li className='mb-6'>
+              <a className='text-white text-sm font-medium font-open-sans' href='/#'>Nearshore software development</a>
+            </li>
+            <li className='mb-6'>
+              <a className='text-white text-sm font-medium font-open-sans' href='/#'>Referral program</a>
+            </li>
+            <li className='mb-6'>
+              <a className='text-white text-sm font-medium font-open-sans' href='/#'>Services</a>
+            </li>
+            <li className='mb-6'>
+              <a className='text-white text-sm font-medium font-open-sans' href='/#'>Clients</a>
+            </li>
+            <li className='mb-6'>
+              <a className='text-white text-sm font-medium font-open-sans' href='/#'>Home</a>
+            </li>
+            <li className='mb-6'>
+              <a className='text-white text-sm font-medium font-open-sans' href='/#'>Portfolio</a>
+            </li>
+            <li className='mb-6'>
+              <a className='text-white text-sm font-medium font-open-sans' href='/#'>Bootcamps</a>
+            </li>
+          </ul>
+        </div>
+        {/* Third column: connect */}
+        <div className='flex flex-col items-start px-4 md:px-4 h-full md:w-5/12 gap-6 order-2 md:order-3 m-'>
+          <p>a</p>
+        </div>
       </div>
-      <div className='contact-form flex flex-col'></div>
-      <div className='links flex flex-col'></div>
     </footer >
   )
 }
