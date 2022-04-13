@@ -18,7 +18,7 @@ function Footer() {
       className={`block relative bg-[url('/images/footer-bg.png')] w-full bg-cover bg-no-repeat bg-center-bottom
       py-16`}
     >
-      <div className="container-width flex flex-col md:flex-row items-center justify-between">
+      <div className="container-width flex flex-col md:flex-row items-start justify-between">
         {/* First column: Contact info */}
         <div className="flex flex-col items-start px-4 md:px-4 h-full md:w-4/12 gap-6 order-1">
           <img
@@ -79,7 +79,7 @@ function Footer() {
                 className="w-full"
               />
             </a>
-            <div className="w-52">
+            <div className="w-32">
               <img
                 src="./images/clutch.png"
                 alt="clutch badge top b2b companies latin america"
