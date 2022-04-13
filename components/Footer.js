@@ -182,9 +182,6 @@ function Footer() {
         </div>
         {/* Third column: connect */}
         <div className="flex flex-col items-start px-4 pb-12 md:px-4 h-full w-11/12 md:w-5/12 gap-6 order-2 md:order-3">
-          <h4 className="text-lg text-white font-bold font-open-sans mb-6">
-            Connect with us
-          </h4>
           <ContactForm />
         </div>
       </div>
