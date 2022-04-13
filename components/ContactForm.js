@@ -1,9 +1,11 @@
 import React, { useState, useRef, useCallback } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck, faEyeLowVision, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faCheck, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 function ContactForm() {
-  const [validForm, setValidForm] = useState(false);
+  const [validForm, setValidForm] = useState(true);
+  // TODO: add spinner when making the request with axios
+  const [sendingMessage, setSendingMessage] = useState(false);
   const [errorSendingMessage, setErrorSendingMessage] = useState(false);
   const [messageSent, setMessageSent] = useState(true);
 
@@ -51,14 +53,19 @@ function ContactForm() {
     e.preventDefault();
 
     if (nameValid && emailValid && messageValid) {
-      axios({
-        method: "post",
-        url: `${process.env.REACT_APP_API}`,
-        headers: { "content-type": "application/json" },
-        data: { name, email, message }
-      })
+      setValidForm(true);
+      // axios({
+      //   method: "post",
+      //   url: `${process.env.REACT_APP_API}`,
+      //   headers: { "content-type": "application/json" },
+      //   data: { name, email, message }
+      // })
+      setTimeout(() => {
+        setMessageSent(true);
+      }, 1500)
+      return
     }
-
+    setValidForm(false);
   };
 
   const handleBackToHome = () => {
@@ -67,8 +74,14 @@ function ContactForm() {
       left: 0,
       behavior: 'smooth',
     });
+    setName('');
+    setNameValid(false);
+    setEmail('');
+    setEmailValid('');
+    setMessage('');
+    setMessageValid('');
     setErrorSendingMessage(false);
-    setMessageSent(false)
+    setMessageSent(false);
   }
 
   // TODO: add font "Aleo" for the inputs text
@@ -160,6 +173,9 @@ function ContactForm() {
               <div className={`${(messageValid || message.length === 0) ? 'opacity-0' : 'opacity-100'} text-white text-sm pl-2 pt-1`}>
                 Message must be at least 10 characters long.
               </div>
+              {!validForm && (<div className={`${(validForm) ? 'opacity-0' : 'opacity-100'} text-white text-sm pl-2 pt-1`}>
+                Please check all the fields are complete and try again.
+              </div>)}
             </div>
             <button
               className="inline-block self-start action-button-gradient py-2 px-6 sm:py-3 sm:px-12
