@@ -11,6 +11,7 @@ module.exports = {
         "icon-blue": "#5c93ce",
         "gray-placeholder": "#495057",
         "gray-border": "#ced4da",
+        "gray-body": '#646464'
       },
     },
     fontFamily: {

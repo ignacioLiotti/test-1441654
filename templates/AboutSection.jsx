@@ -17,18 +17,24 @@ function AboutSection() {
             />
           </div>
           <div className="flex flex-col max-w-[50%]">
-            <h2>Where? </h2>
-            <p>
+            <h2 className="mt-8 mb-2 text-[2rem] text-icon-blue font-aleo font-bold">
+              Where?{" "}
+            </h2>
+            <p className="text-base text-gray-body font-open-sans leading-8">
               Our headquarters are located in Corrientes, a beautiful city in
               northeast Argentina.
             </p>
-            <h2>Who?</h2>
-            <p>
+            <h2 className="mt-8 mb-2 text-[2rem] text-icon-blue font-aleo font-bold">
+              Who?
+            </h2>
+            <p className="text-base text-gray-body font-open-sans leading-8">
               We are a company that provides technological solutions to our
               customers to enhance their potencial and achieve their goals.{" "}
             </p>
-            <h2>How?</h2>
-            <p>
+            <h2 className="mt-8 mb-2 text-[2rem] text-icon-blue font-aleo font-bold">
+              How?
+            </h2>
+            <p className="text-base text-gray-body font-open-sans leading-8">
               Offering top quality technological solutions for our clients using
               proven methodologies and best practices. Our staff is formed by
               some of the most talented developers and designers.{" "}
