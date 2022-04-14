@@ -4,10 +4,10 @@ import { faCheck, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 function ContactForm() {
   const [validForm, setValidForm] = useState(true);
+  const [errorSendingMessage, setErrorSendingMessage] = useState(false);
+  const [messageSent, setMessageSent] = useState(false);
   // TODO: add spinner when making the request with axios
   const [sendingMessage, setSendingMessage] = useState(false);
-  const [errorSendingMessage, setErrorSendingMessage] = useState(false);
-  const [messageSent, setMessageSent] = useState(true);
 
   const [name, setName] = useState("");
   const [nameValid, setNameValid] = useState(false);
@@ -54,6 +54,7 @@ function ContactForm() {
 
     if (nameValid && emailValid && messageValid) {
       setValidForm(true);
+      // TODO: use PHP to send email or create backend and make request for email
       // axios({
       //   method: "post",
       //   url: `${process.env.REACT_APP_API}`,
@@ -84,8 +85,6 @@ function ContactForm() {
     setMessageSent(false);
   }
 
-  // TODO: add font "Aleo" for the inputs text
-  // TODO: validate form
   return (
     <>
       {messageSent && (
@@ -122,7 +121,7 @@ function ContactForm() {
                 type="text"
                 placeholder="Name*"
                 className={`w-full h-9  px-2 text-base text-gray-placeholder bg-white bg-clip-padding
-                border border-gray-border rounded-xl focus:ring focus:ring-icon-blue outline-none
+                border border-gray-border rounded-xl focus:ring focus:ring-icon-blue outline-none font-aleo
                 ${(nameValid || name.length === 0) ? 'focus:ring-icon-blue' : 'focus:ring-red-700 border-2 border-red-700'}
                 ${(nameValid) ? 'border-2 border-green-600' : ''}`}
               />
@@ -144,7 +143,7 @@ function ContactForm() {
                 type="email"
                 placeholder="E-mail*"
                 className={`w-full h-9  px-2 text-base text-gray-placeholder bg-white bg-clip-padding
-                border border-gray-border rounded-xl focus:ring focus:ring-icon-blue outline-none
+                border border-gray-border rounded-xl focus:ring focus:ring-icon-blue outline-none font-aleo
                 ${(emailValid || email.length === 0) ? 'focus:ring-icon-blue' : 'focus:ring-red-700 border-2 border-red-700'}
                 ${(emailValid) ? 'border-2 border-green-600' : ''}`}
               />
@@ -166,7 +165,7 @@ function ContactForm() {
                 placeholder="Message*"
                 className={`w-full h-56 px-2 pt-2 pb-1 text-base text-gray-placeholder
               bg-white bg-clip-padding border border-gray-border rounded-xl
-                overflow-auto resize-none focus:ring focus:ring-icon-blue outline-none
+                overflow-auto resize-none focus:ring focus:ring-icon-blue outline-none font-aleo
                 ${(messageValid || message.length === 0) ? 'focus:ring-icon-blue' : 'focus:ring-red-700 border-2 border-red-700'}
                 ${(messageValid) ? 'border-2 border-green-600' : ''}`}
               />

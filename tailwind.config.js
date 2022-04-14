@@ -14,6 +14,7 @@ module.exports = {
     },
     fontFamily: {
       "open-sans": ['"Open Sans"'],
+      "aleo": ["Aleo"]
     },
     backgroundPosition: {
       "center-bottom": "center bottom",
