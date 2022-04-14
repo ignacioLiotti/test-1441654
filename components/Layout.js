@@ -10,7 +10,7 @@ function Layout({ children }) {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Navbar />
-      <div className="flex-grow pt-16 md:pt-20 bg-sky-500">
+      <div className="flex-grow">
         {children}
       </div>
       <Footer />

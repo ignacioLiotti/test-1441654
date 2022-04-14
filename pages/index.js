@@ -1,9 +1,10 @@
 import Head from "next/head";
-import Image from "next/image";
+import AboutSection from "../templates/AboutSection";
+import HeroSection from "../templates/HeroSection";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center h-[2000px]">
+    <div className="flex flex-col items-center justify-center">
       <Head>
         <title>Devlights - Home</title>
         <meta
@@ -12,8 +13,8 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <h1 className="text-2xl">This is the HOME page</h1>
+      <HeroSection />
+      <AboutSection />
     </div>
   );
 }
