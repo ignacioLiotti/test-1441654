@@ -1,6 +1,6 @@
 import React from "react";
 
-function AboutSection() {
+function AboutSection({ strings }) {
   return (
     <section className="w-full">
       <div

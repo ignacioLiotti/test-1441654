@@ -1,6 +1,6 @@
 import React from "react";
 
-function VideoButton() {
+function VideoButton({ text }) {
   return (
     <>
       <a
@@ -15,7 +15,7 @@ function VideoButton() {
             alt=""
           />
         </div>
-        <span className="text-white">Intro Video</span>
+        <span className="text-white">{text}</span>
       </a>
     </>
   );

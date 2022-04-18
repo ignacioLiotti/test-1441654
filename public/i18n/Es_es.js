@@ -1,4 +1,4 @@
-{
+const es = {
     "intro": {
         "title": "Somos una compañía dedicada a proveer soluciones tecnológicas.",
         "btnWork": "Trabajemos juntos",
@@ -193,3 +193,5 @@
         "btnCheck": "Visita la web"
     }
 }
+
+export default es;

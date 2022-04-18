@@ -2,7 +2,7 @@ import React from "react";
 import ActionButton from "../components/ActionButton";
 import VideoButton from "../components/VideoButton";
 
-function HeroSection() {
+function HeroSection({ strings }) {
   return (
     <div className="h-[50.75rem] w-full bg-hero-section bg-center-bottom bg-cover bg-no-repeat relative">
       <section className="flex items-center justify-center w-full mx-auto pt-48 pb-64">
@@ -19,11 +19,11 @@ function HeroSection() {
           </div>
           <div className="sm:w-[35rem] h-[20.5rem]  lg:h-[17.25rem] xl:h-[20.5rem] mb-10 order-2 lg:order-1">
             <h2 className="text-white text-center lg:text-left text-[1.5rem] sm:text-[2rem] md:text-[3rem] leading-9 sm:leading-hero-section font-extrabold font-aleo transition-all duration-300 ease-in-out">
-              We are a company dedicated to provide technological solutions
+              {strings.title}
             </h2>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 sm:gap-10 pt-8">
-              <ActionButton text="Let's work together" resize={false} />
-              <VideoButton />
+              <ActionButton text={strings.btnWork} resize={false} />
+              <VideoButton text={strings.btnVideo} />
             </div>
           </div>
         </div>
