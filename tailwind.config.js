@@ -13,6 +13,9 @@ module.exports = {
         "gray-border": "#ced4da",
         "gray-body": '#646464'
       },
+      lineHeight: {
+        'hero-section': '4.375rem'
+      }
     },
     fontFamily: {
       "open-sans": ['"Open Sans"'],
@@ -21,6 +24,9 @@ module.exports = {
     backgroundPosition: {
       "center-bottom": "center bottom",
     },
+    backgroundImage: {
+      'hero-section': "url('/images/intro-bg.png')"
+    }
   },
   plugins: [],
 };
