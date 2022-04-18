@@ -27,6 +27,9 @@ module.exports = {
     backgroundImage: {
       'hero-section': "url('/images/intro-bg.png')"
     },
+    backgroundSize: {
+      'zoomed-in-gradient': '300% 100%'
+    },
     animation: {
       idleIcon1: 'idle01 9s ease-in-out 1s infinite alternate none running',
       idleIcon2: 'idle02 15s linear infinite alternate',
