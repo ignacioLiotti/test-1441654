@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const navigationData = [
   { id: 0, name: "Home", path: "/#" },
@@ -45,7 +47,7 @@ function Navbar() {
       flex flex-row items-center justify-between transition-all duration-300 ease-in"
       >
         <div
-          className={`${scrolledDown ? "translate-y-2 md:translate-y-0" : "md:translate-y-3"
+          className={`${scrolledDown ? "-translate-y-2 md:translate-y-0" : "md:translate-y-3"
             } flex flex-row items-center justify-between w-full p-4 transition-all duration-300 ease-in`}
         >
           <img
@@ -55,20 +57,10 @@ function Navbar() {
           />
           {!openMenu && (
             <button className="md:hidden" onClick={onMenuPress}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8 text-white"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth={2}
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
+              <FontAwesomeIcon
+                icon={faBars}
+                className="h-8 w-8 m-4 text-white"
+              />
             </button>
           )}
         </div>
@@ -131,20 +123,10 @@ function Navbar() {
           className="md:hidden absolute top-0 right-0"
           onClick={onMenuPress}
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
+          <FontAwesomeIcon
+            icon={faXmark}
             className="h-8 w-8 m-4 text-white"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth="4"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
+          />
         </button>
       </div>
     </nav>
