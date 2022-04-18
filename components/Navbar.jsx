@@ -37,6 +37,7 @@ function Navbar() {
     const locale = e.target.value;
     const path = locale + router.pathname;
     router.replace(path, path, { locale });
+    setOpenMenu(false);
   };
 
   useEffect(() => {
@@ -88,7 +89,7 @@ function Navbar() {
         >
           <ul className="flex flex-row items-center justify-end">
             {/* TODO: add the indicator for the current section as an underline*/}
-            {navigationData.map((item) => (
+            {t?.navigationData.map((item) => (
               <li key={item.id}>
                 <a
                   className="block whitespace-nowrap w-auto py-5 px-4 text-sm md:text-md text-white font-open-sans"
@@ -100,13 +101,10 @@ function Navbar() {
             ))}
             {/* TODO: this is a dropdown component that switches languages */}
             <li>
-              {/* <span className="block whitespace-nowrap w-auto py-5 px-4 text-sm md:text-md text-white font-open-sans">
-                EN
-              </span> */}
               <select
                 onChange={changeLanguage}
                 defaultValue={locale}
-                className="text-white text-shadow-sm text-lg bg-transparent tracking-wide"
+                className="text-white text-shadow-sm w-auto py-5 px-4 text-sm md:text-md bg-transparent tracking-wide"
               >
                 <option className="text-black" value="en">
                   EN
@@ -145,9 +143,18 @@ function Navbar() {
             ))}
             {/* TODO: this is a dropdown component that switches languages */}
             <li className="w-2/3">
-              <span className="block whitespace-nowrap py-5 px-4 text-white font-open-sans">
-                EN
-              </span>
+              <select
+                onChange={changeLanguage}
+                defaultValue={locale}
+                className="text-white text-shadow-sm w-auto py-5 px-4 text-sm md:text-md bg-transparent tracking-wide"
+              >
+                <option className="text-black" value="en">
+                  EN
+                </option>
+                <option className="text-black" value="es">
+                  ES
+                </option>
+              </select>
             </li>
           </ul>
         </div>

@@ -1,4 +1,12 @@
 const es = {
+    "navigationData": [
+        { id: 0, name: "Inicio", path: "/#" },
+        { id: 1, name: "Nosotros", path: "/#about" },
+        { id: 2, name: "Servicios", path: "/#services" },
+        { id: 3, name: "Portafolio", path: "/#portfolio" },
+        { id: 4, name: "Clientes", path: "/#clients" },
+        { id: 5, name: "Contacto", path: "/#footer" },
+    ],
     "intro": {
         "title": "Somos una compañía dedicada a proveer soluciones tecnológicas.",
         "btnWork": "Trabajemos juntos",
