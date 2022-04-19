@@ -21,7 +21,7 @@ module.exports = {
     },
     fontFamily: {
       "open-sans": ['"Open Sans"'],
-      "aleo": ["Aleo"],
+      aleo: ["Aleo"],
     },
     backgroundPosition: {
       "center-bottom": "center bottom",
@@ -33,6 +33,9 @@ module.exports = {
     backgroundSize: {
       "working-cover": "cover",
       "zoomed-in-gradient": "300% 100%",
+    },
+    boxShadow: {
+      "service-card": " 0px 10px 30px 0px rgba(1, 84, 85, 0.2)",
     },
     animation: {
       idleIcon1: "idle01 9s ease-in-out 1s infinite alternate none running",
