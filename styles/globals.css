@@ -8,6 +8,15 @@
 @font-face {
   font-family: "Aleo";
   src: url(../public/fonts/Aleo-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aleo";
+  src: url(../public/fonts/Aleo-Bold.ttf);
+  font-weight: bold;
+  font-style: normal;
 }
 
 @tailwind utilities;
@@ -21,6 +30,10 @@
   box-shadow: 0px 12px 20px 0px rgba(255, 126, 95, 0.15);
 }
 
-.container-width {
+.nav-container-width {
   @apply sm:max-w-[34rem] md:max-w-[45rem] lg:max-w-[60rem] xl:max-w-6xl w-full mx-auto;
+}
+
+.container-width {
+  @apply w-[45rem] lg:w-[60rem] xl:w-[71.25rem] mx-auto;
 }
