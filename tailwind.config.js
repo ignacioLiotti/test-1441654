@@ -32,6 +32,7 @@ module.exports = {
     },
     backgroundSize: {
       "working-cover": "cover",
+      "size-100": "100% 100%",
       "zoomed-in-gradient": "300% 100%",
     },
     boxShadow: {
