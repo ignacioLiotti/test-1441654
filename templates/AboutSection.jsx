@@ -5,7 +5,7 @@ function AboutSection({ strings }) {
     <section className="w-full">
       <div
         className="sm:max-w-[34rem] md:max-w-[45rem] lg:max-w-[60rem] xl:max-w-6xl w-full mx-auto
-        pt-[4.375rem] pb-[8.75rem] max-h-[48.5rem]
+        pt-[4.375rem] pb-[8.75rem]
         transition-all duration-300 ease-in"
       >
         <div className="flex flex-row flex-wrap max-h-full px-4">

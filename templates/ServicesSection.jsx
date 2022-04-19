@@ -6,11 +6,11 @@ function ServicesSection({ strings }) {
   return (
     <section
       className="w-full bg-services-section bg-center-bottom bg-no-repeat bg-working-cover
-        relative pt-52 pb-10"
+        relative pt-52 pb-10 mt-[-38rem] md:mt-[-24rem] lg:mt-0"
     >
       <div className="container-width">
-        <div className="flex flex-row">
-          <div className="flex flex-col max-w-[25%] px-4">
+        <div className="flex flex-col lg:flex-row">
+          <div className="flex flex-col w-full lg:max-w-[25%] px-4 mt-[27rem] sm:mt-[16rem] md:mt-[10.625rem] lg:mt-0">
             <h2 className="font-aleo font-bold text-white text-5xl leading-tight mb-5 mt-[3.75rem]">
               {strings.title}
             </h2>
@@ -20,11 +20,11 @@ function ServicesSection({ strings }) {
             <p className="font-open-sans text-white text-[0.938rem] leading-[1.8] mb-2">
               {strings.subtitleText2}
             </p>
-            <div className="flex flex-col items-start justify-center mt-11">
-              <ActionButton text={strings.btnContact} resize={true} />
+            <div className="flex flex-col items-center sm:items-start justify-center mt-8 sm:mt-11">
+              <ActionButton text={strings.btnContact} resize={false} />
             </div>
           </div>
-          <div className="columns-3 gap-8 space-y-6 px-4 max-w-[75%]">
+          <div className="md:columns-3 gap-8 space-y-6 px-4 w-full lg:max-w-[75%] mt-[4rem] sm:mt-[6rem] lg:mt-0">
             {strings.serviceCards.map((card) => (
               <div key={card.id} className="break-inside-avoid">
                 <ServiceCard
