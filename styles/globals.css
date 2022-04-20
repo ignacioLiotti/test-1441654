@@ -3,6 +3,13 @@
 
 @font-face {
   font-family: "Open Sans";
+  src: url(../public/fonts/OpenSans-Bold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
   src: url(../public/fonts/OpenSans-Regular.ttf);
 }
 

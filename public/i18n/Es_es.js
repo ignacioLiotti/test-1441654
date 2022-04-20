@@ -13,6 +13,7 @@ const es = {
     btnVideo: "Intro Video",
   },
   aboutUs: {
+    srcImage: "sobre-nosotros",
     who: "¿Quiénes somos? ",
     whoDesc:
       "Somos una compañía que provee soluciones tecnológicas a nuestros clientes, optimizando sus procesos y permitiéndoles de esta manera alcanzar su máximo potencial.",

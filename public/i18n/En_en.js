@@ -13,6 +13,7 @@ const en = {
     btnVideo: "Intro Video",
   },
   aboutUs: {
+    srcImage: "about-extra-1",
     who: "Who?",
     whoDesc:
       "We are a company that provides technological solutions to our customers to enhance their potencial and achieve their goals.",

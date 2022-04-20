@@ -4,13 +4,18 @@ function ServiceCard({ title, description, image }) {
   return (
     <article
       data-aos="fade-up"
+      data-aos-duration={1000}
       data-aos-once
       className="group flex flex-col w-full h-fit bg-white rounded-[2.5rem] shadow-service-card p-6
       hover:-translate-y-2 transition-all duration-300 ease-in-out
     "
     >
       <span className="flex flex-col items-start justify-center w-full h-16 ml-6 mb-10">
-        <img src={`/images/icons/${image}.png`} alt="" />
+        <img
+          src={`/images/icons/${image}.png`}
+          alt=""
+          className="object-contain"
+        />
       </span>
       <h4
         className="font-aleo font-bold text-almost-black text-xl leading-[30px] mb-6

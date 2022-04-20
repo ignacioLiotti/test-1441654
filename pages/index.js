@@ -16,7 +16,7 @@ export default function Home() {
   const t = locale === 'en' ? en : es;
 
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init();
   }, []);
 
   return (

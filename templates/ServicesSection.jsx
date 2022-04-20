@@ -24,7 +24,7 @@ function ServicesSection({ strings }) {
               <ActionButton text={strings.btnContact} resize={false} />
             </div>
           </div>
-          <div className="md:columns-3 -space-y-10 lg:-space-y-6 gap-6 lg:gap-8 px-4 w-full lg:max-w-[75%] mt-[4rem] sm:mt-[6rem] lg:mt-0">
+          <div className="md:columns-3 -space-y-10 lg:-space-y-5 gap-6 lg:gap-8 px-4 w-full lg:max-w-[75%] mt-[4rem] sm:mt-[6rem] lg:mt-0">
             {strings.serviceCards.map((card) => (
               <div
                 key={card.id}
