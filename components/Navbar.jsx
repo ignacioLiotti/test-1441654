@@ -99,7 +99,6 @@ function Navbar() {
                 </a>
               </li>
             ))}
-            {/* TODO: this is a dropdown component that switches languages */}
             <li>
               <select
                 onChange={changeLanguage}
@@ -141,7 +140,6 @@ function Navbar() {
                 </a>
               </li>
             ))}
-            {/* TODO: this is a dropdown component that switches languages */}
             <li className="w-2/3">
               <select
                 onChange={changeLanguage}
