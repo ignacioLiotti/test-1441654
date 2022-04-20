@@ -14,7 +14,7 @@ function StatsCard({
       data-aos-duration={2000}
       data-aos-once
       className="flex flex-col md:flex-row gap-7 md:gap-0 items-center bg-gray-stats rounded-[2rem]
-      w-2/3 min-h-[7.375rem] px-4 pt-2 pb-5 text-white"
+      w-2/3 min-h-[7.375rem] px-4 pt-2 pb-5 text-white select-none"
     >
       <div className="flex flex-col items-center justify-start px-4 w-full md:w-1/3 h-full">
         <p className="font-montserrat text-center text-base tracking-widest">

@@ -7,7 +7,7 @@ function ServiceCard({ title, description, image }) {
       data-aos-duration={1000}
       data-aos-once
       className="group flex flex-col w-full h-fit bg-white rounded-[2.5rem] shadow-service-card p-6
-      hover:-translate-y-2 transition-all duration-300 ease-in-out
+      hover:-translate-y-2 transition-all duration-300 ease-in-out select-none
     "
     >
       <span className="flex flex-col items-start justify-center w-full h-16 ml-6 mb-10">
