@@ -5,6 +5,7 @@ import HeroSection from "../templates/HeroSection";
 import en from '../public/i18n/En_en';
 import es from '../public/i18n/Es_es';
 import ServicesSection from "../templates/ServicesSection";
+import StatisticsSection from "../templates/StatisticsSection";
 
 export default function Home() {
   const router = useRouter();
@@ -24,6 +25,7 @@ export default function Home() {
       <HeroSection strings={t.intro} />
       <AboutSection strings={t.aboutUs} />
       <ServicesSection strings={t.services} />
+      <StatisticsSection strings={t.projectsBanner} />
     </div>
   );
 }

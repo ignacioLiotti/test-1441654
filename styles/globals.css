@@ -5,6 +5,7 @@
   font-family: "Open Sans";
   src: url(../public/fonts/OpenSans-Regular.ttf);
 }
+
 @font-face {
   font-family: "Aleo";
   src: url(../public/fonts/Aleo-Regular.ttf);
@@ -17,6 +18,11 @@
   src: url(../public/fonts/Aleo-Bold.ttf);
   font-weight: bold;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../public/fonts/Montserrat-Regular.ttf);
 }
 
 @tailwind utilities;

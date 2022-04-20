@@ -13,6 +13,7 @@ module.exports = {
         "gray-border": "#ced4da",
         "gray-body": "#646464",
         "gray-service": "#7f7f7f",
+        "gray-stats": "#353535",
         "almost-black": "#1d1d1d",
       },
       lineHeight: {
@@ -22,6 +23,7 @@ module.exports = {
     fontFamily: {
       "open-sans": ['"Open Sans"'],
       aleo: ["Aleo"],
+      "montserrat": ["Montserrat"],
     },
     backgroundPosition: {
       "center-bottom": "center bottom",
