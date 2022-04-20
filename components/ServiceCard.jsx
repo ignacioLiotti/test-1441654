@@ -3,6 +3,8 @@ import React from "react";
 function ServiceCard({ title, description, image }) {
   return (
     <article
+      data-aos="fade-up"
+      data-aos-once
       className="group flex flex-col w-full h-fit bg-white rounded-[2.5rem] shadow-service-card p-6
       hover:-translate-y-2 transition-all duration-300 ease-in-out
     "

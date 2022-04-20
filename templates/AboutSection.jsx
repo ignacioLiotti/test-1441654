@@ -9,7 +9,7 @@ function AboutSection({ strings }) {
         transition-all duration-300 ease-in"
       >
         <div className="flex flex-row flex-wrap max-h-full px-4">
-          <div className="px-4">
+          <div className="px-4" data-aos="fade-up" data-aos-once>
             <img
               src="/images/about-extra-1.png"
               className="max-w-full h-[35rem]"

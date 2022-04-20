@@ -1,5 +1,8 @@
+import React, { useEffect } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import AboutSection from "../templates/AboutSection";
 import HeroSection from "../templates/HeroSection";
 import en from '../public/i18n/En_en';
@@ -11,6 +14,10 @@ export default function Home() {
   const router = useRouter();
   const { locale } = router;
   const t = locale === 'en' ? en : es;
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
 
   return (
     <div className="flex flex-col items-center justify-center">
