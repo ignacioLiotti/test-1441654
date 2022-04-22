@@ -6,7 +6,7 @@ function StatisticsSection({ strings }) {
   const numYears = moment("20160101", "YYYYMMDD").fromNow(true).split(" ")[0];
 
   return (
-    <section className="container-width flex flex-col items-center justify-center mb-20">
+    <section className="container-width flex flex-col items-center justify-center">
       <StatsCard
         projects={strings.projects}
         numProjects={150}

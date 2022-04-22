@@ -98,6 +98,14 @@ const es = {
     btnAll: "TODO",
     btnMobile: "MÓVIL",
     btnWeb: "WEB",
+    items: [
+      { id: 1, imageName: "creative-humans", name: "Creative Humans", category: "web development", link: "http://devlights.com/portfolio/creativehumans" },
+      { id: 2, imageName: "ceo", name: "CEO", category: "web development and stock control", link: "http://devlights.com/portfolio/ceo" },
+      { id: 3, imageName: "sas2-1", name: "SAS", category: "system devlopment", link: "http://devlights.com/portfolio/sas" },
+      { id: 4, imageName: "doctoronline", name: "Doctor Responde", category: "app development", link: "http://devlights.com/portfolio/dr-online" },
+      { id: 5, imageName: "livet", name: "Livet", category: "app development", link: "http://devlights.com/portfolio/livet" },
+      { id: 6, imageName: "ocio", name: "Tiempo de OCIO", category: "app development", link: "http://devlights.com/portfolio/tiempodeocio" },
+    ],
   },
   technologies: {
     title: "Tecnologías",

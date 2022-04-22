@@ -14,7 +14,9 @@ module.exports = {
         "gray-body": "#646464",
         "gray-service": "#7f7f7f",
         "gray-stats": "#353535",
+        "gray-third": "#333333",
         "almost-black": "#1d1d1d",
+        "orange-pill": "#ffa133",
       },
       lineHeight: {
         "hero-section": "4.375rem",
