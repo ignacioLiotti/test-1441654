@@ -13,7 +13,7 @@ function PortfolioCard({ data }) {
           {data.name}
         </h4>
         <span className="text-slate-100 uppercase select-none">
-          {data.category}
+          {data.description}
         </span>
         <a href={data.link}>
           <FontAwesomeIcon
