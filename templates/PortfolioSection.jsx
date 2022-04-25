@@ -1,26 +1,21 @@
-import React, { useState, Fragment } from "react";
-import { Tab } from "@headlessui/react";
+import React, { useState, useEffect } from "react";
+//import { Tab } from "@headlessui/react";
 import PortfolioCard from "../components/PortfolioCard";
+import PortfolioTab from "../components/PortfolioTab";
 
 function PortfolioSection({ strings }) {
   const [portfolioItems, setPortfolioItems] = useState(strings.items);
+  const [currentTab, setCurrentTab] = useState("all");
 
-  const onChangeTab = (tabIndex) => {
-    switch (tabIndex) {
-      case 1:
-        setPortfolioItems(
-          strings.items.filter((item) => item.category === "mobile")
-        );
-        break;
-      case 2:
-        setPortfolioItems(
-          strings.items.filter((item) => item.category === "web")
-        );
-        break;
-      default:
-        setPortfolioItems(strings.items);
+  useEffect(() => {
+    if (currentTab === "all") {
+      setPortfolioItems(strings.items);
+    } else {
+      setPortfolioItems(
+        strings.items.filter((item) => item.category === currentTab)
+      );
     }
-  };
+  }, [currentTab]);
 
   return (
     <div className="container-width flex flex-col items-center justify-center w-full py-16">
@@ -28,61 +23,11 @@ function PortfolioSection({ strings }) {
         {strings.title}
       </h3>
       <div className="w-14 h-4 rounded-full bg-orange-pill my-5"></div>
-      <Tab.Group
-        className={"flex flex-row gap-8 mt-4 mb-9"}
-        onChange={(index) => onChangeTab(index)}
-      >
-        <Tab.List>
-          <Tab as={Fragment}>
-            {({ selected }) => (
-              <button
-                className={`py-2 px-5 rounded-full font-open-sans text-sm text-gray-third leading-5
-                transition-all duration-500 ease-in-out
-                ${
-                  selected
-                    ? "bg-opacity-100 bg-orange-pill font-bold"
-                    : "bg-opacity-0 hover:bg-orange-pill hover:font-bold"
-                }
-              `}
-              >
-                <span className="p-2">{strings.btnAll}</span>
-              </button>
-            )}
-          </Tab>
-          <Tab>
-            {({ selected }) => (
-              <button
-                className={`py-2 px-5 rounded-full font-open-sans text-sm text-gray-third leading-5
-                transition-all duration-200 ease-in-out
-                ${
-                  selected
-                    ? "bg-opacity-100 bg-orange-pill font-bold"
-                    : "bg-opacity-0"
-                }
-              `}
-              >
-                {strings.btnMobile}
-              </button>
-            )}
-          </Tab>
-          <Tab>
-            {({ selected }) => (
-              <button
-                className={`py-2 px-5 rounded-full font-open-sans text-sm text-gray-third leading-5
-                transition-all duration-200 ease-in-out
-                ${
-                  selected
-                    ? "bg-opacity-100 bg-orange-pill font-bold"
-                    : "bg-opacity-0"
-                }
-              `}
-              >
-                {strings.btnWeb}
-              </button>
-            )}
-          </Tab>
-        </Tab.List>
-      </Tab.Group>
+      <PortfolioTab
+        initial="all"
+        data={strings.tabs}
+        onSelect={(value) => setCurrentTab(value)}
+      />
       <div className="w-full h-[35rem] grid grid-cols-3 grid-rows-2 gap-7">
         {portfolioItems.map((item) => (
           <PortfolioCard key={item.id} data={item} />

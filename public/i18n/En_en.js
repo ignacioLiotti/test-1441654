@@ -94,9 +94,12 @@ const en = {
   },
   portfolio: {
     title: "Portfolio",
-    btnAll: "ALL",
-    btnMobile: "MOBILE",
-    btnWeb: "WEB",
+    all: 'all',
+    tabs: [
+      { id: 1, name: "all", category: "all" },
+      { id: 2, name: "mobile", category: "mobile" },
+      { id: 3, name: "web", category: "web" },
+    ],
     items: [
       { id: 1, imageName: "creative-humans", name: "Creative Humans", description: "web development", link: "http://devlights.com/portfolio/creativehumans", category: "web" },
       { id: 2, imageName: "ceo", name: "CEO", description: "web development and stock control", link: "http://devlights.com/portfolio/ceo", category: "web" },
