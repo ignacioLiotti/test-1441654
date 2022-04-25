@@ -4,7 +4,7 @@ import ActionButton from "../components/ActionButton";
 function TechnologiesSection({ strings }) {
   return (
     <section
-      className="w-full bg-technologies-section-mobile md:bg-technologies-section bg-initial bg-no-repeat bg-size-100-50 md:bg-size-100 xl:bg-size-47-98
+      className="w-full bg-technologies-section-mobile md:bg-technologies-section bg-initial bg-no-repeat bg-size-100-50 md:bg-size-100 xl:bg-size-50-100
     relative md:pb-[10rem]"
     >
       <div className="container-width flex flex-col md:flex-row items-center justify-center px-4">

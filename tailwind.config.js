@@ -43,7 +43,7 @@ module.exports = {
       "size-100": "100% 100%",
       "zoomed-in-gradient": "300% 100%",
       "size-45": "45%",
-      "size-47-98": "47% 98%",
+      "size-50-100": "50% 100%",
       "size-100-50": "100% 50%",
     },
     boxShadow: {
