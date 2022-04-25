@@ -30,15 +30,21 @@ module.exports = {
     },
     backgroundPosition: {
       "center-bottom": "center bottom",
+      "initial": "initial"
     },
     backgroundImage: {
       "hero-section": "url('/images/intro-bg.png')",
       "services-section": "url('/images/blue.png')",
+      "technologies-section": "url('/images/about_overlay3.png')",
+      "technologies-section-mobile": "url('/images/about_overlay3-mobile.png')",
     },
     backgroundSize: {
       "working-cover": "cover",
       "size-100": "100% 100%",
       "zoomed-in-gradient": "300% 100%",
+      "size-45": "45%",
+      "size-47-98": "47% 98%",
+      "size-100-50": "100% 50%",
     },
     boxShadow: {
       "service-card": " 0px 10px 30px 0px rgba(1, 84, 85, 0.2)",

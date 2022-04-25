@@ -10,6 +10,7 @@ import es from '../public/i18n/Es_es';
 import ServicesSection from "../templates/ServicesSection";
 import StatisticsSection from "../templates/StatisticsSection";
 import PortfolioSection from "../templates/PortfolioSection";
+import TechnologiesSection from "../templates/TechnologiesSection";
 
 export default function Home() {
   const router = useRouter();
@@ -35,6 +36,7 @@ export default function Home() {
       <ServicesSection strings={t.services} />
       <StatisticsSection strings={t.projectsBanner} />
       <PortfolioSection strings={t.portfolio} />
+      <TechnologiesSection strings={t.technologies} />
     </div>
   );
 }

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-//import { Tab } from "@headlessui/react";
 import PortfolioCard from "../components/PortfolioCard";
 import PortfolioTab from "../components/PortfolioTab";
 
@@ -28,7 +27,7 @@ function PortfolioSection({ strings }) {
         data={strings.tabs}
         onSelect={(value) => setCurrentTab(value)}
       />
-      <div className="w-full h-[35rem] grid grid-cols-3 grid-rows-2 gap-7">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7">
         {portfolioItems.map((item) => (
           <PortfolioCard key={item.id} data={item} />
         ))}

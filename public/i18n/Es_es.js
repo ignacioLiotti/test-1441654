@@ -114,9 +114,10 @@ const es = {
     title: "Tecnologías",
     subtitleText1:
       "En Devlights, combinamos las ultimas tecnologías y las mejores prácticas proveyendo productos excepcionales.",
-    subTitle2:
+    subtitleText2:
       "Nuestro equipo es capaz de construir y diseñar la solución perfecta para cada cliente utilizando las últimas tecnologías y siguiendo los más altos estándares en la industria del software.",
     btnProjects: "Nuestros Proyectos",
+    srcImage: "tech-img",
   },
   clients: {
     title: "Clientes",

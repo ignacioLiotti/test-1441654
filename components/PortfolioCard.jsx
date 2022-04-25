@@ -4,7 +4,7 @@ import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 function PortfolioCard({ data }) {
   return (
-    <div className="group w-[21.875rem] h-64 overflow-hidden">
+    <div className="group w-[21.875rem] h-64 overflow-hidden place-self-center">
       <div
         className="opacity-0 group-hover:opacity-80 absolute w-[21.875rem] h-64 z-30 flex flex-col items-center justify-center 
       bg-[#0f86e7] bg-opacity-90 rounded-lg transition-all duration-200 ease-linear"

@@ -116,6 +116,7 @@ const en = {
     subtitleText2:
       "Our team is capable to build and design the perfect solution for each client using the latest technology stacks and following the highest standards on the software industry.",
     btnProjects: "Our projects",
+    srcImage: "tech-img",
   },
   clients: {
     title: "Clients",
