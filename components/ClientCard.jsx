@@ -2,6 +2,7 @@ import React from "react";
 
 function ClientCard({ clientId }) {
   return (
+    // TODO: agregar el efecto de hover
     <div className="h-32 w-64 bg-white p-4 m-3 shadow-generic-card rounded-[20px]">
       <div className="">
         <img
