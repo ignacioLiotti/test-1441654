@@ -47,7 +47,7 @@ module.exports = {
       "size-100-50": "100% 50%",
     },
     boxShadow: {
-      "service-card": " 0px 10px 30px 0px rgba(1, 84, 85, 0.2)",
+      "generic-card": " 0px 10px 30px 0px rgba(1, 84, 85, 0.2)",
     },
     animation: {
       idleIcon1: "idle01 9s ease-in-out 1s infinite alternate none running",

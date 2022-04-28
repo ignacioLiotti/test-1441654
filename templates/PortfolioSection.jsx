@@ -17,22 +17,24 @@ function PortfolioSection({ strings }) {
   }, [currentTab]);
 
   return (
-    <div className="container-width flex flex-col items-center justify-center w-full py-16">
-      <h3 className="font-aleo font-bold text-4xl text-center text-gray-third mb-2">
-        {strings.title}
-      </h3>
-      <div className="w-14 h-4 rounded-full bg-orange-pill my-5"></div>
-      <PortfolioTab
-        initial="all"
-        data={strings.tabs}
-        onSelect={(value) => setCurrentTab(value)}
-      />
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7">
-        {portfolioItems.map((item) => (
-          <PortfolioCard key={item.id} data={item} />
-        ))}
+    <section>
+      <div className="container-width flex flex-col items-center justify-start w-full py-16 md:min-h-[53.75rem]">
+        <h3 className="font-aleo font-bold text-4xl text-center text-gray-third mb-2">
+          {strings.title}
+        </h3>
+        <div className="w-14 h-4 rounded-full bg-orange-pill my-5"></div>
+        <PortfolioTab
+          initial="all"
+          data={strings.tabs}
+          onSelect={(value) => setCurrentTab(value)}
+        />
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7">
+          {portfolioItems.map((item) => (
+            <PortfolioCard key={item.id} data={item} />
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 

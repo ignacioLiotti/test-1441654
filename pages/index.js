@@ -11,8 +11,10 @@ import ServicesSection from "../templates/ServicesSection";
 import StatisticsSection from "../templates/StatisticsSection";
 import PortfolioSection from "../templates/PortfolioSection";
 import TechnologiesSection from "../templates/TechnologiesSection";
+import ClientsSection from "../templates/ClientsSection";
 
 export default function Home() {
+  // TODO: custom hook useLanguage
   const router = useRouter();
   const { locale } = router;
   const t = locale === 'en' ? en : es;
@@ -37,6 +39,7 @@ export default function Home() {
       <StatisticsSection strings={t.projectsBanner} />
       <PortfolioSection strings={t.portfolio} />
       <TechnologiesSection strings={t.technologies} />
+      <ClientsSection strings={t.clients} />
     </div>
   );
 }
