@@ -121,6 +121,8 @@ const en = {
   clients: {
     title: "Clients",
     btnMore: "Show more",
+  },
+  testimonials: {
     clientsText: "What our clients say about us",
   },
   footer: {

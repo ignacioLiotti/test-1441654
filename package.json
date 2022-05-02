@@ -19,7 +19,8 @@
     "moment-timezone": "^0.5.34",
     "next": "12.1.4",
     "react": "18.0.0",
-    "react-dom": "18.0.0"
+    "react-dom": "18.0.0",
+    "react-swipeable": "^7.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.4",
