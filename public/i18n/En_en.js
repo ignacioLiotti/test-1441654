@@ -124,6 +124,12 @@ const en = {
   },
   testimonials: {
     clientsText: "What our clients say about us",
+    clients: [
+      {
+        clientName: "Roberto Maciel", company: "Liber", role: "Director",
+        opinion: "Devlights team was fundamental in the launch of our first mobile app. They accomplished all the goals we agreed upon, always delivering in timely manner. Their team was very professional and definitely exceeded our expectations. The process was really straight forward. Communication was fluent and the team was proactive at every time. We had a great experience working with Devlights and we are grateful they could helped us with this venture."
+      }
+    ]
   },
   footer: {
     title: "Contact Us",

@@ -4,7 +4,7 @@ import { useSwipeable } from "react-swipeable";
 export const CarouselItem = ({ children, width }) => {
   return (
     <div
-      className="carousel-item inline-flex items-center justify-center h-48 bg-green-400 text-white"
+      className="inline-flex items-center justify-center h-48 bg-green-400 text-white"
       style={{ width: width }}
     >
       {children}
@@ -26,6 +26,8 @@ const Carousel = ({ children }) => {
     setActiveIndex(newIndex);
   };
 
+  // Sets up an automated slide through carousel when component is mounted
+  // it also stops the automated slide when hovering the card for proper reading
   useEffect(() => {
     const interval = setInterval(() => {
       if (!paused) {
@@ -40,7 +42,7 @@ const Carousel = ({ children }) => {
     };
   });
 
-  // allows swipe actions in mobile devices
+  // Allows swipe actions on mobile devices
   const handlers = useSwipeable({
     onSwipedLeft: () => updateIndex(activeIndex + 1),
     onSwipedRight: () => updateIndex(activeIndex - 1),

@@ -13,7 +13,14 @@ function TestimonialsSection({ strings }) {
       </div>
       <div className="w-full">
         <Carousel>
-          <CarouselItem>Item 1</CarouselItem>
+          <CarouselItem>
+            <div
+              className="bg-white shadow-generic-card w-full h-auto max-h-96 m-12
+              "
+            >
+              Item 1
+            </div>
+          </CarouselItem>
           <CarouselItem>Item 2</CarouselItem>
           <CarouselItem>Item 3</CarouselItem>
         </Carousel>
