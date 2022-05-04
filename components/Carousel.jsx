@@ -4,7 +4,7 @@ import { useSwipeable } from "react-swipeable";
 export const CarouselItem = ({ children, width }) => {
   return (
     <div
-      className="inline-flex items-center justify-center h-48 bg-green-400 text-white"
+      className="inline-flex items-center justify-center h-[17rem] pt-8"
       style={{ width: width }}
     >
       {children}
@@ -56,7 +56,8 @@ const Carousel = ({ children }) => {
     >
       <div
         {...handlers}
-        className="whitespace-nowrap transition-transform duration-500"
+        // className="whitespace-nowrap transition-transform duration-500"
+        className="whitespace-nowrap"
         style={{ transform: `translateX(-${activeIndex * 100}%)` }}
       >
         {React.Children.map(children, (child, index) => {

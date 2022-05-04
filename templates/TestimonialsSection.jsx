@@ -10,20 +10,30 @@ function TestimonialsSection({ strings }) {
           {strings.clientsText}
         </h3>
         <div className="w-14 h-4 rounded-full bg-orange-pill my-5"></div>
-      </div>
-      <div className="w-full">
-        <Carousel>
-          <CarouselItem>
-            <div
-              className="bg-white shadow-generic-card w-full h-auto max-h-96 m-12
-              "
-            >
-              Item 1
-            </div>
-          </CarouselItem>
-          <CarouselItem>Item 2</CarouselItem>
-          <CarouselItem>Item 3</CarouselItem>
-        </Carousel>
+        <div className="w-full">
+          <Carousel>
+            {strings.clients?.map((client, index) => (
+              <CarouselItem key="index">
+                <div className="flex flex-row w-full h-full rounded-3xl p-8 overflow-clip m-8 bg-white shadow-generic-card">
+                  <div className="w-1/3">
+                    <img
+                      src={`/images/testimonials/${client.img}.png`}
+                      className="object-contain"
+                    />
+                  </div>
+                  <div className="w-2/3 ">
+                    <p>{client.clientName}</p>
+                    <p>{client.company}</p>
+                    <p>{client.role}</p>
+                    <p className="w-full h-auto whitespace-pre-wrap">
+                      {client.opinion}
+                    </p>
+                  </div>
+                </div>
+              </CarouselItem>
+            ))}
+          </Carousel>
+        </div>
       </div>
     </section>
   );

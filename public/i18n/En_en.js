@@ -126,9 +126,21 @@ const en = {
     clientsText: "What our clients say about us",
     clients: [
       {
-        clientName: "Roberto Maciel", company: "Liber", role: "Director",
+        clientName: "Roberto Maciel", company: "Liber", role: "Director", img: 'roberto',
         opinion: "Devlights team was fundamental in the launch of our first mobile app. They accomplished all the goals we agreed upon, always delivering in timely manner. Their team was very professional and definitely exceeded our expectations. The process was really straight forward. Communication was fluent and the team was proactive at every time. We had a great experience working with Devlights and we are grateful they could helped us with this venture."
-      }
+      },
+      {
+        clientName: "Ross Forsyth", company: "Human Design", role: "Director Of Technology", img: 'ross',
+        opinion: "Devlights is a great team to work with. Not only do they have the skills to get the job done but they communicate effectively at every level throughout the project. Their team was just what we needed!"
+      },
+      {
+        clientName: "Darlene Liebman", company: "Creative Humans", role: "Founder", img: 'darlene',
+        opinion: "Working with the team at Devlights has been a great experience. The Team is knowledgeable, responsive and gracious. I highly recommend them, for any project large or small."
+      },
+      {
+        clientName: "Lindsay Insco", company: "Millenium Digital Technologies", role: "Lead Developer", img: 'lindsay',
+        opinion: "Devlights has been such a useful team, I've come to look at them like family. With the variety of experience everyone has, it seems there's always a great fit for a variety of projects. I've loved working with the team so much, I have brought them on to long-term projects with me and I wouldn't have it any other way."
+      },
     ]
   },
   footer: {
