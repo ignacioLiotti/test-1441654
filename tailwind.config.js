@@ -16,6 +16,7 @@ module.exports = {
         "gray-service": "#7f7f7f",
         "gray-stats": "#353535",
         "gray-third": "#333333",
+        "gray-devil": "#666666",
         "almost-black": "#1d1d1d",
         "orange-pill": "#ffa133",
       },

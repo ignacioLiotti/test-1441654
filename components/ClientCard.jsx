@@ -8,11 +8,11 @@ function ClientCard({ clientId }) {
     >
       <div
         className="group-hover:scale-110 transition-all duration-300 ease-in-out
-      transition-all duration-200 ease-linear"
+      transition-all duration-200 ease-linear w-full h-full"
       >
         <img
           src={`/images/clients/client-${clientId}.png`}
-          className="w-full h-full rounded-lg object-cover"
+          className="w-full h-full rounded-lg object-contain"
           alt="client image"
         />
       </div>

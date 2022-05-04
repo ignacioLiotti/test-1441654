@@ -15,19 +15,29 @@ function TestimonialsSection({ strings }) {
             {strings.clients?.map((client, index) => (
               <CarouselItem key="index">
                 <div className="flex flex-row w-full h-full rounded-3xl p-8 overflow-clip m-8 bg-white shadow-generic-card">
-                  <div className="w-1/3">
-                    <img
-                      src={`/images/testimonials/${client.img}.png`}
-                      className="object-contain"
-                    />
+                  <div className="w-1/3 flex items-center justify-center">
+                    <div className="w-52 h-52">
+                      <img
+                        src={`/images/testimonials/${client.img}.png`}
+                        className="w-52 h-52 object-fill"
+                      />
+                    </div>
                   </div>
-                  <div className="w-2/3 ">
-                    <p>{client.clientName}</p>
-                    <p>{client.company}</p>
-                    <p>{client.role}</p>
-                    <p className="w-full h-auto whitespace-pre-wrap">
-                      {client.opinion}
-                    </p>
+                  <div className="w-2/3 flex items-center justify-center">
+                    <div className="flex flex-col">
+                      <p className="p-1 font-aleo font-bold text-icon-blue text-2xl leading-8 -mb-1">
+                        {client.clientName}
+                      </p>
+                      <p className="p-1 font-open-sans font-bold text-gray-third text-lg leading-8 opacity-80 -mb-1">
+                        {client.company}
+                      </p>
+                      <p className="p-1 font-open-sans font-normal text-gray-third text-base leading-8 -mb-1">
+                        {client.role}
+                      </p>
+                      <p className="p-2 font-montserrat font-normal text-gray-devil text-base tracking-[1px] leading-loose w-full h-auto whitespace-pre-wrap">
+                        {client.opinion}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </CarouselItem>

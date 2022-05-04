@@ -4,7 +4,7 @@ import { useSwipeable } from "react-swipeable";
 export const CarouselItem = ({ children, width }) => {
   return (
     <div
-      className="inline-flex items-center justify-center h-[17rem] pt-8"
+      className="inline-flex items-center justify-center h-[28rem] pt-8"
       style={{ width: width }}
     >
       {children}
