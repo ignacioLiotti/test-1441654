@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useSwipeable } from "react-swipeable";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 export const CarouselItem = ({ children, width }) => {
   return (
@@ -56,8 +58,8 @@ const Carousel = ({ children }) => {
     >
       <div
         {...handlers}
-        // className="whitespace-nowrap transition-transform duration-500"
-        className="whitespace-nowrap"
+        className="whitespace-nowrap transition-transform duration-500"
+        // className="whitespace-nowrap"
         style={{ transform: `translateX(-${activeIndex * 100}%)` }}
       >
         {React.Children.map(children, (child, index) => {
@@ -71,15 +73,36 @@ const Carousel = ({ children }) => {
             updateIndex(activeIndex - 1);
           }}
         >
-          Prev
+          <FontAwesomeIcon
+            icon={faAngleLeft}
+            className="text-gray-devil text-4xl mr-6 pt-1 hover:text-almost-black"
+          />
         </button>
+        <div className="flex flex-row my-8">
+          {React.Children.map(children, (child, index) => {
+            return (
+              <button
+                className={`${
+                  index === activeIndex ? "bg-opacity-80" : "bg-opacity-30"
+                }
+                  m-2 h-4 w-4 rounded-full bg-almost-black hover:bg-opacity-80`}
+                onClick={() => {
+                  updateIndex(index);
+                }}
+              ></button>
+            );
+          })}
+        </div>
         <button
           className="m-2"
           onClick={() => {
             updateIndex(activeIndex + 1);
           }}
         >
-          Next
+          <FontAwesomeIcon
+            icon={faAngleRight}
+            className="text-gray-devil text-4xl ml-6 pt-1 hover:text-almost-black"
+          />
         </button>
       </div>
     </div>
