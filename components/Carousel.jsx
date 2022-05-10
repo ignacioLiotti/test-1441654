@@ -6,7 +6,7 @@ import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 export const CarouselItem = ({ children, width }) => {
   return (
     <div
-      className="inline-flex items-center justify-center h-[28rem] pt-8"
+      className="inline-flex items-center justify-center lg:h-[30rem] xl:h-[28rem] pt-8"
       style={{ width: width }}
     >
       {children}

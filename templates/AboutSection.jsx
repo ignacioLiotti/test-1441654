@@ -13,7 +13,7 @@ function AboutSection({ strings }) {
           <div className="px-4" data-aos="fade-up" data-aos-once>
             <img
               src={`/images/${strings.srcImage}.png`}
-              className="max-w-full h-full"
+              className="max-w-full h-full object-contain"
               alt="about us"
             />
           </div>

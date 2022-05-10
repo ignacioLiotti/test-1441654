@@ -4,7 +4,7 @@ import { CarouselItem } from "../components/Carousel";
 
 function TestimonialsSection({ strings }) {
   return (
-    <section className="py-12">
+    <section className="py-12 w-full">
       <div className="container-width flex flex-col items-center justify-center w-full">
         <h3 className="font-aleo font-bold text-4xl text-center text-gray-third mb-2">
           {strings.clientsText}
@@ -14,16 +14,16 @@ function TestimonialsSection({ strings }) {
           <Carousel>
             {strings.clients?.map((client) => (
               <CarouselItem key={client.clientId}>
-                <div className="flex flex-row w-full h-auto rounded-3xl p-8 overflow-clip my-8 mx-10 bg-white shadow-testimonial-card">
-                  <div className="w-1/3 flex items-center justify-center">
-                    <div className="w-52 h-52">
+                <div className="flex flex-col lg:flex-row w-full h-auto rounded-3xl p-4 sm:p-8 overflow-clip my-8 mx-4 sm:mx-10 bg-white shadow-testimonial-card">
+                  <div className="w-full lg:w-1/3 flex items-center justify-center">
+                    <div className="w-[5.5rem] h-[5.5rem] sm:w-52 sm:h-52">
                       <img
                         src={`/images/testimonials/${client.img}.png`}
-                        className="w-52 h-52 object-fill"
+                        className="w-[5.5rem] h-[5.5rem] sm:w-52 sm:h-52 object-fill"
                       />
                     </div>
                   </div>
-                  <div className="w-2/3 flex items-center justify-center">
+                  <div className="w.full lg:w-2/3 flex items-center justify-center">
                     <div className="flex flex-col">
                       <p className="p-1 font-aleo font-bold text-icon-blue text-2xl leading-8 -mb-1">
                         {client.clientName}

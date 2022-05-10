@@ -121,7 +121,7 @@ function Navbar() {
       <div
         className={`fixed md:hidden z-10 h-screen w-full bg-nav-blue bg-opacity-80 top-0
         transition-all ease-in-out duration-500 ${
-          openMenu ? "opacity-100" : "opacity-0"
+          openMenu ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
       >
         <div
