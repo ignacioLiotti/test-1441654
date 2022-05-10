@@ -25,15 +25,16 @@ const es = {
       "Ofrecemos soluciones tecnológicas de alta calidad para nuestros clientes usando metodologías probadas, buenas prácticas. Nuestro staff está formado por desarrolladores y diseñadores muy talentosos.",
   },
   whyUs: {
+    srcImage: "why",
     timeZone: "Zona horaria",
-    tiemZoneDes: "Estamos a una hora de distancia de la franja horaria este.",
+    timeZoneDes: "Estamos a una hora de distancia de la franja horaria este.",
     cost: "Costos convenientes",
     costDesc: "Precios excepcionales a comparación con nuestros competidores.",
     talent: "Talento tecnológico",
     talentDesc:
       "Nuestro equipo está conformado por programadores altamente calificados en diferentes plataformas tecnológicas.",
-    English: "Proficiencia en Inglés",
-    EnglishDesc:
+    english: "Proficiencia en Inglés",
+    englishDesc:
       "Argentina es el país con el más alto nivel de inglés en Latinoamérica.",
   },
   services: {
@@ -127,18 +128,22 @@ const es = {
     clientsText: "Lo que dicen nuestros clientes",
     clients: [
       {
+        clientId: "1",
         clientName: "Roberto Maciel", company: "Liber", role: "Director", img: 'roberto',
         opinion: "El equipo de Devlights ha sido fundamental en el lanzamiento de nuestra primer App. Han cumplido con los plazos y las exigencias que hemos demandado, muchas veces haciendo más de lo acordado y mostrándose proactivos en cada fase del proceso. La comunicación fue fluida en todo momento. Esta experiencia significó un gran paso para nuestro equipo profesional, agradecemos que nos hayan acompañado!"
       },
       {
+        clientId: "2",
         clientName: "Ross Forsyth", company: "Human Design", role: "Director Of Technology", img: 'ross',
         opinion: "Devlights es un gran equipo con el cual trabajar, no solo tienen las habilidades para realizar el trabajo, sino que también se comunican de manera efectiva a lo largo de todo el proyecto. ¡Su equipo era exactamente lo que necesitaba!"
       },
       {
+        clientId: "3",
         clientName: "Darlene Liebman", company: "Creative Humans", role: "Founder", img: 'darlene',
         opinion: "Trabajar con el equipo de Devlights ha sido una gran experiencia. El equipo tiene los conocimientos, responde y son muy amables. Realmente los recomiendo para cualquier tipo de proyecto ya sea grande o pequeño."
       },
       {
+        clientId: "4",
         clientName: "Lindsay Insco", company: "Millenium Digital Technologies", role: "Lead Developer", img: 'lindsay',
         opinion: "El equipo de Devlights ha sido de gran ayuda, los considero casi familia. Amplia experiencia y conocimientos técnicos, siempre tienen el personal adecuado para encarar cualquier tipo de proyecto. Incluirlos en proyectos a largo plazo fue una excelente decisión, no lo habría hecho de otra manera."
       },

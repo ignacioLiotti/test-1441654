@@ -12,8 +12,8 @@ function TestimonialsSection({ strings }) {
         <div className="w-14 h-4 rounded-full bg-orange-pill my-5"></div>
         <div className="w-full">
           <Carousel>
-            {strings.clients?.map((client, index) => (
-              <CarouselItem key="index">
+            {strings.clients?.map((client) => (
+              <CarouselItem key={client.clientId}>
                 <div className="flex flex-row w-full h-auto rounded-3xl p-8 overflow-clip my-8 mx-10 bg-white shadow-testimonial-card">
                   <div className="w-1/3 flex items-center justify-center">
                     <div className="w-52 h-52">

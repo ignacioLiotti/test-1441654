@@ -13,6 +13,7 @@ import PortfolioSection from "../templates/PortfolioSection";
 import TechnologiesSection from "../templates/TechnologiesSection";
 import ClientsSection from "../templates/ClientsSection";
 import TestimonialsSection from "../templates/TestimonialsSection";
+import WhySection from "../templates/WhySection";
 
 export default function Home() {
   // TODO: custom hook useLanguage
@@ -36,6 +37,7 @@ export default function Home() {
       </Head>
       <HeroSection strings={t.intro} />
       <AboutSection strings={t.aboutUs} />
+      <WhySection strings={t.whyUs}/>
       <ServicesSection strings={t.services} />
       <StatisticsSection strings={t.projectsBanner} />
       <PortfolioSection strings={t.portfolio} />

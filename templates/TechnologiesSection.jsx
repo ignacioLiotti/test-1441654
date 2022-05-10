@@ -23,7 +23,7 @@ function TechnologiesSection({ strings }) {
             <ActionButton text={strings.btnProjects} resize={false} />
           </div>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-duration={1000} data-aos-once>
           <img
             src={`/images/${strings.srcImage}.png`}
             className="max-w-full h-[35rem] object-contain"
