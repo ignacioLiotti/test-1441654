@@ -3,11 +3,33 @@
 
 @font-face {
   font-family: "Open Sans";
+  src: url(../public/fonts/OpenSans-Bold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
   src: url(../public/fonts/OpenSans-Regular.ttf);
 }
+
 @font-face {
   font-family: "Aleo";
   src: url(../public/fonts/Aleo-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Aleo";
+  src: url(../public/fonts/Aleo-Bold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../public/fonts/Montserrat-Regular.ttf);
 }
 
 @tailwind utilities;
@@ -21,6 +43,10 @@
   box-shadow: 0px 12px 20px 0px rgba(255, 126, 95, 0.15);
 }
 
+.nav-container-width {
+  @apply w-full sm:max-w-[34rem] md:max-w-[45rem] lg:max-w-[60rem] xl:max-w-6xl mx-auto;
+}
+
 .container-width {
-  @apply sm:max-w-[34rem] md:max-w-[45rem] lg:max-w-[60rem] xl:max-w-6xl w-full mx-auto;
+  @apply w-full sm:w-[34rem] md:w-[45rem] lg:w-[60rem] xl:w-[71.25rem] mx-auto;
 }
