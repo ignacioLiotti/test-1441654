@@ -19,7 +19,7 @@ export default function Home() {
   // TODO: custom hook useLanguage
   const router = useRouter();
   const { locale } = router;
-  const t = locale === 'en' ? en : es;
+  const translation = locale === 'en' ? en : es;
 
   useEffect(() => {
     Aos.init();
@@ -35,15 +35,15 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <HeroSection strings={t.intro} />
-      <AboutSection strings={t.aboutUs} />
-      <WhySection strings={t.whyUs}/>
-      <ServicesSection strings={t.services} />
-      <StatisticsSection strings={t.projectsBanner} />
-      <PortfolioSection strings={t.portfolio} />
-      <TechnologiesSection strings={t.technologies} />
-      <ClientsSection strings={t.clients} />
-      <TestimonialsSection strings={t.testimonials} />
+      <HeroSection strings={translation.intro} />
+      <AboutSection strings={translation.aboutUs} />
+      <WhySection strings={translation.whyUs}/>
+      <ServicesSection strings={translation.services} />
+      <StatisticsSection strings={translation.projectsBanner} />
+      <PortfolioSection strings={translation.portfolio} />
+      <TechnologiesSection strings={translation.technologies} />
+      <ClientsSection strings={translation.clients} />
+      <TestimonialsSection strings={translation.testimonials} />
     </div>
   );
 }
