@@ -38,6 +38,7 @@ module.exports = {
       "services-section": "url('/images/blue.png')",
       "technologies-section": "url('/images/about_overlay3.png')",
       "technologies-section-mobile": "url('/images/about_overlay3-mobile.png')",
+      "careers-section": "url('/images/about_overlay4.png')"
     },
     backgroundSize: {
       "working-cover": "cover",

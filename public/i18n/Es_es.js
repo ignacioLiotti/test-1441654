@@ -124,6 +124,14 @@ const es = {
     title: "Clientes",
     btnMore: "Ver más",
   },
+  careers: {
+    title: "Carreras",
+    subtitleText1: "En Devlights estamos en búsqueda constante de nuevos talentos, ¿Tienes lo que se necesita?",
+    subtitleText2: "En esta sección podrás aplicar a nuestras últimas busquedas laborales y chequear sus requerimientos, para mas información haz click en el boton de abajo. ",
+    srcImage: "tech-img",
+    btnCareers: "Mirá las posiciones disponibles",
+
+  },
   testimonials: {
     clientsText: "Lo que dicen nuestros clientes",
     clients: [

@@ -152,6 +152,14 @@ const en = {
       },
     ]
   },
+  careers: {
+    title: "Careers",
+    subtitleText1: "In Devlights we are always looking for fresh talent, do you have what it takes?.",
+    subtitleText2: "In this section you can apply for our latest job openings and check the requirements, for further information just click on the button below ",
+    srcImage: "tech-img",
+    btnCareers: "Check all positions",
+
+  },
   footer: {
     title: "Contact Us",
     address1: "Corrientes, Argentina. 1250 Junin st., 2nd Floor.",

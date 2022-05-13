@@ -8,7 +8,7 @@ function TechnologiesSection({ strings }) {
     relative md:pb-[10rem]"
     >
       <div className="container-width flex flex-col md:flex-row items-center justify-center px-4">
-        <div className="flex flex-col items-start justify-end md:max-w-[40%]">
+        <div className="flex flex-col items-center justify-end md:max-w-[40%] md:items-start">
           <h2 className="font-aleo font-bold text-white text-3xl leading-tight mb-5 mt-[4.75rem]">
             {strings.title}
           </h2>

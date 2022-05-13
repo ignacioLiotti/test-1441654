@@ -139,6 +139,14 @@ function Footer() {
                 className="text-white text-sm font-medium font-open-sans"
                 href="/#"
               >
+                Careers
+              </a>
+            </li>
+            <li className="mb-6">
+              <a
+                className="text-white text-sm font-medium font-open-sans"
+                href="/#"
+              >
                 Home
               </a>
             </li>

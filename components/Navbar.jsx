@@ -11,7 +11,8 @@ const navigationData = [
   { id: 2, name: "Services", path: "/#services" },
   { id: 3, name: "Portfolio", path: "/#portfolio" },
   { id: 4, name: "Clients", path: "/#clients" },
-  { id: 5, name: "Contact", path: "/#footer" },
+  { id: 5, name: "Careers", path: "/#careers" },
+  { id: 6, name: "Contact", path: "/#footer" },
 ];
 
 function Navbar() {
