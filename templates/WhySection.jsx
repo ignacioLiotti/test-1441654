@@ -11,7 +11,12 @@ function WhySection({ strings }) {
       >
         <div className="flex flex-col md:flex-row justify-between md:max-h-[42rem] px-4">
           <div className="flex flex-col gap-7 md:gap-0 justify-center w-full md:max-w-[50%] order-2 md:order-1">
-            <div className="flex flex-row items-start gap-3">
+            <div
+              className="flex flex-row items-start gap-3"
+              data-aos="fade-up"
+              data-aos-duration={1000}
+              data-aos-once
+            >
               <div className="w-9 h-9 xs:w-[3.25rem]xs:h-[3.25rem] flex-shrink-0 m-4 xs:m-2">
                 <img
                   src={`/images/icons/${strings.timeZoneImg}.png`}
@@ -28,7 +33,12 @@ function WhySection({ strings }) {
                 </p>
               </div>
             </div>
-            <div className="flex flex-row items-start gap-3">
+            <div
+              className="flex flex-row items-start gap-3"
+              data-aos="fade-up"
+              data-aos-duration={1000}
+              data-aos-once
+            >
               <div className="w-9 h-9 xs:w-[3.25rem]xs:h-[3.25rem] flex-shrink-0 m-4 xs:m-2">
                 <img
                   src={`/images/icons/${strings.costImg}.png`}
@@ -45,7 +55,12 @@ function WhySection({ strings }) {
                 </p>
               </div>
             </div>
-            <div className="flex flex-row items-start gap-3">
+            <div
+              className="flex flex-row items-start gap-3"
+              data-aos="fade-up"
+              data-aos-duration={1000}
+              data-aos-once
+            >
               <div className="w-9 h-9 xs:w-[3.25rem]xs:h-[3.25rem] flex-shrink-0 m-4 xs:m-2">
                 <img
                   src={`/images/icons/${strings.talentImg}.png`}
@@ -62,7 +77,12 @@ function WhySection({ strings }) {
                 </p>
               </div>
             </div>
-            <div className="flex flex-row items-start gap-3">
+            <div
+              className="flex flex-row items-start gap-3"
+              data-aos="fade-up"
+              data-aos-duration={1000}
+              data-aos-once
+            >
               <div className="w-9 h-9 xs:w-[3.25rem]xs:h-[3.25rem] flex-shrink-0 m-4 xs:m-2">
                 <img
                   src={`/images/icons/${strings.englishImg}.png`}
@@ -80,7 +100,11 @@ function WhySection({ strings }) {
               </div>
             </div>
           </div>
-          <div className="px-4 order-1 md:order-2 mb-16 md:mb-0" data-aos="fade-up" data-aos-once>
+          <div
+            className="px-4 order-1 md:order-2 mb-16 md:mb-0"
+            data-aos="fade-up"
+            data-aos-once
+          >
             <img
               src={`/images/${strings.srcImage}.png`}
               className="max-w-full h-full object-contain"
