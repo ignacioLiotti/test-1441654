@@ -11,8 +11,8 @@ function WhySection({ strings }) {
       >
         <div className="flex flex-row justify-between max-h-[42rem] px-4">
           <div className="flex flex-col justify-center w-full max-w-[50%]">
-            <div className="flex flex-row items-center gap-6">
-              <div className="w-[3.25rem] h-[3.25rem]">
+            <div className="flex flex-row items-start gap-6">
+              <div className="w-[3.25rem] h-[3.25rem] flex-shrink-0 mt-4">
                 <img
                   src={`/images/icons/${strings.timeZoneImg}.png`}
                   className="w-full h-auto object-contain"
@@ -28,8 +28,8 @@ function WhySection({ strings }) {
                 </p>
               </div>
             </div>
-            <div className="flex flex-row items-center gap-6">
-              <div className="w-16 h-16">
+            <div className="flex flex-row items-start gap-6">
+              <div className="w-[3.25rem] h-[3.25rem] flex-shrink-0 mt-4">
                 <img
                   src={`/images/icons/${strings.costImg}.png`}
                   className="w-full h-auto object-contain"
@@ -45,8 +45,8 @@ function WhySection({ strings }) {
                 </p>
               </div>
             </div>
-            <div className="flex flex-row items-center gap-6">
-              <div className="w-16 h-16">
+            <div className="flex flex-row items-start gap-6">
+              <div className="w-[3.25rem] h-[3.25rem] flex-shrink-0 mt-4">
                 <img
                   src={`/images/icons/${strings.talentImg}.png`}
                   className="w-full h-auto object-contain"
@@ -62,8 +62,8 @@ function WhySection({ strings }) {
                 </p>
               </div>
             </div>
-            <div className="flex flex-row items-center gap-6">
-              <div className="w-16 h-16">
+            <div className="flex flex-row items-start gap-6">
+              <div className="w-[3.25rem] h-[3.25rem] flex-shrink-0 mt-4">
                 <img
                   src={`/images/icons/${strings.englishImg}.png`}
                   className="w-full h-auto object-contain"
