@@ -10,14 +10,14 @@ function ServicesSection({ strings }) {
     >
       <div className="container-width">
         <div className="flex flex-col lg:flex-row">
-          <div className="flex flex-col w-full lg:max-w-[25%] px-4 mt-[27rem] sm:mt-[17rem] md:mt-[10.625rem] lg:mt-0">
-            <h2 className="font-aleo font-bold text-white text-5xl leading-tight mb-5 mt-[3.75rem]">
+          <div className="flex flex-col xs:items-center w-full lg:max-w-[25%] px-4 mt-[27rem] sm:mt-[17rem] md:mt-[10.625rem] lg:mt-0">
+            <h2 className="font-aleo font-bold text-center xs:text-left text-white text-5xl leading-tight mb-5 mt-[3.75rem]">
               {strings.title}
             </h2>
-            <h4 className="font-open-sans font-bold text-white text-lg leading-7 mb-2">
+            <h4 className="font-open-sans font-bold text-center xs:text-left text-white text-lg leading-7 mb-2">
               {strings.subtitleText1}
             </h4>
-            <p className="font-open-sans text-white text-[0.938rem] leading-[1.8] mb-2">
+            <p className="font-open-sans text-center xs:text-left text-white text-[0.938rem] leading-[1.8] mb-2">
               {strings.subtitleText2}
             </p>
             <div className="flex flex-col items-center sm:items-start justify-center mt-8 sm:mt-11">
