@@ -3,16 +3,16 @@ import React from "react";
 function WhySection({ strings }) {
   return (
     // TODO: add background image
-    <section className="w-full mb-[38rem] sm:mb-[38rem] md:mb-0">
+    <section className="w-full">
       <div
         className="sm:max-w-[34rem] md:max-w-[45rem] lg:max-w-[60rem] xl:max-w-6xl w-full mx-auto
         pt-[4.375rem] pb-[8.75rem]
         transition-all duration-300 ease-in"
       >
-        <div className="flex flex-col md:flex-row justify-between max-h-[42rem] px-4">
+        <div className="flex flex-col md:flex-row justify-between md:max-h-[42rem] px-4">
           <div className="flex flex-col gap-7 md:gap-0 justify-center w-full md:max-w-[50%] order-2 md:order-1">
             <div className="flex flex-row items-start gap-3">
-              <div className="w-9 h-9 xs:w-[3.25rem] xs:border-purple-500 xs:h-[3.25rem] flex-shrink-0 m-4 xs:m-2">
+              <div className="w-9 h-9 xs:w-[3.25rem]xs:h-[3.25rem] flex-shrink-0 m-4 xs:m-2">
                 <img
                   src={`/images/icons/${strings.timeZoneImg}.png`}
                   className="w-full h-auto object-contain"
@@ -29,7 +29,7 @@ function WhySection({ strings }) {
               </div>
             </div>
             <div className="flex flex-row items-start gap-3">
-              <div className="w-9 h-9 xs:w-[3.25rem] xs:h-[3.25rem] flex-shrink-0 m-4">
+              <div className="w-9 h-9 xs:w-[3.25rem]xs:h-[3.25rem] flex-shrink-0 m-4 xs:m-2">
                 <img
                   src={`/images/icons/${strings.costImg}.png`}
                   className="w-full h-auto object-contain"
@@ -46,7 +46,7 @@ function WhySection({ strings }) {
               </div>
             </div>
             <div className="flex flex-row items-start gap-3">
-              <div className="w-9 h-9 xs:w-[3.25rem] xs:h-[3.25rem] flex-shrink-0 m-4">
+              <div className="w-9 h-9 xs:w-[3.25rem]xs:h-[3.25rem] flex-shrink-0 m-4 xs:m-2">
                 <img
                   src={`/images/icons/${strings.talentImg}.png`}
                   className="w-full h-auto object-contain"
@@ -63,7 +63,7 @@ function WhySection({ strings }) {
               </div>
             </div>
             <div className="flex flex-row items-start gap-3">
-              <div className="w-9 h-9 xs:w-[3.25rem] xs:h-[3.25rem] flex-shrink-0 m-4">
+              <div className="w-9 h-9 xs:w-[3.25rem]xs:h-[3.25rem] flex-shrink-0 m-4 xs:m-2">
                 <img
                   src={`/images/icons/${strings.englishImg}.png`}
                   className="w-full h-auto object-contain"
