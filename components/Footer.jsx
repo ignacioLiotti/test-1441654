@@ -15,12 +15,12 @@ import ContactForm from "./ContactForm";
 function Footer() {
   return (
     <footer
-      className={`block relative bg-[url('/images/footer-bg.png')] w-full bg-cover bg-no-repeat bg-center-bottom
+      className={`block relative bg-[url('/images/footer-bg.png')] w-full bg-working-cover bg-no-repeat bg-center-bottom
       py-16`}
     >
-      <div className="container-width flex flex-col md:flex-row items-start justify-between">
+      <div className="container-width flex flex-col md:flex-row items-center md:items-start justify-between gap-9">
         {/* First column: Contact info */}
-        <div className="flex flex-col items-start px-4 md:px-4 h-full md:w-4/12 gap-6 order-1">
+        <div className="flex flex-col items-start px-8 xs:px-4 md:px-4 h-full md:w-4/12 gap-6 order-1">
           <img
             className="h-9 md:h-12 object-contain mb-3"
             src="/images/logo-white.png"
@@ -89,8 +89,8 @@ function Footer() {
         </div>
         {/* Second column: links and social */}
         {/* TODO: make two columns when < sm (640px) */}
-        <div className="contact-form flex flex-col items-start justify-start px-4 md:px-4 h-full md:w-3/12 gap-6 order-3 md:order-2">
-          <h4 className="text-lg text-white font-bold font-open-sans uppercase mb-6">
+        <div className="contact-form flex flex-col items-start justify-start px-8 xs:px-4 md:px-4 w-full h-full md:w-3/12 gap-6 order-3 md:order-2">
+          <h4 className="text-xl md:text-lg text-white font-bold font-open-sans uppercase mb-6">
             Links
           </h4>
           <ul>
@@ -189,7 +189,7 @@ function Footer() {
           </div>
         </div>
         {/* Third column: connect */}
-        <div className="flex flex-col items-start px-4 pb-12 md:px-4 h-full w-11/12 md:w-5/12 gap-6 order-2 md:order-3">
+        <div className="flex flex-col items-start mt-8 px-4 pb-12 h-full w-11/12 md:w-5/12 gap-6 order-2 md:order-3">
           <ContactForm />
         </div>
       </div>

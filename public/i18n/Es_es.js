@@ -27,15 +27,19 @@ const es = {
   whyUs: {
     srcImage: "why",
     timeZone: "Zona horaria",
-    timeZoneDes: "Estamos a una hora de distancia de la franja horaria este.",
+    timeZoneDesc: "Estamos a una hora de distancia de la franja horaria este.",
+    timeZoneImg: "clock",
     cost: "Costos convenientes",
     costDesc: "Precios excepcionales a comparación con nuestros competidores.",
+    costImg: "pig",
     talent: "Talento tecnológico",
     talentDesc:
       "Nuestro equipo está conformado por programadores altamente calificados en diferentes plataformas tecnológicas.",
+    talentImg: "comp",
     english: "Proficiencia en Inglés",
     englishDesc:
       "Argentina es el país con el más alto nivel de inglés en Latinoamérica.",
+    englishImg: "talk",
   },
   services: {
     title: "Servicios",

@@ -103,7 +103,7 @@ function ContactForm() {
       )}
       {!messageSent && (
         <>
-          <h4 className="text-lg text-white font-bold font-open-sans mb-6">
+          <h4 className="text-xl md:text-lg text-white font-bold font-open-sans mb-6">
             Connect with us
           </h4>
           <form action="#" onSubmit={handleSubmit} className="flex flex-col gap-1 w-full">
