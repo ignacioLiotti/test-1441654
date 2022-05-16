@@ -9,6 +9,7 @@ function StatsCard({
   numYears,
 }) {
   return (
+    // TODO: add numbers animation
     <div
       data-aos="fade-up"
       data-aos-duration={2000}

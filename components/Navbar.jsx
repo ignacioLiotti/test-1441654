@@ -5,20 +5,10 @@ import es from "../public/i18n/Es_es";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
-const navigationData = [
-  { id: 0, name: "Home", path: "/#" },
-  { id: 1, name: "About us", path: "/#about" },
-  { id: 2, name: "Services", path: "/#services" },
-  { id: 3, name: "Portfolio", path: "/#portfolio" },
-  { id: 4, name: "Clients", path: "/#clients" },
-  { id: 5, name: "Careers", path: "/#careers" },
-  { id: 6, name: "Contact", path: "/#footer" },
-];
-
 function Navbar() {
   const router = useRouter();
   const { locale } = router;
-  const t = locale === "en" ? en : es;
+  const translation = locale === "en" ? en : es;
 
   const [openMenu, setOpenMenu] = useState(false);
   const onMenuPress = () => {
@@ -90,7 +80,7 @@ function Navbar() {
         >
           <ul className="flex flex-row items-center justify-end">
             {/* TODO: add the indicator for the current section as an underline*/}
-            {t?.navigationData.map((item) => (
+            {translation?.navigationData.map((item) => (
               <li key={item.id}>
                 <a
                   className="block whitespace-nowrap w-auto py-5 px-4 text-sm md:text-md text-white font-open-sans"
@@ -122,7 +112,9 @@ function Navbar() {
       <div
         className={`fixed md:hidden z-10 h-screen w-full bg-nav-blue bg-opacity-80 top-0
         transition-all ease-in-out duration-500 ${
-          openMenu ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+          openMenu
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none"
         }`}
       >
         <div
@@ -131,7 +123,7 @@ function Navbar() {
           }`}
         >
           <ul className="flex flex-col items-start justify-end w-full">
-            {navigationData.map((item) => (
+            {translation?.navigationData.map((item) => (
               <li key={item.id}>
                 <a
                   className="block whitespace-nowrap w-auto py-4 px-4 text-white font-open-sans"

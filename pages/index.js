@@ -15,6 +15,7 @@ import ClientsSection from "../templates/ClientsSection";
 import TestimonialsSection from "../templates/TestimonialsSection";
 import WhySection from "../templates/WhySection";
 import CareersSection from "../templates/CareersSection";
+import DefaultLayout from "../layouts/DefaultLayout";
 
 export default function Home() {
   // TODO: custom hook useLanguage
@@ -48,4 +49,12 @@ export default function Home() {
       <CareersSection strings={translation.careers}  />
     </div>
   );
+}
+
+Home.getLayout = function getLayout(page) {
+  return (
+    <DefaultLayout>
+      {page}
+    </DefaultLayout>
+  )
 }

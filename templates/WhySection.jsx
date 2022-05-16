@@ -2,7 +2,6 @@ import React from "react";
 
 function WhySection({ strings }) {
   return (
-    // TODO: add background image
     <section className="w-full bg-why-section bg-no-repeat bg-size-30 bg-left-top">
       <div
         className="sm:max-w-[34rem] md:max-w-[45rem] lg:max-w-[60rem] xl:max-w-6xl w-full mx-auto

@@ -1,11 +1,16 @@
+import NavItem from "../../components/NavItem";
+
 const en = {
   navigationData: [
-    { id: 0, name: "Home", path: "/#" },
-    { id: 1, name: "About us", path: "/#about" },
-    { id: 2, name: "Services", path: "/#services" },
-    { id: 3, name: "Portfolio", path: "/#portfolio" },
-    { id: 4, name: "Clients", path: "/#clients" },
-    { id: 5, name: "Contact", path: "/#footer" },
+    { id: 0, name: "Home", path: "/" },
+    { id: 1, name: <NavItem item="About us" />, path: "#about" },
+    { id: 2, name: <NavItem item="Services" />, path: "#services" },
+    { id: 3, name: <NavItem item="Portfolio" />, path: "#portfolio" },
+    { id: 4, name: <NavItem item="Clients" />, path: "#clients" },
+    { id: 5, name: <NavItem item="Careers" />, path: "#careers" },
+    // { id: 6, name: "Referral Program", path: "/referral" },
+    // { id: 7, name: "Nearshore Software Development", path: "/nearshore-software-development" },
+    { id: 8, name: "Contact", path: "#contact" },
   ],
   intro: {
     title: "We are a company dedicated to provide technological solutions.",

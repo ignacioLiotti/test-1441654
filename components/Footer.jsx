@@ -14,7 +14,7 @@ import ContactForm from "./ContactForm";
 
 function Footer() {
   return (
-    <footer
+    <footer id="contact"
       className={`block relative bg-[url('/images/footer-bg.png')] w-full bg-working-cover bg-no-repeat bg-center-bottom
       py-16`}
     >
@@ -81,7 +81,7 @@ function Footer() {
             </a>
             <div className="w-32">
               <img
-                src="./images/clutch.png"
+                src="/images/clutch.png"
                 alt="clutch badge top b2b companies latin america"
               />
             </div>
