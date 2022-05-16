@@ -19,6 +19,8 @@ module.exports = {
         "gray-devil": "#666666",
         "almost-black": "#1d1d1d",
         "orange-pill": "#ffa133",
+        "cyan-clutch": "#36A9E1",
+        
       },
       lineHeight: {
         "hero-section": "4.375rem",
@@ -28,6 +30,7 @@ module.exports = {
       "open-sans": ['"Open Sans"'],
       aleo: ["Aleo"],
       "montserrat": ["Montserrat"],
+      popins: ["Poppins-Regular"]
     },
     backgroundPosition: {
       "center-bottom": "center bottom",
@@ -38,7 +41,8 @@ module.exports = {
       "services-section": "url('/images/blue.png')",
       "technologies-section": "url('/images/about_overlay3.png')",
       "technologies-section-mobile": "url('/images/about_overlay3-mobile.png')",
-      "careers-section": "url('/images/about_overlay4.png')"
+      "careers-section": "url('/images/about_overlay4.png')",
+      "clutch-landing-hero": "url('/images/clutch-landing-hero.png')"
     },
     backgroundSize: {
       "working-cover": "cover",
@@ -56,6 +60,7 @@ module.exports = {
       idleIcon1: "idle01 9s ease-in-out 1s infinite alternate none running",
       idleIcon2: "idle02 15s linear infinite alternate",
       idleIcon3: "idle03 15s linear infinite alternate",
+      idleIcon4: "idle04 9s ease-in-out 1s infinite alternate none running"
     },
     keyframes: {
       idle01: {
@@ -130,6 +135,32 @@ module.exports = {
         "100%": {
           transform:
             "translateY(15px) translateX(15px) rotate(0deg) scale(0.95); opacity: 0.7",
+        },
+      },
+      idle04: {
+        "0%": {
+          transform:
+            "translateY(5px) translateX(0px) rotate(0deg) scale(1); opacity: 0.9 ",
+        },
+        "20%": {
+          transform:
+            "translateY(10px) translateX(5px) rotate(-5deg) scale(0.8); opacity: 0.8",
+        },
+        "40%": {
+          transform:
+            "translateY(7px) translateX(-5px) rotate(5deg) scale(0.85); opacity: 0.8",
+        },
+        "40%": {
+          transform:
+            "translateY(2px) translateX(-10px) rotate(-2deg) scale(0.7); opacity: 1",
+        },
+        "80%": {
+          transform:
+            "translateY(-4px) translateX(-5px) rotate(-8deg) scale(0.9); opacity: 0.8",
+        },
+        "100%": {
+          transform:
+            "translateY(2px) translateX(5px) rotate(0deg) scale(0.95); opacity: 0.7",
         },
       },
     },

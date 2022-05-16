@@ -5,7 +5,8 @@ const en = {
     { id: 2, name: "Services", path: "/#services" },
     { id: 3, name: "Portfolio", path: "/#portfolio" },
     { id: 4, name: "Clients", path: "/#clients" },
-    { id: 5, name: "Contact", path: "/#footer" },
+    { id: 5, name: "Careers", path: "/#careers" },
+    { id: 6, name: "Contact", path: "/#footer" },
   ],
   intro: {
     title: "We are a company dedicated to provide technological solutions.",
@@ -99,19 +100,61 @@ const en = {
   },
   portfolio: {
     title: "Portfolio",
-    all: 'all',
+    all: "all",
     tabs: [
       { id: 1, name: "all", category: "all" },
       { id: 2, name: "mobile", category: "mobile" },
       { id: 3, name: "web", category: "web" },
     ],
     items: [
-      { id: 1, imageName: "creative-humans", name: "Creative Humans", description: "web development", link: "http://devlights.com/portfolio/creativehumans", category: "web" },
-      { id: 2, imageName: "ceo", name: "CEO", description: "web development and stock control", link: "http://devlights.com/portfolio/ceo", category: "web" },
-      { id: 3, imageName: "sas2-1", name: "SAS", description: "system devlopment", link: "http://devlights.com/portfolio/sas", category: "web" },
-      { id: 4, imageName: "doctoronline", name: "Doctor Responde", description: "app development", link: "http://devlights.com/portfolio/dr-online", category: "mobile" },
-      { id: 5, imageName: "livet", name: "Livet", description: "app development", link: "http://devlights.com/portfolio/livet", category: "mobile" },
-      { id: 6, imageName: "ocio", name: "Tiempo de OCIO", description: "app development", link: "http://devlights.com/portfolio/tiempodeocio", category: "mobile" },
+      {
+        id: 1,
+        imageName: "creative-humans",
+        name: "Creative Humans",
+        description: "web development",
+        link: "http://devlights.com/portfolio/creativehumans",
+        category: "web",
+      },
+      {
+        id: 2,
+        imageName: "ceo",
+        name: "CEO",
+        description: "web development and stock control",
+        link: "http://devlights.com/portfolio/ceo",
+        category: "web",
+      },
+      {
+        id: 3,
+        imageName: "sas2-1",
+        name: "SAS",
+        description: "system devlopment",
+        link: "http://devlights.com/portfolio/sas",
+        category: "web",
+      },
+      {
+        id: 4,
+        imageName: "doctoronline",
+        name: "Doctor Responde",
+        description: "app development",
+        link: "http://devlights.com/portfolio/dr-online",
+        category: "mobile",
+      },
+      {
+        id: 5,
+        imageName: "livet",
+        name: "Livet",
+        description: "app development",
+        link: "http://devlights.com/portfolio/livet",
+        category: "mobile",
+      },
+      {
+        id: 6,
+        imageName: "ocio",
+        name: "Tiempo de OCIO",
+        description: "app development",
+        link: "http://devlights.com/portfolio/tiempodeocio",
+        category: "mobile",
+      },
     ],
   },
   technologies: {
@@ -123,6 +166,15 @@ const en = {
     btnProjects: "Our projects",
     srcImage: "tech-img",
   },
+  clutch: {
+    subtitleText1:
+      "Clutch Names Devlights as Argentina’s Leading Staff Augmentation Partner for 2022",
+    subtitleText2: "Find out why they awarded us with the highest score!",
+    btnClutch: "Read more",
+    srcImage: "clutch_section_bn",
+    srcImageTitle: "cluch-section-title",
+  },
+
   clients: {
     title: "Clients",
     btnMore: "Show more",
@@ -131,34 +183,52 @@ const en = {
     clientsText: "What our clients say about us",
     clients: [
       {
-        clientId: '1',
-        clientName: "Roberto Maciel", company: "Liber", role: "Director", img: 'roberto',
-        opinion: "Devlights team was fundamental in the launch of our first mobile app. They accomplished all the goals we agreed upon, always delivering in timely manner. Their team was very professional and definitely exceeded our expectations. The process was really straight forward. Communication was fluent and the team was proactive at every time. We had a great experience working with Devlights and we are grateful they could helped us with this venture."
+        clientId: "1",
+        clientName: "Roberto Maciel",
+        company: "Liber",
+        role: "Director",
+        img: "roberto",
+        opinion:
+          "Devlights team was fundamental in the launch of our first mobile app. They accomplished all the goals we agreed upon, always delivering in timely manner. Their team was very professional and definitely exceeded our expectations. The process was really straight forward. Communication was fluent and the team was proactive at every time. We had a great experience working with Devlights and we are grateful they could helped us with this venture.",
       },
       {
-        clientId: '2',
-        clientName: "Ross Forsyth", company: "Human Design", role: "Director Of Technology", img: 'ross',
-        opinion: "Devlights is a great team to work with. Not only do they have the skills to get the job done but they communicate effectively at every level throughout the project. Their team was just what we needed!"
+        clientId: "2",
+        clientName: "Ross Forsyth",
+        company: "Human Design",
+        role: "Director Of Technology",
+        img: "ross",
+        opinion:
+          "Devlights is a great team to work with. Not only do they have the skills to get the job done but they communicate effectively at every level throughout the project. Their team was just what we needed!",
       },
       {
-        clientId: '3',
-        clientName: "Darlene Liebman", company: "Creative Humans", role: "Founder", img: 'darlene',
-        opinion: "Working with the team at Devlights has been a great experience. The Team is knowledgeable, responsive and gracious. I highly recommend them, for any project large or small."
+        clientId: "3",
+        clientName: "Darlene Liebman",
+        company: "Creative Humans",
+        role: "Founder",
+        img: "darlene",
+        opinion:
+          "Working with the team at Devlights has been a great experience. The Team is knowledgeable, responsive and gracious. I highly recommend them, for any project large or small.",
       },
       {
-        clientId: '4',
-        clientName: "Lindsay Insco", company: "Millenium Digital Technologies", role: "Lead Developer", img: 'lindsay',
-        opinion: "Devlights has been such a useful team, I've come to look at them like family. With the variety of experience everyone has, it seems there's always a great fit for a variety of projects. I've loved working with the team so much, I have brought them on to long-term projects with me and I wouldn't have it any other way."
+        clientId: "4",
+        clientName: "Lindsay Insco",
+        company: "Millenium Digital Technologies",
+        role: "Lead Developer",
+        img: "lindsay",
+        opinion:
+          "Devlights has been such a useful team, I've come to look at them like family. With the variety of experience everyone has, it seems there's always a great fit for a variety of projects. I've loved working with the team so much, I have brought them on to long-term projects with me and I wouldn't have it any other way.",
       },
-    ]
+    ],
   },
+
   careers: {
     title: "Careers",
-    subtitleText1: "In Devlights we are always looking for fresh talent, do you have what it takes?.",
-    subtitleText2: "In this section you can apply for our latest job openings and check the requirements, for further information just click on the button below ",
+    subtitleText1:
+      "In Devlights we are always looking for fresh talent, do you have what it takes?.",
+    subtitleText2:
+      "In this section you can apply for our latest job openings and check the requirements, for further information just click on the button below ",
     srcImage: "tech-img",
     btnCareers: "Check all positions",
-
   },
   footer: {
     title: "Contact Us",
@@ -175,6 +245,7 @@ const en = {
       referral: "Referral Program",
       services: "Services",
       clients: "Clients",
+      careers: "Careers",
       home: "Home",
       portfolio: "Portfolio",
       bootcamps: "Bootcamps",
@@ -330,6 +401,128 @@ const en = {
     },
     technologies: "TECHNOLOGIES USED IN THIS PROJECT",
     btnCheck: "Check it out!",
+  },
+  clutchLanding: {
+    headerImage: "clutch-landing-hero",
+    headerTitle:
+      "Clutch Names Devlights as Argentina’s Leading Staff Augmentation Partner for 2022",
+    heroParagraph1:
+      "Filling your team with talented and dedicated professionals is no easy feat. That’s why we at Devlights, strive to help you with your projects and unique needs through our extensive IT staff augmentation and development solutions. Based in Corrientes, Argentina, we allow our clients to focus on their operations while we deliver accurate development results.",
+    heroParagraph2:
+      "Because of our proven track record, we’ve recently gain an accolade from a trusted industry resource. During the annual Clutch Leaders Awards, Devlights was officially landed a spot on the 2022 list of innovators",
+    heroParagraph3:
+      "Our team was recognized as one of Argentina’s leading staff augmentation partners!",
+    aboutClutch:
+      "Clutch is a B2B review and rating platform designed to help browsers connect with the right solutions providers for their specific needs. Every year, the site holds an awards cycle to celebrate the best and brightest B2B companies from different industries and categories around the world. To be recognized as a leader,firms must demonstrate unparellaed commitment, incredible excellence, and thought leadership.",
+    reviewsTitle: "Client reviews",
+    reviewsParagraph:
+      "Client reviews and success are among the variables taken into consolidation for these awards. Needless to say, we unlocked this exciting milestone because of our partners. Thank you so much to everyone who contributed to making this recognition possible! We are genuinely grateful for our clients, especially those who graciously rated us on Clutch. The support and confidence they have in the Devlights team is worth more than anything else for us.",
+    reviewsParagraphStrong: "We are proud to be your trusted partner!",
+    movingForwardTitle: "Moving forward",
+    movingForwardParagraph:
+      "We can’t wait to grow further with our clients and conquer more challenges.",
+    movingForwardParagraphStrong:
+      "If you’re interested in working with us too, don’t hesitate to reach out and ask any queries you may have! The Devlights team will get back to you as soon as possible.",
+    clutch_Testimonials: {
+      clients: [
+        {
+          clientId: "1",
+          clientName: "",
+          company: "Data Solutions Company",
+          role: "Engineer",
+          img: "",
+          opinion:
+            "They were able to get a grasp of our needs and the requirements we had in mind.",
+        },
+        {
+          clientId: "2",
+          clientName: "Alejandro Berardi",
+          company: "IAAER SAS",
+          role: "Partner",
+          img: "",
+          opinion: "We’re completely satisfied with the results.",
+        },
+        {
+          clientId: "3",
+          clientName: "Martin Ruiz Diaz",
+          company: "Livet",
+          role: "Founder",
+          img: "",
+          opinion:
+            "We’ve had an excellent experience and they exceed our expectations.",
+        },
+        {
+          clientId: "4",
+          clientName: "Norberto Antonio",
+          company: "Public Health Insurance Company",
+          role: "Member",
+          img: "",
+          opinion: "The results have been tremendously positive.",
+        },
+        {
+          clientId: "5",
+          clientName: "",
+          company: "Emergency Training School",
+          role: "Independent Contractor",
+          img: "",
+          opinion:
+            "I was most impressed by their willingness to listen and adapt.",
+        },
+        {
+          clientId: "6",
+          clientName: "",
+          company: "Cybersecurity Firms",
+          role: "Lead Developer",
+          img: "",
+          opinion:
+            "We worked well together. Devlights always made sure that things were done on time.",
+        },
+        {
+          clientId: "7",
+          clientName: "Ruben Amadeo Capizzano",
+          company: "Entravision",
+          role: "Director of Technology & Product",
+          img: "",
+          opinion:
+            "We're impressed by how clear and easy our communication has been with them.",
+        },
+        {
+          clientId: "8",
+          clientName: "Rohit Gupta",
+          company: "Behaviour Sense",
+          role: "Co-Founder",
+          img: "",
+          opinion:
+            "When issues were raised, they were fixed in a collaborative and pragmatic manner.",
+        },
+        {
+          clientId: "9",
+          clientName: "Fernando Cores",
+          company: "Bubble BPM",
+          role: "CTO",
+          img: "",
+          opinion: "We liked their flexibility and dedication.",
+        },
+        {
+          clientId: "10",
+          clientName: "Matias Benitez",
+          company: "TLV1",
+          role: "Technical Director",
+          img: "",
+          opinion:
+            "We were impressed by the time it took to complete our website in a short time, meeting our expectations.",
+        },
+        {
+          clientId: "11",
+          clientName: "Mark Warren",
+          company: "Proactive Technology Management",
+          role: "Project Manager",
+          img: "",
+          opinion:
+            "We have no plans to work with any other company at this time.",
+        },
+      ],
+    },
   },
 };
 

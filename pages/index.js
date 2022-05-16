@@ -15,6 +15,7 @@ import ClientsSection from "../templates/ClientsSection";
 import TestimonialsSection from "../templates/TestimonialsSection";
 import WhySection from "../templates/WhySection";
 import CareersSection from "../templates/CareersSection";
+import ClutchSection from "../templates/ClutchSection";
 
 export default function Home() {
   // TODO: custom hook useLanguage
@@ -43,6 +44,7 @@ export default function Home() {
       <StatisticsSection strings={translation.projectsBanner} />
       <PortfolioSection strings={translation.portfolio} />
       <TechnologiesSection strings={translation.technologies} />
+      <ClutchSection strings={translation.clutch} />
       <ClientsSection strings={translation.clients} />
       <TestimonialsSection strings={translation.testimonials} />
       <CareersSection strings={translation.careers}  />

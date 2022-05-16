@@ -120,6 +120,13 @@ const es = {
     btnProjects: "Nuestros Proyectos",
     srcImage: "tech-img",
   },
+  clutch: {
+    subtitleText1: "Clutch nombra a Devlights como el principal socio de aumento de personal de Argentina para 2022",
+    subtitleText2: "¡Descubre por qué nos otorgaron la puntuación más alta!",
+    btnClutch: "Leer más",
+    srcImage: "clutch_section_bn",
+    srcImateTitle: "cluch-section-title",
+  },
   clients: {
     title: "Clientes",
     btnMore: "Ver más",
@@ -325,6 +332,128 @@ const es = {
     },
     technologies: "TECNOLOGíAS UTILIZADAS EN ESTE PROYECTO",
     btnCheck: "Visita la web",
+  },
+  clutchLanding: {
+    headerImage: "clutch-landing-hero",
+    headerTitle:
+      "Clutch nombra a Devlights como el principal socio de aumento de personal de Argentina para 2022",
+    heroParagraph1:
+      "Llenar su equipo con profesionales talentosos y dedicados no es tarea fácil. Es por eso que en Devlights nos esforzamos por ayudarlo con sus proyectos y necesidades únicas a través de nuestras amplias soluciones de desarrollo y aumento del personal de IT. Con sede en Corrientes, Argentina, permitimos que nuestros clientes se concentren en sus operaciones mientras brindamos resultados de desarrollo precisos.",
+    heroParagraph2:
+      "Debido a nuestro comprobado historial, recientemente obtuvimos un galardón de un recurso confiable de la industria. Durante los premios anuales Clutch Leaders Awards, Devlights obtuvo oficialmente un lugar en la lista de innovadores de 2022",
+    heroParagraph3:
+      "¡Nuestro equipo fue reconocido como uno de los principales socios de aumento de personal de Argentina!",
+    aboutClutch:
+      "Clutch es una plataforma de calificación y revisión B2B diseñada para ayudar a los navegadores a conectarse con los proveedores de soluciones adecuados para sus necesidades específicas. Cada año, el sitio realiza un ciclo de premios para celebrar las mejores y más brillantes empresas B2B de diferentes industrias y categorías en todo el mundo. Para ser reconocidas como líderes, las empresas deben demostrar compromiso sin igual, excelencia increíble y liderazgo intelectual.",
+    reviewsTitle: "Reseñas de clientes",
+    reviewsParagraph:
+      "Las revisiones de los clientes y el éxito se encuentran entre las variables que se toman en cuenta para la consolidación de estos premios. No hace falta decir que desbloqueamos este emocionante hito gracias a nuestros socios. ¡Muchas gracias a todos los que colaboraron para que este reconocimiento fuera posible! Estamos genuinamente agradecidos por nuestros clientes, especialmente por aquellos que gentilmente nos calificaron en Clutch. El apoyo y la confianza que tienen en el equipo de Devlights vale más que cualquier otra cosa para nosotros.",
+    reviewsParagraphStrong: "¡Estamos orgullosos de ser su socio de confianza!",
+    movingForwardTitle: "Avanzando",
+    movingForwardParagraph:
+      "Estamos ansiosos por crecer juenta a nuestros clientes y conquistar más desafíos.",
+    movingForwardParagraphStrong:
+      "Si también está interesado en trabajar con nosotros, ¡no dude en comunicarse y realizar cualquier consulta que pueda tener! El equipo de Devlights se pondrá en contacto contigo lo antes posible.",
+    clutch_Testimonials: {
+      clients: [
+        {
+          clientId: "1",
+          clientName: "",
+          company: "Data Solutions Company",
+          role: "Engineer",
+          img: "",
+          opinion:
+            "Pudieron comprender nuestras necesidades y los requisitos que teníamos en mente.",
+        },
+        {
+          clientId: "2",
+          clientName: "Alejandro Berardi",
+          company: "IAAER SAS",
+          role: "Partner",
+          img: "",
+          opinion: "Estamos completamente satisfechos con los resultados.",
+        },
+        {
+          clientId: "3",
+          clientName: "Martin Ruiz Diaz",
+          company: "Livet",
+          role: "Founder",
+          img: "",
+          opinion:
+            "Hemos tenido una excelente experiencia y superaron nuestras expectativas.",
+        },
+        {
+          clientId: "4",
+          clientName: "Norberto Antonio",
+          company: "Public Health Insurance Company",
+          role: "",
+          img: "",
+          opinion: "Los resultados han sido tremendamente positivos.",
+        },
+        {
+          clientId: "5",
+          clientName: "",
+          company: "Emergency Training School",
+          role: "Independent Contractor",
+          img: "",
+          opinion:
+            "Lo que más me impresionó fue su disposición a escuchar y adaptarse.",
+        },
+        {
+          clientId: "6",
+          clientName: "",
+          company: "Cybersecurity Firms",
+          role: "Lead Developer",
+          img: "",
+          opinion:
+            "Trabajamos bien juntos. Devlights siempre se aseguró de que las cosas se hicieran a tiempo.",
+        },
+        {
+          clientId: "7",
+          clientName: "Ruben Amadeo Capizzano",
+          company: "Entravision",
+          role: "Director of Technology & Product",
+          img: "",
+          opinion:
+            "Estamos impresionados por lo clara y fácil que ha sido nuestra comunicación con ellos.",
+        },
+        {
+          clientId: "8",
+          clientName: "Rohit Gupta",
+          company: "Behaviour Sense",
+          role: "Co-Founder",
+          img: "",
+          opinion:
+            "Cuando surgieron problemas, se solucionaron de manera colaborativa y pragmática.",
+        },
+        {
+          clientId: "9",
+          clientName: "Fernando Cores",
+          company: "Bubble BPM",
+          role: "CTO",
+          img: "",
+          opinion: "Nos gustó su flexibilidad y dedicación.",
+        },
+        {
+          clientId: "10",
+          clientName: "Matias Benitez",
+          company: "TLV1",
+          role: "Technical Director",
+          img: "",
+          opinion:
+            "Nos impresionó el corto tiempo que tomó completar, cumpliendo con nuestras expectativas.",
+        },
+        {
+          clientId: "11",
+          clientName: "Mark Warren",
+          company: "Proactive Technology Management",
+          role: "Project Manager",
+          img: "",
+          opinion:
+            "No tenemos planes de trabajar con ninguna otra compañía en este momento.",
+        },
+      ],
+    },
   },
 };
 
