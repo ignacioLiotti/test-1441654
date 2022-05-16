@@ -81,7 +81,7 @@ function Footer() {
             </a>
             <div className="w-32">
               <img
-                src="./images/clutch.png"
+                src="/images/clutch.png"
                 alt="clutch badge top b2b companies latin america"
               />
             </div>

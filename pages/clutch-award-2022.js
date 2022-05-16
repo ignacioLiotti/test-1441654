@@ -113,7 +113,7 @@ function clutch_award_2022() {
                   </div>
                   <div className="w-full lg:w-2/3 flex items-center justify-center mt-4">
                     <div className="flex flex-col items-center">
-                      <p className="p-2 font-Poppins-Regular text-[1.5rem] font-normal text-white text-base text-center tracking-[1px] leading-8 w-full h-auto whitespace-pre-wrap">
+                      <p className="p-2 font-Poppins-Regular text-2xl font-normal text-white text-base text-center tracking-[1px] leading-8 w-full h-auto whitespace-pre-wrap">
                         {`"${client.opinion}"`}
                       </p>
                       
