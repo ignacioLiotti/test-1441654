@@ -10,12 +10,12 @@ function Navbar() {
   const { locale } = router;
   const translation = locale === "en" ? en : es;
 
-  const [openMenu, setOpenMenu] = useState(false);
+    const [openMenu, setOpenMenu] = useState(false);
   const onMenuPress = () => {
     setOpenMenu(!openMenu);
   };
 
-  const [scrolledDown, setScrolledDown] = useState(false);
+  const [scrolledDown, setScrolledDown] = useState(true);
   const setTransparentBackground = () => {
     if (window.scrollY >= 80) {
       setScrolledDown(true);
@@ -32,8 +32,10 @@ function Navbar() {
   };
 
   useEffect(() => {
-    setTransparentBackground();
-    window.addEventListener("scroll", setTransparentBackground);
+    if(asPath === "/"){
+      setTransparentBackground();
+      window.addEventListener("scroll", setTransparentBackground);
+    }
   }, []);
 
   return (
