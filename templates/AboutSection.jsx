@@ -3,7 +3,7 @@ import React from "react";
 function AboutSection({ strings }) {
   return (
     // TODO: add background image
-    <section className="w-full">
+    <section className="w-full bg-about-section bg-no-repeat bg-size-30 bg-right-center">
       <div
         className="sm:max-w-[34rem] md:max-w-[45rem] lg:max-w-[60rem] xl:max-w-6xl w-full mx-auto
         pt-[4.375rem] pb-[8.75rem]

@@ -30,10 +30,15 @@ module.exports = {
       "montserrat": ["Montserrat"],
     },
     backgroundPosition: {
+      "right-center": "right center",
+      "left-center": "left center",
+      "left-top": "left top",
       "center-bottom": "center bottom",
       "initial": "initial"
     },
     backgroundImage: {
+      "about-section": "url('/images/about_overlay.png')",
+      "why-section": "url('/images/about_overlay2.png')",
       "hero-section": "url('/images/intro-bg.png')",
       "services-section": "url('/images/blue.png')",
       "technologies-section": "url('/images/about_overlay3.png')",
@@ -47,6 +52,7 @@ module.exports = {
       "size-45": "45%",
       "size-50-100": "50% 100%",
       "size-100-50": "100% 50%",
+      "size-30": "30% auto",
     },
     boxShadow: {
       "generic-card": "0px 10px 30px 0px rgba(1, 84, 85, 0.2)",
