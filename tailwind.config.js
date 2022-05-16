@@ -20,7 +20,7 @@ module.exports = {
         "almost-black": "#1d1d1d",
         "orange-pill": "#ffa133",
         "cyan-clutch": "#36A9E1",
-        
+        "nav-white": "#f7f7f7"
       },
       lineHeight: {
         "hero-section": "4.375rem",
@@ -60,7 +60,8 @@ module.exports = {
     },
     boxShadow: {
       "generic-card": "0px 10px 30px 0px rgba(1, 84, 85, 0.2)",
-      "testimonial-card": "10px 10px 24px 0px rgba(0, 0, 0, 0.44)"
+      "testimonial-card": "10px 10px 24px 0px rgba(0, 0, 0, 0.44)",
+      "navbar": "0 3px 16px #858585;"
     },
     animation: {
       idleIcon1: "idle01 9s ease-in-out 1s infinite alternate none running",

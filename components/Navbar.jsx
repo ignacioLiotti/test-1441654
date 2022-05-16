@@ -5,17 +5,17 @@ import es from "../public/i18n/Es_es";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
-function Navbar() {
+function Navbar({ transparentScroll, whiteBackground, hasShadow }) {
   const router = useRouter();
   const { locale } = router;
   const translation = locale === "en" ? en : es;
 
-    const [openMenu, setOpenMenu] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false);
   const onMenuPress = () => {
     setOpenMenu(!openMenu);
   };
 
-  const [scrolledDown, setScrolledDown] = useState(true);
+  const [scrolledDown, setScrolledDown] = useState(false);
   const setTransparentBackground = () => {
     if (window.scrollY >= 80) {
       setScrolledDown(true);
@@ -32,9 +32,11 @@ function Navbar() {
   };
 
   useEffect(() => {
-    if(asPath === "/"){
+    if (transparentScroll) {
       setTransparentBackground();
       window.addEventListener("scroll", setTransparentBackground);
+    } else {
+      setScrolledDown(true)
     }
   }, []);
 
@@ -44,11 +46,23 @@ function Navbar() {
       transition-all duration-300 ease-in z-50`}
     >
       <div
-        className={`${
+        className={`
+        ${
           scrolledDown
             ? "opacity-100 h-[4.875rem]"
             : "opacity-0 h-[3.75rem] md:h-20"
-        } navbar-gradient absolute top-0 left-0 right-0 w-screen -z-10 transition-all duration-300 ease-in`}
+        }
+        ${
+          whiteBackground
+            ? "bg-nav-white"
+            : "navbar-gradient"
+        }
+        ${
+          hasShadow
+          ? "shadow-navbar"
+          : ""
+        }
+        absolute top-0 left-0 right-0 w-screen -z-10 transition-all duration-300 ease-in`}
       ></div>
       <div
         className="sm:max-w-[34rem] md:max-w-[45rem] lg:max-w-[60rem] xl:max-w-6xl w-full mx-auto
@@ -63,7 +77,7 @@ function Navbar() {
         >
           <img
             className="h-9 md:h-12 object-contain"
-            src="/images/logo.png"
+            src={`/images/${whiteBackground ? "logo-original" : "logo"}.png`}
             alt="devlights logo"
           />
           {!openMenu && (
@@ -81,11 +95,14 @@ function Navbar() {
           } hidden md:block transition-all duration-300 ease-in`}
         >
           <ul className="flex flex-row items-center justify-end">
-            {/* TODO: add the indicator for the current section as an underline*/}
+            {/* TODO: add the indicator for the current section as an underline
+                TODO: do not show section links in pages different from index
+            */}
             {translation?.navigationData.map((item) => (
               <li key={item.id}>
                 <a
-                  className="block whitespace-nowrap w-auto py-5 px-4 text-sm md:text-md text-white font-open-sans"
+                  className={`${whiteBackground ? "text-black" : "text-white"} 
+                    block whitespace-nowrap w-auto py-5 px-4 text-sm md:text-md font-open-sans hover:scale-[1.20] transition-all duration-300 ease-linear`}
                   href={item.path}
                 >
                   {item.name}
@@ -96,7 +113,8 @@ function Navbar() {
               <select
                 onChange={changeLanguage}
                 defaultValue={locale}
-                className="text-white text-shadow-sm w-auto py-5 px-4 text-sm md:text-md bg-transparent tracking-wide"
+                className={`${whiteBackground ? "text-black" : "text-white"} outline-none 
+                  text-shadow-sm w-auto py-5 px-4 text-sm md:text-md bg-transparent tracking-wide hover:scale-[1.20] transition-all duration-300 ease-linear`}
               >
                 <option className="text-black" value="en">
                   EN

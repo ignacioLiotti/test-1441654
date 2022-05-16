@@ -3,16 +3,16 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-function DefaultLayout({ children }) {
+function PortfolioLayout({ children }) {
   return (
     <>
       <Head>
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Navbar
-        transparentScroll={true}
-        whiteBackground={false}
-        hasShadow={false}
+        transparentScroll={false}
+        whiteBackground={true}
+        hasShadow={true}
       />
       <div className="flex-grow">{children}</div>
       <Footer />
@@ -20,4 +20,4 @@ function DefaultLayout({ children }) {
   );
 }
 
-export default DefaultLayout;
+export default PortfolioLayout;

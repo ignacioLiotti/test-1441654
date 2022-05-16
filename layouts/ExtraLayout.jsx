@@ -3,14 +3,14 @@ import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-function DefaultLayout({ children }) {
+function ExtraLayout({children}) {
   return (
     <>
       <Head>
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Navbar
-        transparentScroll={true}
+        transparentScroll={false}
         whiteBackground={false}
         hasShadow={false}
       />
@@ -20,4 +20,4 @@ function DefaultLayout({ children }) {
   );
 }
 
-export default DefaultLayout;
+export default ExtraLayout;
