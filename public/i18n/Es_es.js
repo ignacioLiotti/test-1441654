@@ -141,7 +141,7 @@ const es = {
     subtitleText2: "En esta sección podrás aplicar a nuestras últimas busquedas laborales y chequear sus requerimientos, para mas información haz click en el boton de abajo. ",
     srcImage: "tech-img",
     btnCareers: "Mirá las posiciones disponibles",
-
+    noJobs: "Por el momento no hay trabajos disponibles"
   },
   testimonials: {
     clientsText: "Lo que dicen nuestros clientes",
@@ -459,6 +459,45 @@ const es = {
       ],
     },
   },
+  nearshore_landing: {
+    headerTitle: "Servicios de desarrollo de software Nearshore",
+    headerSubTitle: "Conectamos a nuestros clientes con su producto",
+    headerBtn: "Agenda una CITA GRATUITA",
+    why_hirinus_section: {
+      title: "Por qué contratar nuestros servicios",
+      paragraph: "Podemos proporcionar una fuente para cada tecnología en el mercado. Ya sea que necesite desarrolladores de software, diseñadores, desarrolladores móviles o project managers, haremos todo lo posible para asegurarnos de que se cumplan sus requisitos y de que encuentre el talento que necesita para su equipo."
+    },
+    our_services_section: {
+      title: "Nuestro servicio se destaca del resto.",
+      cultural_fit_title: "Gran sintonia cultural y zona horaria similar.",
+      cultural_fit_paragraph: "Buscamos personas con la capacidad de incorporarse fácilmente a tu equipo, las habilidades blandas son fundamentales para nosotros. Podemos formar un nuevo equipo para hacernos cargo de un proyecto existente o comenzar uno nuevo para próximos proyectos y estamos a solo una hora de la zona horaria del Este.",
+      rates_title: "Tarifas excepcionales, transparencia y conveniencia",
+      rates_paragraph: "Términos y condiciones de contrato claros, Devlights es capaz de proporcionar especialistas altamente calificados por solo una fracción del costo del talento local.",
+      dependable_title: "Confiables, somos justo lo que nuestros clientes necesitan",
+      dependable_paragraph: "Nos preocupamos por las relaciones a largo plazo con los clientes. Este es un valor central en Devlights. Nos esforzamos por crear relaciones sólidas y trabajar junto con nuestros clientes para ayudarlos a tener éxito a largo plazo."
+    },
+    partner_up_section: {
+      title: "¡Asociémonos en su próximo proyecto!",
+      paragraph: "Devlights se destaca del resto porque es capaz de ofrecer soluciones de desarrollo de software punta a punta a sus clientes. Contamos con un equipo calificado de profesionales totalmente dedicados a trabajar en los proyectos tecnológicos de nuestros clientes. Usted proporciona las especificaciones, nosotros proporcionamos una solución de software.",
+      btn: "Cuéntanos más sobre tu proyecto"
+    },
+    how_does_it_work_section: {
+      title: "¿Como funciona?",
+      step_1: "Nos reunimos con el cliente para informarnos sobre su idea y trabajarla juntos.",
+      step_2: "De nuestra bolsa de talentos, seleccionamos los perfiles que mejor se ajustan a los requisitos.",
+      step_3: "Seleccionamos los mejores activos, para luego, alistarse para profundizar en los detalles y comenzar a trabajar en su proyecto."
+    },
+    get_in_touch_section: {
+      title: "Conectamos a nuestros clientes con sus productos",
+      paragraph: "En Devlights hacemos que las cosas sucedan. Nuestras soluciones de subcontratación brindan a los clientes acceso a un amplio grupo de talentos. Dotar del personal necesario para construir un equipo es esencial para el éxito de cualquier negocio, pero para ser eficiente se requiere dedicar recursos significativos al proceso. Sin embargo, a veces el presupuesto o los plazos son ajustados, o la empresa simplemente necesita un talento remoto a tiempo completo para realizar un trabajo específico. En este caso, el personal como servicio es el camino a seguir. Devlights es capaz de proporcionar proyectos de dotación de personal de IT a corto y largo plazo de especialistas altamente calificados, creados según sus especificaciones y por una fracción del costo.",
+      form_title: "Pongamosnos en contacto.",
+      form_btn: "Enviar Mensaje"
+    },
+    our_clients_section: {
+      title: "Lo que nuestros clientes dicen de nosotros."
+    },
+    meet_the_team_section: "Conoce al equipo."
+  }
 };
 
 export default es;

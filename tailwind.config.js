@@ -20,6 +20,10 @@ module.exports = {
         "almost-black": "#1d1d1d",
         "orange-pill": "#ffa133",
         "cyan-clutch": "#36A9E1",
+        "light-blue": "#009ada",
+        "cyan-nearshore-section-bg": "#10b5e9",
+        "green-work-steps": "#20a088",
+        "lavanda-nearshore": "#5c93ce"
         
       },
       lineHeight: {
@@ -47,7 +51,10 @@ module.exports = {
       "technologies-section": "url('/images/about_overlay3.png')",
       "technologies-section-mobile": "url('/images/about_overlay3-mobile.png')",
       "careers-section": "url('/images/about_overlay4.png')",
-      "clutch-landing-hero": "url('/images/clutch-landing-hero.png')"
+      "clutch-landing-hero": "url('/images/clutch-landing-hero.png')",
+      "nearshore-landing-hero": "url('/images/nearshore/header_bg.png')",
+      "nearshore-landing-clients": "url('/images/nearshore/clients-bg.png')",
+     "nearshore-landing-team": "url('/images/nearshore/team-bg.png')"
     },
     backgroundSize: {
       "working-cover": "cover",
@@ -60,7 +67,9 @@ module.exports = {
     },
     boxShadow: {
       "generic-card": "0px 10px 30px 0px rgba(1, 84, 85, 0.2)",
-      "testimonial-card": "10px 10px 24px 0px rgba(0, 0, 0, 0.44)"
+      "testimonial-card": "10px 10px 24px 0px rgba(0, 0, 0, 0.44)",
+      "white-action-btn": "0px 2px 12px 2px rgba(0, 0, 0, 0.40)",
+      "work-steps-shadow": "0px 2px 4px 1px rgba(0, 0, 0, 0.40)"
     },
     animation: {
       idleIcon1: "idle01 9s ease-in-out 1s infinite alternate none running",

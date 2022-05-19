@@ -5,6 +5,7 @@ import ActionButton from "../components/ActionButton";
 import JobsCard from "../components/JobsCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import NoJobsFound from "../components/NoJobsFound";
 
 function CareersSection({ strings }) {
   const router = useRouter();
@@ -12,9 +13,7 @@ function CareersSection({ strings }) {
   const [jobs, setJobs] = useState([]);
 
   const jobsRequest = async () => {
-    const jobs = await axios.get(
-      `http://localhost:8000/jobs?language=${locale}`
-    );
+    const jobs = await axios.get(`http://localhost:8000/jobs`);
     setJobs(jobs.data.data);
   };
 
@@ -29,20 +28,24 @@ function CareersSection({ strings }) {
       <div className="container-width flex flex-col-reverse justify-center items-center pt-12 md:flex-row items-center justify-around px-4 ">
         <div className="w-80 mr-4 mt-6 md:w-96 md:mr-40">
           <div data-aos="fade-up" data-aos-duration={1000} data-aos-once>
-            {jobs.slice(-4).map((job) => {
-              return (
-                <div
-                  onClick={() =>
-                    window.open(
-                      `http://localhost:3000/jobs/${job.slug}`,
-                      "_blank"
-                    )
-                  }
-                >
-                  <JobsCard title={job.title} name={job.typeOfJob.name} />
-                </div>
-              );
-            })}
+            {jobs.length > 0 ? (
+              jobs.slice(-4).map((job) => {
+                return (
+                  <div
+                    onClick={() =>
+                      window.open(
+                        `http://localhost:3000/jobs/${job.slug}`,
+                        "_blank"
+                      )
+                    }
+                  >
+                    <JobsCard title={job.title} name={job.typeOfJob.name} />
+                  </div>
+                );
+              })
+            ) : (
+              <NoJobsFound title={strings.noJobs} />
+            )}
           </div>
         </div>
 

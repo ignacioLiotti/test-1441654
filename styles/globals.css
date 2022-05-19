@@ -60,3 +60,49 @@
 .container-width {
   @apply w-full sm:w-[34rem] md:w-[45rem] lg:w-[60rem] xl:w-[71.25rem] mx-auto;
 }
+
+.step-left{
+  background-color: #20a088 ;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  border: solid 2px white ;
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.3);
+  position: relative;
+  
+}
+
+.step-left::after{
+  content: "";
+  background-color: #20a088 ;
+  width: 40px;
+  height: 40px;
+  rotate: 45deg;
+  border-radius: 10%;
+  position: absolute;
+  right: 40%;
+  top: 20%;
+  
+}
+
+.step-right{
+  background-color: #20a088 ;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  border: solid 2px white ;
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.3);
+  position: relative
+}
+
+.step-right::before{
+  content: "";
+  background-color: #20a088 ;
+  width: 40px;
+  height: 40px;
+  rotate: 45deg;
+  border-radius: 10%;
+  position: absolute;
+  left: 40%;
+  top: 20%;
+}

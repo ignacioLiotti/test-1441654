@@ -25,7 +25,7 @@ function clutch_award_2022() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section className="flex items-center justify-end w-full mt-20 -translate-y-2 bg-clutch-landing-hero bg-center-top bg-cover bg-no-repeat relative mx-auto pt-40 pb-32">
+      <section className="flex items-center justify-end w-full h-[400px] mt-20 -translate-y-2 bg-clutch-landing-hero bg-center-top bg-cover bg-no-repeat relative mx-auto pt-40 pb-32">
         <div
           className="flex flex-col justify-end items-center lg:items-start lg:flex-row z-10 px-4
           w-[45rem] lg:w-[60rem] xl:w-[71.25rem] md:-translate-y-10 lg:translate-y-0 transition-all duration-300 ease-in-out
@@ -113,9 +113,9 @@ function clutch_award_2022() {
                   </div>
                   <div className="w-full lg:w-2/3 flex items-center justify-center mt-4">
                     <div className="flex flex-col items-center">
-                      <p className="p-2 font-Poppins-Regular text-2xl font-normal text-white text-base text-center tracking-[1px] leading-8 w-full h-auto whitespace-pre-wrap">
+                      <h3 className="p-2 font-Poppins-Regular text-[1.5rem] font-normal text-white text-base text-center tracking-[1px] leading-8 w-full h-auto whitespace-pre-wrap">
                         {`"${client.opinion}"`}
-                      </p>
+                      </h3>
                       
                       <p className="p-1 font-aleo text-white text-lg leading-8  -mb-1  tracking-[1px]" >
                       {client.role}, {client.company}
