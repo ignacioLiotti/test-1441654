@@ -54,7 +54,7 @@ module.exports = {
       "clutch-landing-hero": "url('/images/clutch-landing-hero.png')",
       "nearshore-landing-hero": "url('/images/nearshore/header_bg.png')",
       "nearshore-landing-clients": "url('/images/nearshore/clients-bg.png')",
-     "nearshore-landing-team": "url('/images/nearshore/team-bg.png')"
+      "nearshore-landing-team": "url('/images/nearshore/team-bg.png')"
     },
     backgroundSize: {
       "working-cover": "cover",
