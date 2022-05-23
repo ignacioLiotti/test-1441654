@@ -4,24 +4,24 @@ import ActionButton from "../components/ActionButton";
 
 function ClutchSection({ strings }) {
   return (
-    <section className="flex py-14 w-[64rem]">
+    <section className="w-full flex flex-col md:flex-row md:py-14 md:w-[64rem]">
       <div className="px-4" data-aos="fade-up" data-aos-once>
         <img
           src={`/images/clutch_section_bn.png`}
-          className="max-w-full h-full object-contain -translate-x-28"
+          className="max-w-full h-full object-contain md:-translate-x-28"
           alt="Clutch award"
         />
       </div>
-      <div className="container-width flex flex-col items-start justify-center w-full -translate-x-52">
+      <div className="container-width flex flex-col items-center justify-center w-full md:items-start md:-translate-x-52">
         <img
           src={`/images/cluch-section-title.png`}
-          className="w-44 mb-6 object-contain"
+          className="w-28 mb-6 object-contain md:w-44"
           alt="Clutch award title"
         />
-        <h3 className="font-aleo font-bold text-2xl text-left text-gray-third mb-2 ">
+        <h3 className="font-aleo font-bold text-center text-lg p-4 text-gray-third mb-2 md:text-2xl md:text-left md:p-0 ">
           {strings.subtitleText1}
         </h3>
-        <p className="font-Poppins-Regular text-[1.5rem] text-cyan-clutch w-96 ">
+        <p className="font-Poppins-Regular text-cyan-clutch text-center md:w-96 md:text-[1.5rem] md:text-left ">
           {strings.subtitleText2}
         </p>
 
