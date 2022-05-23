@@ -9,6 +9,7 @@ import WhiteActionButton from "../components/WhiteActionButton";
 import ContactForm from "../components/NearshoreContactForm";
 import Carousel from "../components/NearshoreCarousel";
 import { CarouselItem } from "../components/ClutchCarousel";
+import ExtraLayout from "../layouts/ExtraLayout";
 
 function NearshoreSoftwareDevelopment() {
   useEffect(() => {
@@ -27,18 +28,18 @@ function NearshoreSoftwareDevelopment() {
         <meta name={translation.metaName} content={translation.metaContent} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className="w-full h-[900px] flex items-center justify-center -mt-24 bg-nearshore-landing-hero bg-working-cover bg-center bg bg-no-repeat  pt-40 pb-32 ">
-        <div className="w-[70rem] ">
+      <section className="w-full h-[500px] flex items-center justify-center bg-nearshore-landing-hero bg-working-cover bg-center bg bg-no-repeat md:h-[900px] md:-mt-24  md:pt-40 md:pb-32 ">
+        <div className="w-full p-8 md:w-[70rem] md:p-0 ">
           <div
-            className="flex flex-col items-start justify-center md:w-[30rem] sm:w-[40rem] mb-4 mr-80 order-1 lg:order-2 "
+            className="flex flex-col justify-center items-center md:items-start md:w-[30rem] md:mb-4 md:mr-80 md:order-1 lg:order-2 "
             data-aos="fade-right"
             data-aos-duration={1000}
             data-aos-once
           >
-            <h2 className="font-aleo text-white text-[1.9rem] font-semibold leading-[1.4] ">
+            <h2 className="font-aleo text-white font-semibold text-[1.4rem] text-center md:text-[1.9rem] md:leading-[1.4] md:text-left ">
               {translation.headerTitle}
             </h2>
-            <p className="font-aleo text-white text-[1.2rem] font-semibold leading-[1.4] mb-10 mt-2 ">
+            <p className="font-aleo text-white font-semibold text-center mt-2 mb-8  md:text-[1.2rem] md:leading-[1.4] md:mb-10 md:mt-2 md:text-left">
               {translation.headerSubTitle}
             </p>
             <WhiteActionButton
@@ -51,24 +52,24 @@ function NearshoreSoftwareDevelopment() {
           </div>
         </div>
       </section>
-      <section className="flex justify-center items-start w-[70rem] mt-28 mb-10">
+      <section className="w-full flex flex-col justify-center items-center p-6 -mt-24 md:items-start md:flex-row md:w-[70rem] md:mt-28 md:mb-10 md:p-0">
         <div
-          className="w-[36rem] relative"
+          className="w-full md:w-[36rem] relative"
           data-aos="fade-right"
           data-aos-duration={1000}
           data-aos-delay="100"
           data-aos-once
         >
-          <div className="absolute w-12 h-1 bg-orange-pill left-[-11%] top-[18%]"></div>
-          <h2 className="font-aleo text-light-blue text-[2.5rem] font-semibold leading-[1.4] tracking-normal mt-10 mb-8 ">
+          <div className="absolute  bg-orange-pill left-[-11%] top-[18%] md:w-12 md:h-1"></div>
+          <h2 className="font-aleo text-light-blue font-semibold text-center text-[2rem] md:text-[2.5rem] md:text-left md:leading-[1.4] md:tracking-normal md:mt-10 md:mb-8 ">
             {translation.why_hirinus_section.title}
           </h2>
-          <p className="text-[1.1rem] text-gray-500 leading-[2] mb-10 mt-2 pr-8 ">
+          <p className="text-center mt-4 mb-8 md:text-[1.1rem] text-gray-500 md:leading-[2] md:mb-10 md:mt-2 md:pr-8 ">
             {translation.why_hirinus_section.paragraph}
           </p>
         </div>
         <div
-          className="w-[36rem]"
+          className="mt-8 md:w-[36rem] md:mt-0"
           data-aos="fade-left"
           data-aos-duration={1000}
           data-aos-delay="100"
@@ -82,21 +83,21 @@ function NearshoreSoftwareDevelopment() {
         </div>
       </section>
       <section
-        className="flex flex-col justify-center items-center w-[70rem] mt-24 mb-10"
+        className="w-full flex flex-col justify-center items-center p-6 md:w-[70rem] md:mt-24 md:mb-10 md:p-0"
         data-aos="fade-up"
         data-aos-duration={1000}
         data-aos-delay="500"
         data-aos-once
       >
-        <h2 className="font-aleo text-light-blue text-[2.5rem] font-semibold leading-[1.4] tracking-normal mt-10 mb-8 ">
+        <h2 className="font-aleo text-light-blue font-semibold text-[2rem] text-center md:text-[2.5rem] md:text-left md:leading-[1.4] md:tracking-normal md:mt-10 md:mb-8 ">
           {translation.our_services_section.title}
         </h2>
 
-        <div className="flex items-start justify-center w-full mt-6">
-          <div className="flex flex-col items-center w-[22rem] m-4">
+        <div className="w-full flex flex-col items-center justify-center md:mt-6 md:flex-row md:items-start">
+          <div className="flex flex-col items-center mt-10 md:w-[22rem] md:m-4 ">
             <img
               src={`/images/nearshore/icon-01.png`}
-              className="w-[11rem] mb-6 object-contain"
+              className="w-[8rem] mb-4 md:w-[11rem] md:mb-6 object-contain"
               alt="clients"
             />
             <h3 className="font-aleo text-light-blue text-[1.3rem] text-center font-semibold leading-[1.4] tracking-normal mt-4">
@@ -106,10 +107,10 @@ function NearshoreSoftwareDevelopment() {
               {translation.our_services_section.cultural_fit_paragraph}
             </p>
           </div>
-          <div className="flex flex-col items-center w-[22rem] m-4">
+          <div className="flex flex-col items-center mt-10 md:w-[22rem] md:m-4">
             <img
               src={`/images/nearshore/icon-02.png`}
-              className="w-[11rem]] mb-6 object-contain"
+              className="w-[8rem] mb-4 md:w-[11rem] md:mb-6 object-contain"
               alt="clients"
             />
             <h3 className="font-aleo text-light-blue text-[1.3rem] text-center font-semibold leading-[1.4] tracking-normal mt-5">
@@ -119,10 +120,10 @@ function NearshoreSoftwareDevelopment() {
               {translation.our_services_section.rates_paragraph}
             </p>
           </div>
-          <div className="flex flex-col items-center w-[22rem] m-4">
+          <div className="flex flex-col items-center mt-10 md:w-[22rem] md:m-4">
             <img
               src={`/images/nearshore/icon-03.png`}
-              className="w-[11rem] mb-6 object-contain"
+              className="w-[8rem] mb-4 md:w-[11rem] md:mb-6 object-contain"
               alt="clients"
             />
             <h3 className="font-aleo text-light-blue text-[1.3rem] text-center font-semibold leading-[1.4] tracking-normal mt-5">
@@ -369,3 +370,11 @@ function NearshoreSoftwareDevelopment() {
 }
 
 export default NearshoreSoftwareDevelopment;
+
+NearshoreSoftwareDevelopment.getLayout = function getLayout(page) {
+    return (
+      <ExtraLayout>
+        {page}
+      </ExtraLayout>
+    )
+  }
