@@ -4,7 +4,7 @@ import ServiceCard from "../components/ServiceCard";
 
 function ServicesSection({ strings }) {
   return (
-    <section
+    <section id="services"
       className="w-full bg-services-section bg-center-bottom bg-no-repeat bg-working-cover xl:bg-size-100
         relative pt-52 md:pt-[11.5rem] pb-10 mt-[-38rem] md:mt-[-24rem] lg:mt-0"
     >

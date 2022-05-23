@@ -17,7 +17,7 @@ function PortfolioSection({ strings }) {
   }, [currentTab]);
 
   return (
-    <section>
+    <section id="portfolio">
       <div className="container-width flex flex-col items-center justify-start w-full py-16 md:min-h-[53.75rem]">
         <h3 className="font-aleo font-bold text-4xl text-center text-gray-third mb-2">
           {strings.title}

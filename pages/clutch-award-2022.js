@@ -9,6 +9,7 @@ import Script from "next/script";
 
 import Carousel from "../components/ClutchCarousel";
 import { CarouselItem } from "../components/ClutchCarousel";
+import ExtraLayout from "../layouts/ExtraLayout";
 
 function clutch_award_2022() {
   useEffect(() => {
@@ -229,4 +230,12 @@ function clutch_award_2022() {
   );
 }
 
-export default clutch_award_2022;
+export default ClutchAward2022;
+
+ClutchAward2022.getLayout = function getLayout(page) {
+  return (
+    <ExtraLayout>
+      {page}
+    </ExtraLayout>
+  )
+}

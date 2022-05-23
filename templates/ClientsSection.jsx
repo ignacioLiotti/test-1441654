@@ -6,7 +6,8 @@ function ClientsSection({ strings }) {
   const [show, setShow] = useState(false);
 
   return (
-    <section className="py-14">
+    <section id="clients" 
+      className="py-14">
       <div className="container-width flex flex-col items-center justify-center w-full">
         <h3 className="font-aleo font-bold text-4xl text-center text-gray-third mb-2">
           {strings.title}

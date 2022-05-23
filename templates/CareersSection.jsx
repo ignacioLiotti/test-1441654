@@ -26,7 +26,8 @@ function CareersSection({ strings }) {
   console.log(jobs);
 
   return (
-    <section className="w-full bg-technologies-section-mobile bg-size-100-50 md:bg-careers-section bg-working-cover bg-no-repeat bg-size-100 md:bg-size-100 xl:bg-size-100 relative md:pt-[6rem] md:pb-[6rem] md:mb-[4em]">
+    <section id="careers"
+      className="w-full bg-technologies-section-mobile bg-size-100-50 md:bg-careers-section bg-working-cover bg-no-repeat bg-size-100 md:bg-size-100 xl:bg-size-100 relative md:pt-[6rem] md:pb-[6rem] md:mb-[4em]">
       <div className="container-width flex flex-col-reverse justify-center items-center pt-12 md:flex-row items-center justify-around px-4 ">
         <div className="w-80 mr-4 mt-6 md:w-96 md:mr-40">
           <div data-aos="fade-up" data-aos-duration={1000} data-aos-once>

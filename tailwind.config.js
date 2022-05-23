@@ -23,8 +23,8 @@ module.exports = {
         "light-blue": "#009ada",
         "cyan-nearshore-section-bg": "#10b5e9",
         "green-work-steps": "#20a088",
-        "lavanda-nearshore": "#5c93ce"
-        
+        "lavanda-nearshore": "#5c93ce",
+        "nav-white": "#f7f7f7"
       },
       lineHeight: {
         "hero-section": "4.375rem",
@@ -69,7 +69,8 @@ module.exports = {
       "generic-card": "0px 10px 30px 0px rgba(1, 84, 85, 0.2)",
       "testimonial-card": "10px 10px 24px 0px rgba(0, 0, 0, 0.44)",
       "white-action-btn": "0px 2px 12px 2px rgba(0, 0, 0, 0.40)",
-      "work-steps-shadow": "0px 2px 4px 1px rgba(0, 0, 0, 0.40)"
+      "work-steps-shadow": "0px 2px 4px 1px rgba(0, 0, 0, 0.40)",
+      "navbar": "0 3px 16px #858585;"
     },
     animation: {
       idleIcon1: "idle01 9s ease-in-out 1s infinite alternate none running",

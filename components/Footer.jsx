@@ -14,7 +14,7 @@ import ContactForm from "./ContactForm";
 
 function Footer() {
   return (
-    <footer
+    <footer id="contact"
       className={`block relative bg-[url('/images/footer-bg.png')] w-full bg-working-cover bg-no-repeat bg-center-bottom
       py-16`}
     >

@@ -1,3 +1,5 @@
+import NavItem from "../../components/NavItem";
+
 const en = {
   navigationData: [
     { id: 0, name: "Home", path: "/#" },
