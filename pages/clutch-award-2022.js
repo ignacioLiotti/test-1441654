@@ -11,7 +11,7 @@ import Carousel from "../components/ClutchCarousel";
 import { CarouselItem } from "../components/ClutchCarousel";
 import ExtraLayout from "../layouts/ExtraLayout";
 
-function clutch_award_2022() {
+function ClutchAward2022() {
   useEffect(() => {
     Aos.init();
   }, []);
