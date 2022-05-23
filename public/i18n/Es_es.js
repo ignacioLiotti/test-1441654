@@ -460,6 +460,9 @@ const es = {
     },
   },
   nearshore_landing: {
+    metaTitle: "Subcontratación de desarrollo de software | Devlights",
+    metaName: "Descripción",
+    metaContent: "Podemos proporcionar una fuente para cada tecnología disponible en el mercado. Ya sea que necesite desarrolladores de software, diseñadores, desarrolladores móviles o gerentes de proyectos, haremos todo lo posible para asegurarnos de que se cumplan sus requisitos y de que encuentre el talento que necesita para su equipo.",
     headerTitle: "Servicios de desarrollo de software Nearshore",
     headerSubTitle: "Conectamos a nuestros clientes con su producto",
     headerBtn: "Agenda una CITA GRATUITA",

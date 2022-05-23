@@ -13,8 +13,10 @@ function CareersSection({ strings }) {
   const [jobs, setJobs] = useState([]);
 
   const jobsRequest = async () => {
-    const jobs = await axios.get(`http://localhost:8000/jobs`);
-    setJobs(jobs.data.data);
+    try{
+      const jobs = await axios.get(`http://localhost:8000/jobs`);
+      setJobs(jobs.data.data);
+    } catch(err) {console.log(err)}
   };
 
   useEffect(() => {

@@ -2,7 +2,7 @@ import React, { useState, useRef, useCallback } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faXmark } from "@fortawesome/free-solid-svg-icons";
 
-function ContactForm() {
+function ContactForm({title}) {
   const [validForm, setValidForm] = useState(true);
   const [errorSendingMessage, setErrorSendingMessage] = useState(false);
   const [messageSent, setMessageSent] = useState(false);
@@ -103,7 +103,7 @@ function ContactForm() {
       )}
       {!messageSent && (
         <>
-          <h2 className="font-aleo text-light-blue text-center text-[2.6rem] font-semibold leading-[1.4] tracking-normal mt-4 mb-8 ">Let's get in touch</h2>
+          <h2 className="font-aleo text-light-blue text-center text-[2.6rem] font-semibold leading-[1.4] tracking-normal mt-4 mb-8 ">{title}</h2>
           <form action="#" onSubmit={handleSubmit} className="flex flex-col w-full">
             <div className="relative mb-4">
               <div className={`${(name.length > 0) ? 'block' : 'hidden'}`}>
