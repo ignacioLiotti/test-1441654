@@ -26,8 +26,8 @@ function ClutchSection({ strings }) {
         </p>
 
         <div className="mt-6">
-          <a href="/clutch-award-2022">
-            <ActionButton text={strings.btnClutch} onClickAction={()=>console.log('clutch clicked')} />
+          <a href="/clutch-award-2022" target="_blank">
+            <ActionButton text={strings.btnClutch} />
           </a>
         </div>
       </div>

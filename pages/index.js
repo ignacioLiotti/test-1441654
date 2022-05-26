@@ -17,6 +17,7 @@ import WhySection from "../templates/WhySection";
 import CareersSection from "../templates/CareersSection";
 import DefaultLayout from "../layouts/DefaultLayout";
 import ClutchSection from "../templates/ClutchSection";
+import BadgesSection from "../templates/BadgesSection";
 
 export default function Home() {
   // TODO: custom hook useLanguage
@@ -49,6 +50,7 @@ export default function Home() {
       <ClientsSection strings={translation.clients} />
       <TestimonialsSection strings={translation.testimonials} />
       <CareersSection strings={translation.careers}  />
+      <BadgesSection />
     </div>
   );
 }
