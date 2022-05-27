@@ -24,7 +24,11 @@ module.exports = {
         "cyan-nearshore-section-bg": "#10b5e9",
         "green-work-steps": "#20a088",
         "lavanda-nearshore": "#5c93ce",
-        "nav-white": "#f7f7f7"
+        "nav-white": "#f7f7f7",
+        "gray-bootcamp": "#212529",
+        "orange-bootcamp-btn": "#ff7208",
+        "cyan-bootcamp": "#6be2cd",
+        "gold-bootcamp": "#fbb03b"
       },
       lineHeight: {
         "hero-section": "4.375rem",
@@ -34,7 +38,7 @@ module.exports = {
       "open-sans": ['"Open Sans"'],
       aleo: ["Aleo"],
       "montserrat": ["Montserrat"],
-      popins: ["Poppins-Regular"]
+      "poppins": ["Poppins"]
     },
     backgroundPosition: {
       "right-center": "right center",
@@ -54,7 +58,10 @@ module.exports = {
       "clutch-landing-hero": "url('/images/clutch-landing-hero.png')",
       "nearshore-landing-hero": "url('/images/nearshore/header_bg.png')",
       "nearshore-landing-clients": "url('/images/nearshore/clients-bg.png')",
-      "nearshore-landing-team": "url('/images/nearshore/team-bg.png')"
+      "nearshore-landing-team": "url('/images/nearshore/team-bg.png')",
+      "react-course": "url('/images/bootcamp/react-course.jpg')",
+      "angular-course": "url('/images/bootcamp/angular-course.jpg')",
+      "fede-coach": "url('/images/bootcamp/federico-loebarth.jpeg')"
     },
     backgroundSize: {
       "working-cover": "cover",
