@@ -103,7 +103,7 @@ function ContactForm({title}) {
       )}
       {!messageSent && (
         <>
-          <h2 className="font-aleo text-light-blue text-center text-[2.6rem] font-semibold leading-[1.4] tracking-normal mt-4 mb-8 ">{title}</h2>
+          <h2 className="font-aleo text-black text-center text-[2.6rem] font-semibold leading-[1.4] tracking-normal mt-4 mb-8 ">{title}</h2>
           <form action="#" onSubmit={handleSubmit} className="flex flex-col w-full">
             <div className="relative mb-4">
               <div className={`${(name.length > 0) ? 'block' : 'hidden'}`}>
@@ -119,7 +119,7 @@ function ContactForm({title}) {
                 type="text"
                 placeholder="Name*"
                 className={`w-full h-9  px-2 text-base text-gray-placeholder bg-white bg-clip-padding
-                border border-gray-border rounded-xl focus:ring focus:ring-icon-blue outline-none font-aleo
+                border border-gray-border rounded-3xl focus:ring focus:ring-icon-blue outline-none font-aleo contact-shadow
                 ${(nameValid || name.length === 0) ? 'focus:ring-icon-blue' : 'focus:ring-red-700 border-2 border-red-700'}
                 ${(nameValid) ? 'border-2 border-green-600' : ''}`}
               />
@@ -140,8 +140,8 @@ function ContactForm({title}) {
                 onChange={handleEmailInput}
                 type="email"
                 placeholder="E-mail*"
-                className={`w-full h-9  px-2 text-base text-gray-placeholder bg-white bg-clip-padding
-                border border-gray-border rounded-xl focus:ring focus:ring-icon-blue outline-none font-aleo
+                className={`w-full h-9  px-2 text-base text-gray-placeholder bg-white bg-clip-padding contact-shadow
+                border border-gray-border rounded-3xl focus:ring focus:ring-icon-blue outline-none font-aleo
                 ${(emailValid || email.length === 0) ? 'focus:ring-icon-blue' : 'focus:ring-red-700 border-2 border-red-700'}
                 ${(emailValid) ? 'border-2 border-green-600' : ''}`}
               />
@@ -161,7 +161,7 @@ function ContactForm({title}) {
                 ref={messageInput}
                 onChange={handleMessageInput}
                 placeholder="Message*"
-                className={`w-full h-40 px-2 pt-2 pb-1 text-base text-gray-placeholder
+                className={`w-full h-40 px-2 pt-2 pb-1 text-base text-gray-placeholder contact-shadow
               bg-white bg-clip-padding border border-gray-border rounded-xl
                 overflow-auto resize-none focus:ring focus:ring-icon-blue outline-none font-aleo
                 ${(messageValid || message.length === 0) ? 'focus:ring-icon-blue' : 'focus:ring-red-700 border-2 border-red-700'}

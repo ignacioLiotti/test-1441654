@@ -58,6 +58,12 @@ html{
   font-weight: bold;
   font-style: normal;
 }
+@font-face {
+  font-family: "Oswald";
+  src: url(../public/fonts/Oswald-Variable.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
 
 
 
@@ -84,6 +90,101 @@ html{
   box-shadow: 0px 12px 20px 0px rgba(255, 126, 95, 0.15);
 }
 
+.gold-gradient{
+  background-image: linear-gradient(
+    135deg,
+    hsl(44deg 100% 60%) 0%,
+    hsl(44deg 95% 57%) 5%,
+    hsl(43deg 91% 55%) 11%,
+    hsl(43deg 87% 53%) 18%,
+    hsl(43deg 83% 51%) 27%,
+    hsl(43deg 87% 48%) 38%,
+    hsl(40deg 83% 50%) 50%,
+    hsl(37deg 84% 52%) 64%,
+    hsl(33deg 85% 53%) 78%,
+    hsl(30deg 86% 55%) 91%,
+    hsl(26deg 87% 56%) 100%
+  );
+  background-size: 100% 250% ;
+  background-position: top;
+}
+.gold-gradient:hover{
+  background-position: bottom;
+}
+
+.service-shadow{
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+}
+.how-work-shadow{
+  filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.25));
+}
+.contact-shadow{
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.blue-purple-gradient-2{
+  background: linear-gradient(90deg, #7640CC -17%, #36A9E1 139%);
+}
+.blue-transparent-nearshore{
+  background: linear-gradient(90deg, #466AE72B -17%, #466AE700 139%);
+}
+.rocbird-shadow{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.rocbird-center{
+  background-position: center;
+}
+.rocbird-text-gradient{
+  background: linear-gradient(90deg, #FFFFFF -2.56%, #39CEFD 107.36%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.effect{
+  position: relative;
+  overflow: hidden;
+}
+.effect::before{
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -4rem;
+  right: -4rem;
+  background-image: linear-gradient(
+  180deg,
+  hsl(263deg 58% 53%) 12%,
+  hsl(251deg 61% 57%) 39%,
+  hsl(238deg 65% 60%) 50%,
+  hsl(228deg 72% 58%) 57%,
+  hsl(219deg 77% 55%) 63%,
+  hsl(212deg 81% 51%) 67%,
+  hsl(206deg 100% 46%) 72%,
+  hsl(204deg 100% 46%) 76%,
+  hsl(202deg 100% 45%) 80%,
+  hsl(199deg 100% 45%) 85%,
+  hsl(200deg 78% 51%) 91%,
+  hsl(200deg 74% 55%) 100%
+);
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.25s ease-out;
+}
+.effect:hover::before{
+  transform: scale(20);
+  transition: transform 0.7s ease-out;
+  background-image: linear-gradient(
+  180deg,
+  hsl(263deg 58% 53%) 0%,
+  hsl(251deg 61% 57%) 50%,
+  hsl(199deg 100% 45%) 65%,
+  hsl(200deg 74% 55%) 100%
+);
+
+}
+
 .nav-container-width {
   @apply w-full sm:max-w-[34rem] md:max-w-[45rem] lg:max-w-[60rem] xl:max-w-6xl mx-auto;
 }
@@ -91,6 +192,8 @@ html{
 .container-width {
   @apply w-full sm:w-[34rem] md:w-[45rem] lg:w-[60rem] xl:w-[71.25rem] mx-auto;
 }
+
+
 
 .step-left{
   background-color: #20a088 ;

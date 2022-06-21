@@ -8,7 +8,7 @@ const en = {
     { id: 3, name: "Portfolio", path: "/#portfolio" },
     { id: 4, name: "Clients", path: "/#clients" },
     { id: 5, name: "Careers", path: "/#careers" },
-    { id: 6, name: "Contact", path: "/#footer" },
+    { id: 6, name: "Contact Us", path: "/#footer" },
   ],
   intro: {
     title: "We are a company dedicated to provide technological solutions.",
@@ -74,10 +74,10 @@ const en = {
       },
       {
         id: 4,
-        imgSource: "testing",
-        title: "Testing",
+        imgSource: "ux",
+        title: "UX/UI Design",
         description:
-          "We all make mistakes. Some of those mistakes are unimportant , but some are dangerous or expensive. Our software products are built under the most rigorous conditions and tested under the most meticoulous control.",
+          "Want to refresh the look and functionality of your site/app? Our highly skilled team of designers and developers can give your project a smooth and engaging user experience that will increase traffic, style, and performance in order to reach more users.",
       },
       {
         id: 5,
@@ -85,13 +85,14 @@ const en = {
         title: "Web development",
         description:
           "Thinking about taking your project/business to the net? Our team can develop and design cross platform websites that are visually engaging, following the latest trends on UX/UI.",
-      },
-      {
+      },{
         id: 6,
-        imgSource: "ux",
-        title: "UX/UI Design",
+        imgSource: "rocbird-bird",
+        title: "Data Management",
         description:
-          "Want to refresh the look and functionality of your site/app? Our highly skilled team of designers and developers can give your project a smooth and engaging user experience that will increase traffic, style, and performance in order to reach more users.",
+          "We are happy to announce that Devlights and ",
+        description2:"RocBird have joined forces!",
+        button: "SEE MORE",
       },
     ],
   },
@@ -560,7 +561,10 @@ const en = {
     },
     get_in_touch_section: {
       title: "We connect our clients with their products",
-      paragraph: "We make things happen here at Devlights. Our outsourcing solutions provides clients access to a vast pool of talent Staffing the talents to build a team is essential for the success of any business, but to be efficient it requires devoting significant resources to the process. However, sometimes the budget or time frames are tight, or the company might simply need a full-time remote talent to do a specific job. In this case, staffing-as-a-service is the way to go in such a case. Devlights is capable of providing highly-skilled specialists short-term and long-term IT staffing projects built to your specification and for a fraction of the cost.",
+      first_card_title:"We make things happen here at Devlights.",
+      first_card:"Our outsourcing solutions provides clients access to a vast pool of talent Staffing the talents to build a team is essential for the success of any business, but to be efficient it requires devoting significant resources to the process.",
+      second_card:"However, sometimes the budget or time frames are tight, or the company might simply need a full-time remote talent to do a specific job. In this case, staffing-as-a-service is the way to go in such a case.",
+      third_card: " Devlights is capable of providing highly-skilled specialists short-term and long-term IT staffing projects built to your specification and for a fraction of the cost.",
       form_title: "Let's get in touch",
       form_btn: "Send Message"
     },

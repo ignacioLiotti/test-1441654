@@ -6,14 +6,13 @@ import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 export const CarouselItem = ({ children, width }) => {
   return (
     <div
-      className="inline-flex items-center justify-center lg:h-[30rem] xl:h-[28rem] pt-8"
+      className="inline-flex items-center justify-center p-[1rem] lg:h-[30rem] xl:h-[28rem] pt-8"
       style={{ width: width }}
     >
       {children}
     </div>
   );
 };
-
 const Carousel = ({ children }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [paused, setPaused] = useState(false);
@@ -67,7 +66,7 @@ const Carousel = ({ children }) => {
         })}
       </div>
       <div className="flex flex-row items-center, justify-center">
-        <button
+        {/* <button
           className="m-2"
           onClick={() => {
             updateIndex(activeIndex - 1);
@@ -77,7 +76,7 @@ const Carousel = ({ children }) => {
             icon={faAngleLeft}
             className="text-gray-devil text-4xl mr-6 pt-1 hover:text-almost-black"
           />
-        </button>
+        </button> */}
         <div className="flex flex-row my-8">
           {React.Children.map(children, (child, index) => {
             return (
@@ -93,7 +92,7 @@ const Carousel = ({ children }) => {
             );
           })}
         </div>
-        <button
+        {/* <button
           className="m-2"
           onClick={() => {
             updateIndex(activeIndex + 1);
@@ -103,7 +102,7 @@ const Carousel = ({ children }) => {
             icon={faAngleRight}
             className="text-gray-devil text-4xl ml-6 pt-1 hover:text-almost-black"
           />
-        </button>
+        </button> */}
       </div>
     </div>
   );

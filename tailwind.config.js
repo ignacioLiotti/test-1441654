@@ -28,7 +28,10 @@ module.exports = {
         "gray-bootcamp": "#212529",
         "orange-bootcamp-btn": "#ff7208",
         "cyan-bootcamp": "#6be2cd",
-        "gold-bootcamp": "#fbb03b"
+        "gold-bootcamp": "#fbb03b",
+        "gray-blue-nearshore": "#F6F6FF",
+        "purple-nearshore": "#7640CC",
+        "dark-blue-nearshore": "#080c19"
       },
       lineHeight: {
         "hero-section": "4.375rem",
@@ -38,7 +41,8 @@ module.exports = {
       "open-sans": ['"Open Sans"'],
       aleo: ["Aleo"],
       "montserrat": ["Montserrat"],
-      "poppins": ["Poppins"]
+      "poppins": ["Poppins"],
+      "oswald": ["Oswald"],
     },
     backgroundPosition: {
       "right-center": "right center",
@@ -61,10 +65,14 @@ module.exports = {
       "nearshore-landing-team": "url('/images/nearshore/team-bg.png')",
       "react-course": "url('/images/bootcamp/react-course.jpg')",
       "angular-course": "url('/images/bootcamp/angular-course.jpg')",
-      "fede-coach": "url('/images/bootcamp/federico-loebarth.jpeg')"
+      "fede-coach": "url('/images/bootcamp/federico-loebarth.jpeg')",
+      "rocbird-landing-hero": "url('/images/rocbird/background.jpg')",
+      "rocbird-logo": "url('/images/rocbird/rocbird.png')",
+      "portfolio-1": "url('/images/portfolio/creativeHumans/bg-portf1.png')",
     },
     backgroundSize: {
       "working-cover": "cover",
+      "working-contain": "contain",
       "size-100": "100% 100%",
       "zoomed-in-gradient": "300% 100%",
       "size-45": "45%",
@@ -83,7 +91,9 @@ module.exports = {
       idleIcon1: "idle01 9s ease-in-out 1s infinite alternate none running",
       idleIcon2: "idle02 15s linear infinite alternate",
       idleIcon3: "idle03 15s linear infinite alternate",
-      idleIcon4: "idle04 9s ease-in-out 1s infinite alternate none running"
+      idleIcon4: "idle04 9s ease-in-out 1s infinite alternate none running",
+      idleIcon5: "idle05 3s ease-in-out 1s infinite alternate none running",
+      hoveringArrow: "hoveringArrow 3s ease-in-out infinite alternate"
     },
     keyframes: {
       idle01: {
@@ -184,6 +194,36 @@ module.exports = {
         "100%": {
           transform:
             "translateY(2px) translateX(5px) rotate(0deg) scale(0.95); opacity: 0.7",
+        },
+      },
+      idle05: {
+        "0%": {
+          transform:
+            "translateY(0px) rotate(-0.5deg) scale(1) ",
+        },
+        "100%": {
+          transform:
+            "translateY(5px) rotate(1deg) scale(0.95)",
+        },
+      },
+      idle06: {
+        "0%": {
+          transform:
+            "translateY(5px) rotate(-1deg) scale(0.95) ",
+        },
+        "100%": {
+          transform:
+            "translateY(0px) rotate(-0.5deg) scale(1)",
+        },
+      },
+      hoveringArrow: {
+        "0%": {
+          transform:
+            "rotate(0deg) scale(1); opacity: 0.9 ",
+        },
+        "100%": {
+          transform:
+            "rotate(10deg) scale(0.95); opacity: 0.7",
         },
       },
     },

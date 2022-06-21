@@ -10,7 +10,8 @@ function ServicesSection({ strings }) {
     >
       <div className="container-width">
         <div className="flex flex-col lg:flex-row">
-          <div className="flex flex-col xs:items-center w-full lg:max-w-[25%] px-4 mt-[27rem] sm:mt-[17rem] md:mt-[10.625rem] lg:mt-0">
+          <d
+          iv className="flex flex-col xs:items-center w-full lg:max-w-[25%] px-4 mt-[27rem] sm:mt-[17rem] md:mt-[10.625rem] lg:mt-0">
             <h2 className="font-aleo font-bold text-center xs:text-left text-white text-5xl leading-tight mb-5 mt-[3.75rem]">
               {strings.title}
             </h2>
@@ -23,7 +24,7 @@ function ServicesSection({ strings }) {
             <div className="flex flex-col items-center sm:items-start justify-center mt-8 sm:mt-11">
               <ActionButton text={strings.btnContact} resize={false} />
             </div>
-          </div>
+          </d>
           <div className="md:columns-3 -space-y-10 lg:-space-y-5 gap-6 lg:gap-8 px-4 w-full lg:max-w-[75%] mt-[4rem] sm:mt-[6rem] lg:mt-0">
             {strings.serviceCards.map((card) => (
               <div
@@ -33,7 +34,9 @@ function ServicesSection({ strings }) {
                 <ServiceCard
                   title={card.title}
                   description={card.description}
+                  description2={card.description2}
                   image={card.imgSource}
+                  button={card.button}
                 />
               </div>
             ))}

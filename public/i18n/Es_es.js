@@ -3,11 +3,11 @@ import NavItem from "../../components/NavItem";
 const es = {
   navigationData: [
     { id: 0, name: "Inicio", path: "/" },
-    { id: 1, name: <NavItem item="Nosotros" />, path: "#about" },
-    { id: 2, name: <NavItem item="Servicios" />, path: "#services" },
-    { id: 3, name: <NavItem item="Portfolio" />, path: "#portfolio" },
-    { id: 4, name: <NavItem item="Clientes" />, path: "#clients" },
-    { id: 5, name: <NavItem item="Carreras" />, path: "#careers" },
+    { id: 1, name: "Nosotros" , path: "#about" },
+    { id: 2, name: "Servicios" , path: "#services" },
+    { id: 3, name: "Portfolio" , path: "#portfolio" },
+    { id: 4, name: "Clientes" , path: "#clients" },
+    { id: 5, name: "Carreras" , path: "#careers" },
     // { id: 6, name: "Referral Program", path: "/referral" },
     // { id: 7, name: "Nearshore Software Development", path: "/nearshore-software-development" },
     { id: 8, name: "Contacto", path: "#contact" },
@@ -497,7 +497,10 @@ const es = {
     },
     get_in_touch_section: {
       title: "Conectamos a nuestros clientes con sus productos",
-      paragraph: "En Devlights hacemos que las cosas sucedan. Nuestras soluciones de subcontratación brindan a los clientes acceso a un amplio grupo de talentos. Dotar del personal necesario para construir un equipo es esencial para el éxito de cualquier negocio, pero para ser eficiente se requiere dedicar recursos significativos al proceso. Sin embargo, a veces el presupuesto o los plazos son ajustados, o la empresa simplemente necesita un talento remoto a tiempo completo para realizar un trabajo específico. En este caso, el personal como servicio es el camino a seguir. Devlights es capaz de proporcionar proyectos de dotación de personal de IT a corto y largo plazo de especialistas altamente calificados, creados según sus especificaciones y por una fracción del costo.",
+      first_card_title:"We make things happen here at Devlights.",
+      first_card:"Our outsourcing solutions provides clients access to a vast pool of talent Staffing the talents to build a team is essential for the success of any business, but to be efficient it requires devoting significant resources to the process.",
+      second_card:"However, sometimes the budget or time frames are tight, or the company might simply need a full-time remote talent to do a specific job. In this case, staffing-as-a-service is the way to go in such a case.",
+      third_card: " Devlights is capable of providing highly-skilled specialists short-term and long-term IT staffing projects built to your specification and for a fraction of the cost.",
       form_title: "Pongamosnos en contacto.",
       form_btn: "Enviar Mensaje"
     },

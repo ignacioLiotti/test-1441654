@@ -5,11 +5,15 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import en from "../public/i18n/En_en";
 import es from "../public/i18n/Es_es";
-import WhiteActionButton from "../components/WhiteActionButton";
 import ContactForm from "../components/NearshoreContactForm";
-import Carousel from "../components/NearshoreCarousel";
+import ClutchCarousel from "../components/ClutchCarousel";
 import { CarouselItem } from "../components/ClutchCarousel";
+import NearshoreCarousel from "../components/NearshoreCarousel";
+import {CarouselItem as NearshoreItem} from "../components/NearshoreCarousel";
 import ExtraLayout from "../layouts/ExtraLayout";
+import GoldActionButton from "../components/GoldActionButton";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function NearshoreSoftwareDevelopment() {
   useEffect(() => {
@@ -28,21 +32,22 @@ function NearshoreSoftwareDevelopment() {
         <meta name={translation.metaName} content={translation.metaContent} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className="w-full h-[500px] flex items-center justify-center bg-nearshore-landing-hero bg-working-cover bg-center bg bg-no-repeat md:h-[900px] md:-mt-24  md:pt-40 md:pb-32 ">
-        <div className="w-full p-8 md:w-[70rem] md:p-0 ">
+      {/* hero section */}
+      <section className="w-full h-[750px] flex items-center justify-center bg-nearshore-landing-hero bg-working-cover md:bg-working-contain bg-center bg bg-no-repeat md:h-[900px] md:-mt-24  md:pt-40 md:pb-32 ">
+        <div className="w-full p-8 md:w-[70rem] md:p-0 flex flex-col md:flex-row">
           <div
-            className="flex flex-col justify-center items-center md:items-start md:w-[30rem] md:mb-4 md:mr-80 md:order-1 lg:order-2 "
+            className="flex flex-col justify-center items-center md:items-start md:w-[30rem]  "
             data-aos="fade-right"
             data-aos-duration={1000}
             data-aos-once
           >
-            <h2 className="font-aleo text-white font-semibold text-[1.4rem] text-center md:text-[1.9rem] md:leading-[1.4] md:text-left ">
+            <h2 className="font-aleo text-white font-bold text-[1.7rem] text-center md:text-[3rem] md:leading-[1.4] md:text-left ">
               {translation.headerTitle}
             </h2>
-            <p className="font-aleo text-white font-semibold text-center mt-2 mb-8  md:text-[1.2rem] md:leading-[1.4] md:mb-10 md:mt-2 md:text-left">
+            <p className="font-poppins text-white font-normal text-center mt-2 mb-8 md:text-[1.2rem] md:leading-[1.4] md:mb-10 md:mt-2 md:text-left">
               {translation.headerSubTitle}
             </p>
-            <WhiteActionButton
+            <GoldActionButton
               text={translation.headerBtn}
               resize={false}
               onClickAction={() =>
@@ -50,40 +55,97 @@ function NearshoreSoftwareDevelopment() {
               }
             />
           </div>
+          <div className="relative"
+              data-aos="fade-left"
+              data-aos-duration={1000}
+              data-aos-once >
+            <img src={`/images/nearshore/heroPhoto.png`}
+                alt=""
+                className="hidden md:inline"
+            />
+            <img src={`/images/nearshore/heroPhotoMobile.png`}
+                alt=""
+                className="md:hidden"
+            />
+            <img src={`/images/nearshore/heroPiggybank.png`}
+                alt=""
+                className="absolute hidden md:inline right-[-1rem] bottom-[-2rem] md:animate-idleIcon1"
+  
+            />
+            <img src={`/images/nearshore/rocket.png`}
+                alt=""
+                className="absolute hidden md:inline left-[-2rem] bottom-20 md:animate-idleIcon2"
+            />
+            <img src={`/images/nearshore/curvedArrow.png`}
+                alt=""
+                className="absolute hidden md:inline right-[-15%] top-20 md:animate-hoveringArrow origin-left"
+            />
+
+          </div>
         </div>
       </section>
-      <section className="w-full flex flex-col justify-center items-center p-6 -mt-24 md:items-start md:flex-row md:w-[70rem] md:mt-28 md:mb-10 md:p-0">
+      {/* why hiring our services */}
+      <section className="w-full flex flex-col-reverse justify-center items-center p-6 -mt-24 md:items-start md:flex-row md:w-[75rem] md:mt-28 md:mb-10 md:p-0">
         <div
-          className="w-full md:w-[36rem] relative"
-          data-aos="fade-right"
-          data-aos-duration={1000}
-          data-aos-delay="100"
-          data-aos-once
-        >
-          <div className="absolute  bg-orange-pill left-[-11%] top-[18%] md:w-12 md:h-1"></div>
-          <h2 className="font-aleo text-light-blue font-semibold text-center text-[2rem] md:text-[2.5rem] md:text-left md:leading-[1.4] md:tracking-normal md:mt-10 md:mb-8 ">
-            {translation.why_hirinus_section.title}
-          </h2>
-          <p className="text-center mt-4 mb-8 md:text-[1.1rem] text-gray-500 md:leading-[2] md:mb-10 md:mt-2 md:pr-8 ">
-            {translation.why_hirinus_section.paragraph}
-          </p>
-        </div>
-        <div
-          className="mt-8 md:w-[36rem] md:mt-0"
+          className="grid grid-cols-3 grid-rows-2 relative mt-8 md:w-[40rem] md:mt-0"
           data-aos="fade-left"
           data-aos-duration={1000}
           data-aos-delay="100"
           data-aos-once
         >
           <img
-            src={`/images/nearshore/services.png`}
-            className="w-[34rem] mb-6 object-contain"
-            alt="clients"
+            src={`/images/nearshore/angular.png`}
+            className=" w-[15rem]  object-contain z-10 animate-[idle06_2.2s_ease-in-out_1s_infinite_alternate_none_running]"
+            alt="logos of Angular, PHP, Flutter, React, dot Net and Laravel"
           />
+          <img
+            src={`/images/nearshore/php.png`}
+            className="relative w-[15rem] top-5 -left-5  object-contain z-10 animate-[idle05_1.7s_ease-in-out_3s_infinite_alternate_none_running]"
+            alt="logos of Angular, PHP, Flutter, React, dot Net and Laravel"
+          />
+          <img
+            src={`/images/nearshore/flutter.png`}
+            className="relative w-[15rem] top-10 -left-10 object-contain z-10 animate-[idle06_3.5s_ease-in-out_1.7s_infinite_alternate_none_running]"
+            alt="logos of Angular, PHP, Flutter, React, dot Net and Laravel"
+          />
+          <img
+            src={`/images/nearshore/react.png`}
+            className="relative w-[15rem] -top-5 left-5 object-contain z-10 animate-[idle05_2.5s_ease-in-out_4s_infinite_alternate_none_running]"
+            alt="logos of Angular, PHP, Flutter, React, dot Net and Laravel"
+          />
+          <img
+            src={`/images/nearshore/net.png`}
+            className="relative w-[15rem]  object-contain z-10 animate-[idle06_3s_ease-in-out_5s_infinite_alternate_none_running]"
+            alt="logos of Angular, PHP, Flutter, React, dot Net and Laravel"
+          />
+          <img
+            src={`/images/nearshore/laravel.png`}
+            className="relative w-[15rem] top-5 -left-5 object-contain z-10 animate-[idle05_4s_ease-in-out_3.5s_infinite_alternate_none_running]"
+            alt="logos of Angular, PHP, Flutter, React, dot Net and Laravel"
+          />
+          <img className="absolute top-0 blur-[8rem] opacity-[0.4]  z-0" 
+               src={`/images/nearshore/blob-shadow.svg`} 
+               alt="" />
+        </div>
+        <div
+          className="w-full md:w-[35rem] relative"
+          data-aos="fade-right"
+          data-aos-duration={1000}
+          data-aos-delay="100"
+          data-aos-once
+        >
+          <span className="absolute gold-gradient md:w-14 md:h-4 rounded-[1rem]"></span>
+          <h2 className="font-aleo text-light-blue font-semibold text-center text-[2rem] md:text-[2.5rem] md:text-left md:leading-[1.4] md:tracking-normal md:mt-10 md:mb-8 ">
+            {translation.why_hirinus_section.title}
+          </h2>
+          <p className="text-left mt-4 mb-8 md:text-[1.1rem] text-gray-500 md:leading-[2] md:mb-10 md:mt-2 md:pr-8 ">
+            {translation.why_hirinus_section.paragraph}
+          </p>
         </div>
       </section>
+      {/* our service */}
       <section
-        className="w-full flex flex-col justify-center items-center p-6 md:w-[70rem] md:mt-24 md:mb-10 md:p-0"
+        className="w-full flex flex-col justify-center items-center p-6 md:w-[80rem] md:mt-24 md:mb-10 md:p-0"
         data-aos="fade-up"
         data-aos-duration={1000}
         data-aos-delay="500"
@@ -94,48 +156,49 @@ function NearshoreSoftwareDevelopment() {
         </h2>
 
         <div className="w-full flex flex-col items-center justify-center md:mt-6 md:flex-row md:items-start">
-          <div className="flex flex-col items-center mt-10 md:w-[22rem] md:m-4 ">
+          <div className="effect group flex flex-col items-center mt-10 md:w-[30rem] md:h-[27rem] p-[2rem] rounded-[10px] md:m-4  service-shadow">
             <img
-              src={`/images/nearshore/icon-01.png`}
-              className="w-[8rem] mb-4 md:w-[11rem] md:mb-6 object-contain"
+              src={`/images/nearshore/thumbsup.svg`}
+              className="group-hover:filter group-hover:brightness-0 group-hover:invert w-[8rem] mb-4 md:w-[4rem] md:mb-6 object-contain"
               alt="clients"
             />
-            <h3 className="font-aleo text-light-blue text-[1.3rem] text-center font-semibold leading-[1.4] tracking-normal mt-4">
+            <h3 className="group-hover:text-white font-aleo text-light-blue text-[1.3rem] text-center font-semibold leading-[1.4] tracking-normal mt-4">
               {translation.our_services_section.cultural_fit_title}
             </h3>
-            <p className="text-center text-gray-600 mt-6">
+            <p className="group-hover:text-white text-center text-gray-600 mt-6">
               {translation.our_services_section.cultural_fit_paragraph}
             </p>
           </div>
-          <div className="flex flex-col items-center mt-10 md:w-[22rem] md:m-4">
+          <div className="effect group flex flex-col items-center mt-10 md:w-[30rem] md:h-[27rem] p-[2rem] rounded-[10px] md:m-4 hover:text-white service-shadow">
             <img
-              src={`/images/nearshore/icon-02.png`}
-              className="w-[8rem] mb-4 md:w-[11rem] md:mb-6 object-contain"
+              src={`/images/nearshore/piggybank.svg`}
+              className="group-hover:filter group-hover:brightness-0 group-hover:invert w-[8rem] mb-4 md:w-[4rem] md:mb-6 object-contain"
               alt="clients"
             />
-            <h3 className="font-aleo text-light-blue text-[1.3rem] text-center font-semibold leading-[1.4] tracking-normal mt-5">
+            <h3 className="group-hover:text-white font-aleo text-light-blue text-[1.3rem] text-center font-semibold leading-[1.4] tracking-normal mt-4">
               {translation.our_services_section.rates_title}
             </h3>
-            <p className="text-center text-gray-600 mt-6">
+            <p className="group-hover:text-white text-center text-gray-600 mt-6">
               {translation.our_services_section.rates_paragraph}
             </p>
           </div>
-          <div className="flex flex-col items-center mt-10 md:w-[22rem] md:m-4">
+          <div className="effect group flex flex-col items-center mt-10 md:w-[30rem] md:h-[27rem] p-[2rem] rounded-[10px] md:m-4 hover:text-white service-shadow">
             <img
-              src={`/images/nearshore/icon-03.png`}
-              className="w-[8rem] mb-4 md:w-[11rem] md:mb-6 object-contain"
+              src={`/images/nearshore/graph.svg`}
+              className="group-hover:filter group-hover:brightness-0 group-hover:invert w-[8rem] mb-4 md:w-[4rem] md:mb-6 object-contain"
               alt="clients"
             />
-            <h3 className="font-aleo text-light-blue text-[1.3rem] text-center font-semibold leading-[1.4] tracking-normal mt-5">
+            <h3 className="group-hover:text-white font-aleo text-light-blue text-[1.3rem] text-center font-semibold leading-[1.4] tracking-normal mt-4">
               {translation.our_services_section.dependable_title}
             </h3>
-            <p className="text-center text-gray-600 mt-6">
+            <p className="group-hover:text-white text-center text-gray-600 mt-6">
               {translation.our_services_section.dependable_paragraph}
             </p>
           </div>
         </div>
       </section>
-      <section className="flex flex-col justify-center items-center w-full h-[27rem] bg-cyan-nearshore-section-bg mt-20 ">
+      {/* lets partner up  */}
+      <section className="flex flex-col justify-center items-center w-full p-[1rem] h-full md:h-[27rem] bg-gray-blue-nearshore mt-20 ">
         <div
           className="flex flex-col justify-center items-center"
           data-aos="fade-up"
@@ -143,207 +206,223 @@ function NearshoreSoftwareDevelopment() {
           data-aos-delay="100"
           data-aos-once
         >
-          <h2 className="font-aleo text-white text-[2.5rem] font-semibold leading-[1.5] tracking-normal ">
+          <h2 className="font-aleo text-light-blue text-center md:text-left text-[2.5rem] font-semibold leading-[1.5] tracking-normal ">
             {" "}
             {translation.partner_up_section.title}
           </h2>
-          <p className=" w-[70rem] text-[1.2rem] text-center text-white leading-[2] mb-10 mt-6">
+          <p className=" md:w-[60rem] w-full text-[1.2rem] text-center text-gray-body leading-[2] mb-10 mt-6">
             {translation.partner_up_section.paragraph}
           </p>
-          <WhiteActionButton
+          <GoldActionButton
             text={translation.partner_up_section.btn}
-            resize={true}
+            resize={false}
             onClickAction={() =>
               window.open(`https://calendly.com/devlights/30min`, "_blank")
             }
           />
         </div>
       </section>
-      <section className="flex flex-col justify-center items-center w-[70rem] mt-14 mb-10">
-        <h2
-          className="font-aleo text-light-blue text-[2.7rem] font-semibold leading-[1.4] tracking-normal mt-10 mb-8 "
-          data-aos="fade-zoom-in"
-          data-aos-easing="ease-in"
-          data-aos-duration={800}
-          data-aos-delay="100"
-          data-aos-offset="0"
-        >
+      {/* How does it work? */}
+      <section
+        className="w-full flex flex-col justify-center items-center md:w-[80rem] md:mt-24 md:mb-10 md:p-0"
+        data-aos="fade-up"
+        data-aos-duration={1000}
+        data-aos-delay="500"
+        data-aos-once
+      >
+        <h2 className="font-aleo text-light-blue font-semibold text-[2rem] text-center md:text-[2.5rem] md:text-left md:leading-[1.4] md:tracking-normal md:mt-10 md:mb-8 ">
           {translation.how_does_it_work_section.title}
         </h2>
 
-        <div
-          className=" flex justify-around items-center w-[70rem] mt-10 relative"
-          data-aos="fade-zoom-in"
-          data-aos-easing="ease-in"
-          data-aos-duration={800}
-          data-aos-delay="100"
-          data-aos-offset="0"
-        >
-          <div className="flex items-center w-[28rem] h-[5rem] bg-white shadow-work-steps-shadow rounded-2xl">
-            <p className="text-center text-gray-600 p-4">
-              {translation.how_does_it_work_section.step_1}
-            </p>
-          </div>
-          <div className="step-right">
-            <span className="font-aleo text-white text-[2.2rem] font-semibold leading-[1.5] tracking-normal mt-10 mb-8 z-10 left-[36%] top-[-49%] absolute ">
-              1
-            </span>
-          </div>
-          <div className="flex justify-center w-[28rem]">
-            <img
-              src={`/images/nearshore/work-01.png`}
-              className="h-[15rem] object-contain"
-              alt="clients"
-            />
-          </div>
-          <div
-            className="absolute bg-green-work-steps w-3 h-60 top-[55%]"
-            data-aos="fade-zoom-in"
-            data-aos-easing="ease-in"
-            data-aos-duration={800}
-            data-aos-delay="100"
-            data-aos-offset="0"
-          ></div>
+        {/* Carrousel for mobile view */}
+        <div className=" w-full md:hidden ">
+          <NearshoreCarousel>
+            <NearshoreItem>
+              <div className=" relative flex flex-col items-center mt-10 p-[2rem] rounded-[10px] bg-white how-work-shadow mb-[1rem] ">
+                <p className="absolute top-[-2.5rem] left-center rounded-[50%] flex items-center justify-center border-white border-[0.5rem] bg-purple-nearshore w-[5rem] h-[5rem] font-oswald font-bold text-white text-[2.8rem]">
+                  01
+                </p>
+                <p className="w-full text-clip text-center  text-gray-600 mt-6 font-open-sans whitespace-pre-wrap">
+                  {translation.how_does_it_work_section.step_1}
+                </p>
+              </div>
+            </NearshoreItem>
+            <NearshoreItem>
+              <div className="relative flex flex-col items-center mt-10 md:w-[30rem] md:h-[10rem] p-[2rem] rounded-[10px] bg-white md:m-4 how-work-shadow mb-[1rem] md:mb-0 ">
+                <p className="absolute top-[-2.5rem] left-center rounded-[50%] flex items-center justify-center border-white border-[0.5rem] bg-purple-nearshore w-[5rem] h-[5rem] font-oswald font-bold text-white text-[2.8rem]">
+                  02
+                </p>
+                <p className="text-center text-gray-600 mt-6 font-open-sans whitespace-pre-wrap">
+                  {translation.how_does_it_work_section.step_2}
+                </p>
+              </div>
+            </NearshoreItem>
+            <NearshoreItem>
+              <div className="relative flex flex-col items-center mt-10 md:w-[30rem] md:h-[10rem] p-[2rem] rounded-[10px] bg-white md:m-4 how-work-shadow mb-[1rem] md:mb-0 ">
+                <p className="absolute top-[-2.5rem] left-center rounded-[50%] flex items-center justify-center border-white border-[0.5rem] bg-purple-nearshore w-[5rem] h-[5rem] font-oswald font-bold text-white text-[2.8rem]">
+                  03
+                </p>
+                <p className="text-center text-gray-600 mt-6 font-open-sans whitespace-pre-wrap">
+                  {translation.how_does_it_work_section.step_3}
+                </p>
+              </div>
+            </NearshoreItem>
+          </NearshoreCarousel>
         </div>
-
-        <div
-          className=" flex justify-around items-center w-[70rem] mt-10 relative"
-          data-aos="fade-zoom-in"
-          data-aos-easing="ease-in"
-          data-aos-duration={800}
-          data-aos-delay="100"
-          data-aos-offset="0"
-        >
-          <div className="flex justify-center w-[28rem]">
-            <img
-              src={`/images/nearshore/work-02.png`}
-              className="h-[15rem] object-contain"
-              alt="clients"
-            />
-          </div>
-          <div className="step-left">
-            <span className="font-aleo text-white text-[2.2rem] font-semibold leading-[1.5] tracking-normal mt-10 mb-8 z-10 left-[36%] top-[-49%] absolute ">
-              2
-            </span>
-          </div>
-          <div className="flex items-center w-[28rem] h-[5rem] bg-white shadow-work-steps-shadow rounded-2xl">
-            <p className="text-center text-gray-600 p-4">
-              {translation.how_does_it_work_section.step_2}
-            </p>
-          </div>
-          <div
-            className="absolute bg-green-work-steps w-3 h-60 top-[55%]"
-            data-aos="fade-zoom-in"
-            data-aos-easing="ease-in"
-            data-aos-duration={800}
-            data-aos-delay="100"
-            data-aos-offset="0"
-          ></div>
-        </div>
-        <div
-          className=" flex justify-around items-center w-[70rem]  mt-10"
-          data-aos="fade-zoom-in"
-          data-aos-easing="ease-in"
-          data-aos-duration={800}
-          data-aos-delay="100"
-          data-aos-offset="0"
-        >
-          <div className="flex items-center w-[28rem] h-[5rem] bg-white shadow-work-steps-shadow rounded-2xl">
-            <p className="text-center text-gray-600 p-4">
-              {translation.how_does_it_work_section.step_3}
-            </p>
-          </div>
-          <div className="step-right">
-            <span className="font-aleo text-white text-[2.2rem] font-semibold leading-[1.5] tracking-normal mt-10 mb-8 z-10 left-[36%] top-[-49%] absolute ">
-              3
-            </span>
-          </div>
-          <div className="flex justify-center w-[28rem]">
-            <img
-              src={`/images/nearshore/work-03.png`}
-              className="h-[15rem] object-contain"
-              alt="clients"
-            />
-          </div>
-        </div>
+        {/* steps one next to eachother for desktop view */}
+          <div className="w-full hidden md:flex flex-col items-center justify-center md:mt-6 md:flex-row ">
+              <div className="relative flex flex-col items-center mt-10 md:w-[30rem] md:h-[10rem] p-[2rem] rounded-[10px] bg-white md:m-4 how-work-shadow mb-[1rem] md:mb-0 ">
+                <p className="absolute top-[-2.5rem] left-center rounded-[50%] flex items-center justify-center border-white border-[0.5rem] bg-purple-nearshore w-[5rem] h-[5rem] font-oswald font-bold text-white text-[2.8rem]">
+                  01
+                </p>
+                <p className="text-center text-gray-600 mt-6 font-open-sans">
+                  {translation.how_does_it_work_section.step_1}
+                </p>
+              </div>
+              <div className="relative flex flex-col items-center mt-10 md:w-[30rem] md:h-[10rem] p-[2rem] rounded-[10px] bg-white md:m-4 how-work-shadow mb-[1rem] md:mb-0">
+                <p className="absolute top-[-2.5rem] left-center rounded-[50%] flex items-center justify-center border-white border-[0.5rem] bg-purple-nearshore w-[5rem] h-[5rem] font-oswald font-bold text-white text-[2.8rem]">
+                  02
+                </p>
+                <p className="text-center text-gray-600 mt-6 font-open-sans">
+                  {translation.how_does_it_work_section.step_2}
+                </p>
+              </div>
+              <div className="relative flex flex-col items-center mt-10 md:w-[30rem] md:h-[10rem] p-[2rem] rounded-[10px] bg-white md:m-4 how-work-shadow mb-[1rem] md:mb-0">
+                <p className="absolute top-[-2.5rem] left-center rounded-[50%] flex items-center justify-center border-white border-[0.5rem] bg-purple-nearshore w-[5rem] h-[5rem] font-oswald font-bold text-white text-[2.8rem]">
+                  03
+                </p>
+                <p className="text-center text-gray-600 mt-6 font-open-sans">
+                  {translation.how_does_it_work_section.step_3}
+                </p>
+              </div>
+            </div> 
+        
       </section>
-      <section className="flex flex-col justify-center items-center w-full h-[44rem] bg-cyan-nearshore-section-bg mt-20 ">
-        <div className="flex w-[70rem] items-center">
+      {/* We connect our clients with their products */}
+      <section className="flex  justify-center items-center w-full h-full md:h-[50rem] bg-black">
+        <div className="flex w-[75rem] items-center justify-center">
           <div
-            className="w-[35rem]"
+            className="w-full"
             data-aos="fade-right"
             data-aos-duration={1000}
             data-aos-delay="100"
             data-aos-once
           >
-            <h2 className="font-aleo text-white text-[2.5rem] font-semibold leading-[1.2] ">
+            <h2 className="font-aleo hidden md:flex justify-center mt-[2rem] md:mt-[0rem] text-white text-[2.5rem] text-center font-semibold leading-[1.2] ">
               {translation.get_in_touch_section.title}
             </h2>
-            <p className="text-[1.1rem] text-white leading-[1.8] mt-10">
-              {translation.get_in_touch_section.paragraph}
-            </p>
+            <div className="flex flex-col px-[2rem] md:px-0 md:flex-row justify-around items-start mt-[2rem] md:mt-[5rem] h-full">
+              <img 
+                src={`/images/nearshore/getInTouch.png`} 
+                alt="One of our team members"
+                className="w-full h-full object-contain"
+              />
+              <h2 className="font-aleo md:hidden mt-[2rem] md:mt-[0rem] text-white text-[2.5rem] text-center font-semibold leading-[1.2] ">
+                {translation.get_in_touch_section.title}
+              </h2> 
+              <div className="flex flex-col items-start justify-start md:ml-[3rem] ">
+                <div className="blue-transparent-nearshore rounded-[0.7rem] mb-[1.5rem] mt-[2rem] md:mt-0">
+                  <div className="relative flex flex-col  md:flex-row justify-center items-center md:items-start bg-dark-blue-nearshore m-[0.4rem] p-[1rem] rounded-[0.5rem]">
+                    <div className="flex justify-center mr-[1rem] items-center h-[5rem] md:h-[3rem] w-[5rem] md:w-[3rem] rounded-[50%]  blue-purple-gradient-2 p-[1rem]"> 
+                      <FontAwesomeIcon
+                        icon={faCheck}
+                        className=" text-white text-5xl md:text-2xl"
+                      />
+                    </div>
+                    <div>
+                      <h3 className="text-white text-2xl font-bold text-center md:text-left">
+                      {translation.get_in_touch_section.first_card_title}
+                      </h3>
+                      <p className="text-white text-[1.2rem] mt-[1rem] text-center md:text-left">
+                      {translation.get_in_touch_section.first_card}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="blue-transparent-nearshore rounded-[0.7rem] mb-[1.5rem]">
+                  <div className="relative flex flex-col md:flex-row justify-center items-center md:items-start bg-dark-blue-nearshore m-[0.4rem] p-[1rem] rounded-[0.5rem]">
+                    <div className="flex justify-center mr-[1rem] items-center h-[5rem] md:h-[3rem] w-[5rem] md:w-[3rem] rounded-[50%]  blue-purple-gradient-2 p-[1rem]"> 
+                      <FontAwesomeIcon
+                        icon={faCheck}
+                        className=" text-white text-5xl md:text-2xl"
+                      />
+                    </div>
+                    <div>
+                      <p className="text-white text-[1.2rem] mt-[1rem] md:mt-0 text-center md:text-left">
+                      {translation.get_in_touch_section.second_card}
+
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="blue-transparent-nearshore rounded-[0.7rem] mb-[2rem]">
+                  <div className="relative flex flex-col md:flex-row justify-center items-center md:items-start bg-dark-blue-nearshore m-[0.4rem] p-[1rem] rounded-[0.5rem]">
+                    <div className="flex justify-center mr-[1rem] items-center h-[5rem] md:h-[3rem] w-[5rem] md:w-[3rem] rounded-[50%]  blue-purple-gradient-2 p-[1rem]"> 
+                      <FontAwesomeIcon
+                        icon={faCheck}
+                        className=" text-white text-5xl md:text-2xl"
+                      />
+                    </div>
+                    <div>
+                      <p className="text-white text-[1.2rem] mt-[1rem] md:mt-0 text-center md:text-left">
+                      {translation.get_in_touch_section.third_card}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>    
+            </div>
           </div>
+        </div>
+      </section>
+      {/* Let's get in touch */}
+      <section className="flex flex-col justify-center items-center w-full h-[44rem] bg-white ">
+        <div className="flex w-[70rem] items-center justify-center">
           <div
-            className="w-[35rem] p-6"
+            className="w-[23rem] md:w-[55rem] p-6"
             data-aos="fade-left"
             data-aos-duration={1000}
             data-aos-delay="100"
             data-aos-once
           >
-            <div className="bg-white rounded-2xl px-10 py-6">
               <ContactForm
                 title={translation.get_in_touch_section.form_title}
               />
-            </div>
           </div>
         </div>
       </section>
-      <section className="w-full h-[700px] flex flex-col items-center justify-center bg-nearshore-landing-clients bg-working-cover bg-center bg-no-repeat  pt-20 pb-20">
-        <h2 className="font-aleo text-lavanda-nearshore text-[2.5rem] font-semibold leading-[1.2]">
-          {translation.our_clients_section.title}
-        </h2>
-        <div
-          className="w-full"
-          data-aos="fade-up"
-          data-aos-duration={1000}
-          data-aos-delay="100"
-          data-aos-once
-        >
-          <Carousel>
-            {testimonials.clients?.map((client) => (
+      {/* testimonials */}
+      <section className="w-full clutch-slide-gradient flex justify-center md:h-[38rem]">
+        <div data-aos="fade-up" data-aos-duration={1000} data-aos-once>
+          <ClutchCarousel>
+            {testimonials.clients?.map((client) => ( 
               <CarouselItem key={client.clientId}>
-                <div className="flex flex-col lg:flex-row w-[70rem] mt-20 h-auto rounded-3xl p-4 sm:p-8 overflow-clip my-8 mx-4 sm:mx-10 bg-white shadow-testimonial-card">
+                <div className="flex flex-col items-center justify-center w-[350px] md:p-8 p-4 overflow-clip mx-10 md:w-[80rem]">
                   <div className="w-full lg:w-1/3 flex items-center justify-center">
-                    <div className="w-[5.5rem] h-[5.5rem] sm:w-52 sm:h-52">
+                    <div className="w-[3.5rem] h-[3.5rem] sm:w-36 sm:h-36">
                       <img
-                        src={`/images/testimonials/${client.img}.png`}
-                        className="w-[5.5rem] h-[5.5rem] sm:w-52 sm:h-52 object-fill"
+                        src={`/images/clutch-quote.png`}
+                        className="w-[3.5rem] h-[3.5rem] sm:w-36 sm:h-36 object-fill"
                       />
                     </div>
                   </div>
-                  <div className="w.full lg:w-2/3 flex items-center justify-center">
-                    <div className="flex flex-col">
-                      <p className="p-1 font-aleo font-bold text-icon-blue text-2xl leading-8 -mb-1">
-                        {client.clientName}
-                      </p>
-                      <p className="p-1 font-open-sans font-bold text-gray-third text-lg leading-8 opacity-80 -mb-1">
-                        {client.company}
-                      </p>
-                      <p className="p-1 font-open-sans font-normal text-gray-third text-base leading-8 -mb-1">
-                        {client.role}
-                      </p>
-                      <p className="p-2 font-montserrat font-normal text-gray-devil text-base tracking-[1px] leading-loose w-full h-auto whitespace-pre-wrap">
-                        {client.opinion}
-                      </p>
-                    </div>
+                  <div className="w-full lg:w-[800px] flex flex-col items-center justify-center mt-4">
+                    <h3 className="p-2 font-Poppins-Regular md:text-2xl text-md font-normal text-white text-center tracking-[1px] w-full h-auto whitespace-pre-wrap">
+                      {`"${client.opinion}"`}
+                    </h3>
+
+                    <p className="p-1 font-bold font-aleo text-white text-lg leading-8 mt-[1rem] -mb-1  tracking-[1px]">
+                      {client.role}, {client.company}
+                    </p>
                   </div>
                 </div>
               </CarouselItem>
             ))}
-          </Carousel>
+          </ClutchCarousel>
         </div>
       </section>
-      <section className="w-full h-[800px] flex flex-col items-center justify-start bg-nearshore-landing-team bg-working-cover bg-center bg-no-repeat pt-20 pb-20">
+      {/* meet the team */}
+      <section className="w-full md:h-[800px] flex flex-col items-center justify-start bg-nearshore-landing-team bg-working-cover bg-center bg-no-repeat pt-20 pb-20">
         <h2
           className="font-aleo text-lavanda-nearshore text-[2.5rem] font-semibold leading-[1.2]"
           data-aos="fade-zoom-in"

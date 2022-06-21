@@ -1,6 +1,8 @@
 import React from "react";
+import GoldActionButton from "../components/GoldActionButton";
 
-function ServiceCard({ title, description, image }) {
+function ServiceCard({ title, description, description2, image, button, link }) {
+  
   return (
     <article
       data-aos="fade-up"
@@ -27,6 +29,18 @@ function ServiceCard({ title, description, image }) {
       <p className="text-gray-service text-[0.938rem] leading-[1.8]">
         {description}
       </p>
+      <p className="text-gray-service text-[0.938rem] leading-[1.8]">
+        {description2}
+      </p>
+      {button ? 
+      <div className="flex justify-center items-center mt-12">
+        <GoldActionButton 
+            text={button}
+            resize={true}
+            onClickAction={() =>
+              window.open(`https://devlights.com/rocbird`, "_blank")
+            }/> 
+      </div>: '' }
     </article>
   );
 }

@@ -6,7 +6,47 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar({ transparentScroll, whiteBackground, hasShadow }) {
+
   const router = useRouter();
+  
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    // just trigger this so that the initial state 
+    // is updated as soon as the component is mounted
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  // console.log(scrollY)
+  // function witch return in witch section the user is
+  const getSection = () => {
+    if (scrollY < 0) {
+      return "home";
+    } else if (scrollY > 0 && scrollY < 765) {
+      return "home";
+    } else if (scrollY > 765 && scrollY < 1000) {
+      return "about";
+    } else if (scrollY > 1000 && scrollY < 1500) {
+      return "portfolio";
+    } else if (scrollY > 1500 && scrollY < 2000) {
+      return "contact";
+    } else {
+      return "home";
+    }
+  }
+  // console.log(getSection())
+
+
   const { locale } = router;
   const translation = locale === "en" ? en : es;
 

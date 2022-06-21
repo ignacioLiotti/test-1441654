@@ -4,7 +4,7 @@ function WhiteActionButton({ text, resize, onClickAction }) {
   return (
     <button
       className={`inline-block bg-white
-    rounded-2xl cursor-pointer font-open-sans text-amber-500 font-semibold shadow-white-action-btn
+    rounded-2xl cursor-pointer font-open-sans text-amber-500 font-semibold
     leading-normal transition-all duration-300 ease-in-out
     ${
       resize
