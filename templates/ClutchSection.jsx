@@ -8,7 +8,12 @@ function ClutchSection({ strings }) {
       <div className="px-4" data-aos="fade-up" data-aos-once>
         <img
           src={`/images/clutch_section_bn.png`}
-          className="max-w-full h-full object-contain md:-translate-x-28"
+          className="hidden md:flex max-w-full h-full object-contain md:-translate-x-28"
+          alt="Clutch award"
+        />
+        <img
+          src={`/images/clutch.png`}
+          className="max-w-[65%] h-full object-contain m-auto mb-6 md:hidden"
           alt="Clutch award"
         />
       </div>

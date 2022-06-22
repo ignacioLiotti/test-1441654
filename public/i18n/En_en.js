@@ -572,6 +572,69 @@ const en = {
       title: "What our clients say about us"
     },
     meet_the_team_section: "Meet the team"
+  },
+  rocbird_landing: {
+    metaTitle: "Outsourcing software development | Devlights",
+    metaName: "Description",
+    metaContent: "We can provide and source for every technology available within the market. Whether you require demandware developers, designers, mobile developers or project managers, we will put our best to make sure that your requirements are met and that you find the talent that you need for your team.",
+    headerTitle: "It's a match!",
+    headerSubTitle: "We are happy to announce that Devlights and RocBird have joined forces!",
+    this_aliance_section: {
+      first_card: "This alliance will help Devlights provide a more complete and robust service to its partners.",
+      second_card: "RocBird's experience and perspective will be a game changer when building complex data-driven solutions."
+    },
+    about_section: {
+      title: "About RocBird",
+      paragraph: "They are a technology, innovation and software development company that helps companies in their digital transformation of processes, providing the tools and qualified resources necessary to achieve the proposed objectives and thus obtain a competitive advantage.",
+      first_card:{
+        title:'BIG DATA',
+        paragraph:'Our Big Data tools and solutions will help you organize the large volume of data that floods your daily business, to obtain valuable information that you may be missing.'
+      },
+      second_card:{
+        title:'DATA ANALYTICS',
+        paragraph:'We can help you understand the operation of your business by taking advantage of its data, to accelerate its growth through well-formed decisions.'
+      },
+      third_card:{
+        title:'DATA SCIENCE',
+        paragraph:'We use scientific methods and artificial intelligence to obtain knowledge from existing data, translating it into easy-to-understand visualizations to help you make better decisions that enable the expansion of your business.'
+      },
+      fourth_card:{
+        title:'WEB  DEVELOPMENT  & CORPORATIVE DEVELOPMENT',
+        paragraph:'Our team will be able to develop the system that meets the needs of your company. We have experience in developing products for StartUps and custom corporate systems. '
+      },
+      fifth_card:{
+        title:'SPECIALIZED CONSULTANCIES',
+        paragraph:'We know the latest market trends and have participated in multiple projects, making that experience available to your business.'
+      },
+      sixth_card:{
+        title:'DATA ANALYTICS',
+        paragraph:'We can help you understand the operation of your business by taking advantage of its data, to accelerate its growth through well-formed decisions. Our Data Analytics service includes data capture, cleaning and modeling.'
+      },
+    },
+    partner_up_section: {
+      title: "Let's partner up on your next project!",
+      paragraph: "Devlights stands out from the rest because is capable to offer END-TO-END software development solutions to their clients. We count on a qualified team of professionals entirely dedicated to working on our clients’ technology projects. You Provide the specifitacions, we provide a software solution.",
+      btn: "Tell us more about your project"
+    },
+    how_does_it_work_section: {
+      title: "How does it work?",
+      step_1: "We meet with the client to brief about his idea and work it out togheter.",
+      step_2: "From our talent pool, we select the profiles that best match the requirements.",
+      step_3: "We select the best assets for your project and then they are ready to dig into the details and start working."
+    },
+    get_in_touch_section: {
+      title: "We connect our clients with their products",
+      first_card_title:"We make things happen here at Devlights.",
+      first_card:"Our outsourcing solutions provides clients access to a vast pool of talent Staffing the talents to build a team is essential for the success of any business, but to be efficient it requires devoting significant resources to the process.",
+      second_card:"However, sometimes the budget or time frames are tight, or the company might simply need a full-time remote talent to do a specific job. In this case, staffing-as-a-service is the way to go in such a case.",
+      third_card: " Devlights is capable of providing highly-skilled specialists short-term and long-term IT staffing projects built to your specification and for a fraction of the cost.",
+      form_title: "Let's get in touch",
+      form_btn: "Send Message"
+    },
+    our_clients_section: {
+      title: "What our clients say about us"
+    },
+    meet_the_team_section: "Meet the team"
   }
 };
 

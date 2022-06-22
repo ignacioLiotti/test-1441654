@@ -12,7 +12,7 @@ function BadgesSection() {
       }, []);
   return (
     <section
-        className=" flex flex-col items-center mb-8 md:flex-row md:items-center md:justify-around md:w-[56rem] md:mb-10"
+        className=" flex flex-col items-center py-8 md:flex-row md:items-center md:justify-center gap-[1rem] md:gap-[5rem] w-full  md:py-10 bg-gray-200"
         data-aos="fade-up"
         data-aos-duration={1000}
         data-aos-once
@@ -34,6 +34,16 @@ function BadgesSection() {
           data-height="50"
           data-clutchcompany-id="414104"
         ></div>
+        <img
+          src={`/images/design-rush-badge.png`}
+          className="object-fill cursor-pointer mt-8 w-48 object-fill md:w-[15rem] md:mt-1"
+          onClick={() =>
+            window.open(
+              "https://www.designrush.com/agency/software-development/colorado",
+              "_blank"
+            )
+          }
+        />
         <img
           src={`/images/top-rated.png`}
           className="object-fill cursor-pointer mt-8 w-48 object-fill md:w-[10rem] md:mt-1"

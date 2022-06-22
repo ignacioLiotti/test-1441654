@@ -78,6 +78,7 @@ module.exports = {
       "size-45": "45%",
       "size-50-100": "50% 100%",
       "size-100-50": "100% 50%",
+      "size-100-60": "100% 60%",
       "size-30": "30% auto",
     },
     boxShadow: {
@@ -209,11 +210,29 @@ module.exports = {
       idle06: {
         "0%": {
           transform:
+            "translateY(5px) rotate(0deg) scale(1) ",
+        },
+        "50%": {
+          transform:
             "translateY(5px) rotate(-1deg) scale(0.95) ",
         },
         "100%": {
           transform:
             "translateY(0px) rotate(-0.5deg) scale(1)",
+        },
+      },
+      idle07: {
+        "0%": {
+          transform:
+            "translateY(0px) ",
+        },
+        "50%": {
+          transform:
+            "translateY(5px) ",
+        },
+        "100%": {
+          transform:
+            "translateY(0px) ",
         },
       },
       hoveringArrow: {

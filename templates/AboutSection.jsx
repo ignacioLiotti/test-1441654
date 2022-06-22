@@ -17,7 +17,7 @@ function AboutSection({ strings }) {
               alt="about us"
             />
           </div>
-          <div className="flex flex-col justify-center md:max-w-[50%]">
+          <div className="flex flex-col justify-center md:max-w-[65%] md:pr-[8rem]">
             <h2 className="mt-8 mb-2 text-[2rem] text-icon-blue font-aleo font-bold">
               {strings.where}
             </h2>

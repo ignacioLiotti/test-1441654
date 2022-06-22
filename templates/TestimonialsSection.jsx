@@ -14,7 +14,7 @@ function TestimonialsSection({ strings }) {
           <Carousel>
             {strings.clients?.map((client) => (
               <CarouselItem key={client.clientId}>
-                <div className="flex flex-col lg:flex-row w-full h-auto rounded-3xl p-4 sm:p-8 overflow-clip my-8 mx-4 sm:mx-10 bg-white shadow-testimonial-card">
+                <div className="flex flex-col lg:flex-row w-full h-auto rounded-3xl p-4 sm:p-8 overflow-clip my-8 mx-8 sm:mx-10 bg-white shadow-testimonial-card">
                   <div className="w-full lg:w-1/3 flex items-center justify-center">
                     <div className="w-[5.5rem] h-[5.5rem] sm:w-52 sm:h-52">
                       <img

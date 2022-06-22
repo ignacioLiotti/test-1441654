@@ -1,10 +1,12 @@
+import { useRouter } from "next/router";
 import React from "react";
 import ActionButton from "../components/ActionButton";
 
 function TechnologiesSection({ strings }) {
+  const router = useRouter()
   return (
     <section
-      className="w-full bg-technologies-section-mobile md:bg-technologies-section bg-initial bg-no-repeat bg-size-100-50 md:bg-size-100 xl:bg-size-50-100
+      className="w-full bg-technologies-section-mobile md:bg-technologies-section bg-initial bg-no-repeat bg-size-100-60 md:bg-size-100 xl:bg-size-50-100
     relative md:pb-[10rem]"
     >
       <div className="container-width flex flex-col md:flex-row items-center justify-center px-4">
@@ -20,7 +22,7 @@ function TechnologiesSection({ strings }) {
             {strings.subtitleText2}
           </p>
           <div className="flex flex-col items-center sm:items-start justify-center mt-8 sm:mt-11">
-            <ActionButton text={strings.btnProjects} resize={false} />
+            <ActionButton text={strings.btnProjects} resize={false} onClickAction={() => router.push("/#portfolio")} />
           </div>
         </div>
         <div data-aos="fade-up" data-aos-duration={1000} data-aos-once>

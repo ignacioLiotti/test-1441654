@@ -9,9 +9,10 @@ import WhiteActionButton from "../components/WhiteActionButton";
 import ContactForm from "../components/NearshoreContactForm";
 import Carousel from "../components/NearshoreCarousel";
 import { CarouselItem } from "../components/ClutchCarousel";
+import BoopImg from "../components/BoopImg";
 import ExtraLayout from "../layouts/ExtraLayout";
 
-function NearshoreSoftwareDevelopment() {
+function Rocbird() {
   useEffect(() => {
     Aos.init();
   }, []);
@@ -19,8 +20,7 @@ function NearshoreSoftwareDevelopment() {
   const { locale } = router;
   const testimonials = locale === "en" ? en.testimonials : es.testimonials;
   const translation =
-    locale === "en" ? en.nearshore_landing : es.nearshore_landing;
-
+    locale === "en" ? en.rocbird_landing : es.rocbird_landing;
   return (
     <div className="w-full flex flex-col items-center justify-center ">
       <Head>
@@ -39,14 +39,17 @@ function NearshoreSoftwareDevelopment() {
               data-aos-once
             >
               <h2 className="font-aleo text-white font-semibold text-[1.4rem] text-center md:text-[4rem] md:leading-[1.4] md:text-left ">
-                It's a match!
+                {translation.headerTitle}
               </h2>
               <p className="font-aleo text-transparent rocbird-text-gradient font-semibold text-center mt-2 mb-8  md:text-[1.5rem] md:leading-[1.4] md:mb-1 md:mt-2 md:text-left">
-              We are happy to announce that Devlights and RocBird have joined forces!
+                {translation.headerSubTitle}
               </p>
             </div>
           </div>
-          <div className=""> 
+          <div className=""
+              data-aos="fade-left"
+              data-aos-duration={1000}
+              data-aos-once> 
               <img
                   src={`/images/rocbird/rocbirdplusdevlights.png`}
                   className="w-[45rem] mt-24 mb-6 object-contain"
@@ -67,24 +70,37 @@ function NearshoreSoftwareDevelopment() {
         >
             <img
                 src={`/images/rocbird/blob.svg`}
-                className="z-0 object-contain w-full"
+                className="z-0 object-contain w-full animate-[idle05_5s_ease-in-out_3s_infinite_alternate_none_running]"
                 alt="clients"
-            />
-            <img
-                src={`/images/rocbird/nahu.png`}
-                className="absolute z-10 object-contain w-[15rem]"
-                alt="clients"
-            />
-            <img
-                src={`/images/rocbird/nico.png`}
-                className="absolute bottom-0 -right-6 z-10 object-contain w-[10rem]"
-                alt="clients"
-            />
-            <img
-                src={`/images/rocbird/yisus.png`}
-                className="absolute top-0 -left-6 z-10 object-contain w-[10rem]"
-                alt="clients"
-            />
+                />
+            <div className="absolute w-[17rem]">
+              <BoopImg y='-35' scale='1.05' rotation='-5' springConfig={{tension:'50',friction:'20'}}>
+                    <img
+                        src={`/images/rocbird/nahu.png`}
+                        className="z-10 object-contain w-full animate-[idle07_3.5s_ease-in-out_1s_infinite_alternate_none_running]"
+                        alt="clients"
+                    />
+              </BoopImg>
+            </div>
+            <div className="absolute bottom-0 -right-6 z-10">
+              <BoopImg x='15' scale='1.05' rotation='15' springConfig={{tension:'150',friction:'10'}}>
+                <img
+                  src={`/images/rocbird/nico.png`}
+                  className="object-contain w-[10rem] animate-[idle05_1.7s_ease-in-out_3s_infinite_alternate_none_running]"
+                  alt="clients"
+                /> 
+              </BoopImg>
+            </div>
+            <div className="absolute top-0 -left-6 z-10">
+              <BoopImg y='15' scale='1.05' rotation='5' springConfig={{tension:'100',friction:'5'}}>
+                <img
+                  src={`/images/rocbird/yisus.png`}
+                  className=" z-10 object-contain w-[10rem] animate-[idle06_3.7s_ease-in-out_0.5s_infinite_alternate_none_running]"
+                  alt="clients"
+                />
+              </BoopImg>
+            </div>
+
         </div>
         <div
           className="flex flex-col justify-center items-start"
@@ -102,7 +118,8 @@ function NearshoreSoftwareDevelopment() {
                   />
             </div>
             <p className=" w-[100%] text-[1.4rem] text-left text-gray group-hover:font-bold transition-all ease-in-out leading-[2] ml-[1rem]">
-            This alliance will help Devlights provide a more complete and robust service to its partners.</p>
+              {translation.this_aliance_section.first_card}
+            </p>
           </div>
           <div className="flex flex-row justify-center items-center w-[40rem] mt-[3rem] group">
             <div className="flex justify-center items-center w-[8rem] h-[10rem] px-[1.75rem] py-[2.5rem] bg-white group-hover:bg-purple-nearshore transition-all ease-in-out rounded-[10px] rocbird-shadow">
@@ -114,7 +131,8 @@ function NearshoreSoftwareDevelopment() {
 
             </div>
             <p className=" w-[100%] text-[1.4rem] text-left text-gray group-hover:font-bold transition-all ease-in-out leading-[2] ml-[1rem]">
-            RocBird's experience and perspective will be a  game changer when building complex data-driven solutions.</p>
+              {translation.this_aliance_section.second_card}
+            </p>
           </div>
         </div>
       </section>
@@ -147,10 +165,10 @@ function NearshoreSoftwareDevelopment() {
             data-aos-once
             >
               <h2 className="font-aleo text-gray-600 group-hover:text-white font-semibold text-center text-[2rem] md:text-[1.4rem] md:text-left md:leading-[1] md:tracking-normal md:mt-10 md:mb-2  transition-all ease-in-out">
-                  {translation.why_hirinus_section.title}
+                  {translation.about_section.first_card.title}
               </h2>
               <p className="font-poppins text-left mt-4 mb-8 md:text-[0.9rem] text-gray-500 group-hover:text-white md:leading-[2] md:mb-10 md:mt-2 md:pr-8  transition-all ease-in-out">
-                  {translation.why_hirinus_section.paragraph}
+                  {translation.about_section.first_card.paragraph}
               </p>
             </div>
             <div
@@ -161,10 +179,10 @@ function NearshoreSoftwareDevelopment() {
             data-aos-once
             >
               <h2 className="font-aleo text-gray-600 group-hover:text-white font-semibold text-center text-[2rem] md:text-[1.4rem] md:text-left md:leading-[1] md:tracking-normal md:mt-10 md:mb-2  transition-all ease-in-out">
-                  {translation.why_hirinus_section.title}
+                  {translation.about_section.second_card.title}
               </h2>
               <p className="font-poppins text-left mt-4 mb-8 md:text-[0.9rem] text-gray-500 group-hover:text-white md:leading-[2] md:mb-10 md:mt-2 md:pr-8  transition-all ease-in-out">
-                  {translation.why_hirinus_section.paragraph}
+                  {translation.about_section.second_card.paragraph}
               </p>
             </div>
         </div>
@@ -177,10 +195,10 @@ function NearshoreSoftwareDevelopment() {
             data-aos-once
             >
               <h2 className="font-aleo text-gray-600 group-hover:text-white font-semibold text-center text-[2rem] md:text-[1.4rem] md:text-left md:leading-[1] md:tracking-normal md:mt-10 md:mb-2  transition-all ease-in-out">
-                  {translation.why_hirinus_section.title}
+                  {translation.about_section.third_card.title}
               </h2>
               <p className="font-poppins text-left mt-4 mb-8 md:text-[0.9rem] text-gray-500 group-hover:text-white md:leading-[2] md:mb-10 md:mt-2 md:pr-8  transition-all ease-in-out">
-                  {translation.why_hirinus_section.paragraph}
+                  {translation.about_section.third_card.paragraph}
               </p>
             </div>
             <div
@@ -191,10 +209,10 @@ function NearshoreSoftwareDevelopment() {
             data-aos-once
             >
               <h2 className="font-aleo text-gray-600 group-hover:text-white font-semibold text-center text-[2rem] md:text-[1.4rem] md:text-left md:leading-[1] md:tracking-normal md:mt-10 md:mb-2  transition-all ease-in-out">
-                  {translation.why_hirinus_section.title}
+                  {translation.about_section.fourth_card.title}
               </h2>
               <p className="font-poppins text-left mt-4 mb-8 md:text-[0.9rem] text-gray-500 group-hover:text-white md:leading-[2] md:mb-10 md:mt-2 md:pr-8  transition-all ease-in-out">
-                  {translation.why_hirinus_section.paragraph}
+                  {translation.about_section.fourth_card.paragraph}
               </p>
             </div>
         </div>
@@ -207,10 +225,10 @@ function NearshoreSoftwareDevelopment() {
             data-aos-once
             >
               <h2 className="font-aleo text-gray-600 group-hover:text-white font-semibold text-center text-[2rem] md:text-[1.4rem] md:text-left md:leading-[1] md:tracking-normal md:mt-10 md:mb-2  transition-all ease-in-out">
-                  {translation.why_hirinus_section.title}
+                  {translation.about_section.fifth_card.title}
               </h2>
               <p className="font-poppins text-left mt-4 mb-8 md:text-[0.9rem] text-gray-500 group-hover:text-white md:leading-[2] md:mb-10 md:mt-2 md:pr-8  transition-all ease-in-out">
-                  {translation.why_hirinus_section.paragraph}
+                  {translation.about_section.fifth_card.paragraph}
               </p>
             </div>
             <div
@@ -221,10 +239,10 @@ function NearshoreSoftwareDevelopment() {
             data-aos-once
             >
               <h2 className="font-aleo text-gray-600 group-hover:text-white font-semibold text-center text-[2rem] md:text-[1.4rem] md:text-left md:leading-[1] md:tracking-normal md:mt-10 md:mb-2  transition-all ease-in-out">
-                  {translation.why_hirinus_section.title}
+                  {translation.about_section.sixth_card.title}
               </h2>
               <p className="font-poppins text-left mt-4 mb-8 md:text-[0.9rem] text-gray-500 group-hover:text-white md:leading-[2] md:mb-10 md:mt-2 md:pr-8  transition-all ease-in-out">
-                  {translation.why_hirinus_section.paragraph}
+                  {translation.about_section.sixth_card.paragraph}
               </p>
             </div>
         </div>
@@ -234,9 +252,9 @@ function NearshoreSoftwareDevelopment() {
   );
 }
 
-export default NearshoreSoftwareDevelopment;
+export default Rocbird;
 
-NearshoreSoftwareDevelopment.getLayout = function getLayout(page) {
+Rocbird.getLayout = function getLayout(page) {
     return (
       <ExtraLayout>
         {page}

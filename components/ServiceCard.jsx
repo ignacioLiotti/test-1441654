@@ -36,7 +36,7 @@ function ServiceCard({ title, description, description2, image, button, link }) 
       <div className="flex justify-center items-center mt-12">
         <GoldActionButton 
             text={button}
-            resize={true}
+            resize={false}
             onClickAction={() =>
               window.open(`https://devlights.com/rocbird`, "_blank")
             }/> 

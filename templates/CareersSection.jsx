@@ -14,9 +14,9 @@ function CareersSection({ strings }) {
 
   const jobsRequest = async () => {
     try{
-      const jobs = await axios.get(`http://localhost:8000/jobs`);
+      const jobs = await axios.get(`https://jobs.devlights.com/jobs`);
       setJobs(jobs.data.data);
-    } catch(err) {console.log(err)}
+    } catch(err) {console.log('ACAAAA',err)}
   };
 
   useEffect(() => {
