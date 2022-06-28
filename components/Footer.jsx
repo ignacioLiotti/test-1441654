@@ -131,10 +131,11 @@ function Footer() {
               </a>
             </li>
             <li className="mb-6">
-              <Link>
+              <Link
+                href="/#"
+              >
                 <a
                   className="text-white text-sm font-medium font-open-sans"
-                  href="/#"
                 >
                   Bootcamps
                 </a>
