@@ -36,6 +36,7 @@ function ServicesSection({ strings }) {
                   description={card.description}
                   description2={card.description2}
                   image={card.imgSource}
+                  list={card.list}
                   button={card.button}
                 />
               </div>

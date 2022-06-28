@@ -4,7 +4,7 @@ import ActionButton from "../components/ActionButton";
 
 function ClutchSection({ strings }) {
   return (
-    <section className="w-full flex flex-col md:flex-row md:py-14 md:w-[64rem]">
+    <section className="w-full flex flex-col md:flex-row pb-12 md:pb-0 md:py-14 md:w-[64rem]">
       <div className="px-4" data-aos="fade-up" data-aos-once>
         <img
           src={`/images/clutch_section_bn.png`}

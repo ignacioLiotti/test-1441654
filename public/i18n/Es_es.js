@@ -19,6 +19,7 @@ const es = {
   },
   aboutUs: {
     srcImage: "sobre-nosotros",
+    srcImageMobile: "AboutMobileEs",
     who: "¿Quiénes somos? ",
     whoDesc:
       "Somos una compañía que provee soluciones tecnológicas a nuestros clientes, optimizando sus procesos y permitiéndoles de esta manera alcanzar su máximo potencial.",
@@ -31,6 +32,7 @@ const es = {
   },
   whyUs: {
     srcImage: "porque",
+    srcImageMobile: "WhyUsMobileEs",
     timeZone: "Zona horaria",
     timeZoneDesc: "Estamos a una hora de distancia de la franja horaria este.",
     timeZoneImg: "clock",
@@ -523,31 +525,31 @@ const es = {
       second_card: "RocBird's experience and perspective will be a game changer when building complex data-driven solutions."
     },
     about_section: {
-      title: "About RocBird",
-      paragraph: "They are a technology, innovation and software development company that helps companies in their digital transformation of processes, providing the tools and qualified resources necessary to achieve the proposed objectives and thus obtain a competitive advantage.",
+      title: "Sobre RocBird",
+      paragraph: "Son una empresa de tecnología, innovación y desarrollo de soluciones a medida que puede ayudar a tu compañía en la transformación digital de procesos, proveyendo las herramientas y los recursos calificados necesarios para alcanzar los objetivos propuestos y así obtener una ventaja competitiva. Nuestra meta principal es potenciar tu negocio, construir una relación sólida y duradera, y convertirnos en tu socio tecnológico de preferencia.",
       first_card:{
         title:'BIG DATA',
-        paragraph:'Our Big Data tools and solutions will help you organize the large volume of data that floods your daily business, to obtain valuable information that you may be missing.'
+        paragraph:'Herramientas y soluciones de Big Data te ayudarán a organizar el gran volumen de datos que inunda tu negocio a diario, para obtener información valiosa que se pueda estar perdiendo.'
       },
       second_card:{
         title:'DATA ANALYTICS',
-        paragraph:'We can help you understand the operation of your business by taking advantage of its data, to accelerate its growth through well-formed decisions.'
+        paragraph:'Te ayuda a entender el funcionamiento de tu negocio sacando partida de sus datos, para acelerar su crecimiento a través de decisiones bien fundadas. '
       },
       third_card:{
         title:'DATA SCIENCE',
-        paragraph:'We use scientific methods and artificial intelligence to obtain knowledge from existing data, translating it into easy-to-understand visualizations to help you make better decisions that enable the expansion of your business.'
+        paragraph:'Métodos científicos e inteligencia artificial para obtener conocimientos a partir de los datos existentes, plasmándolos en visualizaciones fáciles de comprender para ayudarte en la toma de mejores decisiones que ayuden a expandir tus negocios.'
       },
       fourth_card:{
-        title:'WEB  DEVELOPMENT  & CORPORATIVE DEVELOPMENT',
-        paragraph:'Our team will be able to develop the system that meets the needs of your company. We have experience in developing products for StartUps and custom corporate systems. '
+        title:'DESARROLLO WEB & DESARROLLOS CORPORATIVOS',
+        paragraph:'Tienen un equipo que podrá desarrollar el sistema que satisfaga las necesidades de tu empresa. Cuentan con experiencia en desarrollo de productos para StartUps y de sistemas corporativos a medida.'
       },
       fifth_card:{
-        title:'SPECIALIZED CONSULTANCIES',
-        paragraph:'We know the latest market trends and have participated in multiple projects, making that experience available to your business.'
+        title:'CONSULTORÍAS ESPECIALIZADAS',
+        paragraph:'Conocen las últimas tendencias del mercado y han participado en múltiples proyectos, poniendo esa experiencia a disposición de tu negocio.'
       },
       sixth_card:{
-        title:'DATA ANALYTICS',
-        paragraph:'We can help you understand the operation of your business by taking advantage of its data, to accelerate its growth through well-formed decisions. Our Data Analytics service includes data capture, cleaning and modeling.'
+        title:'DATA GOVERNANCE',
+        paragraph:'Te acompañan con su experiencia real en implementaciones y una suite de soluciones que harán que todo parezca más sencillo y que puedas lograr quick wins que justifiquen la inversión.'
       },
     },
     partner_up_section: {

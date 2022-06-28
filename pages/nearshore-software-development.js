@@ -85,7 +85,7 @@ function NearshoreSoftwareDevelopment() {
         </div>
       </section>
       {/* why hiring our services */}
-      <section className="w-full flex flex-col-reverse justify-center items-center p-6 -mt-24 md:items-start md:flex-row md:w-[75rem] md:mt-28 md:mb-10 md:p-0">
+      <section className="w-full flex flex-col-reverse justify-center items-center p-6 -mt-12 md:items-start md:flex-row md:w-[75rem] md:mt-28 md:mb-10 md:p-0">
         <div
           className="grid grid-cols-3 grid-rows-2 relative mt-8 md:w-[40rem] md:mt-0"
           data-aos="fade-left"
@@ -145,7 +145,7 @@ function NearshoreSoftwareDevelopment() {
       </section>
       {/* our service */}
       <section
-        className="w-full flex flex-col justify-center items-center p-6 md:w-[80rem] md:mt-24 md:mb-10 md:p-0"
+        className="w-full flex flex-col justify-center items-center p-6 pb-20 md:pb-0 md:w-[80rem] md:mt-24 md:mb-10 md:p-0"
         data-aos="fade-up"
         data-aos-duration={1000}
         data-aos-delay="500"
@@ -169,16 +169,16 @@ function NearshoreSoftwareDevelopment() {
               {translation.our_services_section.cultural_fit_paragraph}
             </p>
           </div>
-          <div className="effect group flex flex-col items-center mt-10 md:w-[30rem] md:h-[27rem] p-[2rem] rounded-[10px] md:m-4 hover:text-white service-shadow">
+          <div className="effect bg-purple-blue-gradient md:bg-working-none group flex flex-col items-center mt-10 md:w-[30rem] md:h-[27rem] p-[2rem] rounded-[10px] md:m-4 hover:text-white service-shadow">
             <img
               src={`/images/nearshore/piggybank.svg`}
-              className="group-hover:filter group-hover:brightness-0 group-hover:invert w-[8rem] mb-4 md:w-[4rem] md:mb-6 object-contain"
+              className="brightness-0 invert md:brightness-100 md:invert-0 group-hover:filter group-hover:brightness-0 group-hover:invert w-[8rem] mb-4 md:w-[4rem] md:mb-6 object-contain"
               alt="clients"
             />
-            <h3 className="group-hover:text-white font-aleo text-light-blue text-[1.3rem] text-center font-semibold leading-[1.4] tracking-normal mt-4">
+            <h3 className="group-hover:text-white font-aleo text-white md:text-light-blue text-[1.3rem] text-center font-semibold leading-[1.4] tracking-normal mt-4">
               {translation.our_services_section.rates_title}
             </h3>
-            <p className="group-hover:text-white text-center text-gray-600 mt-6">
+            <p className="group-hover:text-white text-center text-white md:text-gray-600 mt-6">
               {translation.our_services_section.rates_paragraph}
             </p>
           </div>
@@ -198,7 +198,7 @@ function NearshoreSoftwareDevelopment() {
         </div>
       </section>
       {/* lets partner up  */}
-      <section className="flex flex-col justify-center items-center w-full p-[1rem] h-full md:h-[27rem] bg-gray-blue-nearshore mt-20 ">
+      <section className="flex flex-col justify-center items-center w-full p-[1rem] h-full pb-12 md:pb-0 md:h-[27rem] bg-gray-blue-nearshore pt-10 md:pt-0  ">
         <div
           className="flex flex-col justify-center items-center"
           data-aos="fade-up"
@@ -224,7 +224,7 @@ function NearshoreSoftwareDevelopment() {
       </section>
       {/* How does it work? */}
       <section
-        className="w-full flex flex-col justify-center items-center md:w-[80rem] md:mt-24 md:mb-10 md:p-0"
+        className="w-full flex flex-col justify-center items-center md:w-[80rem] mt-12 md:mb-24 md:mb-10 md:p-0"
         data-aos="fade-up"
         data-aos-duration={1000}
         data-aos-delay="500"
@@ -299,7 +299,7 @@ function NearshoreSoftwareDevelopment() {
         
       </section>
       {/* We connect our clients with their products */}
-      <section className="flex  justify-center items-center w-full h-full md:h-[50rem] bg-black">
+      <section className="flex  justify-center items-center w-full h-full md:h-[50rem] bg-black pb-10 md:pb-0">
         <div className="flex w-[75rem] items-center justify-center">
           <div
             className="w-full"
@@ -376,7 +376,7 @@ function NearshoreSoftwareDevelopment() {
         </div>
       </section>
       {/* Let's get in touch */}
-      <section className="flex flex-col justify-center items-center w-full h-[44rem] bg-white ">
+      <section className="flex flex-col justify-center items-center w-full py-6 md:py-0 md:h-[44rem] bg-white ">
         <div className="flex md:w-[70rem] items-center justify-center">
           <div
             className="w-[23rem] md:w-[55rem] p-6"

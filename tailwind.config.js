@@ -69,6 +69,8 @@ module.exports = {
       "rocbird-landing-hero": "url('/images/rocbird/background.jpg')",
       "rocbird-logo": "url('/images/rocbird/rocbird.png')",
       "portfolio-1": "url('/images/portfolio/creativeHumans/bg-portf1.png')",
+      "purple-blue-gradient": "linear-gradient(180deg, rgba(118, 64, 204, 1), rgba(54, 169, 225, 1))",
+      "working-none":"linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 225, 0))",
     },
     backgroundSize: {
       "working-cover": "cover",

@@ -17,6 +17,7 @@ const en = {
   },
   aboutUs: {
     srcImage: "about-extra-1",
+    srcImageMobile:"AboutMobile",
     who: "Who?",
     whoDesc:
       "We are a company that provides technological solutions to our customers to enhance their potencial and achieve their goals.",
@@ -29,6 +30,7 @@ const en = {
   },
   whyUs: {
     srcImage: "why",
+    srcImageMobile: "WhyUsMobile",
     timeZone: "Time zone",
     timeZoneDesc: "We're one hour away from East time.",
     timeZoneImg: "clock",
@@ -588,27 +590,27 @@ const en = {
       paragraph: "They are a technology, innovation and software development company that helps companies in their digital transformation of processes, providing the tools and qualified resources necessary to achieve the proposed objectives and thus obtain a competitive advantage.",
       first_card:{
         title:'BIG DATA',
-        paragraph:'Our Big Data tools and solutions will help you organize the large volume of data that floods your daily business, to obtain valuable information that you may be missing.'
+        paragraph:'Big Data tools and solutions will help you organize the large volume of data that floods your daily business, to obtain valuable information that you may be missing.'
       },
       second_card:{
         title:'DATA ANALYTICS',
-        paragraph:'We can help you understand the operation of your business by taking advantage of its data, to accelerate its growth through well-formed decisions.'
+        paragraph:'Can help you understand the operation of your business by taking advantage of its data, to accelerate its growth through well-formed decisions.'
       },
       third_card:{
         title:'DATA SCIENCE',
-        paragraph:'We use scientific methods and artificial intelligence to obtain knowledge from existing data, translating it into easy-to-understand visualizations to help you make better decisions that enable the expansion of your business.'
+        paragraph:'Use scientific methods and artificial intelligence to obtain knowledge from existing data, translating it into easy-to-understand visualizations to help you make better decisions that enable the expansion of your business.'
       },
       fourth_card:{
         title:'WEB  DEVELOPMENT  & CORPORATIVE DEVELOPMENT',
-        paragraph:'Our team will be able to develop the system that meets the needs of your company. We have experience in developing products for StartUps and custom corporate systems. '
+        paragraph:'A team able to develop the system that meets the needs of your company. We have experience in developing products for StartUps and custom corporate systems. '
       },
       fifth_card:{
         title:'SPECIALIZED CONSULTANCIES',
-        paragraph:'We know the latest market trends and have participated in multiple projects, making that experience available to your business.'
+        paragraph:'They know the latest market trends and have participated in multiple projects, making that experience available to your business.'
       },
       sixth_card:{
         title:'DATA ANALYTICS',
-        paragraph:'We can help you understand the operation of your business by taking advantage of its data, to accelerate its growth through well-formed decisions. Our Data Analytics service includes data capture, cleaning and modeling.'
+        paragraph:'They can help you understand the operation of your business by taking advantage of its data, to accelerate its growth through well-formed decisions. Their Data Analytics service includes data capture, cleaning and modeling.'
       },
     },
     partner_up_section: {

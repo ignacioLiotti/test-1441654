@@ -1,7 +1,7 @@
 import React from "react";
 import GoldActionButton from "../components/GoldActionButton";
 
-function ServiceCard({ title, description, description2, image, button, link }) {
+function ServiceCard({ title, description, description2, list, image, button, link }) {
   
   return (
     <article
@@ -32,6 +32,16 @@ function ServiceCard({ title, description, description2, image, button, link }) 
       <p className="text-gray-service text-[0.938rem] leading-[1.8]">
         {description2}
       </p>
+      {list ? 
+      <div className="flex justify-start items-center pt-2">
+        <ul>
+        {
+          list.map((item)=>(
+            <li><p className="text-gray-service text-[0.938rem] leading-[1.8]">{item}</p></li>
+          ))
+        }
+        </ul>
+      </div>: '' }
       {button ? 
       <div className="flex justify-center items-center mt-12">
         <GoldActionButton 

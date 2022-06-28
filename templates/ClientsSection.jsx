@@ -14,7 +14,7 @@ function ClientsSection({ strings }) {
         </h3>
         <div className="w-14 h-4 rounded-full bg-orange-pill my-5"></div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {[...Array(show ? 31 : 20)].map((pos, index) => (
+          {[...Array(show ? 32 : 20)].map((pos, index) => (
             <ClientCard clientId={index + 1} key={index} />
           ))}
         </div>

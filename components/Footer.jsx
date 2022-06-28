@@ -35,7 +35,7 @@ function Footer() {
                   className="text-white text-lg mr-4 pt-1"
                 />
                 <p className="font-open-sans text-white leading-5 text-[0.938rem]">
-                  Corrientes, Argentina. 1250 Junin st., 2nd Floor.
+                  Corrientes, Argentina. <br/> 1250 Junin st., 2nd Floor.
                 </p>
               </div>
             </li>

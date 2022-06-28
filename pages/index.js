@@ -19,15 +19,96 @@ import DefaultLayout from "../layouts/DefaultLayout";
 import ClutchSection from "../templates/ClutchSection";
 import BadgesSection from "../templates/BadgesSection";
 
-export default function Home() {
+export default function Home({ip}) {
   // TODO: custom hook useLanguage
   const router = useRouter();
   const { locale } = router;
   const translation = locale === 'en' ? en : es;
 
+  // 
+  const postSocial = async () => {
+    
+    const social = await fetch('/api/get', {
+      method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          "social": `${router.query.social}`,
+          "post": `${router.query.post}`,
+        })
+    });
+    const socialFound = await social.json();
+    console.log("aca esta tu test",socialFound)
+    
+    // const social = await fetch('/api/getall', {
+    //   method: 'GET',
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //   }
+    // });
+    // const data = await social.json();
+    
+    // if the param in the URL exists as a social return an array with the social found
+    
+    // const socialFound = data.social.filter(s => s.social == router.query.social && s.post == router.query.post);
+    
+    if( socialFound.social != 0) {
+      const updateCount=socialFound.social[0].amount+1;
+
+      console.log("updateando")
+
+      const social = await fetch('/api/update', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          "social": `${router.query.social}`,
+          "post": `${router.query.post}`,
+          "amount": `${updateCount}`
+        })
+      });
+    }else{
+      console.log('no social found');
+      const social = await fetch('/api/add', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          "social": `${router.query.social}`,
+          "post": `${router.query.post}`,
+          "amount": `1`
+        })
+      });
+    }
+  }
+
+
+  // Check if the user has in their localstorage the visited flag witch determines if the user can be counted as a new visitor
+  const socialCounter=()=>{
+    if (typeof window !== 'undefined') { // needed to prevent error in SSR with Next.js
+      if(window.sessionStorage.getItem('visited')){
+        return
+      }
+      else{
+      
+        window.sessionStorage.setItem('visited','true');
+      
+        postSocial(); 
+      
+      }
+    }
+  }
+  
+
   useEffect(() => {
     Aos.init();
-  }, []);
+    if(router.isReady){ //The router doesn't load until the page is loaded so it can cause problems reading undefined, must wait till .isReady=true
+    socialCounter();
+    }
+  }, [router.isReady]);
 
   return (
     <div className="flex flex-col items-center justify-center">
@@ -61,4 +142,15 @@ Home.getLayout = function getLayout(page) {
       {page}
     </DefaultLayout>
   )
+}
+
+export async function getServerSideProps({ req }) {
+  console.log(req.headers);
+  const ip = req.headers['x-real-ip'] || req.connection.remoteAddress;
+  
+  return {
+    props: {
+      ip,
+    }, // will be passed to the page component as props
+  };
 }

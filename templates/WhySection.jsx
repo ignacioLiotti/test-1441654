@@ -5,11 +5,19 @@ function WhySection({ strings }) {
     <section className="w-full bg-why-section bg-no-repeat bg-size-30 bg-left-top">
       <div
         className="sm:max-w-[34rem] md:max-w-[45rem] lg:max-w-[60rem] xl:max-w-6xl w-full mx-auto
-        pt-[4.375rem] pb-[8.75rem]
+        md:pt-[4.375rem] md:pb-[8.75rem]
         transition-all duration-300 ease-in"
       >
         <div className="flex flex-col md:flex-row justify-between md:max-h-[42rem] px-4">
           <div className="flex flex-col gap-7 md:gap-7 justify-center w-full md:max-w-[65%] md:pl-[7rem] order-2 md:order-1">
+            <div className="flex justify-end animate-idleIcon4">
+              <img src="/images/icons/icon_1.png" />
+            </div>
+            <img
+              src={`/images/${strings.srcImageMobile}.png`}
+              className="md:hidden inline max-w-full h-full object-contain"
+              alt="about us"
+            />
             <div
               className="flex flex-row items-start gap-3"
               data-aos="fade-up"
@@ -106,7 +114,7 @@ function WhySection({ strings }) {
           >
             <img
               src={`/images/${strings.srcImage}.png`}
-              className="max-w-full h-full object-contain"
+              className="hidden md:inline max-w-full h-full object-contain"
               alt="why us"
             />
           </div>

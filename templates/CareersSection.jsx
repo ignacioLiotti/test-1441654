@@ -16,14 +16,12 @@ function CareersSection({ strings }) {
     try{
       const jobs = await axios.get(`https://jobs.devlights.com/jobs`);
       setJobs(jobs.data.data);
-    } catch(err) {console.log('ACAAAA',err)}
+    } catch(err) {console.log(err)}
   };
 
   useEffect(() => {
     jobsRequest();
   }, []);
-
-  console.log(jobs);
 
   return (
     <section id="careers"
