@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
 
-const connectMongo = async () => mongoose.connect("mongodb://localhost:27017/DevlightsTest");
+const connectMongo = async () => mongoose.connect(MONGO_URI);
 
 export default connectMongo;
