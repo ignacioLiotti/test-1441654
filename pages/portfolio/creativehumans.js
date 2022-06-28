@@ -9,14 +9,15 @@ import ExtraLayout from "../../layouts/ExtraLayout";
 import GoldActionButton from "../../components/GoldActionButton";
 
 
-function creativehumans() {
+export function creativehumans() {
     useEffect(() => {
         Aos.init();
-      }, []);
-      const router = useRouter();
-      const { locale } = router;
-      const testimonials = locale === "en" ? en.testimonials : es.testimonials;
-      const translation =
+    }, []);
+
+    const router = useRouter();
+    const { locale } = router;
+    const testimonials = locale === "en" ? en.testimonials : es.testimonials;
+    const translation =
         locale === "en" ? en.nearshore_landing : es.nearshore_landing;
 
     return (
@@ -64,7 +65,6 @@ function creativehumans() {
     )
 }
 
-export default creativehumans
 
 creativehumans.getLayout = function getLayout(page) {
     return (
