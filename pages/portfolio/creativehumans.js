@@ -73,3 +73,13 @@
 //       </ExtraLayout>
 //     )
 //   }
+
+import React from 'react'
+
+const creativehumans = () => {
+  return (
+    <div>creativehumans</div>
+  )
+}
+
+export default creativehumans
