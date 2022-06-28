@@ -11,6 +11,7 @@ import {
   faTwitterSquare,
 } from "@fortawesome/free-brands-svg-icons";
 import ContactForm from "./ContactForm";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -95,6 +96,7 @@ function Footer() {
                 className="text-white text-sm font-medium font-open-sans"
                 href="/nearshore-software-development"
                 target="_blank"
+                rel="noreferrer"
               >
                 Nearshore software development
               </a>
@@ -112,6 +114,7 @@ function Footer() {
                 className="text-white text-sm font-medium font-open-sans"
                 href="/clutch-award-2022"
                 target="_blank"
+                rel="noreferrer"
               >
                 Clutch Award
               </a>
@@ -122,17 +125,18 @@ function Footer() {
                 className="text-white text-sm font-medium font-open-sans"
                 href="https://jobs.devlights.com/"
                 target="_blank"
+                rel="noreferrer"
               >
                 Join the team
               </a>
             </li>
             <li className="mb-6">
-              <a
+              <Link
                 className="text-white text-sm font-medium font-open-sans"
                 href="/#"
               >
                 Bootcamps
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
