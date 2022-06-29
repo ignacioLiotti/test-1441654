@@ -19,7 +19,7 @@ import DefaultLayout from "../layouts/DefaultLayout";
 import ClutchSection from "../templates/ClutchSection";
 import BadgesSection from "../templates/BadgesSection";
 
-export default function Home({ip}) {
+export default function Home() {
   // TODO: custom hook useLanguage
   const router = useRouter();
   const { locale } = router;
@@ -110,7 +110,7 @@ export default function Home({ip}) {
     }
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    
+
   }, [router.isReady]);
 
   return (
@@ -145,15 +145,4 @@ Home.getLayout = function getLayout(page) {
       {page}
     </DefaultLayout>
   )
-}
-
-export async function getServerSideProps({ req }) {
-  console.log(req.headers);
-  const ip = req.headers['x-real-ip'] || req.connection.remoteAddress;
-  
-  return {
-    props: {
-      ip,
-    }, // will be passed to the page component as props
-  };
 }
