@@ -5,6 +5,7 @@ export default async function getSocial(req, res) {
   try {
     
     await connectMongo();
+    console.log(req.query.social, req.query.post);
     const social = await Socials.findOneAndUpdate(({social: req.body.social},{post:req.body.post}),{amount:req.body.amount});
     res.json({ social });
 
