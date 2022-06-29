@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
+import Image from "next/image";
 import { useRouter } from "next/router";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -21,6 +22,7 @@ function ClutchAward2022() {
   return (
     <div className="w-full flex flex-col items-center justify-center">
       <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>Devlights - Awards</title>
         <meta
           name="description"
@@ -62,11 +64,13 @@ function ClutchAward2022() {
           </p>
         </div>
         <div className="w-full flex flex-col items-center md:w-[30rem] md:p-4 ">
-          <img
-            src={`/images/clutch-landing-badge.png`}
-            className="w-[220px] mb-12 object-contain md:w-[22rem] mb:mb-6"
-            alt="Clutch award"
-          />
+          <div className="w-[220px] h-[220px] mb-12 object-contain md:w-[22rem] md:h-[22rem] mb:mb-6 relative">
+            <Image
+              src={`/images/clutch-landing-badge.png`}
+              alt="Clutch award"
+              layout="fill"
+            />
+          </div>
         </div>
       </section>
       <section className="flex flex-col items-center justify-center w-full h-[24rem] clutch-gradient">
@@ -76,11 +80,15 @@ function ClutchAward2022() {
           data-aos-duration={1000}
           data-aos-once
         >
-          <img
-            src={`/images/clutch-landing-middle.png`}
-            className="w-[120px] md:w-40 md:mb-2 object-contain"
-            alt="Clutch award"
-          />
+          <div 
+            className="w-[120px] h-12 md:w-40 md:mb-2 object-contain relative"
+          >
+            <Image
+              src={`/images/clutch-landing-middle.png`}
+              alt="Clutch award"
+              layout="fill"
+            />
+          </div>
           <p className="text-center font-Poppins-Regular text-white text-[1.1rem] px-8 mt-2 md:w-[54rem] md:text-[1.4rem] md:leading-10">
             {translation.aboutClutch}
           </p>
@@ -102,24 +110,26 @@ function ClutchAward2022() {
           </p>
         </div>
         <div
-          className="w-[280px] flex flex-col items-center md:w-[30rem] relative "
+          className="w-[280px] mb-6 flex flex-col items-center md:w-[30rem] relative "
           data-aos="fade-left"
           data-aos-duration={1000}
           data-aos-once
         >
-          <img
-            src={`/images/clutch-landing-clients.png`}
-            className="w-[30rem] mb-6 object-contain"
-            alt="clients"
-          />
-          <div className="right-[65%] top-[10%] w-[7rem] absolute animate-idleIcon4 shadow-testimonial-card rounded-[10px]  md:w-[10rem]">
-            <img src="/images/icons/icon_11.png" />
+          <div className="h-[20rem] md:w-[30rem] md:h-[30rem]">
+            <Image
+              src={`/images/clutch-landing-clients.png`}
+              alt="clients"
+              layout="fill"
+            />
           </div>
-          <div className="right-[70%] top-[25%]  w-[7rem] absolute animate-idleIcon4 shadow-testimonial-card rounded-[10px] md:w-[10rem]">
-            <img src="/images/icons/icon_12.png" />
+          <div className="right-[65%] top-[0%] w-[7rem] h-[5rem] absolute animate-idleIcon4 shadow-testimonial-card rounded-[10px]  md:w-[10rem] ">
+            <Image layout='fill' src="/images/icons/icon_11.png" />
           </div>
-          <div className="left-[60%] top-[40%] w-[9rem] absolute animate-idleIcon4 shadow-testimonial-card rounded-[10px] md:w-[12rem]">
-            <img src="/images/icons/icon_10.png" />
+          <div className="right-[70%] top-[25%]  w-[7rem] h-[5rem] absolute animate-idleIcon4 shadow-testimonial-card rounded-[10px] md:w-[10rem] ">
+            <Image layout='fill' src="/images/icons/icon_12.png" />
+          </div>
+          <div className="left-[60%] bottom-[10%] w-[9rem] h-[5rem] absolute animate-idleIcon4 shadow-testimonial-card rounded-[10px] md:w-[12rem] ">
+            <Image layout='fill' src="/images/icons/icon_10.png" />
           </div>
         </div>
       </section>
@@ -130,10 +140,10 @@ function ClutchAward2022() {
               <CarouselItem key={client.clientId}>
                 <div className="flex flex-col items-center justify-center w-[300px] h-auto p-8 overflow-clip mx-10 md:w-[80rem]">
                   <div className="w-full lg:w-1/3 flex items-center justify-center">
-                    <div className="w-[3.5rem] h-[3.5rem] sm:w-36 sm:h-36">
-                      <img
+                    <div className="w-[3.5rem] h-[3.5rem] sm:w-36 sm:h-36 relative">
+                      <Image
                         src={`/images/clutch-quote.png`}
-                        className="w-[3.5rem] h-[3.5rem] sm:w-36 sm:h-36 object-fill"
+                        layout="fill"
                       />
                     </div>
                   </div>
@@ -173,16 +183,21 @@ function ClutchAward2022() {
           data-aos-duration={1000}
           data-aos-once
         >
-          <img
-            src={`/images/clutch-landing-eze.png`}
-            className="w-[30rem] mb-6 object-contain"
-            alt="clients"
-          />
-          <div className="right-[70%] top-[10%] w-[5rem] md:w-[7rem] md:right-[90%] md:top-[10%] absolute animate-idleIcon1">
-            <img src="/images/icons/icon_9.png" />
+          <div
+            className="w-[30rem] h-[30rem] mb-6 object-contain relative"
+          >
+            <Image
+              src={`/images/clutch-landing-eze.png`}
+              layout="fill"
+              alt="clients"
+            />
+
           </div>
-          <div className="left-[70%] top-[25%] absolute animate-idleIcon1">
-            <img src="/images/icons/icon_7.png" />
+          <div className="right-[70%] top-[10%] w-[5rem] h-[5rem] md:w-[7rem] md:h-[7rem] md:right-[90%] md:top-[10%] absolute animate-idleIcon1">
+            <Image src="/images/icons/icon_9.png" layout='fill'/>
+          </div>
+          <div className="left-[70%] top-[25%] w-[5rem] h-[2rem] md:w-[7rem] md:h-[3rem] absolute animate-idleIcon1">
+            <Image src="/images/icons/icon_7.png" layout="fill"/>
           </div>
         </div>
       </section>

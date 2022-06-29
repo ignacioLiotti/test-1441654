@@ -39,7 +39,7 @@ export default function Home({ip}) {
         })
     });
     const socialFound = await social.json();
-    console.log("aca esta tu test",socialFound)
+    console.log("aca esta tu test",socialFound.social)
     
     // const social = await fetch('/api/getall', {
     //   method: 'GET',
@@ -53,9 +53,9 @@ export default function Home({ip}) {
     
     // const socialFound = data.social.filter(s => s.social == router.query.social && s.post == router.query.post);
     
-    if( socialFound.social != 0) {
+    if( socialFound.social != 0 | null | undefined ) {
       const updateCount=socialFound.social[0].amount+1;
-
+      console.log("updateCount",updateCount)
       console.log("updateando")
 
       const social = await fetch('/api/update', {
@@ -108,6 +108,9 @@ export default function Home({ip}) {
     if(router.isReady){ //The router doesn't load until the page is loaded so it can cause problems reading undefined, must wait till .isReady=true
     socialCounter();
     }
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    
   }, [router.isReady]);
 
   return (

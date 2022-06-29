@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import Image from "next/image";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import en from "../public/i18n/En_en";
@@ -28,6 +29,7 @@ function NearshoreSoftwareDevelopment() {
   return (
     <div className="w-full flex flex-col items-center justify-center ">
       <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>{translation.metaTitle}</title>
         <meta name={translation.metaName} content={translation.metaContent} />
         <link rel="icon" href="/favicon.ico" />
@@ -59,28 +61,48 @@ function NearshoreSoftwareDevelopment() {
               data-aos="fade-left"
               data-aos-duration={1000}
               data-aos-once >
-            <img src={`/images/nearshore/heroPhoto.png`}
-                alt=""
-                className="hidden md:inline"
-            />
-            <img src={`/images/nearshore/heroPhotoMobile.png`}
-                alt=""
-                className="md:hidden"
-            />
-            <img src={`/images/nearshore/heroPiggybank.png`}
-                alt=""
-                className="absolute hidden md:inline right-[-1rem] bottom-[-2rem] md:animate-idleIcon1"
-  
-            />
-            <img src={`/images/nearshore/rocket.png`}
-                alt=""
-                className="absolute hidden md:inline left-[-2rem] bottom-20 md:animate-idleIcon2"
-            />
-            <img src={`/images/nearshore/curvedArrow.png`}
-                alt=""
-                className="absolute hidden md:inline right-[-15%] top-20 md:animate-hoveringArrow origin-left"
-            />
-
+            <div
+              className="hidden md:inline"
+            >
+              <Image src={`/images/nearshore/heroPhoto.png`}
+                  alt=""
+                  width={450}
+                  height={450}
+              />
+            </div>
+            <div 
+              className="md:hidden"
+            >
+              <Image src={`/images/nearshore/heroPhotoMobile.png`}
+                  alt=""
+                  width={450}
+                  height={400}
+              />
+            </div>
+            <div
+              className="absolute h-[5rem] w-[5rem] hidden md:inline right-[-1rem] bottom-[-2rem] md:animate-idleIcon1"
+            >
+              <Image src={`/images/nearshore/heroPiggybank.png`}
+                  alt=""
+                  layout="fill"
+              />
+            </div>
+            <div
+              className="absolute h-[4rem] w-[4rem] hidden md:inline left-[-2rem] bottom-20 md:animate-idleIcon2"
+            >
+              <Image src={`/images/nearshore/rocket.png`}
+                  alt=""
+                  layout="fill"
+              />
+            </div>
+            <div
+              className="absolute h-[13rem] w-[12rem] hidden md:inline right-[-15%] top-20 md:animate-hoveringArrow origin-left"
+            >
+              <Image src={`/images/nearshore/curvedArrow.png`}
+                  alt=""
+                  layout="fill"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -157,11 +179,16 @@ function NearshoreSoftwareDevelopment() {
 
         <div className="w-full flex flex-col items-center justify-center md:mt-6 md:flex-row md:items-start">
           <div className="effect group flex flex-col items-center mt-10 md:w-[30rem] md:h-[27rem] p-[2rem] rounded-[10px] md:m-4  service-shadow">
-            <img
-              src={`/images/nearshore/thumbsup.svg`}
-              className="group-hover:filter group-hover:brightness-0 group-hover:invert w-[8rem] mb-4 md:w-[4rem] md:mb-6 object-contain"
-              alt="clients"
-            />
+            <div
+              className="group-hover:filter group-hover:brightness-0 group-hover:invert w-[8rem] h-[8rem] mb-4 md:w-[4rem] md:h-[4rem] md:mb-6 object-contain relative"
+              >
+              <Image
+                src={`/images/nearshore/thumbsup.svg`}
+                alt="clients"
+                layout="fill"
+              />
+
+            </div>
             <h3 className="group-hover:text-white font-aleo text-light-blue text-[1.3rem] text-center font-semibold leading-[1.4] tracking-normal mt-4">
               {translation.our_services_section.cultural_fit_title}
             </h3>
@@ -170,11 +197,15 @@ function NearshoreSoftwareDevelopment() {
             </p>
           </div>
           <div className="effect bg-purple-blue-gradient md:bg-working-none group flex flex-col items-center mt-10 md:w-[30rem] md:h-[27rem] p-[2rem] rounded-[10px] md:m-4 hover:text-white service-shadow">
-            <img
-              src={`/images/nearshore/piggybank.svg`}
-              className="brightness-0 invert md:brightness-100 md:invert-0 group-hover:filter group-hover:brightness-0 group-hover:invert w-[8rem] mb-4 md:w-[4rem] md:mb-6 object-contain"
-              alt="clients"
-            />
+            <div
+              className="brightness-0 invert md:brightness-100 md:invert-0 group-hover:filter group-hover:brightness-0 group-hover:invert w-[8rem] h-[8rem] mb-4 md:w-[4rem] md:h-[4rem] md:mb-6 object-contain"
+            >
+              <Image
+                src={`/images/nearshore/piggybank.svg`}
+                alt="clients"
+                layout="fill"
+                />
+            </div>
             <h3 className="group-hover:text-white font-aleo text-white md:text-light-blue text-[1.3rem] text-center font-semibold leading-[1.4] tracking-normal mt-4">
               {translation.our_services_section.rates_title}
             </h3>
@@ -183,11 +214,15 @@ function NearshoreSoftwareDevelopment() {
             </p>
           </div>
           <div className="effect group flex flex-col items-center mt-10 md:w-[30rem] md:h-[27rem] p-[2rem] rounded-[10px] md:m-4 hover:text-white service-shadow">
-            <img
-              src={`/images/nearshore/graph.svg`}
-              className="group-hover:filter group-hover:brightness-0 group-hover:invert w-[8rem] mb-4 md:w-[4rem] md:mb-6 object-contain"
-              alt="clients"
-            />
+            <div
+              className="group-hover:filter group-hover:brightness-0 group-hover:invert w-[8rem] h-[8rem] mb-4 md:w-[4rem] md:h-[4rem] md:mb-6 object-contain relative"
+            >
+              <Image
+                src={`/images/nearshore/graph.svg`}
+                alt="clients"
+                layout="fill"
+                />
+            </div>
             <h3 className="group-hover:text-white font-aleo text-light-blue text-[1.3rem] text-center font-semibold leading-[1.4] tracking-normal mt-4">
               {translation.our_services_section.dependable_title}
             </h3>
