@@ -39,25 +39,10 @@ export default function Home() {
         })
     });
     const socialFound = await social.json();
-    console.log("aca esta tu test",socialFound.social)
     
-    // const social = await fetch('/api/getall', {
-    //   method: 'GET',
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //   }
-    // });
-    // const data = await social.json();
-    
-    // if the param in the URL exists as a social return an array with the social found
-    
-    // const socialFound = data.social.filter(s => s.social == router.query.social && s.post == router.query.post);
-    
-    if( socialFound.social != 0 | null | undefined ) {
+    if( socialFound.social ) {
       const updateCount=socialFound.social[0].amount+1;
-      console.log("updateCount",updateCount)
-      console.log("updateando")
-
+      
       const social = await fetch('/api/update', {
         method: 'POST',
         headers: {
