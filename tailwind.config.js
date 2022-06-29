@@ -247,6 +247,20 @@ module.exports = {
             "rotate(10deg) scale(0.95); opacity: 0.7",
         },
       },
+      ripple: {
+        '0%': {
+          transform: 'scale(1)',
+          opacity: 1,
+        },
+        '50%': {
+          transform: 'scale(10)',
+          opacity: 0.375
+        },
+        '100%': {
+          transform: 'scale(35)',
+          opacity: 0
+        }
+      },
     },
     screens: {
       'xs': '448px',

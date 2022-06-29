@@ -24,6 +24,7 @@ function HeroSection({ strings }) {
     }
 
   }, [isMenuOpen])
+
   return (
     <div className="h-[50.75rem] w-full bg-hero-section bg-center-bottom bg-cover bg-no-repeat">
       <section className="flex items-center justify-center w-full mx-auto pt-48 pb-64" ref={ref}>
@@ -66,16 +67,15 @@ function HeroSection({ strings }) {
               <ActionButton text={strings.btnWork} resize={false} />
               {/* <VideoButton text={strings.btnVideo} /> */}
               <button
-                className="flex flex-row items-center justify-center gap-4"
+                className="flex flex-row items-center justify-center w-30 h-15 gap-4 relative overflow-hidden rounded-full"
                 id="fl-homepage-video"
-                onClick={()=>setIsMenuOpen(oldState => !oldState)}
+                onClick={(e)=>{
+                  // For functionality
+                  setIsMenuOpen(oldState => !oldState)
+                }}
               >
                 <div className="flex items-center justify-center h-12 w-12 bg-white rounded-full">
-                  <img
-                    className="max-w-full h-auto"
-                    src="/images/icons/play.svg"
-                    alt=""
-                  />
+                  <span className=" triangle "></span>
                 </div>
                 <span className="text-white">{strings.btnVideo}</span>
               </button>

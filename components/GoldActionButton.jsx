@@ -7,7 +7,7 @@ function GoldActionButton({ text, resize, onClickAction }) {
     <Boop scale='1.05' >
       <button
         className={`inline-block
-        rounded-[3rem] cursor-pointer font-open-sans text-white font-semibold
+        rounded-[3rem] cursor-pointer font-open-sans text-white font-semibold text-[1rem]
         leading-normal transition-all duration-300 ease-in-out 
         gold-gradient 
         ${

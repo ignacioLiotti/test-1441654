@@ -37,7 +37,7 @@ function ServiceCard({ title, description, description2, list, image, button, li
         <ul>
         {
           list.map((item,index)=>(
-            <li key={index}><p className="text-gray-service text-[0.938rem] leading-[1.8]">{item}</p></li>
+           <li key={index} className='flex justify-start items-center'><span className="mx-1 bg-gold-bootcamp h-2 w-2 rounded-full"></span><p className="text-gray-service text-[0.938rem] leading-[1.8]">{item}</p></li>
           ))
         }
         </ul>
