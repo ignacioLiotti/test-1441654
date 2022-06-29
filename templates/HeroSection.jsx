@@ -1,15 +1,56 @@
-import React from "react";
+import React,{useState,useEffect, useRef} from "react";
 import ActionButton from "../components/ActionButton";
 import VideoButton from "../components/VideoButton";
+import { IoCloseOutline } from "react-icons/io5";
+import { BiLoaderAlt } from "react-icons/bi";
 
 function HeroSection({ strings }) {
+  const ref = useRef()
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  useEffect(() => {
+    const checkIfClickedOutside = e => {
+      // If the menu is open and the clicked target is not within the menu,
+      // then close the menu
+      if (isMenuOpen && ref.current && ref.current.contains(e.target)) {
+        setIsMenuOpen(false)
+      }
+    }
+    document.addEventListener("mousedown", checkIfClickedOutside)
+    return () => {
+      // Cleanup the event listener
+      document.removeEventListener("mousedown", checkIfClickedOutside)
+    }
+
+  }, [isMenuOpen])
   return (
-    <div className="h-[50.75rem] w-full bg-hero-section bg-center-bottom bg-cover bg-no-repeat relative">
-      <section className="flex items-center justify-center w-full mx-auto pt-48 pb-64">
+    <div className="h-[50.75rem] w-full bg-hero-section bg-center-bottom bg-cover bg-no-repeat">
+      <section className="flex items-center justify-center w-full mx-auto pt-48 pb-64" ref={ref}>
+        {isMenuOpen ? (
+            <div className="fixed left-0 top-0 opacity-1 bg-gray-500/50 z-50" >
+              <div className="flex items-center justify-center h-[100vh] w-[100vw]">
+                <div className="" >
+                  <div className="flex relative bottom-37px">
+                    <iframe
+                      className="z-50"
+                      loading="lazy"
+                      width="800"
+                      height="500"
+                      src="https://www.youtube.com/embed/2mC4zqdTWs4?&autoplay=1"
+                      title="YouTube video player"
+                      frameBorder="0"
+                      allow="accelerometer;fullscreen; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ) : null}
         <div
           className="flex flex-col justify-center items-center lg:items-start lg:flex-row z-10 px-4
-          w-[45rem] lg:w-[60rem] xl:w-[71.25rem] md:-translate-y-10 lg:translate-y-0 transition-all duration-300 ease-in-out
-          "
+          w-[45rem] lg:w-[60rem] xl:w-[71.25rem] md:-translate-y-10 lg:translate-y-0 transition-all duration-300 ease-in-out"
         >
           <div className="flex items-center justify-center sm:w-[35rem] mb-4 order-1 lg:order-2">
             <img
@@ -23,7 +64,21 @@ function HeroSection({ strings }) {
             </h2>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 sm:gap-10 pt-8">
               <ActionButton text={strings.btnWork} resize={false} />
-              <VideoButton text={strings.btnVideo} />
+              {/* <VideoButton text={strings.btnVideo} /> */}
+              <button
+                className="flex flex-row items-center justify-center gap-4"
+                id="fl-homepage-video"
+                onClick={()=>setIsMenuOpen(oldState => !oldState)}
+              >
+                <div className="flex items-center justify-center h-12 w-12 bg-white rounded-full">
+                  <img
+                    className="max-w-full h-auto"
+                    src="/images/icons/play.svg"
+                    alt=""
+                  />
+                </div>
+                <span className="text-white">{strings.btnVideo}</span>
+              </button>
             </div>
           </div>
         </div>

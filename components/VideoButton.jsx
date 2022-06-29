@@ -1,3 +1,4 @@
+// DEPRECATED
 import React from "react";
 
 function VideoButton({ text }) {
@@ -22,3 +23,5 @@ function VideoButton({ text }) {
 }
 
 export default VideoButton;
+
+// DEPRECATED
