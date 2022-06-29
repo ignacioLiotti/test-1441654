@@ -44,6 +44,10 @@ export default function Home() {
       const updateCount=socialFound.social[0].amount+1;
       console.log(updateCount);
       console.log(socialFound.social)
+      console.log(router.query.social)
+      console.log(router.query.post)
+
+
       
       const social = await fetch('/api/update', {
         method: 'POST',
