@@ -42,6 +42,8 @@ export default function Home() {
     
     if( socialFound.social ) {
       const updateCount=socialFound.social[0].amount+1;
+      console.log(updateCount);
+      console.log(socialFound.social)
       
       const social = await fetch('/api/update', {
         method: 'POST',
