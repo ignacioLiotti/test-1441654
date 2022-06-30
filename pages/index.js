@@ -63,7 +63,7 @@ export default function Home() {
     }else{
       console.log('no social found');
       const social = await fetch('/api/add', {
-        method: 'POST',
+        method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
         },

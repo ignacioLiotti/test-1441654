@@ -106,7 +106,7 @@ const es = {
   projectsBanner: {
     projects: "PROYECTOS",
     satisfaction: "SATISFACCIÓN DE CLIENTES",
-    years: "AÑOS EN EL NEGOCIO",
+    years: "AÑOS DE TRAYECTORIA",
   },
   portfolio: {
     title: "Portfolio",
@@ -159,7 +159,7 @@ const es = {
       {
         clientId: "1",
         clientName: "Roberto Maciel", company: "Liber", role: "Director", img: 'roberto',
-        opinion: "El equipo de Devlights ha sido fundamental en el lanzamiento de nuestra primer App. Han cumplido con los plazos y las exigencias que hemos demandado, muchas veces haciendo más de lo acordado y mostrándose proactivos en cada fase del proceso. La comunicación fue fluida en todo momento. Esta experiencia significó un gran paso para nuestro equipo profesional, agradecemos que nos hayan acompañado!"
+        opinion: "El equipo ha sido fundamental en el lanzamiento de nuestra primer App. Han cumplido con los plazos y exigencias que hemos demandado, muchas veces haciendo más de lo acordado y mostrándose proactivos. La comunicación fue fluida en todo momento. Esta experiencia significó un gran paso para nuestro equipo profesional, agradecemos que nos hayan acompañado!"
       },
       {
         clientId: "2",

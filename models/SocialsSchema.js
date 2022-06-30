@@ -1,14 +1,15 @@
 import { Schema, model, models } from 'mongoose';
 
 const SocialsSchema = new Schema({
-  social:{
-    type: String,
-    required: true,
-  },
   post:{
     type: String,
     required: false,
     default: '',
+  },
+  date:{
+    type: Date,
+    required: false,
+    default: Date.now,
   },
   amount:{
     type: Number,
@@ -17,7 +18,7 @@ const SocialsSchema = new Schema({
   },
 });
 
-SocialsSchema.index({ social: 1, post: 1 }, { unique: true });
+SocialsSchema.index({ post: 1 , date:1 }, { unique: true });
 
 const Socials = models.Socials || model('Socials', SocialsSchema);
 
