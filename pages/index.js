@@ -34,8 +34,8 @@ export default function Home() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          "social": `${router.query.social}`,
           "post": `${router.query.post}`,
+          "date": `${router.query.date}`,
         })
     });
     const socialFound = await social.json();
@@ -43,11 +43,10 @@ export default function Home() {
     if( socialFound.social ) {
       const updateCount=socialFound.social[0].amount+1;
       console.log(updateCount);
-      console.log(socialFound.social)
-      console.log(router.query.social)
+      console.log(socialFound)
+      console.log(socialFound.date)
+      console.log(router.query.date)
       console.log(router.query.post)
-
-
       
       const social = await fetch('/api/update', {
         method: 'POST',
@@ -55,8 +54,8 @@ export default function Home() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          "social": `${router.query.social}`,
           "post": `${router.query.post}`,
+          "date": `${router.query.date}`,
           "amount": `${updateCount}`
         })
       });
@@ -68,8 +67,8 @@ export default function Home() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          "social": `${router.query.social}`,
           "post": `${router.query.post}`,
+          "date": `${router.query.date}`,
           "amount": `1`
         })
       });
