@@ -38,16 +38,18 @@ export default function Home() {
           "date": `${router.query.date}`,
         })
     });
-    const socialFound = await social.json();
+    // const socialFound = await social.json();
+    const socialFound = {social:[]};
     console.log(socialFound)
     
     if( socialFound.social ) {
-      const updateCount=socialFound.social[0].amount+1;
-      console.log(updateCount);
+      console.log("entre al update");
       console.log(socialFound)
       console.log(socialFound.date)
       console.log(router.query.date)
       console.log(router.query.post)
+      const updateCount=socialFound.social[0].amount+1;
+      console.log(updateCount);
       
       const social = await fetch('/api/update', {
         method: 'POST',
