@@ -42,7 +42,7 @@ export default function Home() {
     // const socialFound = {social:[]};
     console.log(socialFound)
     
-    if( socialFound.social ) {
+    if( socialFound.social || socialFound.social.length > 0 ) {
       console.log("entre al update");
       console.log(socialFound.social)
       console.log(socialFound.date)
