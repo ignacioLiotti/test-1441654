@@ -38,13 +38,13 @@ export default function Home() {
           "date": `${router.query.date}`,
         })
     });
-    // const socialFound = await social.json();
-    const socialFound = {social:[]};
+    const socialFound = await social.json();
+    // const socialFound = {social:[]};
     console.log(socialFound)
     
     if( socialFound.social ) {
       console.log("entre al update");
-      console.log(socialFound)
+      console.log(socialFound.social)
       console.log(socialFound.date)
       console.log(router.query.date)
       console.log(router.query.post)
