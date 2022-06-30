@@ -39,6 +39,7 @@ export default function Home() {
         })
     });
     const socialFound = await social.json();
+    console.log(socialFound)
     
     if( socialFound.social ) {
       const updateCount=socialFound.social[0].amount+1;
@@ -80,7 +81,9 @@ export default function Home() {
   const socialCounter=()=>{
     if (typeof window !== 'undefined') { // needed to prevent error in SSR with Next.js
       if(window.sessionStorage.getItem('visited')){
-        return
+        postSocial(); 
+        
+        
       }
       else{
       
