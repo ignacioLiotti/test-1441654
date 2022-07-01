@@ -12,11 +12,9 @@ export default async function getSocial(req, res) {
     const social = await Socials.aggregate([
       {
         $match: {
-          src: src,
-          post: post,
-          date: { $gte: new Date(from), $lt: new Date(to) },
-        },
-      },
+          src: src
+        }
+      }
       // {
       //   $lookup: {
       //     from: "projects",
