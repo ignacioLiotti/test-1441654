@@ -9,7 +9,7 @@ export default async function getSocial(req, res) {
 
     const { src, post, from, to } = req.query;
 
-    const social = await TimeRecord.aggregate([
+    const social = await Socials.aggregate([
       {
         $match: {
           src: src,
