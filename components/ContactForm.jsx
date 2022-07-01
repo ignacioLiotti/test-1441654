@@ -121,7 +121,7 @@ function ContactForm() {
       )}
       {!messageSent && (
         <>
-          <h4 className="text-xl md:text-lg text-white font-bold font-open-sans mb-6">
+          <h4 className="text-xl md:text-lg text-white font-bold font-open-sans">
             Connect with us
           </h4>
           <form
@@ -129,7 +129,7 @@ function ContactForm() {
             onSubmit={handleSubmit}
             className="flex flex-col w-full"
           >
-            <div className="relative mb-4">
+            <div className="relative">
               <div className={`${name.length > 0 ? "block" : "hidden"}`}>
                 <FontAwesomeIcon
                   icon={nameValid ? faCheck : faXmark}
@@ -144,7 +144,7 @@ function ContactForm() {
                 onChange={handleNameInput}
                 type="text"
                 placeholder="Name*"
-                className={`w-full h-12  px-4 text-base text-gray-placeholder bg-white bg-clip-padding
+                className={`w-full h-12 px-4 text-base text-gray-placeholder bg-white bg-clip-padding
                 border border-gray-border rounded-3xl focus:ring focus:ring-icon-blue outline-none font-aleo
                 ${
                   nameValid || name.length === 0
@@ -161,7 +161,7 @@ function ContactForm() {
                 Name must be at least 5 characters long.
               </div>
             </div>
-            <div className="relative mb-4">
+            <div className="relative">
               <div className={`${email.length > 0 ? "block" : "hidden"}`}>
                 <FontAwesomeIcon
                   icon={emailValid ? faCheck : faXmark}
