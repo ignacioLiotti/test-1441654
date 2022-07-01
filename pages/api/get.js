@@ -5,18 +5,16 @@ export default async function getSocial(req, res) {
   try {
     
     await connectMongo();
-    
-    const { src, post, from, to } = req.query;
+    const social2 = await Socials.find({src:req.body.src});
 
-    const social2 = await Socials.find({src});
+    // const { src, post, from, to } = req.query;
 
-
-    // const social = await Socials.aggregate([
-    //   {
-    //     $match: {
-    //       src: req.query.src
-    //     }
-    //   }
+    const social = await Socials.aggregate([
+      {
+        $match: {
+          src: req.query.src
+        }
+      }
       // {
       //   $lookup: {
       //     from: "projects",
@@ -51,9 +49,9 @@ export default async function getSocial(req, res) {
       //     },
       //   },
       // },
-    // ]);
+    ]);
 
-    res.json({ social2 });
+    res.json({ social2 }, { social });
 
 
 
