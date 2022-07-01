@@ -7,12 +7,12 @@ export default async function getSocial(req, res) {
     await connectMongo();
     // const social = await Socials.find({social:req.body.post, post:req.body.date});
 
-    const { src, post, from, to } = req.query;
+    // const { src, post, from, to } = req.query;
 
     const social = await Socials.aggregate([
       {
         $match: {
-          src: src
+          src: req.query.src
         }
       }
       // {
