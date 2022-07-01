@@ -35,7 +35,7 @@ function Footer() {
                   icon={faLocationDot}
                   className="text-white text-lg mr-4 pt-1"
                 />
-                <p className="font-open-sans text-white leading-8 text-[1.3rem]">
+                <p className="font-open-sans text-white leading-8 text-[1.3rem] md:text-[1rem] md:leading-5">
                   Corrientes, Argentina. <br/> 1250 Junin st., 2nd Floor.
                 </p>
               </div>
@@ -46,7 +46,7 @@ function Footer() {
                   icon={faPhoneFlip}
                   className="text-white text-lg mr-4"
                 />
-                <p className="font-open-sans text-white leading-5 text-[1.3rem]">
+                <p className="font-open-sans text-white leading-5 text-[1.3rem] md:text-[1rem]">
                   +54 (0379) 4230003
                 </p>
               </div>
@@ -57,7 +57,7 @@ function Footer() {
                   icon={faEnvelope}
                   className="text-white text-lg mr-4 pt-1"
                 />
-                <p className="font-open-sans text-white leading-5 text-[1.3rem]">
+                <p className="font-open-sans text-white leading-5 text-[1.3rem] md:text-[1rem]">
                   contact@devlights.com
                 </p>
               </div>
