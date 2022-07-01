@@ -30,12 +30,12 @@ function Footer() {
           />
           <ul className="list-none">
             <li>
-              <div className="flex flex-row items-start mt-6 mb-4">
+              <div className="flex flex-row items-start mb-4">
                 <FontAwesomeIcon
                   icon={faLocationDot}
                   className="text-white text-lg mr-4 pt-1"
                 />
-                <p className="font-open-sans text-white leading-8 text-[1.3rem] md:text-[1rem] md:leading-5">
+                <p className="font-open-sans text-white leading-8 text-[1.2rem] md:text-[1rem] md:leading-5">
                   Corrientes, Argentina. <br/> 1250 Junin st., 2nd Floor.
                 </p>
               </div>
@@ -46,7 +46,7 @@ function Footer() {
                   icon={faPhoneFlip}
                   className="text-white text-lg mr-4"
                 />
-                <p className="font-open-sans text-white leading-5 text-[1.3rem] md:text-[1rem]">
+                <p className="font-open-sans text-white leading-5 text-[1.2rem] md:text-[1rem]">
                   +54 (0379) 4230003
                 </p>
               </div>
@@ -57,7 +57,7 @@ function Footer() {
                   icon={faEnvelope}
                   className="text-white text-lg mr-4 pt-1"
                 />
-                <p className="font-open-sans text-white leading-5 text-[1.3rem] md:text-[1rem]">
+                <p className="font-open-sans text-white leading-5 text-[1.2rem] md:text-[1rem]">
                   contact@devlights.com
                 </p>
               </div>
@@ -67,19 +67,19 @@ function Footer() {
             <a href="https://www.facebook.com/devlightsok/">
               <FontAwesomeIcon
                 icon={faFacebookSquare}
-                className="text-white text-3xl"
+                className="text-white text-4xl"
               />
             </a>
             <a href="https://twitter.com/devlightsok">
               <FontAwesomeIcon
                 icon={faTwitterSquare}
-                className="text-white text-3xl"
+                className="text-white text-4xl"
               />
             </a>
             <a href="https://www.linkedin.com/company/devlights-us">
               <FontAwesomeIcon
                 icon={faLinkedin}
-                className="text-white text-3xl"
+                className="text-white text-4xl"
               />
             </a>
           </div>
