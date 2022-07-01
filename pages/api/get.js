@@ -9,12 +9,12 @@ export default async function getSocial(req, res) {
 
     // const { src, post, from, to } = req.query;
 
-    const social = await Socials.aggregate([
-      {
-        $match: {
-          src: req.query.src
-        }
-      }
+    // const social = await Socials.aggregate([
+    //   {
+    //     $match: {
+    //       src: req.query.src
+    //     }
+    //   }
       // {
       //   $lookup: {
       //     from: "projects",
@@ -49,9 +49,9 @@ export default async function getSocial(req, res) {
       //     },
       //   },
       // },
-    ]);
+    // ]);
 
-    res.json({ social },{ social2 }, { src: req.query.src });
+    res.json({ social2 });
 
 
 
