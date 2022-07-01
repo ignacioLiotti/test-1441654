@@ -5,7 +5,7 @@ export default async function getSocial(req, res) {
   try {
     
     await connectMongo();
-    // const social = await Socials.find({social:req.body.post, post:req.body.date});
+    const social2 = await Socials.find({src:req.body.src});
 
     // const { src, post, from, to } = req.query;
 
@@ -51,7 +51,7 @@ export default async function getSocial(req, res) {
       // },
     ]);
 
-    res.json({ social });
+    res.json({ social },{ social2 }, { src: req.query.src });
 
 
 
