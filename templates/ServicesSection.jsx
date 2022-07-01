@@ -12,7 +12,7 @@ function ServicesSection({ strings }) {
         <div className="flex flex-col lg:flex-row">
           <d
           iv className="flex flex-col xs:items-center w-full lg:max-w-[25%] px-4 mt-[27rem] sm:mt-[17rem] md:mt-[10.625rem] lg:mt-0">
-            <h2 className="font-aleo font-bold text-center xs:text-left text-white text-5xl leading-tight mb-5 mt-[3.75rem]">
+            <h2 className="font-aleo font-bold text-center xs:text-left text-white text-5xl leading-tight mb-5 mt-[7rem]">
               {strings.title}
             </h2>
             <h4 className="font-open-sans font-bold text-center xs:text-left text-white text-lg leading-7 mb-2">

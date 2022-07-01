@@ -28,41 +28,41 @@ export default function Home() {
   // 
   const postSocial = async () => {
     
-    const social = await fetch('/api/get', {
-      method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          "post": `${router.query.post}`,
-          "date": `${router.query.date}`,
-        })
-    });
-    // const socialFound = await social.json();
-    const socialFound = {social:[]};
-    console.log(socialFound)
+    // const social = await fetch('/api/get', {
+    //   method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //     },
+    //     body: JSON.stringify({
+    //       "post": `${router.query.post}`,
+    //       "date": `${router.query.date}`,
+    //     })
+    // });
+    // // const socialFound = await social.json();
+    // const socialFound = {social:[]};
+    // console.log(socialFound)
     
-    if( socialFound.social.length > 0 && socialFound.social ) {
-      console.log("entre al update");
-      console.log(socialFound.social.length)
-      console.log(socialFound.date)
-      console.log(router.query.date)
-      console.log(router.query.post)
-      const updateCount=socialFound.social[0].amount+1;
-      console.log(updateCount);
+    // if( socialFound.social.length > 0 && socialFound.social ) {
+    //   console.log("entre al update");
+    //   console.log(socialFound.social.length)
+    //   console.log(socialFound.date)
+    //   console.log(router.query.date)
+    //   console.log(router.query.post)
+    //   const updateCount=socialFound.social[0].amount+1;
+    //   console.log(updateCount);
       
-      const social = await fetch('/api/update', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          "post": `${router.query.post}`,
-          "date": `${router.query.date}`,
-          "amount": `${updateCount}`
-        })
-      });
-    }else{
+    //   const social = await fetch('/api/update', {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json',
+    //     },
+    //     body: JSON.stringify({
+    //       "post": `${router.query.post}`,
+    //       "date": `${router.query.date}`,
+    //       "amount": `${updateCount}`
+    //     })
+    //   });
+    // }else{
       console.log('no social found');
       const social = await fetch('/api/add', {
         method: 'PUT',
@@ -70,12 +70,12 @@ export default function Home() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
+          "social": `${router.query.src}`,
           "post": `${router.query.post}`,
-          "date": `${router.query.date}`,
-          "amount": `1`
+          "date": `${Date.now()}`,
         })
       });
-    }
+    // }
   }
 
 
@@ -84,15 +84,10 @@ export default function Home() {
     if (typeof window !== 'undefined') { // needed to prevent error in SSR with Next.js
       if(window.sessionStorage.getItem('visited')){
         postSocial(); 
-        
-        
       }
       else{
-      
         window.sessionStorage.setItem('visited','true');
-      
         postSocial(); 
-      
       }
     }
   }

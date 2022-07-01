@@ -1,6 +1,11 @@
 import { Schema, model, models } from 'mongoose';
 
 const SocialsSchema = new Schema({
+  src:{
+    type: String,
+    required: false,
+    default: '',
+  },
   post:{
     type: String,
     required: false,
@@ -10,11 +15,6 @@ const SocialsSchema = new Schema({
     type: Date,
     required: false,
     default: Date.now,
-  },
-  amount:{
-    type: Number,
-    required: true,
-    default: 0,
   },
 });
 
