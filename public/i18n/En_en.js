@@ -417,9 +417,9 @@ const en = {
     heroParagraph2:
       "Because of our proven track record, we’ve recently gain an accolade from a trusted industry resource. During the annual Clutch Leaders Awards, Devlights was officially landed a spot on the 2022 list of innovators",
     heroParagraph3:
-      "Our team was recognized as one of Argentina’s leading staff augmentation partners!",
+      "Our team was recognized as one of Argentina’s leading Staff Augmentation partners!",
     aboutClutch:
-      "Clutch is a B2B review and rating platform designed to help browsers connect with the right solutions providers for their specific needs. Every year, the site holds an awards cycle to celebrate the best and brightest B2B companies from different industries and categories around the world. To be recognized as a leader,firms must demonstrate unparellaed commitment, incredible excellence, and thought leadership.",
+      "Clutch is a B2B review and rating platform designed to help browsers connect with the right solutions providers for their specific needs. Every year, the site holds an awards cycle to celebrate the best and brightest B2B companies from different industries and categories around the world. To be recognized as a leader, firms must demonstrate unparellaed commitment, incredible excellence, and thought leadership.",
     reviewsTitle: "Client reviews",
     reviewsParagraph:
       "Client reviews and success are among the variables taken into consolidation for these awards. Needless to say, we unlocked this exciting milestone because of our partners. Thank you so much to everyone who contributed to making this recognition possible! We are genuinely grateful for our clients, especially those who graciously rated us on Clutch. The support and confidence they have in the Devlights team is worth more than anything else for us.",
@@ -433,23 +433,6 @@ const en = {
       clients: [
         {
           clientId: "1",
-          clientName: "",
-          company: "Data Solutions Company",
-          role: "Engineer",
-          img: "",
-          opinion:
-            "They were able to get a grasp of our needs and the requirements we had in mind.",
-        },
-        {
-          clientId: "2",
-          clientName: "Alejandro Berardi",
-          company: "IAAER SAS",
-          role: "Partner",
-          img: "",
-          opinion: "We’re completely satisfied with the results.",
-        },
-        {
-          clientId: "3",
           clientName: "Martin Ruiz Diaz",
           company: "Livet",
           role: "Founder",
@@ -458,42 +441,7 @@ const en = {
             "We’ve had an excellent experience and they exceed our expectations.",
         },
         {
-          clientId: "4",
-          clientName: "Norberto Antonio",
-          company: "Public Health Insurance Company",
-          role: "Member",
-          img: "",
-          opinion: "The results have been tremendously positive.",
-        },
-        {
-          clientId: "5",
-          clientName: "",
-          company: "Emergency Training School",
-          role: "Independent Contractor",
-          img: "",
-          opinion:
-            "I was most impressed by their willingness to listen and adapt.",
-        },
-        {
-          clientId: "6",
-          clientName: "",
-          company: "Cybersecurity Firms",
-          role: "Lead Developer",
-          img: "",
-          opinion:
-            "We worked well together. Devlights always made sure that things were done on time.",
-        },
-        {
-          clientId: "7",
-          clientName: "Ruben Amadeo Capizzano",
-          company: "Entravision",
-          role: "Director of Technology & Product",
-          img: "",
-          opinion:
-            "We're impressed by how clear and easy our communication has been with them.",
-        },
-        {
-          clientId: "8",
+          clientId: "2",
           clientName: "Rohit Gupta",
           company: "Behaviour Sense",
           role: "Co-Founder",
@@ -502,7 +450,15 @@ const en = {
             "When issues were raised, they were fixed in a collaborative and pragmatic manner.",
         },
         {
-          clientId: "9",
+          clientId: "3",
+          clientName: "Alejandro Berardi",
+          company: "IAAER SAS",
+          role: "Partner",
+          img: "",
+          opinion: "We’re completely satisfied with the results.",
+        },
+        {
+          clientId: "4",
           clientName: "Fernando Cores",
           company: "Bubble BPM",
           role: "CTO",
@@ -510,22 +466,66 @@ const en = {
           opinion: "We liked their flexibility and dedication.",
         },
         {
-          clientId: "10",
+          clientId: "5",
+          clientName: "Ruben Amadeo Capizzano",
+          company: "Entravision",
+          role: "Director of Technology & Product",
+          img: "",
+          opinion:
+          "We're impressed by how clear and easy our communication has been with them.",
+        },
+        {
+          clientId: "6",
           clientName: "Matias Benitez",
           company: "TLV1",
           role: "Technical Director",
           img: "",
           opinion:
-            "We were impressed by the time it took to complete our website in a short time, meeting our expectations.",
+          "We were impressed by the time it took to complete our website in a short time, meeting our expectations.",
         },
         {
-          clientId: "11",
+          clientId: "7",
           clientName: "Mark Warren",
           company: "Proactive Technology Management",
           role: "Project Manager",
           img: "",
           opinion:
-            "We have no plans to work with any other company at this time.",
+          "We have no plans to work with any other company at this time.",
+        },
+        {
+          clientId: "8",
+          clientName: "",
+          company: "Cybersecurity Firms",
+          role: "Lead Developer",
+          img: "",
+          opinion:
+          "We worked well together. Devlights always made sure that things were done on time.",
+        },
+        {
+          clientId: "9",
+          clientName: "",
+          company: "Data Solutions Company",
+          role: "Engineer",
+          img: "",
+          opinion:
+            "They were able to get a grasp of our needs and the requirements we had in mind.",
+        },
+        {
+          clientId: "10",
+          clientName: "Norberto Antonio",
+          company: "Public Health Insurance Company",
+          role: "Member",
+          img: "",
+          opinion: "The results have been tremendously positive.",
+        },
+        {
+          clientId: "11",
+          clientName: "",
+          company: "Emergency Training School",
+          role: "Independent Contractor",
+          img: "",
+          opinion:
+            "I was most impressed by their willingness to listen and adapt.",
         },
       ],
     },

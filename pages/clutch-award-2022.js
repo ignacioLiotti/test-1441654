@@ -22,7 +22,7 @@ function ClutchAward2022() {
   return (
     <div className="w-full flex flex-col items-center justify-center">
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        {/* <meta name="viewport" content="width=device-width, initial-scale=1"/> */}
         <title>Devlights - Awards</title>
         <meta
           name="description"
@@ -31,14 +31,14 @@ function ClutchAward2022() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section className="w-full flex items-center bg-clutch-landing-hero bg-center-top bg-cover bg-no-repeat h-[400px] md:justify-end  md:mt-20 md:-translate-y-2 relative">
+      <section className="w-full flex items-center bg-clutch-landing-hero bg-center-top bg-working-cover bg-no-repeat h-[400px] md:justify-center  md:mt-20 md:-translate-y-2 relative">
         <div
-          className="flex flex-col justify-center items-center "
+          className="flex flex-col justify-center items-end md:w-[72rem] "
           data-aos="fade-left"
           data-aos-duration={1000}
           data-aos-once
         >
-          <h2 className="w-full font-aleo text-white text-left text-2xl mt-14 p-12 md:w-[740px] md:text-left md:text-[2.8rem] md:leading-[1.4] md:mr-80 md:mt-1  ">
+          <h2 className="w-full font-aleo text-white text-left text-2xl mt-14 p-12 md:w-[740px] md:text-left md:text-[2.8rem] md:leading-[1.4] md:mt-1  ">
             {translation.headerTitle}
           </h2>
         </div>
@@ -73,7 +73,7 @@ function ClutchAward2022() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col items-center justify-center w-full h-[24rem] clutch-gradient">
+      <section className="flex flex-col items-center justify-center w-full h-full py-10 clutch-gradient">
         <div
           className="flex flex-col items-center justify-center"
           data-aos="fade-up"
@@ -81,7 +81,7 @@ function ClutchAward2022() {
           data-aos-once
         >
           <div 
-            className="w-[120px] h-12 md:w-40 md:mb-2 object-contain relative"
+            className="w-[120px] h-10 md:w-40 md:mb-2 object-contain relative"
           >
             <Image
               src={`/images/clutch-landing-middle.png`}
@@ -94,7 +94,7 @@ function ClutchAward2022() {
           </p>
         </div>
       </section>
-      <section className="w-full flex flex-col md:flex-row md:justify-center items-center md:w-[72rem] md:mt-10 md:mb-10">
+      <section className="w-full flex flex-col md:flex-row md:justify-center items-center md:w-[72rem] md:mt-10 md:mb-10 overflow-hidden">
         <div
           className="w-full flex flex-col items-center p-8 md:w-[42rem] md:items-left md:p-4"
           data-aos="fade-right"
@@ -133,12 +133,12 @@ function ClutchAward2022() {
           </div>
         </div>
       </section>
-      <section className="w-full clutch-slide-gradient flex justify-center md:h-[28rem]">
+      <section className="w-full clutch-slide-gradient flex justify-center md:h-[28rem] overflow-hidden">
         <div data-aos="fade-up" data-aos-duration={1000} data-aos-once>
           <Carousel>
             {translation.clutch_Testimonials.clients?.map((client) => (
               <CarouselItem key={client.clientId}>
-                <div className="flex flex-col items-center justify-center w-[300px] h-auto p-8 overflow-clip mx-10 md:w-[80rem]">
+                <div className="flex flex-col items-center justify-center w-[350px] h-auto p-8 overflow-clip mx-10 md:w-[80rem]">
                   <div className="w-full lg:w-1/3 flex items-center justify-center">
                     <div className="w-[3.5rem] h-[3.5rem] sm:w-36 sm:h-36 relative">
                       <Image
@@ -148,12 +148,18 @@ function ClutchAward2022() {
                     </div>
                   </div>
                   <div className="w-full lg:w-[800px] flex flex-col items-center justify-center mt-4">
-                    <h3 className="p-2 font-Poppins-Regular text-3xl font-normal text-white text-center tracking-[1px] w-full h-auto whitespace-pre-wrap">
+                    <h3 className="p-2 font-Poppins-Regular text-2xl font-normal text-white text-center tracking-[1px] w-full h-auto whitespace-pre-wrap">
                       {`"${client.opinion}"`}
                     </h3>
 
-                    <p className="p-1 font-aleo text-white text-lg leading-8  -mb-1  tracking-[1px]">
+                    <p className="p-1 hidden md:inline font-aleo text-white text-[1rem] leading-8 -mb-1  tracking-[1px]">
                       {client.role}, {client.company}
+                    </p>
+                    <p className="p-1 md:hidden font-aleo text-white text-[1rem] leading-8 -mb-1  tracking-[1px]">
+                      {client.role}
+                    </p>
+                    <p className="p-1 md:hidden font-aleo text-white text-[1rem] leading-3 -mb-1  tracking-[1px]">
+                      {client.company}
                     </p>
                   </div>
                 </div>
@@ -162,17 +168,17 @@ function ClutchAward2022() {
           </Carousel>
         </div>
       </section>
-      <section className="w-full flex flex-col items-center md:flex-row md:justify-center md:items-center md:w-[72rem] md:mt-10 md:mb-10">
+      <section className="w-full flex flex-col items-center md:flex-row md:justify-center md:items-center overflow-hidden md:w-[72rem] md:mt-10 md:mb-10">
         <div
-          className="flex flex-col items-center md:items-left p-4 md:w-[42rem] "
+          className="flex flex-col items-left md:items-left p-4 md:w-[42rem] "
           data-aos="fade-right"
           data-aos-duration={1000}
           data-aos-once
         >
-          <h2 className="font-aleo text-black text-center text-[1.6rem] md:text-[2.8rem] md:leading-[1.4] md:text-left ">
+          <h2 className="font-aleo text-black pl-4 text-center text-[1.6rem] md:text-[2.8rem] md:leading-[1.4] md:text-left ">
             {translation.movingForwardTitle}
           </h2>
-          <p className=" font-Poppins-Regular p-4 text-center md:text-[1.2rem] md:text-left md:mt-6">
+          <p className=" font-Poppins-Regular px-4  text-center md:text-[1.2rem] md:text-left md:mt-6">
             {translation.movingForwardParagraph}
             <strong> {translation.movingForwardParagraphStrong}</strong>
           </p>
@@ -184,7 +190,7 @@ function ClutchAward2022() {
           data-aos-once
         >
           <div
-            className="w-[30rem] h-[30rem] mb-6 object-contain relative"
+            className="w-[15rem] h-[15rem] mb-6 object-contain relative"
           >
             <Image
               src={`/images/clutch-landing-eze.png`}
@@ -193,7 +199,7 @@ function ClutchAward2022() {
             />
 
           </div>
-          <div className="right-[70%] top-[10%] w-[5rem] h-[5rem] md:w-[7rem] md:h-[7rem] md:right-[90%] md:top-[10%] absolute animate-idleIcon1">
+          <div className="right-[70%] top-[10%] w-[4rem] h-[4rem] md:w-[7rem] md:h-[7rem] md:right-[90%] md:top-[10%] absolute animate-idleIcon1">
             <Image src="/images/icons/icon_9.png" layout='fill'/>
           </div>
           <div className="left-[70%] top-[25%] w-[5rem] h-[2rem] md:w-[7rem] md:h-[3rem] absolute animate-idleIcon1">

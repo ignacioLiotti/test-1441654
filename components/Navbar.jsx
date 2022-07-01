@@ -113,7 +113,7 @@ function Navbar({ transparentScroll, whiteBackground, hasShadow }) {
             scrolledDown
               ? "-translate-y-2 md:translate-y-0"
               : "md:translate-y-3"
-          } flex flex-row items-center justify-between w-[450px] xs:w-[450] md:w-full p-4 transition-all duration-300 ease-in`}
+          } flex flex-row items-center justify-between w-full p-4 transition-all duration-300 ease-in`}
         >
           <img
             className="h-9 md:h-12 object-contain"
