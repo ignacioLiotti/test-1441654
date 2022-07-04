@@ -7,18 +7,17 @@ export default async function getSocial(req, res) {
     await connectMongo();
 
     // const social2 = await Socials.find({src:req.body.src});
-    const src = req.body.src ? 
-    await Socials.aggregate([{ 
+    const src = req.body.src 
+    ? await Socials.aggregate([{ 
       $match: { src: req.body.src },
       $group: {
-        _id: `${req.body.src ? req.body.src : '$src'}`,
+        _id: `${req.body.src}`,
         count: { $sum: 1 }
       }
-     }]) 
-    
+     }])
     : await Socials.aggregate([{ 
       $group: {
-        _id: `${req.body.src ? req.body.src : '$src'}`,
+        _id: '$src',
         count: { $sum: 1 }
       }
      }]) 
@@ -74,14 +73,22 @@ export default async function getSocial(req, res) {
     //   //   },
     //   // },
     // ]);
-    const posts = await Socials.aggregate([
-      {
-        $group: {
-          _id:`${req.body.src ? req.body.src : '$post'}`,
-          count: { $sum: 1 }
-        }
+
+    const posts = req.body.src 
+    ? await Socials.aggregate([{ 
+      $match: { src: req.body.src },
+      $group: {
+        _id: '$post',
+        count: { $sum: 1 }
       }
-    ]);
+     }])
+    : await Socials.aggregate([{ 
+      $group: {
+        _id: '$post',
+        count: { $sum: 1 }
+      }
+     }]) 
+
     const both = {src, posts}
 
     res.json({ both });
