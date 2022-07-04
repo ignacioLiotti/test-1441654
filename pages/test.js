@@ -48,11 +48,12 @@ const Test = () => {
         })
     })
     socialFound = await social.json();
-    console.log(socialFound)
+    console.log('socialFound.json',socialFound)
     }
 
     React.useEffect(() => {
         getData();
+        console.log('useEffect',socialFound)
     }, [socialFound])
 
     console.log(socialFound[0]?.both)
