@@ -8,7 +8,10 @@ const Test = () => {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json',
-        }
+        },
+        body: JSON.stringify({
+          "src": `${router.query.src}`
+        })
     })
     console.log(social)
     }
@@ -17,7 +20,7 @@ const Test = () => {
         getData();
         console.log(social)
 
-    }, [])
+    }, [social])
 
     return (
         <div>{social}</div>
