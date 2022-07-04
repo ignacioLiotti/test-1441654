@@ -7,9 +7,9 @@ const Test = () => {
     const router = useRouter();
 
 
-    const social = ['asda'];
+    const socialFound = ['asda'];
     const getData = async () => {
-    social = await fetch('/api/get', {
+    const social = await fetch('/api/get', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -18,16 +18,16 @@ const Test = () => {
           "src": `${router.query.src}`
         })
     })
-    const socialFound = await social.json();
+    socialFound = await social.json();
     console.log(socialFound)
     }
 
     React.useEffect(() => {
         getData();
-    }, [social])
+    }, [socialFound])
 
     return (
-        <div>{social}</div>
+        <div>{socialFound}</div>
     )
 }
 
