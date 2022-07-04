@@ -14,7 +14,7 @@ export default async function getSocial(req, res) {
 
       {
         $group: {
-          _id: `${req.body.src ? 'req.body.src' : '$src'}`,
+          _id: `${req.body.src ? req.body.src : '$src'}`,
           count: { $sum: 1 }
         }
       }
@@ -56,7 +56,7 @@ export default async function getSocial(req, res) {
     const posts = await Socials.aggregate([
       {
         $group: {
-          _id:`${req.body.src ? '$src' : '$post'}`,
+          _id:`${req.body.src ? req.body.src : '$post'}`,
           count: { $sum: 1 }
         }
       }
