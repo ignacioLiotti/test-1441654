@@ -41,39 +41,42 @@ const Test = () => {
           }]
     )
 
-    const getData = async () => {
-    const social = await fetch('https://test-1441654-jsrkpjody-ignacioliotti.vercel.app/api/get', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          "src": `${router.query.src}`
-        })
-    })
-    socialFound = await social.json();
-    setSocialFound(socialFound);
-    console.log('socialFound.json',socialFound)
-    }
+    // const getData = async () => {
+    // const social = await fetch('https://test-1441654-jsrkpjody-ignacioliotti.vercel.app/api/get', {
+    //     method: 'POST',
+    //     headers: {
+    //         'Content-Type': 'application/json',
+    //     },
+    //     body: JSON.stringify({
+    //       "src": `${router.query.src}`
+    //     })
+    // })
+    // socialFound = await social.json();
+    // setSocialFound(socialFound);
+    // console.log('socialFound.json',socialFound)
+    // }
 
     React.useEffect(() => {
-    const fetchSocial = async () => {
-        const social = await fetch('/api/get', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          "src": `${router.query.src}`
-        })
-    }).then(res => res.json().then(data => {
-        console.log(data)
-        setSocialFound(data)
-        }).catch(err => console.log(err))
-        )}
+        const fetchSocial = async () => {
+            const social = await fetch('/api/get', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                "src": `${router.query.src}`
+                })
+            })
+            .then(res => {
+                console.log('res',res)
+                res.json()
+                .then(data => {console.log(data)
+                            setSocialFound(data)
+            }).catch(err => console.log(err))
+            })}
 
+            fetchSocial();
 
-        fetchSocial();
     },  [router.isReady])
 
     console.log(socialFound[0]?.both)
