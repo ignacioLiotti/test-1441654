@@ -1,11 +1,16 @@
 import React from 'react'
+import { useRouter } from 'next/router'
 
 
 const Test = () => {
+
+    const router = useRouter();
+
+
     const social = ['asda'];
     const getData = async () => {
     social = await fetch('/api/get', {
-        method: 'PUT',
+        method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
@@ -13,13 +18,12 @@ const Test = () => {
           "src": `${router.query.src}`
         })
     })
-    console.log(social)
+    const socialFound = await social.json();
+    console.log(socialFound)
     }
 
     React.useEffect(() => {
         getData();
-        console.log(social)
-
     }, [social])
 
     return (
