@@ -70,7 +70,8 @@ const Test = () => {
             .then(res => {
                 console.log('res',res)
                 res.json()
-                .then(data => {console.log(data)
+                console.log('res',res.json())
+                .then(data => {console.log('data',data)
                             setSocialFound(data)
             }).catch(err => console.log(err))
             })}
