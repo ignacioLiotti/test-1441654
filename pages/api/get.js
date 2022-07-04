@@ -65,7 +65,7 @@ export default async function getSocial(req, res) {
       }
     ]);
 
-    res.json([{ social }, { posts }]);
+    res.json({ social }, { posts });
 
 
 
