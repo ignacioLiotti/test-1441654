@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const test = () => {
+const Test = () => {
     
     const getData = async () => {
     const social = await fetch('/api/get', {
@@ -16,12 +16,9 @@ const test = () => {
         getData();
     }, [])
 
-
-
-
     return (
         <div>{social}</div>
     )
 }
 
-export default test
+export default Test
