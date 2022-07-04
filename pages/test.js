@@ -42,7 +42,7 @@ const Test = () => {
     )
 
     const getData = async () => {
-    const social = await fetch('/api/get', {
+    const social = await fetch('https://test-1441654-jsrkpjody-ignacioliotti.vercel.app/api/get', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -51,31 +51,30 @@ const Test = () => {
           "src": `${router.query.src}`
         })
     })
-    .then(res=>res.json())
-    .then(res=>{
-        setSocialFound(res)
-        console.log('socialFound.json',res)})
-    .then(console.log('socialFound.json',res))
+    socialFound = await social.json();
+    setSocialFound(socialFound);
+    console.log('socialFound.json',socialFound)
     }
 
     React.useEffect(() => {
-
-        fetch('/api/get', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-              "src": `${router.query.src}`
-            })
+    const fetchSocial = async () => {
+        const social = await fetch('https://test-1441654-jsrkpjody-ignacioliotti.vercel.app/api/get', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          "src": `${router.query.src}`
         })
-        .then(res=>res.json())
-        .then(res=>{
-            setSocialFound(res)
-            console.log('socialFound.json',res)})
+    }).then(res => res.json().then(data => {
+        console.log(data)
+        setSocialFound(data)
+        }).catch(err => console.log(err))
+        )}
 
-        console.log('useEffect',socialFound)
-    }, [router.isReady])
+
+        fetchSocial();
+    },  [router.isReady])
 
     console.log(socialFound[0]?.both)
     console.log(socialFound[0]?.both?.src)
