@@ -8,13 +8,13 @@ export default async function getSocial(req, res) {
 
     // const social2 = await Socials.find({src:req.body.src});
     const src = req.body.src 
-    ? await Socials.aggregate([{ 
-      $match: { src: `${req.body.src}` },
-      $group: {
+    ? await Socials.aggregate([
+      {$match: { src: req.body.src } },
+      {$group: {
         _id: `${req.body.src}`,
         count: { $sum: 1 }
-      }  
-    }]) 
+      }}
+    ]) 
     : await Socials.aggregate([{ 
       $group: {
         _id: '$src',
@@ -23,13 +23,13 @@ export default async function getSocial(req, res) {
     }])    
     
     const posts = req.body.src 
-    ? await Socials.aggregate([{ 
-      $match: { src: `${req.body.src}` },
-      $group: {
+    ? await Socials.aggregate([
+      { $match: { src: req.body.src }},
+      {$group: {
         _id: '$post',
         count: { $sum: 1 }
-      }
-     }])
+      }}
+    ])
     : await Socials.aggregate([{ 
       $group: {
         _id: '$post',
