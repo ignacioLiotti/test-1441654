@@ -51,9 +51,11 @@ const Test = () => {
           "src": `${router.query.src}`
         })
     })
-    .then(socialFound = await social.json())
-    .then(setSocialFound(socialFound))
-    console.log('socialFound.json',socialFound)
+    .then(res=>res.json())
+    .then(res=>{
+        setSocialFound(res)
+        console.log('socialFound.json',res)})
+    .then(console.log('socialFound.json',res))
     }
 
     React.useEffect(() => {
