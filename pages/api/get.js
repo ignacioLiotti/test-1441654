@@ -14,7 +14,7 @@ export default async function getSocial(req, res) {
 
       {
         $group: {
-          _id: `${req.body.src ? req.body.src : '$src'}`,
+          _id: `${req.body.src ? {src: req.body.src} : '$src'}`,
           count: { $sum: 1 }
         }
       }
