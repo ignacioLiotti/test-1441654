@@ -11,11 +11,10 @@ export default async function getSocial(req, res) {
     // const { src, post, from, to } = req.query;
 
     const src = await Socials.aggregate([
+
       {
         $group: {
-          // Each `_id` must be unique, so if there are multiple
-          // documents with the same age, MongoDB will increment `count`.
-          _id: '$src',
+          _id: `${req.body.src ? 'req.body.src' : '$src'}`,
           count: { $sum: 1 }
         }
       }
@@ -57,9 +56,7 @@ export default async function getSocial(req, res) {
     const posts = await Socials.aggregate([
       {
         $group: {
-          // Each `_id` must be unique, so if there are multiple
-          // documents with the same age, MongoDB will increment `count`.
-          _id: '$post',
+          _id:`${getSrc ? '$src' : '$post'}`,
           count: { $sum: 1 }
         }
       }
