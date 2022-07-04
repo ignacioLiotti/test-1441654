@@ -58,7 +58,7 @@ const Test = () => {
 
     React.useEffect(() => {
         const fetchSocial = async () => {
-            const social = await fetch('/api/get', {
+            await fetch('/api/get', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
