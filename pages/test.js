@@ -59,7 +59,7 @@ const Test = () => {
     React.useEffect(() => {
         getData();
         console.log('useEffect',socialFound)
-    }, [socialFound])
+    }, [router.isReady])
 
     console.log(socialFound[0]?.both)
     console.log(socialFound[0]?.both?.src)
