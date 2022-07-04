@@ -12,7 +12,7 @@ export default async function getSocial(req, res) {
 
     const src = await Socials.aggregate([
 
-      { $match: { src: req.body.src } },
+      { $match: { src: `${req.body.src ? req.body.src : '$src'}` } },
       
       {
         $group: {
