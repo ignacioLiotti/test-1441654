@@ -12,7 +12,8 @@ export default async function getSocial(req, res) {
 
     const src = await Socials.aggregate([
 
-      { $match: { src: `${req.body.src ? req.body.src : '$src'}` } },
+      // if req.body.src truthy then match src, else do not match anything
+      { $match: { src: { $exists: req.body.src } } },
       
       {
         $group: {
