@@ -59,7 +59,21 @@ const Test = () => {
     }
 
     React.useEffect(() => {
-        getData();
+
+        fetch('/api/get', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              "src": `${router.query.src}`
+            })
+        })
+        .then(res=>res.json())
+        .then(res=>{
+            setSocialFound(res)
+            console.log('socialFound.json',res)})
+
         console.log('useEffect',socialFound)
     }, [router.isReady])
 
