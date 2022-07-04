@@ -51,8 +51,8 @@ const Test = () => {
           "src": `${router.query.src}`
         })
     })
-    socialFound = await social.json();
-    setSocialFound(socialFound);
+    .then(socialFound = await social.json())
+    .then(setSocialFound(socialFound))
     console.log('socialFound.json',socialFound)
     }
 
