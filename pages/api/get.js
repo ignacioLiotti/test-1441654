@@ -12,9 +12,11 @@ export default async function getSocial(req, res) {
 
     const src = await Socials.aggregate([
 
+      { $match: { src: req.body.src } },
+      
       {
         $group: {
-          _id: `${req.body.src ? {src: req.body.src} : '$src'}`,
+          _id: `${req.body.src ? req.body.src : '$src'}`,
           count: { $sum: 1 }
         }
       }
