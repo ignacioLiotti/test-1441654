@@ -15,7 +15,7 @@ export default async function getSocial(req, res) {
         $group: {
           // Each `_id` must be unique, so if there are multiple
           // documents with the same age, MongoDB will increment `count`.
-          _id: '$age',
+          _id: '$src',
           count: { $sum: 1 }
         }
       }
