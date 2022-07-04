@@ -78,8 +78,8 @@ const Test = () => {
 
     },  [router.isReady])
 
-    console.log(socialFound[0]?.both)
-    console.log(socialFound[0]?.both?.src)
+    // console.log(socialFound[0]?.both)
+    // console.log(socialFound[0]?.both?.src)
 
     const data = {
         labels: socialFound[0]?.both?.src?.map(social => social._id),
