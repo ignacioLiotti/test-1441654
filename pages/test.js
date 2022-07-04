@@ -7,36 +7,40 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 
 const Test = () => {
 
+
     const router = useRouter();
 
-    const socialFound = [{
-        "both": {
-          "src": [
-            {
-              "_id": "faceboook",
-              "count": 7
-            },
-            {
-                "_id": "twitter",
-                "count": 12
-            },
-            {
-            "_id": "",
-            "count": 2
+    const [socialFound, setSocialFound] = React.useState(
+        [{
+            "both": {
+              "src": [
+                {
+                  "_id": "faceboook",
+                  "count": 7
+                },
+                {
+                    "_id": "twitter",
+                    "count": 12
+                },
+                {
+                "_id": "",
+                "count": 2
+                }
+              ],
+              "posts": [
+                {
+                  "_id": "2do post",
+                  "count": 2
+                },
+                {
+                  "_id": "hola",
+                  "count": 5
+                }
+              ]
             }
-          ],
-          "posts": [
-            {
-              "_id": "2do post",
-              "count": 2
-            },
-            {
-              "_id": "hola",
-              "count": 5
-            }
-          ]
-        }
-      }];
+          }]
+    )
+
     const getData = async () => {
     const social = await fetch('/api/get', {
         method: 'POST',
@@ -48,6 +52,7 @@ const Test = () => {
         })
     })
     socialFound = await social.json();
+    setSocialFound(socialFound);
     console.log('socialFound.json',socialFound)
     }
 
