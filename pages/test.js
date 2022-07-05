@@ -6,6 +6,7 @@ import connectMongo from '../utils/connectMongo';
 import  getSocial  from './api/get';
 import Socials from '../models/SocialsSchema';
 
+
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const Test = (props) => {
@@ -71,46 +72,10 @@ export async function getServerSideProps( context ) {
     const { query }= context
 
     console.log(query)
-    
-    
-    await connectMongo();
 
-    const src = query 
-    ? await Socials.aggregate([
-      {$match: { src: query  } },
-      {$group: {
-        _id: `${query }`,
-        count: { $sum: 1 }
-      }}
-    ]) 
-    : await Socials.aggregate([{ 
-      $group: {
-        _id: '$src',
-        count: { $sum: 1 }
-      }  
-    }])    
-    
-    const posts = query  
-    ? await Socials.aggregate([
-      { $match: { src: query  }},
-      {$group: {
-        _id: '$post',
-        count: { $sum: 1 }
-      }}
-    ])
-    : await Socials.aggregate([{ 
-      $group: {
-        _id: '$post',
-        count: { $sum: 1 }
-      }
-     }]) 
+    getSocial(query);
 
-    console.log(src,posts)
-     
-    const both = {src, posts}
-
-
-     return { props:  { both } }
+     return { props:  {  } }
     }
 
 // export async function getServerSideProps(context) {

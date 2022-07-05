@@ -1,8 +1,7 @@
 import connectMongo from '../../utils/connectMongo';
 import Socials from '../../models/SocialsSchema';
 
-export default async function getSocial(req, res) {
-  try {
+export async function getSocial(req, res) {
     
     await connectMongo();
 
@@ -38,10 +37,15 @@ export default async function getSocial(req, res) {
 
     const both = {src, posts}
 
-    res.json({ both });
+    return both ;
+}
 
+export default async function handler(req, res) {
+  try {
+    const data =await getSocial(req, res)
+    res.json(data)
   } catch (error) {
-        console.log(error);
-        res.json({ error });
+    console.log(error);
+    res.json({ error });
   }
 }
