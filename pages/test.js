@@ -73,9 +73,11 @@ export async function getServerSideProps( context ) {
 
     console.log(query)
 
-    getSocial(query);
+    const data = await getSocial();
 
-     return { props:  {  } }
+    console.log(query)
+
+     return { props:  { data } }
     }
 
 // export async function getServerSideProps(context) {
