@@ -120,8 +120,8 @@ function ContactForm() {
         </div>
       )}
       {!messageSent && (
-        <>
-          <h4 className="text-xl md:text-lg text-white font-bold font-open-sans">
+        <div className="px-5 mt-8 md:mt-0">
+          <h4 className="text-[1.2rem] md:text-lg mb-[1.6rem] text-white font-bold font-open-sans">
             Connect with us
           </h4>
           <form
@@ -145,7 +145,7 @@ function ContactForm() {
                 type="text"
                 placeholder="Name*"
                 className={`w-full h-12 px-4 text-base text-gray-placeholder bg-white bg-clip-padding
-                border border-gray-border rounded-3xl focus:ring focus:ring-icon-blue outline-none font-aleo
+                 rounded-xl focus:ring focus:ring-icon-blue outline-none font-aleo
                 ${
                   nameValid || name.length === 0
                     ? "focus:ring-icon-blue"
@@ -177,7 +177,7 @@ function ContactForm() {
                 type="email"
                 placeholder="E-mail*"
                 className={`w-full h-12  px-4 text-base text-gray-placeholder bg-white bg-clip-padding
-                border border-gray-border rounded-3xl focus:ring focus:ring-icon-blue outline-none font-aleo
+                 rounded-xl focus:ring focus:ring-icon-blue outline-none font-aleo
                 ${
                   emailValid || email.length === 0
                     ? "focus:ring-icon-blue"
@@ -207,8 +207,8 @@ function ContactForm() {
                 ref={messageInput}
                 onChange={handleMessageInput}
                 placeholder="Message*"
-                className={`w-full h-40 px-4 pt-4 pb-1 text-base text-gray-placeholder
-              bg-white bg-clip-padding border border-gray-border rounded-3xl
+                className={`w-full h-[8rem] px-4 pt-4 pb-1 text-base text-gray-placeholder
+              bg-white bg-clip-padding rounded-xl
                 overflow-auto resize-none focus:ring focus:ring-icon-blue outline-none font-aleo
                 ${
                   messageValid || message.length === 0
@@ -237,15 +237,15 @@ function ContactForm() {
               )}
             </div>
             <button
-              className="inline-block self-start action-button-gradient py-2 px-6 sm:py-3 sm:px-12
-              rounded-full cursor-pointer font-open-sans text-white text-xs sm:text-sm
+              className="inline-block self-start action-button-gradient py-3 px-8 sm:py-3 sm:px-12
+              rounded-full cursor-pointer font-poppins text-white text-[1rem] font-bold sm:text-sm
               transition-all duration-300 ease-in-out"
               type="submit"
             >
               Send Message
             </button>
           </form>
-        </>
+        </div>
       )}
     </>
   );

@@ -24,7 +24,7 @@ function Footer() {
         {/* First column: Contact info */}
         <div className="flex flex-col items-start w-11/12 px-8 xs:px-4 md:px-4 h-full md:w-4/12 gap-6 order-1">
           <img
-            className="h-9 -ml-4 -mb-6 md:h-[60px] object-contain mb-3"
+            className="h-11 -ml-4 mb-2 md:h-[60px] object-contain mb-3"
             src="/images/logo-all-white.png"
             alt="devlights logo"
           />
@@ -33,37 +33,37 @@ function Footer() {
               <div className="flex flex-row items-start mb-4">
                 <FontAwesomeIcon
                   icon={faLocationDot}
-                  className="text-white text-lg mr-4 pt-1"
+                  className="text-white text-[1.5rem] mr-2 pt-1"
                 />
-                <p className="font-open-sans text-white leading-8 text-[1.2rem] md:text-[1rem] md:leading-5">
+                <p className="font-open-sans text-white leading-8 text-[.9rem] md:text-[1rem] md:leading-5">
                   Corrientes, Argentina. <br/> 1250 Junin st., 2nd Floor.
                 </p>
               </div>
             </li>
             <li>
-              <div className="flex flex-row mt-6 mb-4">
+              <div className="flex flex-row mt-2 mb-4">
                 <FontAwesomeIcon
                   icon={faPhoneFlip}
-                  className="text-white text-lg mr-4"
+                  className="text-white text-[1.2rem] mr-2"
                 />
-                <p className="font-open-sans text-white leading-5 text-[1.2rem] md:text-[1rem]">
+                <p className="font-open-sans text-white leading-5 text-[.9rem] md:text-[1rem]">
                   +54 (0379) 4230003
                 </p>
               </div>
             </li>
             <li>
-              <div className="flex flex-row mt-6 mb-4">
+              <div className="flex flex-row mt-2 mb-4">
                 <FontAwesomeIcon
                   icon={faEnvelope}
-                  className="text-white text-lg mr-4 pt-1"
+                  className="text-white text-[1.2rem] mr-2 pt-1"
                 />
-                <p className="font-open-sans text-white leading-5 text-[1.2rem] md:text-[1rem]">
+                <p className="font-open-sans text-white leading-5 text-[.9rem] md:text-[1rem]">
                   contact@devlights.com
                 </p>
               </div>
             </li>
           </ul>
-          <div className="flex flex-row gap-14 items-center">
+          <div className="flex flex-row gap-14 -mt-4 items-center">
             <a href="https://www.facebook.com/devlightsok/">
               <FontAwesomeIcon
                 icon={faFacebookSquare}
@@ -86,7 +86,7 @@ function Footer() {
         </div>
         {/* Second column: links and social */}
         {/* TODO: make two columns when < sm (640px) */}
-        <div className="contact-form flex flex-col items-start justify-start px-8 xs:px-4 md:px-4 w-full h-full md:w-3/12 gap-6 order-3 md:order-2">
+        <div className="contact-form flex flex-col items-start justify-start px-12 xs:px-4 md:px-4 w-full h-full md:w-3/12 gap-6 order-3 md:order-2">
           <h4 className="text-xl md:text-lg text-white font-bold font-open-sans uppercase mb-6">
             Links
           </h4>

@@ -38,7 +38,7 @@ function ClutchAward2022() {
           data-aos-duration={1000}
           data-aos-once
         >
-          <h2 className="w-full font-aleo text-white text-left text-2xl mt-14 p-12 md:w-[740px] md:text-left md:text-[2.8rem] md:leading-[1.4] md:mt-1  ">
+          <h2 className="w-full font-aleo font-bold text-white text-left text-2xl mt-14 p-12 md:w-[740px] md:text-left md:text-[2.8rem] md:leading-[1.4] md:mt-1  ">
             {translation.headerTitle}
           </h2>
         </div>
@@ -51,7 +51,7 @@ function ClutchAward2022() {
       >
         <div className="w-full flex flex-col p-8 md:w-[42rem] md:p-4 ">
           <h2 className="font-aleo text-black text-[1.8rem] text-center md:text-[2.8rem] md:text-left md:leading-[1.4] ">
-            {translation.headerTitle}
+            {translation.heroParagraph3}
           </h2>
           <p className="mt-10 font-Poppins-Regular text-[1.1rem] text-center md:text-[1.2rem] md:text-left">
             {translation.heroParagraph1}
@@ -59,14 +59,11 @@ function ClutchAward2022() {
           <p className="mt-10 font-Poppins-Regular text-[1.1rem] text-center md:text-[1.2rem] md:text-left">
             {translation.heroParagraph2}
           </p>
-          <p className="mt-10 font-Poppins-Regular font-bold text-[1.1rem] text-center md:text-[1.2rem] md:text-left">
-            {translation.heroParagraph3}
-          </p>
         </div>
         <div className="w-full flex flex-col items-center md:w-[30rem] md:p-4 ">
-          <div className="w-[220px] h-[220px] mb-12 object-contain md:w-[22rem] md:h-[22rem] mb:mb-6 relative">
+          <div className="w-[206px] h-[220px] mb-12 object-contain md:w-[20rem] md:h-[22rem] mb:mb-6 relative">
             <Image
-              src={`/images/clutch-landing-badge.png`}
+              src={`/images/clutch-landing-badge.svg`}
               alt="Clutch award"
               layout="fill"
             />
@@ -175,7 +172,7 @@ function ClutchAward2022() {
           data-aos-duration={1000}
           data-aos-once
         >
-          <h2 className="font-aleo text-black pl-4 text-center text-[1.6rem] md:text-[2.8rem] md:leading-[1.4] md:text-left ">
+          <h2 className="font-aleo text-black pl-4 text-center text-[1.6rem] md:text-[2.8rem] md:leading-[1.4] md:text-left pt-6 ">
             {translation.movingForwardTitle}
           </h2>
           <p className=" font-Poppins-Regular px-4  text-center md:text-[1.2rem] md:text-left md:mt-6">
