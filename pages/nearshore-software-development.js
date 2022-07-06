@@ -183,7 +183,7 @@ function NearshoreSoftwareDevelopment() {
               className="group-hover:filter group-hover:brightness-0 group-hover:invert w-[8rem] h-[8rem] mb-4 md:w-[4rem] md:h-[4rem] md:mb-6 object-contain relative"
               >
               <Image
-                src={`/images/nearshore/thumbsup.svg`}
+                src={`/images/nearshore/thumbsUp.svg`}
                 alt="clients"
                 layout="fill"
               />
