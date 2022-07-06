@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import Link from "next/link";
 import en from "../public/i18n/En_en";
 import es from "../public/i18n/Es_es";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -143,9 +144,12 @@ function Navbar({ transparentScroll, whiteBackground, hasShadow }) {
                 <a
                   className={`${whiteBackground ? "text-black" : "text-white"} 
                     block whitespace-nowrap w-auto py-5 px-4 text-sm md:text-md font-open-sans hover:scale-[1.20] transition-all duration-300 ease-linear`}
-                  href={item.path}
+                  // href={item.path}
                 >
+                  <Link
+                    href={item.path}>
                   {item.name}
+                  </Link>
                 </a>
               </li>
             ))}

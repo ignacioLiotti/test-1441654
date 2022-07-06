@@ -107,7 +107,7 @@ function NearshoreSoftwareDevelopment() {
         </div>
       </section>
       {/* why hiring our services */}
-      <section className="w-full flex flex-col-reverse justify-center items-center p-6 -mt-12 md:items-start md:flex-row md:w-[75rem] md:mt-28 md:mb-10 md:p-0">
+      <section className="w-full flex flex-col-reverse justify-center items-center p-6 -mt-12 md:items-start md:flex-row md:w-[75rem] md:mt-28 mb-12 md:p-0">
         <div
           className="grid grid-cols-3 grid-rows-2 relative mt-8 md:w-[40rem] md:mt-0"
           data-aos="fade-right"
