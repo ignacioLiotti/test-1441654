@@ -35,7 +35,7 @@ function NearshoreSoftwareDevelopment() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* hero section */}
-      <section className="w-full h-[750px] flex items-center justify-center bg-nearshore-landing-hero bg-working-cover md:bg-working-contain bg-center bg bg-no-repeat md:h-[900px] md:-mt-24  md:pt-40 md:pb-32 ">
+      <section className="w-full h-[750px] flex items-center justify-center bg-nearshore-landing-hero bg-working-cover md:bg-working-contain bg-center bg-no-repeat md:h-[900px] md:-mt-24  md:pt-40 md:pb-32 ">
         <div className="w-full p-8 md:w-[70rem] md:p-0 flex flex-col md:flex-row">
           <div
             className="flex flex-col justify-center items-center md:items-start md:w-[30rem]  "
@@ -110,7 +110,7 @@ function NearshoreSoftwareDevelopment() {
       <section className="w-full flex flex-col-reverse justify-center items-center p-6 -mt-12 md:items-start md:flex-row md:w-[75rem] md:mt-28 md:mb-10 md:p-0">
         <div
           className="grid grid-cols-3 grid-rows-2 relative mt-8 md:w-[40rem] md:mt-0"
-          data-aos="fade-left"
+          data-aos="fade-right"
           data-aos-duration={1000}
           data-aos-delay="100"
           data-aos-once
@@ -160,7 +160,7 @@ function NearshoreSoftwareDevelopment() {
           <h2 className="font-aleo text-light-blue font-semibold text-center text-[2rem] md:text-[2.5rem] md:text-left md:leading-[1.4] md:tracking-normal md:mt-10 md:mb-8 ">
             {translation.why_hirinus_section.title}
           </h2>
-          <p className="text-left mt-4 mb-8 md:text-[1.1rem] text-gray-500 md:leading-[2] md:mb-10 md:mt-2 md:pr-8 ">
+          <p className="text-center md:text-left mt-4 mb-8 md:text-[1.1rem] text-gray-500 md:leading-[2] md:mb-10 md:mt-2 md:pr-8 ">
             {translation.why_hirinus_section.paragraph}
           </p>
         </div>
@@ -415,7 +415,7 @@ function NearshoreSoftwareDevelopment() {
         <div className="flex md:w-[70rem] items-center justify-center">
           <div
             className="w-[23rem] md:w-[55rem] p-6"
-            data-aos="fade-left"
+            data-aos="fade-right"
             data-aos-duration={1000}
             data-aos-delay="100"
             data-aos-once
