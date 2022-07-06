@@ -6,7 +6,7 @@ import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 export const CarouselItem = ({ children, width }) => {
   return (
     <div
-      className="inline-flex items-center justify-center lg:h-[30rem] xl:h-[28rem]"
+      className="inline-flex items-center justify-center lg:h-[30rem] mt-[auto] xl:h-[28rem]"
       style={{ width: width }}
     >
       {children}
@@ -64,13 +64,13 @@ const Carousel = ({ children }) => {
           />
         </button>
       <div
-        className="overflow-hidden md:h-[40rem]"
+        className="overflow-hidden md:h-[35rem] flex items-center justify-center"
         onMouseEnter={() => setPaused(true)}
         onMouseLeave={() => setPaused(false)}
       >
         <div
           {...handlers}
-          className="whitespace-nowrap transition-transform duration-500"
+          className="whitespace-nowrap transition-transform duration-500 m-[auto]"
           // className="whitespace-nowrap"
           style={{ transform: `translateX(-${activeIndex * 100}%)` }}
         >

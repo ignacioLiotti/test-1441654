@@ -427,7 +427,7 @@ function NearshoreSoftwareDevelopment() {
         </div>
       </section>
       {/* testimonials */}
-      <section className="w-full overflow-x-hidden clutch-slide-gradient flex justify-center md:h-[38rem]">
+      <section className="w-full overflow-hidden clutch-slide-gradient flex justify-center md:h-[38rem]">
         <div data-aos="fade-up" data-aos-duration={1000} data-aos-once>
           <ClutchCarousel>
             {testimonials.clients?.map((client) => ( 
@@ -441,12 +441,12 @@ function NearshoreSoftwareDevelopment() {
                       />
                     </div>
                   </div>
-                  <div className="w-full lg:w-[800px] flex flex-col items-center justify-center mt-4">
+                  <div className="w-[90%] lg:w-[800px] flex flex-col items-center justify-center mt-4">
                     <h3 className="p-2 font-Poppins-Regular md:text-2xl text-md font-normal text-white text-center tracking-[1px] w-full h-auto whitespace-pre-wrap">
                       {`"${client.opinion}"`}
                     </h3>
 
-                    <p className="p-1  font-bold font-aleo text-white text-lg leading-8 mt-[1rem] -mb-1  tracking-[1px]">
+                    <p className="p-1 font-bold whitespace-pre-wrap font-aleo text-white text-center text-lg leading-8 mt-[1rem] -mb-1  tracking-[1px]">
                       {client.role}, {client.company}
                     </p>
                   </div>

@@ -474,10 +474,10 @@ const es = {
     metaName: "Descripción",
     metaContent: "Podemos proporcionar una fuente para cada tecnología disponible en el mercado. Ya sea que necesite desarrolladores de software, diseñadores, desarrolladores móviles o gerentes de proyectos, haremos todo lo posible para asegurarnos de que se cumplan sus requisitos y de que encuentre el talento que necesita para su equipo.",
     headerTitle: "Servicios de desarrollo de software Nearshore",
-    headerSubTitle: "Conectamos a nuestros clientes con su producto",
+    headerSubTitle: "Conectamos a nuestros clientes con sus productos",
     headerBtn: "Agenda una CITA GRATUITA",
     why_hirinus_section: {
-      title: "Por qué contratar nuestros servicios",
+      title: "Por qué contratar nuestros servicios?",
       paragraph: "Podemos proporcionar una fuente para cada tecnología en el mercado. Ya sea que necesite desarrolladores de software, diseñadores, desarrolladores móviles o project managers, haremos todo lo posible para asegurarnos de que se cumplan sus requisitos y de que encuentre el talento que necesita para su equipo."
     },
     our_services_section: {

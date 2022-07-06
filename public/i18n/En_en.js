@@ -94,6 +94,7 @@ const en = {
         description:
           "We are happy to announce that Devlights and ",
         description2:"RocBird have joined forces!",
+        list:['BIG  DATA','DATA SCIENCE','DATA ANALYTICS','DATA GOVERNANCE'],
         button: "SEE MORE",
       },
     ],
@@ -535,10 +536,10 @@ const en = {
     metaName: "Description",
     metaContent: "We can provide and source for every technology available within the market. Whether you require demandware developers, designers, mobile developers or project managers, we will put our best to make sure that your requirements are met and that you find the talent that you need for your team.",
     headerTitle: "Nearshore Software development services",
-    headerSubTitle: "We connect our clients with their product",
+    headerSubTitle: "We connect our clients with their products",
     headerBtn: "Schedule a FREE APPOINTMENT",
     why_hirinus_section: {
-      title: "Why hiring our services",
+      title: "Why hiring our services?",
       paragraph: "We can provide and source for every technology in the market. Whether you require demandware developers, designers, mobile developers or project managers, we will put our best to make sure that your requirements are met and that you find the talent that you need for your team."
     },
     our_services_section: {
@@ -552,7 +553,7 @@ const en = {
     },
     partner_up_section: {
       title: "Let's partner up on your next project!",
-      paragraph: "Devlights stands out from the rest because is capable to offer END-TO-END software development solutions to their clients. We count on a qualified team of professionals entirely dedicated to working on our clients’ technology projects. You Provide the specifitacions, we provide a software solution.",
+      paragraph: "Devlights stands out from the rest because is capable to offer END-TO-END software development solutions to their clients. We count on a qualified team of professionals entirely dedicated to working on our clients’ technology projects. You provide the specifitacions, we provide a software solution.",
       btn: "Tell us more about your project"
     },
     how_does_it_work_section: {
