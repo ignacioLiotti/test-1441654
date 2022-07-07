@@ -4,6 +4,7 @@ import GoldActionButton from "../components/GoldActionButton";
 
 function ClientsSection({ strings }) {
   const [show, setShow] = useState(false);
+  const [showMobile, setShowMobile] = useState(10);
 
   return (
     <section id="clients" 
@@ -13,16 +14,48 @@ function ClientsSection({ strings }) {
           {strings.title}
         </h3>
         <div className="w-14 h-4 rounded-full bg-orange-pill my-5"></div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        {/* desktop */}
+        <div className="hidden md:block grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {[...Array(show ? 32 : 20)].map((pos, index) => (
             <ClientCard clientId={index + 1} key={index} />
           ))}
         </div>
-        {!show && (
-          <div className="mt-11">
+        {!show ? (
+          <div className="hidden md:block mt-11">
             <GoldActionButton
               text={strings.btnMore}
               onClickAction={() => setShow(true)}
+              padx={12}
+            />
+          </div>
+        ) :(
+          <div className="hidden md:block mt-11">
+            <GoldActionButton
+              text={strings.btnLess}
+              onClickAction={() => setShow(false)}
+              padx={12}
+            />
+          </div>
+        )}
+        {/* mobile */}
+        <div className="md:hidden grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {[...Array(showMobile < 32 ? showMobile : 32)].map((pos, index) => (
+            <ClientCard clientId={index + 1} key={index} />
+          ))}
+        </div>
+        {showMobile < 32 ? (
+          <div className="mt-11 md:hidden">
+            <GoldActionButton
+              text={strings.btnMore}
+              onClickAction={() => setShowMobile((prev) => prev + 10)}
+              padx={12}
+            />
+          </div>
+        ) :(
+          <div className="mt-11 md:hidden">
+            <GoldActionButton
+              text={strings.btnLess}
+              onClickAction={() => setShowMobile(10)}
               padx={12}
             />
           </div>

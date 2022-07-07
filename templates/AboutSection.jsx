@@ -19,7 +19,7 @@ function AboutSection({ strings }) {
               />
           </div>
           <div className="flex flex-col justify-center md:max-w-[65%] md:pr-[8rem]">
-            <Boop y={-10}>
+            <Boop x={65} y={-50} >
               <div className="animate-idleIcon4">
                 <img src="/images/icons/icon_1.png" />
               </div>

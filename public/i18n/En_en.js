@@ -184,6 +184,7 @@ const en = {
   clients: {
     title: "Clients",
     btnMore: "Show more",
+    btnLess: "Show less",
   },
   testimonials: {
     clientsText: "What our clients say about us",
@@ -648,6 +649,20 @@ const en = {
       title: "What our clients say about us"
     },
     meet_the_team_section: "Meet the team"
+  },
+  footer: {
+    form_title: "Let's get in touch",
+    form_name: "Name",
+    form_name_error: "Name must be at least 5 characters long.",
+    form_email: "E-mail",
+    form_email_error: "Please enter a valid email with at least 10 characters long.",
+    form_message: "Message",
+    form_message_error: "Message must be at least 10 characters long.",
+    form_btn: "Send Message",
+    form_error: "Please check all the fields are complete and try again.",
+    form_sent: "Message sent!",
+    form_contact: "We will contact you soon",
+    form_back: "Back to Home",
   }
 };
 

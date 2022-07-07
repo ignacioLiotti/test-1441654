@@ -85,7 +85,7 @@ module.exports = {
     },
     boxShadow: {
       "generic-card": "0px 10px 30px 0px rgba(1, 84, 85, 0.2)",
-      "testimonial-card": "10px 10px 24px 0px rgba(0, 0, 0, 0.44)",
+      "testimonial-card": "0 10px 24px 0px rgba(0, 0, 0, 0.2)",
       "white-action-btn": "0px 2px 12px 2px rgba(0, 0, 0, 0.40)",
       "work-steps-shadow": "0px 2px 4px 1px rgba(0, 0, 0, 0.40)",
       "navbar": "0 3px 16px #858585;"

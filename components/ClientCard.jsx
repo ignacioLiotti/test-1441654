@@ -6,7 +6,7 @@ function ClientCard({ clientId }) {
     <div
       data-aos="fade-up"
       data-aos-once
-      className="group h-32 w-64 bg-white p-4 m-3 shadow-generic-card rounded-[20px]
+      className="group h-20 w-40 md:h-32 md:w-64 bg-white p-4 m-3 shadow-generic-card rounded-[20px]
       hover:scale-110 transition-all duration-300 ease-in-out"
     >
       <div

@@ -14,27 +14,27 @@ function TestimonialsSection({ strings }) {
           <Carousel>
             {strings.clients?.map((client) => (
               <CarouselItem key={client.clientId}>
-                <div className="flex flex-col lg:flex-row w-full h-auto rounded-3xl p-4 sm:p-8 overflow-clip my-8 mx-8 sm:mx-10 bg-white shadow-testimonial-card">
-                  <div className="w-full lg:w-1/3 flex items-center justify-center">
-                    <div className="w-[5.5rem] h-[5.5rem] sm:w-52 sm:h-52">
+                <div className="flex flex-col w-full h-auto rounded-3xl p-4 sm:p-8  my-8 mx-8 sm:mx-10 bg-white shadow-testimonial-card">
+                  <div className="w-full flex items-center justify-center">
+                    <div className="w-[5.5rem] md:w-[10rem] relative">
                       <img
                         src={`/images/testimonials/${client.img}.png`}
-                        className="w-[5.5rem] h-[5.5rem] sm:w-52 sm:h-52 object-fill"
+                        className="w-[5.5rem] md:w-[10rem] object-fill absolute -top-12 md:-top-24"
                       />
                     </div>
                   </div>
-                  <div className="w.full lg:w-2/3 flex items-center justify-center">
+                  <div className="w-full mt-12 md:mt-20 flex items-center justify-center">
                     <div className="flex flex-col">
-                      <p className="p-1 font-aleo font-bold text-icon-blue text-2xl leading-8 -mb-1">
+                      <p className="p-1 text-center font-aleo font-bold text-gray-devil text-2xl -mb-1">
                         {client.clientName}
                       </p>
-                      <p className="p-1 font-open-sans font-bold text-gray-third text-lg leading-8 opacity-80 -mb-1">
+                      <p className="p-1 text-center font-open-sans font-normal text-icon-blue text-lg opacity-80 -mb-1">
                         {client.company}
                       </p>
-                      <p className="p-1 font-open-sans font-normal text-gray-third text-base leading-8 -mb-1">
+                      <p className="p-1 text-center font-open-sans font-normal text-gray-third text-base -mb-1">
                         {client.role}
                       </p>
-                      <p className="p-2 font-montserrat font-normal text-gray-devil text-base tracking-[1px] leading-loose w-full h-auto whitespace-pre-wrap">
+                      <p className="p-2 mt-4 font-montserrat font-normal text-[0.8rem] text-center text-gray-devil text-base leading-[1.4rem] leading-loose w-full h-auto whitespace-pre-wrap">
                         {client.opinion}
                       </p>
                     </div>

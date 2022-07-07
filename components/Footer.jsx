@@ -14,6 +14,7 @@ import ContactForm from "./ContactForm";
 import Link from "next/link";
 
 function Footer() {
+
   return (
     <footer
       id="footer"

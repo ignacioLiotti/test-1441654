@@ -144,6 +144,7 @@ const es = {
   clients: {
     title: "Clientes",
     btnMore: "Ver más",
+    btnLess: "Ver menos",
   },
   careers: {
     title: "Carreras",
@@ -529,10 +530,10 @@ const es = {
     metaName: "Description",
     metaContent: "We can provide and source for every technology available within the market. Whether you require demandware developers, designers, mobile developers or project managers, we will put our best to make sure that your requirements are met and that you find the talent that you need for your team.",
     headerTitle: "It's a match!",
-    headerSubTitle: "We are happy to announce that Devlights and RocBird have joined forces!",
+    headerSubTitle: "¡Estamos felices de anunciar que Devlights y RocBird han unido fuerzas!",
     this_aliance_section: {
-      first_card: "This alliance will help Devlights provide a more complete and robust service to its partners.",
-      second_card: "RocBird's experience and perspective will be a game changer when building complex data-driven solutions."
+      first_card: "Esta alianza ayudara a Devlights a proveer un servicio mas completo y robusto a sus socios.",
+      second_card: "La experiencia y la perspectiva de RocBird cambiarán las reglas del juego al crear soluciones complejas basadas en datos."
     },
     about_section: {
       title: "Sobre RocBird",
@@ -586,6 +587,20 @@ const es = {
       title: "What our clients say about us"
     },
     meet_the_team_section: "Meet the team"
+  },
+  footer:{
+    form_title: "Pongamosnos en contacto.",
+    form_name: "Nombre",
+    form_name_error: "El nombre debe tener por lo menos 5 caracteres.",
+    form_email: "E-mail",
+    form_email_error: "Por favor ingrese un E-mail valido de por lo menos 10 caracteres.",
+    form_message: "Mensaje",
+    form_message_error: "El mensaje debe tener por lo menos 10 caracteres.",
+    form_btn: "Enviar Mensaje",
+    form_error: "Por favor revise que todos los campos esten completados e intente de nuevo.",
+    form_sent: "Mensaje enviado!",
+    form_contact: "Te contactaremos en la inmediatez",
+    form_back: "Volver a Inicio",
   }
 };
 

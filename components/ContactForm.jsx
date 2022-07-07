@@ -1,4 +1,7 @@
 import React, { useState, useRef, useCallback } from "react";
+import { useRouter } from "next/router";
+import en from "../public/i18n/En_en";
+import es from "../public/i18n/Es_es";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faXmark } from "@fortawesome/free-solid-svg-icons";
 import emailjs from "emailjs-com";
@@ -100,15 +103,20 @@ function ContactForm() {
     setMessageSent(false);
   };
 
+  const router = useRouter();
+  const { locale } = router;
+  const translation =
+    locale === "en" ? en.footer : es.footer;
+
   return (
     <>
       {messageSent && (
         <div className="w-full h-full flex flex-col items-center">
           <span className="text-4xl text-white font-bold font-open-sans my-24">
-            Message sent!
+            {translation.form_sent}
           </span>
           <span className="text-lg text-white font-bold font-open-sans mb-6">
-            We will contact you soon
+            {translation.form_contact}
           </span>
           <button
             className="inline-block action-button-gradient py-2 px-6 sm:py-3 sm:px-12
@@ -116,14 +124,14 @@ function ContactForm() {
               transition-all duration-300 ease-in-out"
             onClick={handleBackToHome}
           >
-            Back to Home
+            {translation.form_back}
           </button>
         </div>
       )}
       {!messageSent && (
         <div className="px-5 mt-8 md:mt-0">
           <h4 className="text-[1.2rem] md:text-lg mb-[1.6rem] text-white font-bold font-open-sans">
-            Connect with us
+            {translation.form_title}
           </h4>
           <form
             action="#"
@@ -144,7 +152,7 @@ function ContactForm() {
                 ref={nameInput}
                 onChange={handleNameInput}
                 type="text"
-                placeholder="Name*"
+                placeholder={translation.form_name}
                 className={`w-full h-12 px-4 text-base text-gray-placeholder bg-white bg-clip-padding
                  rounded-xl focus:ring focus:ring-icon-blue outline-none font-aleo
                 ${
@@ -159,7 +167,7 @@ function ContactForm() {
                   nameValid || name.length === 0 ? "opacity-0" : "opacity-100"
                 } text-white text-sm pl-2 pt-1`}
               >
-                Name must be at least 5 characters long.
+                {translation.form_name_error}
               </div>
             </div>
             <div className="relative">
@@ -176,7 +184,7 @@ function ContactForm() {
                 ref={emailInput}
                 onChange={handleEmailInput}
                 type="email"
-                placeholder="E-mail*"
+                placeholder={translation.form_email}
                 className={`w-full h-12  px-4 text-base text-gray-placeholder bg-white bg-clip-padding
                  rounded-xl focus:ring focus:ring-icon-blue outline-none font-aleo
                 ${
@@ -191,7 +199,7 @@ function ContactForm() {
                   emailValid || email.length === 0 ? "opacity-0" : "opacity-100"
                 } text-white text-sm pl-2 pt-1`}
               >
-                Please enter a valid email with at least 10 characters long.
+                {translation.form_email_error}
               </div>
             </div>
             <div className="relative mb-4">
@@ -207,7 +215,7 @@ function ContactForm() {
                 value={message}
                 ref={messageInput}
                 onChange={handleMessageInput}
-                placeholder="Message*"
+                placeholder={translation.form_message}
                 className={`w-full h-[8rem] px-4 pt-4 pb-1 text-base text-gray-placeholder
               bg-white bg-clip-padding rounded-xl
                 overflow-auto resize-none focus:ring focus:ring-icon-blue outline-none font-aleo
@@ -225,7 +233,7 @@ function ContactForm() {
                     : "opacity-100"
                 } text-white text-sm pl-2 pt-1`}
               >
-                Message must be at least 10 characters long.
+                {translation.form_message_error}
               </div>
               {!validForm && (
                 <div
@@ -233,7 +241,7 @@ function ContactForm() {
                     validForm ? "opacity-0" : "opacity-100"
                   } text-white text-sm pl-2 pt-1`}
                 >
-                  Please check all the fields are complete and try again.
+                  {translation.form_error}
                 </div>
               )}
             </div>
@@ -244,7 +252,7 @@ function ContactForm() {
                 transition-all duration-300 ease-in-out gold-gradient button-active"
                 type="submit"
               >
-                Send Message
+                {translation.form_btn}
               </button>
             </Boop>
           </form>
