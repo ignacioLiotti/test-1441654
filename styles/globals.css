@@ -2,6 +2,18 @@ html{
   scroll-behavior: smooth;
 }
 
+/* In firefox scroll-behavior smooth makes nextjs <Link> component not scroll to top on redirection.
+  This is the recommended fix but obviously undermines the UX by jumping from section to section instead of simply scrolling.
+  Fix as soon as a fix is released 
+  
+  link to the issue https://github.com/vercel/next.js/issues/22858
+  */
+@-moz-document url-prefix() {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 
 
 @tailwind base;

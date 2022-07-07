@@ -54,7 +54,7 @@ module.exports = {
     backgroundImage: {
       "about-section": "url('/images/about_overlay.png')",
       "why-section": "url('/images/about_overlay2.png')",
-      "hero-section": "url('/images/intro-bg.png')",
+      "hero-section": "url('/images/intro-bg.svg')",
       "services-section": "url('/images/blue.png')",
       "technologies-section": "url('/images/about_overlay3.png')",
       "technologies-section-mobile": "url('/images/about_overlay3-mobile.png')",

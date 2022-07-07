@@ -64,7 +64,7 @@ const Carousel = ({ children }) => {
           />
         </button>
       <div
-        className="overflow-hidden md:h-[35rem] flex items-center justify-center"
+        className="overflow-hidden md:h-full flex items-center justify-center"
         onMouseEnter={() => setPaused(true)}
         onMouseLeave={() => setPaused(false)}
       >

@@ -1,4 +1,5 @@
 import React from "react";
+import Boop from "../components/Boop";
 
 function AboutSection({ strings }) {
   return (
@@ -15,12 +16,14 @@ function AboutSection({ strings }) {
               src={`/images/${strings.srcImage}.png`}
               className="hidden md:inline max-w-full h-full object-contain"
               alt="about us"
-            />
+              />
           </div>
           <div className="flex flex-col justify-center md:max-w-[65%] md:pr-[8rem]">
-            <div className="animate-idleIcon4">
-              <img src="/images/icons/icon_1.png" />
-            </div>
+            <Boop y={-10}>
+              <div className="animate-idleIcon4">
+                <img src="/images/icons/icon_1.png" />
+              </div>
+            </Boop>
             <img
               src={`/images/${strings.srcImageMobile}.png`}
               className="md:hidden inline max-w-full h-full object-contain"
