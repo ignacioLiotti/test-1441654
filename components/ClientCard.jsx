@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 function ClientCard({ clientId }) {
   return (
@@ -12,11 +13,13 @@ function ClientCard({ clientId }) {
         className="group-hover:scale-110 transition-all duration-300 ease-in-out
       transition-all duration-200 ease-linear w-full h-full"
       >
-        <img
-          src={`/images/clients/client-${clientId}.png`}
-          className="w-full h-full rounded-lg object-contain"
-          alt="client image"
-        />
+        <div className="relative w-full h-full rounded-lg object-contain">
+          <Image
+            src={`/images/clients/client-${clientId}.png`}
+            layout="fill"
+            alt="client image"
+          />
+        </div>
       </div>
     </div>
   );
