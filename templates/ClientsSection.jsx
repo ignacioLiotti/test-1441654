@@ -15,7 +15,7 @@ function ClientsSection({ strings }) {
         </h3>
         <div className="w-14 h-4 rounded-full bg-orange-pill my-5"></div>
         {/* desktop */}
-        <div className="hidden md:block grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {[...Array(show ? 32 : 20)].map((pos, index) => (
             <ClientCard clientId={index + 1} key={index} />
           ))}
@@ -38,6 +38,8 @@ function ClientsSection({ strings }) {
           </div>
         )}
         {/* mobile */}
+        {/* 32 is the current amount of clients, must update whenever a new client is added */}
+        {/* TODO: clearly... automate this process */}
         <div className="md:hidden grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {[...Array(showMobile < 32 ? showMobile : 32)].map((pos, index) => (
             <ClientCard clientId={index + 1} key={index} />
