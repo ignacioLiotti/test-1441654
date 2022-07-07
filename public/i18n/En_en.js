@@ -565,7 +565,7 @@ const en = {
     get_in_touch_section: {
       title: "We connect our clients with their products",
       first_card_title:"We make things happen here at Devlights.",
-      first_card:"Our outsourcing solutions provides clients access to a vast pool of talent Staffing the talents to build a team is essential for the success of any business, but to be efficient it requires devoting significant resources to the process.",
+      first_card:"Our outsourcing solutions provides clients access to a vast pool of talent. Staffing the talents to build a team is essential for the success of any business, but to be efficient it requires devoting significant resources to the process.",
       second_card:"However, sometimes the budget or time frames are tight, or the company might simply need a full-time remote talent to do a specific job. In this case, staffing-as-a-service is the way to go in such a case.",
       third_card: " Devlights is capable of providing highly-skilled specialists short-term and long-term IT staffing projects built to your specification and for a fraction of the cost.",
       form_title: "Let's get in touch",

@@ -379,7 +379,7 @@ function NearshoreSoftwareDevelopment() {
                       />
                     </div>
                     <div>
-                      <h3 className="text-white text-2xl mt-[1rem] font-bold text-center md:text-left">
+                      <h3 className="text-white text-2xl mt-[1rem] md:mt-0 font-bold text-center md:text-left">
                       {translation.get_in_touch_section.first_card_title}
                       </h3>
                       <p className="text-white text-[1.2rem] mt-[1rem] text-center md:text-left">
