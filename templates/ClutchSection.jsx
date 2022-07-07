@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import ActionButton from "../components/ActionButton";
+import GoldLinkButton from "../components/GoldLinkButton";
 
 function ClutchSection({ strings }) {
   return (
@@ -31,9 +31,10 @@ function ClutchSection({ strings }) {
         </p>
 
         <div className="mt-6">
-          <a href="/clutch-award-2022" target="_blank">
-            <ActionButton text={strings.btnClutch} />
-          </a>
+            <GoldLinkButton 
+              text={strings.btnClutch} 
+              link={"/clutch-award-2022"} 
+              padx={12}/>
         </div>
       </div>
     </section>

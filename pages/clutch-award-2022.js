@@ -31,7 +31,7 @@ function ClutchAward2022() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <section className="w-full flex items-center bg-clutch-landing-hero bg-center-top bg-working-cover bg-no-repeat h-[400px] md:justify-center  md:mt-20 md:-translate-y-2 relative">
+      <section className="w-full flex items-center bg-clutch-landing-hero bg-center-top bg-working-cover bg-no-repeat h-[400px] md:justify-center overflow-hidden md:mt-20 md:-translate-y-2 relative">
         <div
           className="flex flex-col justify-center items-end md:w-[72rem] "
           data-aos="fade-left"

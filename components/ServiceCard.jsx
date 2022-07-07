@@ -1,5 +1,5 @@
 import React from "react";
-import GoldActionButton from "../components/GoldActionButton";
+import GoldLinkButton from "../components/GoldLinkButton";
 
 function ServiceCard({ title, description, description2, list, image, button, link }) {
   
@@ -9,10 +9,10 @@ function ServiceCard({ title, description, description2, list, image, button, li
       data-aos-duration={1000}
       data-aos-once
       className="group flex flex-col w-full h-fit bg-white rounded-[2.5rem] shadow-generic-card p-6
-      hover:-translate-y-2 transition-all duration-300 ease-in-out select-none
+      hover:-translate-y-2 transition-all duration-300 ease-in-out select-none pb-12
     "
     >
-      <span className="flex flex-col items-start justify-center w-full h-16 ml-6 mb-10">
+      <span className="flex flex-col items-start justify-center w-full h-16 mt-2s mb-6">
         <img
           src={`/images/icons/${image}.png`}
           alt=""
@@ -37,19 +37,17 @@ function ServiceCard({ title, description, description2, list, image, button, li
         <ul>
         {
           list.map((item,index)=>(
-           <li key={index} className='flex justify-start items-center'><span className="mx-1 bg-gold-bootcamp h-2 w-2 rounded-full"></span><p className="text-gray-service text-[0.938rem] leading-[1.8]">{item}</p></li>
+           <li key={index} className='flex justify-start items-center'><span className="mx-1 bg-gray-500 h-2 w-2 rounded-full"></span><p className="text-gray-service text-[0.938rem] leading-[1.8]">{item}</p></li>
           ))
         }
         </ul>
       </div>: '' }
       {button ? 
-      <div className="flex justify-center items-center mt-12">
-        <GoldActionButton 
+      <div className="flex justify-center items-center mt-8">
+        <GoldLinkButton 
             text={button}
             resize={false}
-            onClickAction={() =>
-              window.open(`https://devlights.com/rocbird`, "_blank")
-            }/> 
+            link={'/data-management'}/> 
       </div>: '' }
     </article>
   );

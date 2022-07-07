@@ -233,7 +233,7 @@ function NearshoreSoftwareDevelopment() {
         </div>
       </section>
       {/* lets partner up  */}
-      <section className="flex flex-col justify-center items-center w-full p-[1rem] h-full pb-12 md:pb-0 md:h-[27rem] bg-gray-blue-nearshore pt-10 md:pt-0  ">
+      <section className="flex flex-col justify-center items-center w-full p-[2.3rem] h-full pb-12 md:pb-0 md:h-[27rem] bg-gray-blue-nearshore pt-10 md:pt-0  ">
         <div
           className="flex flex-col justify-center items-center"
           data-aos="fade-up"
@@ -241,11 +241,10 @@ function NearshoreSoftwareDevelopment() {
           data-aos-delay="100"
           data-aos-once
         >
-          <h2 className="font-aleo text-light-blue text-center md:text-left text-[2.5rem] font-semibold leading-[1.5] tracking-normal ">
-            {" "}
+          <h2 className="font-aleo text-light-blue text-center md:text-left text-[2.3rem] font-semibold leading-[1.3] tracking-normal ">
             {translation.partner_up_section.title}
           </h2>
-          <p className=" md:w-[60rem] w-full text-[1.2rem] text-center text-gray-body leading-[2] mb-10 mt-6">
+          <p className=" md:w-[60rem] w-full text-[1.2rem] text-center text-gray-body leading-[1.5] mb-10 mt-6">
             {translation.partner_up_section.paragraph}
           </p>
           <GoldActionButton
@@ -306,7 +305,12 @@ function NearshoreSoftwareDevelopment() {
         </div>
         {/* steps one next to eachother for desktop view */}
           <div className="w-full hidden md:flex flex-col items-center justify-center md:mt-6 md:flex-row ">
-              <div className="relative flex flex-col items-center mt-10 md:w-[30rem] md:h-[10rem] p-[2rem] rounded-[10px] bg-white md:m-4 how-work-shadow mb-[1rem] md:mb-0 ">
+              <div className="relative flex flex-col items-center mt-10 md:w-[30rem] md:h-[10rem] p-[2rem] rounded-[10px] bg-white md:m-4 how-work-shadow mb-[1rem] md:mb-0 "
+                data-aos="fade-up"
+                data-aos-duration={1000}
+                data-aos-delay="500"
+                data-aos-once
+              >
                 <p className="absolute top-[-2.5rem] left-center rounded-[50%] flex items-center justify-center border-white border-[0.5rem] bg-purple-nearshore w-[5rem] h-[5rem] font-oswald font-bold text-white text-[2.8rem]">
                   01
                 </p>
@@ -314,7 +318,12 @@ function NearshoreSoftwareDevelopment() {
                   {translation.how_does_it_work_section.step_1}
                 </p>
               </div>
-              <div className="relative flex flex-col items-center mt-10 md:w-[30rem] md:h-[10rem] p-[2rem] rounded-[10px] bg-white md:m-4 how-work-shadow mb-[1rem] md:mb-0">
+              <div className="relative flex flex-col items-center mt-10 md:w-[30rem] md:h-[10rem] p-[2rem] rounded-[10px] bg-white md:m-4 how-work-shadow mb-[1rem] md:mb-0"
+                data-aos="fade-up"
+                data-aos-duration={1000}
+                data-aos-delay="800"
+                data-aos-once
+              >
                 <p className="absolute top-[-2.5rem] left-center rounded-[50%] flex items-center justify-center border-white border-[0.5rem] bg-purple-nearshore w-[5rem] h-[5rem] font-oswald font-bold text-white text-[2.8rem]">
                   02
                 </p>
@@ -322,7 +331,12 @@ function NearshoreSoftwareDevelopment() {
                   {translation.how_does_it_work_section.step_2}
                 </p>
               </div>
-              <div className="relative flex flex-col items-center mt-10 md:w-[30rem] md:h-[10rem] p-[2rem] rounded-[10px] bg-white md:m-4 how-work-shadow mb-[1rem] md:mb-0">
+              <div className="relative flex flex-col items-center mt-10 md:w-[30rem] md:h-[10rem] p-[2rem] rounded-[10px] bg-white md:m-4 how-work-shadow mb-[1rem] md:mb-0"
+                data-aos="fade-up"
+                data-aos-duration={1000}
+                data-aos-delay="1100"
+                data-aos-once
+              >
                 <p className="absolute top-[-2.5rem] left-center rounded-[50%] flex items-center justify-center border-white border-[0.5rem] bg-purple-nearshore w-[5rem] h-[5rem] font-oswald font-bold text-white text-[2.8rem]">
                   03
                 </p>
@@ -330,7 +344,7 @@ function NearshoreSoftwareDevelopment() {
                   {translation.how_does_it_work_section.step_3}
                 </p>
               </div>
-            </div> 
+          </div> 
         
       </section>
       {/* We connect our clients with their products */}
@@ -365,7 +379,7 @@ function NearshoreSoftwareDevelopment() {
                       />
                     </div>
                     <div>
-                      <h3 className="text-white text-2xl font-bold text-center md:text-left">
+                      <h3 className="text-white text-2xl mt-[1rem] font-bold text-center md:text-left">
                       {translation.get_in_touch_section.first_card_title}
                       </h3>
                       <p className="text-white text-[1.2rem] mt-[1rem] text-center md:text-left">
@@ -457,9 +471,9 @@ function NearshoreSoftwareDevelopment() {
         </div>
       </section>
       {/* meet the team */}
-      <section className="w-full md:h-[800px] flex flex-col items-center justify-start bg-nearshore-landing-team bg-working-cover bg-center bg-no-repeat pt-20 pb-20">
+      <section className="w-full md:h-[800px] flex flex-col items-center justify-start bg-nearshore-landing-team bg-working-cover bg-center bg-no-repeat pt-10 md:pt-20 px-10 pb-10">
         <h2
-          className="font-aleo text-lavanda-nearshore text-[2.5rem] font-semibold leading-[1.2]"
+          className="font-aleo text-lavanda-nearshore text-[2.5rem] md:text-[3rem] font-semibold leading-[1.2]"
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in"
           data-aos-duration={800}
@@ -470,7 +484,7 @@ function NearshoreSoftwareDevelopment() {
         </h2>
         <img
           src={`/images/nearshore/team.png`}
-          className="mt-20"
+          className="mt-8"
           alt="clients"
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in"

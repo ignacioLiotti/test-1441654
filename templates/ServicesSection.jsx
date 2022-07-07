@@ -1,17 +1,16 @@
 import React from "react";
-import ActionButton from "../components/ActionButton";
+import GoldLinkButton from "../components/GoldLinkButton";
 import ServiceCard from "../components/ServiceCard";
 
 function ServicesSection({ strings }) {
   return (
     <section id="services"
-      className="w-full bg-services-section bg-center-bottom bg-no-repeat bg-working-cover xl:bg-size-100
-        relative pt-52 md:pt-[11.5rem] pb-10 mt-[-38rem] md:mt-[-24rem] lg:mt-0"
+      className="w-full bg-services-section bg-center-top md:bg-center-bottom bg-no-repeat bg-working-cover xl:bg-size-100
+        relative md:pt-[11.5rem] pb-10  md:mt-[-24rem] lg:mt-0"
     >
       <div className="container-width">
         <div className="flex flex-col lg:flex-row">
-          <d
-          iv className="flex flex-col xs:items-center w-full lg:max-w-[25%] px-4 mt-[27rem] sm:mt-[17rem] md:mt-[10.625rem] lg:mt-0">
+          <div className="flex flex-col items-center md:items-start w-full lg:max-w-[25%] px-4  sm:mt-[17rem] md:mt-[10.625rem] lg:mt-0">
             <h2 className="font-aleo font-bold text-center xs:text-left text-white text-5xl leading-tight mb-5 mt-[7rem]">
               {strings.title}
             </h2>
@@ -22,9 +21,9 @@ function ServicesSection({ strings }) {
               {strings.subtitleText2}
             </p>
             <div className="flex flex-col items-center sm:items-start justify-center mt-8 sm:mt-11">
-              <ActionButton text={strings.btnContact} resize={false} />
+              <GoldLinkButton text={strings.btnContact} resize={false} link={'/#contact'}/>
             </div>
-          </d>
+          </div>
           <div className="md:columns-3 -space-y-10 lg:-space-y-5 gap-6 lg:gap-8 px-4 w-full lg:max-w-[75%] mt-[4rem] sm:mt-[6rem] lg:mt-0">
             {strings.serviceCards.map((card) => (
               <div

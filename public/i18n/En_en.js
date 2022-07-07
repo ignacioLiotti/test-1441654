@@ -8,7 +8,7 @@ const en = {
     { id: 3, name: "Portfolio", path: "/#portfolio" },
     { id: 4, name: "Clients", path: "/#clients" },
     { id: 5, name: "Careers", path: "/#careers" },
-    { id: 6, name: "Contact Us", path: "/#footer" },
+    { id: 6, name: "Contact Us", path: "/#contact" },
   ],
   intro: {
     title: "We are a company dedicated to provide technological solutions.",
@@ -89,7 +89,7 @@ const en = {
           "Thinking about taking your project/business to the net? Our team can develop and design cross platform websites that are visually engaging, following the latest trends on UX/UI.",
       },{
         id: 6,
-        imgSource: "rocbird-bird",
+        imgSource: "rocbird-bird-blue",
         title: "Data Management",
         description:
           "We are happy to announce that Devlights and ",

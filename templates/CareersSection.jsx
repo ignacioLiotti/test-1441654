@@ -23,6 +23,10 @@ function CareersSection({ strings }) {
     jobsRequest();
   }, []);
 
+  if (jobs.length === 0) {
+    return ;
+  }
+
   return (
     <section id="careers"
       className="w-full bg-technologies-section-mobile bg-size-100-50 md:bg-careers-section bg-working-cover bg-no-repeat bg-size-100 md:bg-size-100 xl:bg-size-100 relative md:pt-[6rem] md:pb-[6rem] md:mb-[4em]">

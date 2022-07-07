@@ -141,16 +141,14 @@ function Navbar({ transparentScroll, whiteBackground, hasShadow }) {
             */}
             {translation?.navigationData.map((item) => (
               <li key={item.id}>
-                <a
+                <Link href={item.path}>
+                  <a
                   className={`${whiteBackground ? "text-black" : "text-white"} 
-                    block whitespace-nowrap w-auto py-5 px-4 text-sm md:text-md font-open-sans hover:scale-[1.20] transition-all duration-300 ease-linear`}
-                  // href={item.path}
-                >
-                  <Link
-                    href={item.path}>
+                  block whitespace-nowrap w-auto py-5 px-4 text-sm md:text-md font-open-sans hover:scale-[1.20] transition-all duration-300 ease-linear`}
+                  >
                   {item.name}
-                  </Link>
-                </a>
+                  </a>
+                </Link>
               </li>
             ))}
             <li>
@@ -189,12 +187,13 @@ function Navbar({ transparentScroll, whiteBackground, hasShadow }) {
           <ul className="flex flex-col items-start justify-end w-full">
             {translation?.navigationData.map((item) => (
               <li key={item.id}>
-                <a
-                  className="block whitespace-nowrap w-auto py-4 px-4 text-white font-open-sans"
-                  href={item.path}
-                >
-                  {item.name}
-                </a>
+                <Link href={item.path}>
+                  <a
+                    className="block whitespace-nowrap w-auto py-4 px-4 text-white font-open-sans"
+                  >
+                    {item.name}
+                  </a>
+                </Link>
               </li>
             ))}
             <li className="w-2/3">

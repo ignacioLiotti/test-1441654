@@ -2,6 +2,7 @@ import React, { useState, useRef, useCallback } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faXmark } from "@fortawesome/free-solid-svg-icons";
 import emailjs from "emailjs-com";
+import Boop from "./Boop";
 
 function ContactForm() {
   const [validForm, setValidForm] = useState(true);
@@ -236,14 +237,16 @@ function ContactForm() {
                 </div>
               )}
             </div>
-            <button
-              className="inline-block self-start action-button-gradient py-3 px-8 sm:py-3 sm:px-12
-              rounded-full cursor-pointer font-poppins text-white text-[1rem] font-bold sm:text-sm
-              transition-all duration-300 ease-in-out"
-              type="submit"
-            >
-              Send Message
-            </button>
+            <Boop scale='1.05' >
+              <button
+                className="inline-block self-start action-button-gradient py-3 px-8 sm:py-3 sm:px-12
+                rounded-full cursor-pointer font-poppins text-white text-[1rem] font-bold sm:text-sm
+                transition-all duration-300 ease-in-out gold-gradient button-active"
+                type="submit"
+              >
+                Send Message
+              </button>
+            </Boop>
           </form>
         </div>
       )}

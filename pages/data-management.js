@@ -5,7 +5,6 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import en from "../public/i18n/En_en";
 import es from "../public/i18n/Es_es";
-import WhiteActionButton from "../components/WhiteActionButton";
 import ContactForm from "../components/NearshoreContactForm";
 import Carousel from "../components/NearshoreCarousel";
 import { CarouselItem } from "../components/ClutchCarousel";
@@ -30,7 +29,7 @@ function Rocbird() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* hero section */}
-      <section className="w-full h-[auto] flex items-center justify-around bg-rocbird-landing-hero bg-working-cover bg-center bg bg-no-repeat pb-10 md:-mt-24  md:pt-40 md:pb-32 ">
+      <section className="w-full h-[auto] overflow-hidden flex items-center justify-around bg-rocbird-landing-hero bg-working-cover bg-center bg bg-no-repeat pb-10 md:-mt-24  md:pt-40 md:pb-32 ">
         <div className="flex flex-col md:flex-row justify-center items-center w-[80rem]">
           <div className="w-full p-8 md:p-0 md:w-[40rem] md:mt-24 ">
             <div
@@ -39,7 +38,7 @@ function Rocbird() {
               data-aos-duration={1000}
               data-aos-once
             >
-              <h2 className="font-aleo text-white font-semibold text-[4rem] text-center md:leading-[1.4] md:text-left ">
+              <h2 className="font-aleo text-white font-semibold text-[3.5rem] text-center md:leading-[1.4] md:text-left ">
                 {translation.headerTitle}
               </h2>
               <p className="font-aleo text-transparent rocbird-text-gradient font-semibold text-left mt-2 md:mb-8 text-[1.5rem] md:text-[1.5rem] md:leading-[1.4] md:mb-1 md:mt-2">
@@ -83,7 +82,7 @@ function Rocbird() {
                     />
               </BoopImg>
             </div>
-            <div className="absolute bottom-16 md:bottom-0 right-5 md:-right-6 z-10">
+            <div className="absolute bottom-16 md:bottom-0 right-3 md:-right-6 z-10">
               <BoopImg x='15' scale='1.05' rotation='15' springConfig={{tension:'150',friction:'10'}}>
                 <img
                   src={`/images/rocbird/nico.png`}
@@ -156,7 +155,7 @@ function Rocbird() {
           </p>
         </div>
       </section>
-      <section className="w-full flex flex-col justify-center items-center bg-gray-100  p-6 md:items-center md:p-0 bg-rocbird-logo rocbird-center bg-no-repeat">
+      <section className="w-full flex flex-col justify-center items-center bg-gray-100 overflow-hidden p-6 md:items-center md:p-0 md:bg-rocbird-logo rocbird-center bg-no-repeat">
         <div className="w-full md:w-[90rem] flex flex-col justify-around items-center md:p-6 md:items-start md:flex-row md:mb-10 md:p-0 ">
             <div
             className="w-full md:w-[35rem] relative bg-white group hover:bg-purple-nearshore rocbird-shadow rounded-[1rem] px-[1rem] md:px-[2rem] mb-5 md:mb-0 drop-shadow-[-5px_0_0px_rgba(54,169,225,0.9)] transition-all ease-in-out"
@@ -187,9 +186,9 @@ function Rocbird() {
               </p>
             </div>
         </div>
-        <div className="w-full md:w-[100rem] flex flex-col gap-[30rem] md:gap-0 justify-between items-center md:p-6 md:items-start md:flex-row md:mb-10 md:p-0 ">
+        <div className="w-full md:w-[100rem] flex flex-col gap-[3rem] md:gap-0 justify-between items-center md:p-6 md:items-start md:flex-row md:mb-10 md:p-0 ">
             <div
-            className="w-full md:w-[35rem] relative bg-white group hover:bg-purple-nearshore rocbird-shadow rounded-[1rem] px-[1rem] md:px-[2rem] mb-5 md:mb-0 drop-shadow-[-5px_0_0px_rgba(54,169,225,0.9)] transition-all ease-in-out"
+            className="w-full md:w-[35rem] relative bg-white group hover:bg-purple-nearshore rocbird-shadow rounded-[1rem] px-[1rem] md:px-[2rem] md:mb-0 drop-shadow-[-5px_0_0px_rgba(54,169,225,0.9)] transition-all ease-in-out"
             data-aos="fade-right"
             data-aos-duration={1000}
             data-aos-delay="100"
@@ -202,6 +201,11 @@ function Rocbird() {
                   {translation.about_section.third_card.paragraph}
               </p>
             </div>
+            <img
+                src={`/images/rocbird/rocbirdlogo.png`}
+                className="w-[80%] md:hidden"
+                alt="clients"
+              />
             <div
             className="w-full md:w-[35rem] relative bg-white group hover:bg-purple-nearshore rocbird-shadow rounded-[1rem] px-[1rem] md:px-[2rem] mb-5 md:mb-0 drop-shadow-[5px_0_0px_rgba(54,169,225,0.9)] transition-all ease-in-out"
             data-aos="fade-left"

@@ -1,3 +1,5 @@
+// NOT BEING USED- IF NEEDED USE GOLD ACTION BUTTON OR GOLD LINK BUTTON
+
 import React from "react";
 
 function ActionButton({ text, resize, onClickAction }) {

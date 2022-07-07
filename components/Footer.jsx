@@ -18,7 +18,7 @@ function Footer() {
     <footer
       id="footer"
       className={`block relative bg-[url('/images/footer-bg.png')] w-full footer-bg-gradient
-      py-16`}
+      py-16 scroll-m-20`}
     >
       <div className="container-width flex flex-col md:flex-row items-center md:items-start justify-between gap-9">
         {/* First column: Contact info */}
@@ -64,19 +64,28 @@ function Footer() {
             </li>
           </ul>
           <div className="flex flex-row gap-14 -mt-4 items-center">
-            <a href="https://www.facebook.com/devlightsok/">
+            <a 
+              href="https://www.facebook.com/devlightsok/"
+              target="_blank"
+              rel="noreferrer">
               <FontAwesomeIcon
                 icon={faFacebookSquare}
                 className="text-white text-4xl"
               />
             </a>
-            <a href="https://twitter.com/devlightsok">
+            <a 
+              href="https://twitter.com/devlightsok" 
+              target="_blank"
+              rel="noreferrer">
               <FontAwesomeIcon
                 icon={faTwitterSquare}
                 className="text-white text-4xl"
               />
             </a>
-            <a href="https://www.linkedin.com/company/devlights-us">
+            <a 
+              href="https://www.linkedin.com/company/devlights-us"
+              target="_blank"
+              rel="noreferrer">
               <FontAwesomeIcon
                 icon={faLinkedin}
                 className="text-white text-4xl"
@@ -92,14 +101,13 @@ function Footer() {
           </h4>
           <ul>
             <li className="mb-6">
-              <a
-                className="text-white text-sm font-medium font-open-sans"
+              <Link
                 href="/nearshore-software-development"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Nearshore software development
-              </a>
+                >
+                <p className="text-white text-sm font-medium font-open-sans cursor-pointer">
+                  Nearshore software development
+                </p>
+              </Link>
             </li>
             {/* <li className="mb-6">
               <a
@@ -110,41 +118,37 @@ function Footer() {
               </a>
             </li> */}
             <li className="mb-6">
-              <a
-                className="text-white text-sm font-medium font-open-sans"
+              <Link
                 href="/clutch-award-2022"
-                target="_blank"
-                rel="noreferrer"
               >
-                Clutch Award
-              </a>
+                <p className="text-white text-sm font-medium font-open-sans cursor-pointer" >
+                  Clutch Award
+                </p>
+              </Link>
             </li>
 
             <li className="mb-6">
-              <a
-                className="text-white text-sm font-medium font-open-sans"
+              <Link
                 href="https://jobs.devlights.com/"
-                target="_blank"
-                rel="noreferrer"
               >
+              <p className="text-white text-sm font-medium font-open-sans cursor-pointer" >
                 Join the team
-              </a>
+              </p>
+              </Link>
             </li>
             <li className="mb-6">
               <Link
                 href="/#"
               >
-                <a
-                  className="text-white text-sm font-medium font-open-sans"
-                >
+                <p className="text-white text-sm font-medium font-open-sans cursor-pointer" >
                   Bootcamps
-                </a>
+                </p>
               </Link>
             </li>
           </ul>
         </div>
         {/* Third column: connect */}
-        <div className="flex flex-col items-start  px-4 pb-12 h-full w-11/12 md:w-5/12 gap-6 order-2 md:order-3">
+        <div id="contact" className="flex flex-col items-start scroll-m-24 md:scroll-m-0 px-4 pb-12 h-full w-11/12 md:w-5/12 gap-6 order-2 md:order-3">
           <ContactForm />
         </div>
       </div>

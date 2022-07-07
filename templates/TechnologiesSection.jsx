@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import React from "react";
-import ActionButton from "../components/ActionButton";
+import GoldLinkButton from "../components/GoldLinkButton";
 
 function TechnologiesSection({ strings }) {
   const router = useRouter()
@@ -22,7 +22,7 @@ function TechnologiesSection({ strings }) {
             {strings.subtitleText2}
           </p>
           <div className="flex flex-col items-center sm:items-start justify-center mt-8 sm:mt-11">
-            <ActionButton text={strings.btnProjects} resize={false} onClickAction={() => router.push("/#portfolio")} />
+            <GoldLinkButton text={strings.btnProjects} resize={false} link={"/#portfolio"} />
           </div>
         </div>
         <div data-aos="fade-up" data-aos-duration={1000} data-aos-once>

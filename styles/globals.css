@@ -111,6 +111,9 @@ html{
 .gold-gradient:hover{
   background-position: bottom;
 }
+.button-active:active{
+  transform: scale(.9);
+}
 
 .service-shadow{
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
@@ -252,6 +255,5 @@ html{
 
 .bootcamp-text-gradient {
   background-image: linear-gradient(90deg, #ff7208 0%, #fbd13b 35%, #6be2cd 70%);
-  
 }
 

@@ -1,11 +1,15 @@
 import React,{useState,useEffect, useRef} from "react";
-import ActionButton from "../components/ActionButton";
-import VideoButton from "../components/VideoButton";
+import GoldActionButton from "../components/GoldActionButton";
+import GoldLinkButton from "../components/GoldLinkButton";
+import { useRouter } from "next/router";
 import { IoCloseOutline } from "react-icons/io5";
 import { BiLoaderAlt } from "react-icons/bi";
 
 function HeroSection({ strings }) {
   const ref = useRef()
+
+  const router = useRouter();
+  
 
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -64,7 +68,13 @@ function HeroSection({ strings }) {
               {strings.title}
             </h2>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 sm:gap-10 pt-8">
-              <ActionButton text={strings.btnWork} resize={false} />
+              <GoldLinkButton 
+                text={strings.btnWork} 
+                resize={false} 
+                link={'/#contact'}
+                padx={'6'}
+                pady={'3'}
+              />
               {/* <VideoButton text={strings.btnVideo} /> */}
               <button
                 className="flex flex-row items-center justify-center w-30 h-15 gap-4 relative overflow-hidden rounded-full"

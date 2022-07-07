@@ -10,7 +10,7 @@ const es = {
     { id: 5, name: "Carreras" , path: "#careers" },
     // { id: 6, name: "Referral Program", path: "/referral" },
     // { id: 7, name: "Nearshore Software Development", path: "/nearshore-software-development" },
-    { id: 8, name: "Contacto", path: "#footer" },
+    { id: 8, name: "Contacto", path: "#contact" },
   ],
   intro: {
     title: "Somos una compañía dedicada a proveer soluciones tecnológicas.",
@@ -93,7 +93,7 @@ const es = {
       },
       {
         id: 6,
-        imgSource: "rocbird-bird",
+        imgSource: "rocbird-bird-blue",
         title: "Data Management",
         description:
           "Estamos felices de anunciar que Devlights y ",
