@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faXmark } from "@fortawesome/free-solid-svg-icons";
 import Boop from "./Boop";
 
-function ContactForm({title}) {
+function ContactForm({translation}) {
   const [validForm, setValidForm] = useState(true);
   const [errorSendingMessage, setErrorSendingMessage] = useState(false);
   const [messageSent, setMessageSent] = useState(false);
@@ -90,27 +90,27 @@ function ContactForm({title}) {
     <>
       {messageSent && (
         <div className="w-full h-full flex flex-col items-center">
-          <span className="text-4xl text-white font-bold font-open-sans my-24">Message sent!</span>
-          <span className="text-lg text-white font-bold font-open-sans mb-6">We will contact you soon</span>
+          <span className="text-4xl text-white font-bold font-open-sans my-24">{translation.form_sent}</span>
+          <span className="text-lg text-white font-bold font-open-sans mb-6">{translation.form_contact}</span>
           <button
             className="inline-block action-button-gradient py-2 px-6 sm:py-3 sm:px-12
               rounded-full cursor-pointer font-open-sans text-white text-xs sm:text-sm
               transition-all duration-300 ease-in-out"
             onClick={handleBackToHome}
           >
-            Back to Home
+            {translation.form_back}
           </button>
         </div>
       )}
       {!messageSent && (
         <>
-          <h2 className="font-aleo text-black text-center text-[2.6rem] font-semibold leading-[1.4] tracking-normal mt-4 mb-8 ">{title}</h2>
+          <h2 className="font-aleo text-black text-center text-[2.6rem] font-semibold leading-[1.4] tracking-normal mt-4 mb-8 ">{translation.title}</h2>
           <form action="#" onSubmit={handleSubmit} className="flex flex-col w-full">
             <div className="relative mb-4">
               <div className={`${(name.length > 0) ? 'block' : 'hidden'}`}>
                 <FontAwesomeIcon
                   icon={nameValid ? faCheck : faXmark}
-                  className={`${(nameValid) ? 'text-green-600' : 'text-red-700'}  text-xl absolute right-2 top-2`}
+                  className={`${(nameValid) ? 'text-green-600' : 'text-red-700'}  text-xl absolute right-4 top-2`}
                 />
               </div>
               <input
@@ -118,21 +118,21 @@ function ContactForm({title}) {
                 ref={nameInput}
                 onChange={handleNameInput}
                 type="text"
-                placeholder="Name*"
+                placeholder={translation.form_name}
                 className={`w-full h-9  px-3 text-base text-gray-placeholder bg-white bg-clip-padding
                 border border-gray-border rounded-3xl focus:ring focus:ring-icon-blue outline-none font-aleo contact-shadow
                 ${(nameValid || name.length === 0) ? 'focus:ring-icon-blue' : 'focus:ring-red-700 border-2 border-red-700'}
                 ${(nameValid) ? 'border-2 border-green-600' : ''}`}
               />
               <div className={`${(nameValid || name.length === 0) ? 'opacity-0' : 'opacity-100  text-black'} text-white text-sm pl-2 pt-1`}>
-                Name must be at least 5 characters long.
+                {translation.form_name_error}
               </div>
             </div>
             <div className="relative mb-4">
               <div className={`${(email.length > 0) ? 'block' : 'hidden'}`}>
                 <FontAwesomeIcon
                   icon={emailValid ? faCheck : faXmark}
-                  className={`${(emailValid) ? 'text-green-600' : 'text-red-700'}  text-xl absolute right-2 top-2`}
+                  className={`${(emailValid) ? 'text-green-600' : 'text-red-700'}  text-xl absolute right-4 top-2`}
                 />
               </div>
               <input
@@ -140,28 +140,28 @@ function ContactForm({title}) {
                 ref={emailInput}
                 onChange={handleEmailInput}
                 type="email"
-                placeholder="E-mail*"
+                placeholder={translation.form_email}
                 className={`w-full h-9  px-3 text-base text-gray-placeholder bg-white bg-clip-padding contact-shadow
                 border border-gray-border rounded-3xl focus:ring focus:ring-icon-blue outline-none font-aleo
                 ${(emailValid || email.length === 0) ? 'focus:ring-icon-blue' : 'focus:ring-red-700 border-2 border-red-700'}
                 ${(emailValid) ? 'border-2 border-green-600' : ''}`}
               />
               <div className={`${(emailValid || email.length === 0) ? 'opacity-0' : 'opacity-100 text-black'} text-white text-sm pl-2 pt-1`}>
-                Please enter a valid email with at least 10 characters long.
+                {translation.form_email_error}
               </div>
             </div>
             <div className="relative mb-4">
               <div className={`${(message.length > 0) ? 'block' : 'hidden'}`}>
                 <FontAwesomeIcon
                   icon={messageValid ? faCheck : faXmark}
-                  className={`${(messageValid) ? 'text-green-600' : 'text-red-700'}  text-xl absolute right-2 top-2`}
+                  className={`${(messageValid) ? 'text-green-600' : 'text-red-700'}  text-xl absolute right-4 top-2`}
                 />
               </div>
               <textarea
                 value={message}
                 ref={messageInput}
                 onChange={handleMessageInput}
-                placeholder="Message*"
+                placeholder={translation.form_message}
                 className={`w-full h-40 px-3 pt-2 pb-1 text-base text-gray-placeholder contact-shadow
               bg-white bg-clip-padding border border-gray-border rounded-xl
                 overflow-auto resize-none focus:ring focus:ring-icon-blue outline-none font-aleo
@@ -169,10 +169,10 @@ function ContactForm({title}) {
                 ${(messageValid) ? 'border-2 border-green-600' : ''}`}
               />
               <div className={`${(messageValid || message.length === 0) ? 'opacity-0' : 'opacity-100  text-black'} text-white text-sm pl-2 pt-1`}>
-                Message must be at least 10 characters long.
+                {translation.form_message_error}
               </div>
               {!validForm && (<div className={`${(validForm) ? 'opacity-0' : 'opacity-100 text-black'} text-white text-sm pl-2 pt-1`}>
-                Please check all the fields are complete and try again.
+              {translation.form_error}
               </div>)}
             </div>
             <div className="flex justify-center items-center">
@@ -183,7 +183,7 @@ function ContactForm({title}) {
                   transition-all duration-300 ease-in-out gold-gradient button-active"
                   type="submit"
                 >
-                  Send Message
+                  {translation.form_btn}
                 </button>
               </Boop>
             </div>

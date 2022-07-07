@@ -435,7 +435,7 @@ function NearshoreSoftwareDevelopment() {
             data-aos-once
           >
               <ContactForm
-                title={translation.get_in_touch_section.form_title}
+                translation={translation.get_in_touch_section}
               />
           </div>
         </div>

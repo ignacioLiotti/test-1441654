@@ -569,7 +569,17 @@ const en = {
       second_card:"However, sometimes the budget or time frames are tight, or the company might simply need a full-time remote talent to do a specific job. In this case, staffing-as-a-service is the way to go in such a case.",
       third_card: " Devlights is capable of providing highly-skilled specialists short-term and long-term IT staffing projects built to your specification and for a fraction of the cost.",
       form_title: "Let's get in touch",
-      form_btn: "Send Message"
+      form_name: "Name",
+      form_name_error: "Name must be at least 5 characters long.",
+      form_email: "E-mail",
+      form_email_error: "Please enter a valid email with at least 10 characters long.",
+      form_message: "Message",
+      form_message_error: "Message must be at least 10 characters long.",
+      form_btn: "Send Message",
+      form_error: "Please check all the fields are complete and try again.",
+      form_sent: "Message sent!",
+      form_contact: "We will contact you soon",
+      form_back: "Back to Home",
     },
     our_clients_section: {
       title: "What our clients say about us"
