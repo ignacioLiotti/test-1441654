@@ -4,12 +4,17 @@ import GoldLinkButton from "../components/GoldLinkButton";
 import { useRouter } from "next/router";
 import { IoCloseOutline } from "react-icons/io5";
 import { BiLoaderAlt } from "react-icons/bi";
+import Boop from "../components/Boop";
 
 function HeroSection({ strings }) {
   const ref = useRef()
 
   const router = useRouter();
   
+  const springConfig = {
+    tension: 100,
+    friction: 10,
+  }
 
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -38,7 +43,7 @@ function HeroSection({ strings }) {
                 <div className="" >
                   <div className="flex relative bottom-37px">
                     <iframe
-                      className="z-50"
+                      className="z-50 w-[90vw] h-[30vh] md:w-[60vw] md:h-[80vh] border-0"
                       loading="lazy"
                       width="800"
                       height="500"
@@ -85,7 +90,9 @@ function HeroSection({ strings }) {
                 }}
               >
                 <div className="flex items-center justify-center h-12 w-12 bg-white rounded-full">
-                  <span className=" triangle "></span>
+                  <Boop x={10} springConfig={springConfig}>
+                    <span className="flex triangle "></span>
+                  </Boop>
                 </div>
                 <span className="text-white">{strings.btnVideo}</span>
               </button>

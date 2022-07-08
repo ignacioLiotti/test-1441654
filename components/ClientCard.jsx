@@ -13,10 +13,11 @@ function ClientCard({ clientId }) {
         className="group-hover:scale-110 transition-all duration-300 ease-in-out
       transition-all duration-200 ease-linear w-full h-full"
       >
-        <div className="relative w-full h-full rounded-lg object-contain">
+        <div className="relative w-full h-full rounded-lg object-contain flex items-center justify-center">
           <Image
             src={`/images/clients/client-${clientId}.png`}
-            layout="fill"
+            width={430}
+            height={193}
             alt="client image"
           />
         </div>

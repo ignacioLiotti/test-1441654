@@ -2,6 +2,12 @@ import React from "react";
 import Boop from "../components/Boop";
 
 function AboutSection({ strings }) {
+
+  const springConfig = {
+    tension: 100,
+    friction: 1,
+  }
+
   return (
     <section id="about" 
       className="w-full bg-about-section bg-no-repeat bg-size-30 bg-right-center">
@@ -19,11 +25,9 @@ function AboutSection({ strings }) {
               />
           </div>
           <div className="flex flex-col justify-center md:max-w-[65%] md:pr-[8rem]">
-            <Boop x={65} y={-50} >
-              <div className="animate-idleIcon4">
-                <img src="/images/icons/icon_1.png" />
-              </div>
-            </Boop>
+            <div className="animate-idleIcon4">
+              <img src="/images/icons/icon_1.png" />
+            </div>
             <img
               src={`/images/${strings.srcImageMobile}.png`}
               className="md:hidden inline max-w-full h-full object-contain"

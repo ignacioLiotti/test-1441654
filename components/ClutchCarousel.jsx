@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useSwipeable } from "react-swipeable";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import Boop from "./Boop";
 
 export const CarouselItem = ({ children, width }) => {
   return (
@@ -58,10 +59,12 @@ const Carousel = ({ children }) => {
             updateIndex(activeIndex - 1);
           }}
         >
-          <FontAwesomeIcon
-            icon={faAngleLeft}
-            className="text-white text-4xl mr-6 pt-1 hover:text-almost-black"
-          />
+          <Boop x={-10}>
+            <FontAwesomeIcon
+              icon={faAngleLeft}
+              className="text-white text-4xl mr-6 pt-1 hover:text-gray-200"
+            />
+          </Boop>
         </button>
       <div
         className="overflow-hidden md:h-full flex items-center justify-center"
@@ -85,10 +88,12 @@ const Carousel = ({ children }) => {
             updateIndex(activeIndex + 1);
           }}
         >
-          <FontAwesomeIcon
-            icon={faAngleRight}
-            className="text-white text-4xl ml-6 pt-1 hover:text-almost-black"
-          />
+          <Boop x={10}>
+            <FontAwesomeIcon
+              icon={faAngleRight}
+              className="text-white text-4xl ml-6 pt-1 hover:text-gray-200"
+            />
+          </Boop>
         </button>
     </div>
   );

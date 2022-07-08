@@ -15,6 +15,7 @@ import ExtraLayout from "../layouts/ExtraLayout";
 import GoldActionButton from "../components/GoldActionButton";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Boop from "../components/Boop";
 
 function NearshoreSoftwareDevelopment() {
   useEffect(() => {
@@ -372,11 +373,15 @@ function NearshoreSoftwareDevelopment() {
               <div className="flex flex-col items-start justify-start md:ml-[3rem] ">
                 <div className="blue-transparent-nearshore rounded-[0.7rem] mb-[1.5rem] mt-[2rem] md:mt-0">
                   <div className="relative flex flex-col  md:flex-row justify-center items-center md:items-start bg-dark-blue-nearshore m-[0.4rem] p-[1rem] rounded-[0.5rem]">
-                    <div className="flex justify-center mr-[1rem] items-center h-[5rem] md:h-[3rem] w-[5rem] md:w-[3rem] rounded-[50%]  blue-purple-gradient-2 p-[1rem]"> 
-                      <FontAwesomeIcon
-                        icon={faCheck}
-                        className=" text-white text-5xl md:text-2xl"
-                      />
+                    <div className="flex justify-center items-center mr-[1rem] h-[5rem] md:h-[3rem] w-[5rem] md:w-[3rem] rounded-[50%]  blue-purple-gradient-2 "> 
+                      <Boop rotation={40}>
+                        <div className="flex justify-center items-center h-[5rem] md:h-[3rem] w-[5rem] md:w-[3rem] rounded-[50%]"> 
+                          <FontAwesomeIcon
+                            icon={faCheck}
+                            className=" text-white text-5xl md:text-2xl"
+                          />
+                        </div>
+                      </Boop>
                     </div>
                     <div>
                       <h3 className="text-white text-2xl mt-[1rem] md:mt-0 font-bold text-center md:text-left">
@@ -391,10 +396,14 @@ function NearshoreSoftwareDevelopment() {
                 <div className="blue-transparent-nearshore rounded-[0.7rem] mb-[1.5rem]">
                   <div className="relative flex flex-col md:flex-row justify-center items-center md:items-start bg-dark-blue-nearshore m-[0.4rem] p-[1rem] rounded-[0.5rem]">
                     <div className="flex justify-center mr-[1rem] items-center h-[5rem] md:h-[3rem] w-[5rem] md:w-[3rem] rounded-[50%]  blue-purple-gradient-2 p-[1rem]"> 
-                      <FontAwesomeIcon
-                        icon={faCheck}
-                        className=" text-white text-5xl md:text-2xl"
-                      />
+                      <Boop rotation={40}>
+                          <div className="flex justify-center items-center h-[5rem] md:h-[3rem] w-[5rem] md:w-[3rem] rounded-[50%]"> 
+                            <FontAwesomeIcon
+                              icon={faCheck}
+                              className=" text-white text-5xl md:text-2xl"
+                            />
+                          </div>
+                      </Boop>
                     </div>
                     <div>
                       <p className="text-white text-[1.2rem] mt-[1rem] md:mt-0 text-center md:text-left">
@@ -407,10 +416,14 @@ function NearshoreSoftwareDevelopment() {
                 <div className="blue-transparent-nearshore rounded-[0.7rem] mb-[2rem]">
                   <div className="relative flex flex-col md:flex-row justify-center items-center md:items-start bg-dark-blue-nearshore m-[0.4rem] p-[1rem] rounded-[0.5rem]">
                     <div className="flex justify-center mr-[1rem] items-center h-[5rem] md:h-[3rem] w-[5rem] md:w-[3rem] rounded-[50%]  blue-purple-gradient-2 p-[1rem]"> 
-                      <FontAwesomeIcon
-                        icon={faCheck}
-                        className=" text-white text-5xl md:text-2xl"
-                      />
+                      <Boop rotation={40}>
+                          <div className="flex justify-center items-center h-[5rem] md:h-[3rem] w-[5rem] md:w-[3rem] rounded-[50%]"> 
+                            <FontAwesomeIcon
+                              icon={faCheck}
+                              className=" text-white text-5xl md:text-2xl"
+                            />
+                          </div>
+                      </Boop>
                     </div>
                     <div>
                       <p className="text-white text-[1.2rem] mt-[1rem] md:mt-0 text-center md:text-left">
