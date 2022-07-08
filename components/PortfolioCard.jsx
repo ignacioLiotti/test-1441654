@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
@@ -27,11 +28,15 @@ function PortfolioCard({ data }) {
           />
         </a>
       </div>
-      <img
-        src={`/images/portfolio/${data.imageName}.png`}
-        className="w-full h-full rounded-lg object-cover group-hover:opacity-30 transition-all duration-200 ease-linear"
-        alt="about us"
-      />
+      <div
+        className="relative overflow-hidden w-full h-full rounded-lg object-cover group-hover:opacity-30 transition-all duration-200 ease-linear"
+      >
+        <Image
+          src={`/images/portfolio/${data.imageName}.png`}
+          alt="about us"
+          layout="fill"
+        />
+      </div>
     </div>
   );
 }
