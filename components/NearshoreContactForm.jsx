@@ -104,8 +104,8 @@ function ContactForm({translation}) {
       )}
       {!messageSent && (
         <>
-          <h2 className="font-aleo text-black text-center text-[2.6rem] font-semibold leading-[1.4] tracking-normal mt-4 mb-8 ">{translation.title}</h2>
-          <form action="#" onSubmit={handleSubmit} className="flex flex-col w-full">
+          <h2 className="font-aleo text-black text-center text-[2.6rem] font-semibold leading-[1.4] tracking-normal mt-4 mb-8 ">{translation.form_title}</h2>
+          <form action="#" onSubmit={handleSubmit} className="flex flex-col w-full gap-[1rem]">
             <div className="relative mb-4">
               <div className={`${(name.length > 0) ? 'block' : 'hidden'}`}>
                 <FontAwesomeIcon
@@ -124,9 +124,10 @@ function ContactForm({translation}) {
                 ${(nameValid || name.length === 0) ? 'focus:ring-icon-blue' : 'focus:ring-red-700 border-2 border-red-700'}
                 ${(nameValid) ? 'border-2 border-green-600' : ''}`}
               />
-              <div className={`${(nameValid || name.length === 0) ? 'opacity-0' : 'opacity-100  text-black'} text-white text-sm pl-2 pt-1`}>
+              {(nameValid || name.length === 0) ? '' : (
+              <div className={`text-white text-sm pl-2 pt-1`}>
                 {translation.form_name_error}
-              </div>
+              </div>)}
             </div>
             <div className="relative mb-4">
               <div className={`${(email.length > 0) ? 'block' : 'hidden'}`}>
@@ -146,9 +147,11 @@ function ContactForm({translation}) {
                 ${(emailValid || email.length === 0) ? 'focus:ring-icon-blue' : 'focus:ring-red-700 border-2 border-red-700'}
                 ${(emailValid) ? 'border-2 border-green-600' : ''}`}
               />
-              <div className={`${(emailValid || email.length === 0) ? 'opacity-0' : 'opacity-100 text-black'} text-white text-sm pl-2 pt-1`}>
-                {translation.form_email_error}
-              </div>
+              {(emailValid || email.length === 0) ? '' : (
+                <div className={`text-white text-sm pl-2 pt-1`}>
+                  {translation.form_email_error}
+                </div>
+              )}
             </div>
             <div className="relative mb-4">
               <div className={`${(message.length > 0) ? 'block' : 'hidden'}`}>

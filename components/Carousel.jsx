@@ -67,7 +67,7 @@ const Carousel = ({ children }) => {
           return React.cloneElement(child, { width: "100%" });
         })}
       </div>
-      <div className="flex flex-row items-center, justify-center">
+      <div className="hidden md:flex flex-row items-center, justify-center">
         <button
           className="m-2"
           onClick={() => {

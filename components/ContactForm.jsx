@@ -129,14 +129,14 @@ function ContactForm() {
         </div>
       )}
       {!messageSent && (
-        <div className="px-5 mt-8 md:mt-0">
+        <div className="px-5 mt-8 md:mt-0 w-full">
           <h4 className="text-[1.2rem] md:text-lg mb-[1.6rem] text-white font-bold font-open-sans">
             {translation.form_title}
           </h4>
           <form
             action="#"
             onSubmit={handleSubmit}
-            className="flex flex-col w-full"
+            className="flex flex-col w-full gap-[1rem]"
           >
             <div className="relative">
               <div className={`${name.length > 0 ? "block" : "hidden"}`}>
@@ -162,13 +162,10 @@ function ContactForm() {
                 }
                 ${nameValid ? "border-2 border-green-600" : ""}`}
               />
-              <div
-                className={`${
-                  nameValid || name.length === 0 ? "opacity-0" : "opacity-100"
-                } text-white text-sm pl-2 pt-1`}
-              >
+              {nameValid || name.length === 0 ? '' : (
+              <div className={`text-white text-sm pl-2 pt-1`}>
                 {translation.form_name_error}
-              </div>
+              </div>)}
             </div>
             <div className="relative">
               <div className={`${email.length > 0 ? "block" : "hidden"}`}>
@@ -194,13 +191,11 @@ function ContactForm() {
                 }
                 ${emailValid ? "border-2 border-green-600" : ""}`}
               />
-              <div
-                className={`${
-                  emailValid || email.length === 0 ? "opacity-0" : "opacity-100"
-                } text-white text-sm pl-2 pt-1`}
-              >
+              {emailValid || email.length === 0 ? '' : (
+              <div className={`text-white text-sm pl-2 pt-1`}>
                 {translation.form_email_error}
-              </div>
+              </div>)}
+              
             </div>
             <div className="relative mb-4">
               <div className={`${message.length > 0 ? "block" : "hidden"}`}>
@@ -226,15 +221,10 @@ function ContactForm() {
                 }
                 ${messageValid ? "border-2 border-green-600" : ""}`}
               />
-              <div
-                className={`${
-                  messageValid || message.length === 0
-                    ? "opacity-0"
-                    : "opacity-100"
-                } text-white text-sm pl-2 pt-1`}
-              >
+              {messageValid || message.length === 0 ? '' : (
+              <div className={`text-white text-sm pl-2 pt-1`}>
                 {translation.form_message_error}
-              </div>
+              </div>)}
               {!validForm && (
                 <div
                   className={`${

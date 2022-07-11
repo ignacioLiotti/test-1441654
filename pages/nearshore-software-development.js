@@ -484,9 +484,9 @@ function NearshoreSoftwareDevelopment() {
         </div>
       </section>
       {/* meet the team */}
-      <section className="w-full md:h-[800px] flex flex-col items-center justify-start bg-nearshore-landing-team bg-working-cover bg-center bg-no-repeat pt-10 md:pt-20 px-10 pb-10">
+      <section className="w-full md:h-[800px] flex flex-col items-center justify-start bg-nearshore-landing-team bg-working-cover bg-center bg-no-repeat pt-10 md:pt-20 px-6 pb-10">
         <h2
-          className="font-aleo text-lavanda-nearshore text-[2.5rem] md:text-[3rem] font-semibold leading-[1.2]"
+          className="font-aleo text-lavanda-nearshore text-[2.5rem] text-center md:text-[3rem] font-semibold leading-[1.2]"
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in"
           data-aos-duration={800}
