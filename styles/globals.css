@@ -278,3 +278,46 @@ html{
   background-image: linear-gradient(90deg, #ff7208 0%, #fbd13b 35%, #6be2cd 70%);
 }
 
+.swiper-testimonials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-wrapper{
+  align-items: center;
+}
+.swiper-marquesina .swiper-wrapper{
+  align-items: center;
+  transition-timing-function: linear !important;
+}
+
+.swiper-testimonials .swiper-button-prev{
+  left: 25%;
+  background-image:url(../public/images/angle-left-solid.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+.swiper-testimonials .swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-testimonials .swiper-button-next{
+  right: 25%;
+  background-image:url(../public/images/angle-right-solid.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+.swiper-testimonials .swiper-button-next::after {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .swiper-testimonials .swiper-button-prev{
+    display: none;
+  }
+  .swiper-testimonials .swiper-button-next{
+    display: none;
+  }
+}

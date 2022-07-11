@@ -10,6 +10,17 @@ import Carousel from "../components/ClutchCarousel";
 import { CarouselItem } from "../components/ClutchCarousel";
 import ExtraLayout from "../layouts/ExtraLayout";
 
+
+import { Navigation, Pagination, Autoplay, A11y } from 'swiper';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 function ClutchAward2022() {
   useEffect(() => {
     Aos.init();
@@ -130,7 +141,7 @@ function ClutchAward2022() {
           </div>
         </div>
       </section>
-      <section className="w-full clutch-slide-gradient flex justify-center md:h-[28rem] overflow-hidden">
+      {/* <section className="w-full clutch-slide-gradient flex justify-center md:h-[28rem] overflow-hidden">
         <div data-aos="fade-up" data-aos-duration={1000} data-aos-once>
           <Carousel>
             {translation.clutch_Testimonials.clients?.map((client) => (
@@ -164,6 +175,49 @@ function ClutchAward2022() {
             ))}
           </Carousel>
         </div>
+      </section> */}
+      <section className="w-full clutch-slide-gradient flex justify-center items-center md:h-full md:py-[2rem] overflow-hidden">
+          <Swiper
+                  modules={[Autoplay, Pagination, Navigation]}
+                  slidesPerView={1}
+                  navigation
+                  loop={true}
+                  autoplay={{
+                    delay: 5000,
+                    disableOnInteraction: false,
+                  }}
+                  className="swiper-testimonials"
+          >
+            {translation.clutch_Testimonials.clients?.map((client) => (
+            <SwiperSlide>
+            <div className="flex flex-col items-center justify-center h-auto pb-8 pt-4 md:p-8 overflow-clip mx-10 ">
+              <div className="w-full lg:w-1/3 flex items-center justify-center">
+                <div className="w-[3.5rem] h-[3.5rem] sm:w-36 sm:h-36 relative">
+                  <Image
+                    src={`/images/clutch-quote.png`}
+                    layout="fill"
+                  />
+                </div>
+              </div>
+              <div className="w-full lg:w-[800px] flex flex-col items-center justify-center mt-4">
+                <h3 className="p-2 font-Poppins-Regular text-2xl font-normal text-white text-center tracking-[1px] w-full h-auto whitespace-pre-wrap">
+                  {`"${client.opinion}"`}
+                </h3>
+
+                <p className="p-1 hidden md:inline font-aleo text-white text-[1rem] leading-8 -mb-1  tracking-[1px]">
+                  {client.role}, {client.company}
+                </p>
+                <p className="p-1 md:hidden font-aleo text-white text-center text-[1rem] leading-8 -mb-1  tracking-[1px]">
+                  {client.role}
+                </p>
+                <p className=" md:hidden font-aleo text-white text-center leading-6 text-[1rem] leading-[16px] -mb-1  tracking-[1px]">
+                  {client.company}
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
+            ))}
+          </Swiper>
       </section>
       <section className="w-full flex flex-col items-center md:flex-row md:justify-center md:items-center overflow-hidden md:w-[72rem] md:mt-10 md:mb-10">
         <div

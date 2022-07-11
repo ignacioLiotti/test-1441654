@@ -507,7 +507,7 @@ const es = {
       first_card:"Nuestras soluciones de subcontratación le brindan a nuestros clientes acceso a un amplio grupo de profesionales. Dotar de estos profesionales es esencial para el exito de cualquier negocio, pero para ser eficiente requiere dedicar una cantidad significativa de recursos a este proceso.",
       second_card:"Sin embargo, a veces el presupuesto o el tiempo es ajustado, o la compania simplemente necesita de talentos remotos de disponibilidad full-time que realizan una tarea en especifico. En este caso, la contratación como servicio es el camino a seguir.",
       third_card: "Devlights es capaz de proporcionar proyectos de personal especialista de TI altamente calificados a corto y largo plazo según sus especificaciones y por una fracción del costo.",
-      form_title: "Pongamosnos en contacto.",
+      form_title: "Mandanos un mensaje.",
       form_name: "Nombre",
       form_name_error: "El nombre debe tener por lo menos 5 caracteres.",
       form_email: "E-mail",

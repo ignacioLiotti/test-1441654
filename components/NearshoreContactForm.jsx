@@ -125,7 +125,7 @@ function ContactForm({translation}) {
                 ${(nameValid) ? 'border-2 border-green-600' : ''}`}
               />
               {(nameValid || name.length === 0) ? '' : (
-              <div className={`text-white text-sm pl-2 pt-1`}>
+              <div className={`text-black text-sm pl-2 pt-1`}>
                 {translation.form_name_error}
               </div>)}
             </div>
@@ -148,7 +148,7 @@ function ContactForm({translation}) {
                 ${(emailValid) ? 'border-2 border-green-600' : ''}`}
               />
               {(emailValid || email.length === 0) ? '' : (
-                <div className={`text-white text-sm pl-2 pt-1`}>
+                <div className={`text-black text-sm pl-2 pt-1`}>
                   {translation.form_email_error}
                 </div>
               )}

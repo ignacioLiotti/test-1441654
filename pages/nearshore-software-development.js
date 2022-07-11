@@ -17,6 +17,16 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Boop from "../components/Boop";
 
+import { Navigation, Pagination, Autoplay, A11y } from 'swiper';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 function NearshoreSoftwareDevelopment() {
   useEffect(() => {
     Aos.init();
@@ -454,7 +464,7 @@ function NearshoreSoftwareDevelopment() {
         </div>
       </section>
       {/* testimonials */}
-      <section className="w-full overflow-hidden clutch-slide-gradient flex justify-center md:h-[38rem]">
+      {/* <section className="w-full overflow-hidden clutch-slide-gradient flex justify-center md:h-[38rem]">
         <div data-aos="fade-up" data-aos-duration={1000} data-aos-once>
           <ClutchCarousel>
             {testimonials.clients?.map((client) => ( 
@@ -482,6 +492,49 @@ function NearshoreSoftwareDevelopment() {
             ))}
           </ClutchCarousel>
         </div>
+      </section> */}
+      <section className="w-full clutch-slide-gradient flex justify-center items-center md:h-full md:py-[2rem] overflow-hidden">
+          <Swiper
+                  modules={[Autoplay, Pagination, Navigation]}
+                  slidesPerView={1}
+                  navigation
+                  loop={true}
+                  autoplay={{
+                    delay: 5000,
+                    disableOnInteraction: false,
+                  }}
+                  className="swiper-testimonials"
+          >
+            {testimonials.clients?.map((client) => (
+            <SwiperSlide>
+            <div className="flex flex-col items-center justify-center h-auto pb-8 pt-4 md:p-8 overflow-clip mx-10 ">
+              <div className="w-full lg:w-1/3 flex items-center justify-center">
+                <div className="w-[3.5rem] h-[3.5rem] sm:w-36 sm:h-36 relative">
+                  <Image
+                    src={`/images/clutch-quote.png`}
+                    layout="fill"
+                  />
+                </div>
+              </div>
+              <div className="w-full lg:w-[800px] flex flex-col items-center justify-center mt-4">
+                <h3 className="p-2 font-Poppins-Regular text-md md:text-2xl font-normal text-white text-center tracking-[1px] w-full h-auto whitespace-pre-wrap">
+                  {`"${client.opinion}"`}
+                </h3>
+
+                <p className="p-1 hidden md:inline font-aleo text-white text-lg font-bold leading-8 -mb-1  tracking-[1px]">
+                  {client.role}, {client.company}
+                </p>
+                <p className="p-1 md:hidden font-aleo text-white text-center text-lg font-bold leading-8 -mb-1  tracking-[1px]">
+                  {client.role}
+                </p>
+                <p className=" md:hidden font-aleo text-white text-center leading-6 text-lg font-bold leading-[24px] -mb-1  tracking-[1px]">
+                  {client.company}
+                </p>
+              </div>
+            </div>
+          </SwiperSlide>
+            ))}
+          </Swiper>
       </section>
       {/* meet the team */}
       <section className="w-full md:h-[800px] flex flex-col items-center justify-start bg-nearshore-landing-team bg-working-cover bg-center bg-no-repeat pt-10 md:pt-20 px-6 pb-10">
