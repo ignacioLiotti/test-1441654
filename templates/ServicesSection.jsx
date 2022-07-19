@@ -10,7 +10,7 @@ function ServicesSection({ strings }) {
     >
       <div className="container-width">
         <div className="flex flex-col lg:flex-row">
-          <div className="flex flex-col items-center md:items-start w-full lg:max-w-[25%] px-4  sm:mt-[17rem] md:mt-[10.625rem] lg:mt-0">
+          <div className="flex flex-col items-center md:items-start w-full lg:max-w-[25%] px-4   md:mt-[10.625rem] lg:mt-0">
             <h2 className="font-aleo font-bold text-center xs:text-left text-white text-5xl leading-tight mb-5 mt-[7rem]">
               {strings.title}
             </h2>

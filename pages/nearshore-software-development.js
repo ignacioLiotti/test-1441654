@@ -503,7 +503,7 @@ function NearshoreSoftwareDevelopment() {
                     delay: 5000,
                     disableOnInteraction: false,
                   }}
-                  className="swiper-testimonials"
+                  className="swiper-testimonials overflow-hidden md:w-[60vw]"
           >
             {testimonials.clients?.map((client) => (
             <SwiperSlide>

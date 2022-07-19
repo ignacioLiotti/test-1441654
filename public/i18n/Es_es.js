@@ -491,7 +491,7 @@ const es = {
       dependable_paragraph: "Nos preocupamos por las relaciones a largo plazo con los clientes. Este es un valor central en Devlights. Nos esforzamos por crear relaciones sólidas y trabajar junto con nuestros clientes para ayudarlos a tener éxito a largo plazo."
     },
     partner_up_section: {
-      title: "¡Asociémonos en su próximo proyecto!",
+      title: "¡Trabajemos juntos en su próximo proyecto!",
       paragraph: "Devlights se destaca del resto porque es capaz de ofrecer soluciones de desarrollo de software punta a punta a sus clientes. Contamos con un equipo calificado de profesionales totalmente dedicados a trabajar en los proyectos tecnológicos de nuestros clientes. Usted proporciona las especificaciones, nosotros proporcionamos una solución de software.",
       btn: "Cuéntanos más sobre tu proyecto"
     },

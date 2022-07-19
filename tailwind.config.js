@@ -38,11 +38,15 @@ module.exports = {
       },
     },
     fontFamily: {
-      "open-sans": ['"Open Sans"'],
-      aleo: ["Aleo"],
-      "montserrat": ["Montserrat"],
       "poppins": ["Poppins"],
-      "oswald": ["Oswald"],
+    },
+    fontSize: {
+      "xs": "1rem",
+      "sm": "1.25rem",
+      "base": "1.5rem",
+      "lg": "2.125rem",
+      "xl": "3rem",
+      "2xl": "3.75rem",
     },
     backgroundPosition: {
       "right-center": "right center",
@@ -96,7 +100,8 @@ module.exports = {
       idleIcon3: "idle03 15s linear infinite alternate",
       idleIcon4: "idle04 9s ease-in-out 1s infinite alternate none running",
       idleIcon5: "idle05 3s ease-in-out 1s infinite alternate none running",
-      hoveringArrow: "hoveringArrow 3s ease-in-out infinite alternate"
+      hoveringArrow: "hoveringArrow 3s ease-in-out infinite alternate",
+      slideLeft: "slide_Left 0.5s ease-in-out normal none running"
     },
     keyframes: {
       idle01: {
@@ -261,11 +266,19 @@ module.exports = {
           opacity: 0
         }
       },
+      slide_Left: {
+        '0%': {
+          height: '0px',
+        },
+        '100%': {
+          height: '10rem',
+        }
+      },
     },
     screens: {
       'xs': '448px',
       'sm': '640px',
-      'md': '768px',
+      'md': '770px',
       'lg': '1024px',
       'xl': '1280px',
       '2xl': '1536px'

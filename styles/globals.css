@@ -292,7 +292,7 @@ html{
 }
 
 .swiper-testimonials .swiper-button-prev{
-  left: 25%;
+  left: 10%;
   background-image:url(../public/images/angle-left-solid.svg);
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -303,7 +303,7 @@ html{
 }
 
 .swiper-testimonials .swiper-button-next{
-  right: 25%;
+  right: 10%;
   background-image:url(../public/images/angle-right-solid.svg);
   background-repeat: no-repeat;
   background-size: 100% auto;

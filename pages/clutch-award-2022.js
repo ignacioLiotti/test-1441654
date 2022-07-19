@@ -102,7 +102,7 @@ function ClutchAward2022() {
           </p>
         </div>
       </section>
-      <section className="w-full flex flex-col md:flex-row md:justify-center items-center md:w-[72rem] md:mt-10 md:mb-10 overflow-hidden">
+      <section className="w-full flex flex-col md:flex-row md:justify-center items-center md:w-[90%] lg:max-w-[72rem] md:mt-10 md:mb-10 overflow-hidden">
         <div
           className="w-full flex flex-col items-center p-8 md:w-[42rem] md:items-left md:p-4"
           data-aos="fade-right"

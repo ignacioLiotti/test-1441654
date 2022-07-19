@@ -4,20 +4,20 @@ import GoldLinkButton from "../components/GoldLinkButton";
 
 function ClutchSection({ strings }) {
   return (
-    <section className="w-full flex flex-col md:flex-row pb-12 md:pb-0 md:py-14 md:w-[64rem]">
-      <div className="px-4" data-aos="fade-up" data-aos-once>
+    <section className="w-full flex flex-col md:flex-row pb-12 md:pb-0 md:py-14 px-[10%] md:px-[15%] lg:w-[75rem] lg:mx-[auto] lg:px-0 " >
+      <div className="px-4 flex" data-aos="fade-up" data-aos-once>
         <img
           src={`/images/clutch_section_bn.svg`}
-          className="hidden md:flex w-[50rem] h-[50rem] object-contain md:-translate-x-28"
+          className="hidden md:flex min-w-[25rem] h-[50rem] object-contain"
           alt="Clutch award"
         />
         <img
           src={`/images/clutch.png`}
-          className="max-w-[65%] h-full object-contain m-auto mb-6 md:hidden"
+          className="max-w-[15rem] sh-full object-contain m-auto mb-6 md:hidden"
           alt="Clutch award"
         />
       </div>
-      <div className="container-width flex flex-col items-center justify-center w-full md:items-start md:-translate-x-52">
+      <div className=" flex flex-col items-center justify-center w-full md:items-start">
         <img
           src={`/images/cluch-section-title.png`}
           className="w-28 mb-6 object-contain md:w-44"
