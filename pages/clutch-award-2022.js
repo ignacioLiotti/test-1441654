@@ -55,7 +55,7 @@ function ClutchAward2022() {
         </div>
       </section>
       <section
-        className="w-full flex flex-col md:flex-row md:justify-center md:w-[72rem] md:mt-10 md:mb-10"
+        className="w-full flex flex-col md:flex-row md:justify-center md:max-w-[72rem] md:mt-10 md:mb-10"
         data-aos="fade-up"
         data-aos-duration={1000}
         data-aos-once
@@ -102,9 +102,9 @@ function ClutchAward2022() {
           </p>
         </div>
       </section>
-      <section className="w-full flex flex-col md:flex-row md:justify-center items-center md:w-[90%] lg:max-w-[72rem] md:mt-10 md:mb-10 overflow-hidden">
+      <section className="w-full flex flex-col lg:flex-row lg:justify-center items-center md:w-[90%] lg:max-w-[72rem] md:mt-10 md:mb-10 overflow-hidden">
         <div
-          className="w-full flex flex-col items-center p-8 md:w-[42rem] md:items-left md:p-4"
+          className="w-full flex flex-col items-center p-8 md:w-[42rem] md:items-start md:p-4"
           data-aos="fade-right"
           data-aos-duration={1000}
           data-aos-once
@@ -219,7 +219,7 @@ function ClutchAward2022() {
             ))}
           </Swiper>
       </section>
-      <section className="w-full flex flex-col items-center md:flex-row md:justify-center md:items-center overflow-hidden md:w-[72rem] md:mt-10 md:mb-10">
+      <section className="w-full flex flex-col items-center md:flex-row md:justify-center md:items-center overflow-hidden md:max-w-[72rem] md:mt-10 md:mb-10">
         <div
           className="flex flex-col items-left md:items-left p-4 md:w-[42rem] "
           data-aos="fade-right"

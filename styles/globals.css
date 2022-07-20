@@ -313,7 +313,7 @@ html{
   display: none;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .swiper-testimonials .swiper-button-prev{
     display: none;
   }

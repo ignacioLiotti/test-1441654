@@ -30,10 +30,10 @@ function Rocbird() {
       </Head>
       {/* hero section */}
       <section className="w-full h-[auto] overflow-hidden flex items-center justify-around bg-rocbird-landing-hero bg-working-cover bg-center bg bg-no-repeat pb-10 md:-mt-24  md:pt-40 md:pb-32 ">
-        <div className="flex flex-col md:flex-row justify-center items-center w-[80rem]">
-          <div className="w-full p-8 md:p-0 md:w-[40rem] md:mt-24 ">
+        <div className="flex flex-col md:flex-row justify-center items-center max-w-[80rem]">
+          <div className="w-full p-8 lg:p-4 md:max-w-[40rem] md:mt-24 ">
             <div
-              className="flex flex-col justify-center items-start md:w-[35rem] pt-[4rem] md:pt-0 md:mb-4 md:mr-80 md:order-1 lg:order-2 "
+              className="flex flex-col justify-center items-start flex-[1_1_35px] pt-[4rem] md:pt-0 md:mb-4 md:order-1 lg:order-2 "
               data-aos="fade-right"
               data-aos-duration={1000}
               data-aos-once
@@ -46,13 +46,13 @@ function Rocbird() {
               </p>
             </div>
           </div>
-          <div className=""
+          <div className="flex flex-1 min-w-[400px]"
               data-aos="fade-left"
               data-aos-duration={1000}
               data-aos-once> 
               <img
                   src={`/images/rocbird/rocbirdplusdevlights.png`}
-                  className="w-[45rem] px-10 md:mt-24 md:mb-6 object-contain"
+                  className="w-full px-10 md:mt-24 md:mb-6 object-contain"
                   alt="Rocbird + Devlights"
               />
           </div>
@@ -60,9 +60,9 @@ function Rocbird() {
         </div>
       </section>
       {/* aliance + photos */}
-      <section className="flex flex-col md:flex-row justify-around items-center w-full md:w-[90rem] md:h-[27rem] bg-white md:my-24">
+      <section className="flex flex-col lg:flex-row justify-around items-center w-full md:max-w-[90rem] lg:h-[27rem] bg-white md:my-24">
         <div
-          className="relative flex flex-col justify-center items-center w-full md:w-[40%] md:h-[auto]"
+          className="relative flex flex-col justify-center items-center md:w-[50%] md:h-[auto] mx-8"
           data-aos="fade-up"
           data-aos-duration={1000}
           data-aos-delay="100"
@@ -70,10 +70,10 @@ function Rocbird() {
         >
             <img
                 src={`/images/rocbird/blob.svg`}
-                className="z-0 object-contain w-full md:motion-safe:animate-[idle05_5s_ease-in-out_3s_infinite_alternate_none_running]"
+                className="z-0 object-contain max-w-[35rem] min-w-[25rem] md:motion-safe:animate-[idle05_5s_ease-in-out_3s_infinite_alternate_none_running]"
                 alt="clients"
                 />
-            <div className="absolute w-[10rem] md:w-[17rem]">
+            <div className="absolute w-[10rem] lg:w-[17rem]">
               <BoopImg y='-35' scale='1.05' rotation='-5' springConfig={{tension:'50',friction:'20'}}>
                     <img
                         src={`/images/rocbird/nahu.png`}
@@ -86,7 +86,7 @@ function Rocbird() {
               <BoopImg x='15' scale='1.05' rotation='15' springConfig={{tension:'150',friction:'10'}}>
                 <img
                   src={`/images/rocbird/nico.png`}
-                  className="object-contain w-[6rem] md:w-[10rem] md:motion-safe:animate-[idle05_1.7s_ease-in-out_3s_infinite_alternate_none_running]"
+                  className="object-contain w-[6rem] md:w-[8rem] lg:w-[10rem] md:motion-safe:animate-[idle05_1.7s_ease-in-out_3s_infinite_alternate_none_running]"
                   alt="clients"
                 /> 
               </BoopImg>
@@ -95,7 +95,7 @@ function Rocbird() {
               <BoopImg y='15' scale='1.05' rotation='5' springConfig={{tension:'100',friction:'5'}}>
                 <img
                   src={`/images/rocbird/yisus.png`}
-                  className=" z-10 object-contain w-[5rem] md:w-[10rem] md:motion-safe:animate-[idle06_3.7s_ease-in-out_0.5s_infinite_alternate_none_running]"
+                  className=" z-10 object-contain w-[5rem] md:w-[7rem] lg:w-[10rem] md:motion-safe:animate-[idle06_3.7s_ease-in-out_0.5s_infinite_alternate_none_running]"
                   alt="clients"
                 />
               </BoopImg>
@@ -103,13 +103,13 @@ function Rocbird() {
 
         </div>
         <div
-          className="flex flex-col justify-center items-start px-6 mb-10 md:mb-0"
+          className="flex flex-col justify-center items-start lg:w-[50%] px-6 mb-10 md:mb-0"
           data-aos="fade-up"
           data-aos-duration={1000}
           data-aos-delay="100"
           data-aos-once
         >
-          <div className="flex flex-row justify-start items-center md:w-[40rem]  group ">
+          <div className="flex flex-row justify-start items-center lg:max-w-[40rem]  group ">
             <div className="flex justify-center items-center w-[8rem] h-[8rem] md:h-[10rem] px-[1.75rem] py-[2.5rem] bg-purple-nearshore md:bg-white group-hover:bg-purple-nearshore transition-all ease-in-out rounded-[10px] rocbird-shadow">
               <img
                       src={`/images/rocbird/icon1.svg`}
@@ -121,7 +121,7 @@ function Rocbird() {
               {translation.this_aliance_section.first_card}
             </p>
           </div>
-          <div className="flex flex-row justify-center items-center md:w-[40rem] mt-[3rem] group">
+          <div className="flex flex-row justify-center items-center lg:max-w-[40rem] mt-[3rem] group">
             <div className="flex justify-center items-center w-[8rem] h-[8rem] md:h-[10rem] px-[1.75rem] py-[2.5rem] bg-white group-hover:bg-purple-nearshore transition-all ease-in-out rounded-[10px] rocbird-shadow">
               <img
                       src={`/images/rocbird/icon2.svg`}

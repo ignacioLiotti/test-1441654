@@ -103,9 +103,8 @@ function ContactForm({translation}) {
         </div>
       )}
       {!messageSent && (
-        <>
-          <h2 className="font-aleo text-black text-center text-[2.6rem] font-semibold leading-[1.4] tracking-normal mt-4 mb-8 ">{translation.form_title}</h2>
-          <form action="#" onSubmit={handleSubmit} className="flex flex-col w-full gap-[1rem]">
+          <form action="#" onSubmit={handleSubmit} className="flex flex-col gap-[1rem]">
+            <h2 className="text-black text-center text-[2.6rem] font-semibold leading-[1.4] tracking-normal mt-4 mb-4 ">{translation.form_title}</h2>
             <div className="relative mb-4">
               <div className={`${(name.length > 0) ? 'block' : 'hidden'}`}>
                 <FontAwesomeIcon
@@ -120,7 +119,7 @@ function ContactForm({translation}) {
                 type="text"
                 placeholder={translation.form_name}
                 className={`w-full h-9  px-3 text-sm text-gray-placeholder bg-white bg-clip-padding
-                border border-gray-border rounded-3xl focus:ring focus:ring-icon-blue outline-none font-aleo contact-shadow
+                border border-gray-border rounded-3xl focus:ring focus:ring-icon-blue outline-none  contact-shadow
                 ${(nameValid || name.length === 0) ? 'focus:ring-icon-blue' : 'focus:ring-red-700 border-2 border-red-700'}
                 ${(nameValid) ? 'border-2 border-green-600' : ''}`}
               />
@@ -142,8 +141,8 @@ function ContactForm({translation}) {
                 onChange={handleEmailInput}
                 type="email"
                 placeholder={translation.form_email}
-                className={`w-full h-9  px-3 text-sm text-gray-placeholder bg-white bg-clip-padding contact-shadow
-                border border-gray-border rounded-3xl focus:ring focus:ring-icon-blue outline-none font-aleo
+                className={`w-full h-9 px-3 text-sm text-gray-placeholder bg-white bg-clip-padding contact-shadow
+                border border-gray-border rounded-3xl focus:ring focus:ring-icon-blue outline-none 
                 ${(emailValid || email.length === 0) ? 'focus:ring-icon-blue' : 'focus:ring-red-700 border-2 border-red-700'}
                 ${(emailValid) ? 'border-2 border-green-600' : ''}`}
               />
@@ -166,8 +165,8 @@ function ContactForm({translation}) {
                 onChange={handleMessageInput}
                 placeholder={translation.form_message}
                 className={`w-full h-40 px-3 pt-2 pb-1 text-sm text-gray-placeholder contact-shadow
-              bg-white bg-clip-padding border border-gray-border rounded-xl
-                overflow-auto resize-none focus:ring focus:ring-icon-blue outline-none font-aleo
+                bg-white bg-clip-padding border border-gray-border rounded-xl
+                overflow-auto resize-none focus:ring focus:ring-icon-blue outline-none 
                 ${(messageValid || message.length === 0) ? 'focus:ring-icon-blue' : 'focus:ring-red-700 border-2 border-red-700'}
                 ${(messageValid) ? 'border-2 border-green-600' : ''}`}
               />
@@ -191,7 +190,6 @@ function ContactForm({translation}) {
               </Boop>
             </div>
           </form>
-        </>
       )}
     </>
   );

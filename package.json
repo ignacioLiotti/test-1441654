@@ -33,6 +33,7 @@
     "react-icons": "^4.4.0",
     "react-spring": "^9.4.5",
     "react-swipeable": "^7.0.0",
+    "styled-components": "^5.3.5",
     "swiper": "^8.3.0"
   },
   "devDependencies": {

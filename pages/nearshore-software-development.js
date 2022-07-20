@@ -46,8 +46,8 @@ function NearshoreSoftwareDevelopment() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* hero section */}
-      <section className="w-full h-[750px] flex items-center justify-center bg-nearshore-landing-hero bg-working-cover md:bg-working-contain bg-center bg-no-repeat md:h-[900px] md:-mt-24  md:pt-40 md:pb-32 ">
-        <div className="w-full p-8 md:w-[70rem] md:p-0 flex flex-col md:flex-row">
+      <section className="w-full h-[750px] overflow-hidden flex items-center justify-center bg-nearshore-landing-hero bg-working-cover bg-center bg-no-repeat md:h-[900px] md:-mt-24  md:pt-40 md:pb-32 ">
+        <div className="w-full p-8 md:w-[70rem] lg:p-0 flex flex-col md:flex-row">
           <div
             className="flex flex-col justify-center items-center md:items-start md:w-[32rem]  "
             data-aos="fade-right"
@@ -82,7 +82,7 @@ function NearshoreSoftwareDevelopment() {
               />
             </div>
             <div 
-              className="md:hidden"
+              className="flex justify-center items-center md:hidden"
             >
               <Image src={`/images/nearshore/heroPhotoMobile.png`}
                   alt=""
@@ -118,7 +118,7 @@ function NearshoreSoftwareDevelopment() {
         </div>
       </section>
       {/* why hiring our services */}
-      <section className="w-full flex flex-col-reverse justify-center items-center p-6 -mt-12 md:items-start md:flex-row md:w-[75rem] md:mt-28 mb-12 md:p-0">
+      <section className="w-full flex flex-col-reverse justify-center items-center p-6 -mt-12 md:items-start lg:flex-row lg:w-[75rem] md:mt-28 mb-12 lg:p-0">
         <div
           className="grid grid-cols-3 grid-rows-2 relative mt-8 md:w-[40rem] md:mt-0"
           data-aos="fade-right"
@@ -128,7 +128,7 @@ function NearshoreSoftwareDevelopment() {
         >
           <img
             src={`/images/nearshore/angular.png`}
-            className=" w-[15rem]  object-contain z-10 animate-[idle06_2.2s_ease-in-out_1s_infinite_alternate_none_running]"
+            className=" w-[15rem] object-contain z-10 animate-[idle06_2.2s_ease-in-out_1s_infinite_alternate_none_running]"
             alt="logos of Angular, PHP, Flutter, React, dot Net and Laravel"
           />
           <img
@@ -161,7 +161,7 @@ function NearshoreSoftwareDevelopment() {
                alt="" />
         </div>
         <div
-          className="w-full md:w-[35rem] relative"
+          className="w-full lg:w-[35rem] relative"
           data-aos="fade-right"
           data-aos-duration={1000}
           data-aos-delay="100"
@@ -178,7 +178,7 @@ function NearshoreSoftwareDevelopment() {
       </section>
       {/* our service */}
       <section
-        className="w-full flex flex-col justify-center items-center p-6 pb-20 md:pb-0 md:w-[80rem] md:mt-24 md:mb-10 md:p-0"
+        className="w-full flex flex-col justify-center items-center p-6 pb-20 lg:pb-0 lg:max-w-[85rem] md:mt-24 md:mb-10"
         data-aos="fade-up"
         data-aos-duration={1000}
         data-aos-delay="500"
@@ -188,10 +188,10 @@ function NearshoreSoftwareDevelopment() {
           {translation.our_services_section.title}
         </h2>
 
-        <div className="w-full flex flex-col items-center justify-center md:mt-6 md:flex-row md:items-start">
-          <div className="effect group flex flex-col items-center mt-10 md:w-[30rem] md:h-[27rem] p-[2rem] rounded-[10px] md:m-4  service-shadow">
+        <div className="w-full flex flex-col items-center justify-center md:mt-6 md:flex-row flex-wrap md:items-start">
+          <div className="effect group flex flex-col items-center mt-10 md:w-[25rem] md:h-[27rem] p-[2rem] rounded-[10px] md:m-4  service-shadow">
             <div
-              className="group-hover:filter group-hover:brightness-0 group-hover:invert w-[6rem] h-[6rem] mb-4 md:w-[4rem] md:h-[4rem] md:mb-6 object-contain relative"
+              className="group-hover:filter group-hover:brightness-0 group-hover:invert w-[6rem] h-[6rem] mb-4 lg:w-[4rem] lg:h-[4rem] md:mb-6 object-contain relative"
               >
               <Image
                 src={`/images/nearshore/thumbsUp.svg`}
@@ -207,7 +207,7 @@ function NearshoreSoftwareDevelopment() {
               {translation.our_services_section.cultural_fit_paragraph}
             </p>
           </div>
-          <div className="effect bg-purple-blue-gradient md:bg-working-none group flex flex-col items-center mt-10 md:w-[30rem] md:h-[27rem] p-[2rem] rounded-[10px] md:m-4 hover:text-white service-shadow">
+          <div className="effect bg-purple-blue-gradient md:bg-working-none group flex flex-col items-center mt-10 md:w-[25rem] md:h-[27rem] p-[2rem] rounded-[10px] md:m-4 hover:text-white service-shadow">
             <div
               className="brightness-0 invert md:brightness-100 md:invert-0 group-hover:filter group-hover:brightness-0 group-hover:invert w-[6rem] h-[6rem] mb-4 md:w-[4rem] md:h-[4rem] md:mb-6 object-contain"
             >
@@ -224,7 +224,7 @@ function NearshoreSoftwareDevelopment() {
               {translation.our_services_section.rates_paragraph}
             </p>
           </div>
-          <div className="effect group flex flex-col items-center mt-10 md:w-[30rem] md:h-[27rem] p-[2rem] rounded-[10px] md:m-4 hover:text-white service-shadow">
+          <div className="effect group flex flex-col items-center mt-10 md:w-[25rem] md:h-[27rem] p-[2rem] rounded-[10px] md:m-4 hover:text-white service-shadow">
             <div
               className="group-hover:filter group-hover:brightness-0 group-hover:invert w-[6rem] h-[6rem] mb-4 md:w-[4rem] md:h-[4rem] md:mb-6 object-contain relative"
             >
@@ -255,7 +255,7 @@ function NearshoreSoftwareDevelopment() {
           <h2 className=" text-light-blue text-center md:text-left text-lg font-semibold leading-[1.3] tracking-normal ">
             {translation.partner_up_section.title}
           </h2>
-          <p className=" md:w-[60rem] w-full text-xs text-center text-gray-body leading-[1.5] mb-10 mt-6">
+          <p className=" md:max-w-[60rem] w-full text-xs text-center text-gray-body leading-[1.5] mb-10 mt-6">
             {translation.partner_up_section.paragraph}
           </p>
           <GoldActionButton
@@ -269,7 +269,7 @@ function NearshoreSoftwareDevelopment() {
       </section>
       {/* How does it work? */}
       <section
-        className="w-full flex flex-col justify-center items-center md:w-[80rem] mt-12 md:mb-24 md:mb-10 md:p-0"
+        className="w-full flex flex-col justify-center items-center md:max-w-[85rem] mt-12 md:mb-24 md:mb-10 md:p-0"
         data-aos="fade-up"
         data-aos-duration={1000}
         data-aos-delay="500"
@@ -315,8 +315,8 @@ function NearshoreSoftwareDevelopment() {
           </NearshoreCarousel>
         </div>
         {/* steps one next to eachother for desktop view */}
-          <div className="w-full hidden md:flex flex-col items-center justify-center md:mt-6 md:flex-row ">
-              <div className="relative flex flex-col items-center mt-10 md:w-[30rem] md:h-[10rem] p-[2rem] rounded-[10px] bg-white md:m-4 how-work-shadow mb-[1rem] md:mb-0 "
+          <div className="w-full hidden md:flex flex-col flex-wrap items-center justify-center md:mt-6 md:flex-row ">
+              <div className="relative flex flex-col items-center mt-10 md:max-w-[25rem] md:h-[10rem] p-[2rem] rounded-[10px] bg-white md:m-4 how-work-shadow mb-[1rem] md:mb-0 "
                 data-aos="fade-up"
                 data-aos-duration={1000}
                 data-aos-delay="500"
@@ -329,7 +329,7 @@ function NearshoreSoftwareDevelopment() {
                   {translation.how_does_it_work_section.step_1}
                 </p>
               </div>
-              <div className="relative flex flex-col items-center mt-10 md:w-[30rem] md:h-[10rem] p-[2rem] rounded-[10px] bg-white md:m-4 how-work-shadow mb-[1rem] md:mb-0"
+              <div className="relative flex flex-col items-center mt-10 md:max-w-[25rem] md:h-[10rem] p-[2rem] rounded-[10px] bg-white md:m-4 how-work-shadow mb-[1rem] md:mb-0"
                 data-aos="fade-up"
                 data-aos-duration={1000}
                 data-aos-delay="800"
@@ -342,7 +342,7 @@ function NearshoreSoftwareDevelopment() {
                   {translation.how_does_it_work_section.step_2}
                 </p>
               </div>
-              <div className="relative flex flex-col items-center mt-10 md:w-[30rem] md:h-[10rem] p-[2rem] rounded-[10px] bg-white md:m-4 how-work-shadow mb-[1rem] md:mb-0"
+              <div className="relative flex flex-col items-center mt-10 md:max-w-[25rem] md:h-[10rem] p-[2rem] rounded-[10px] bg-white md:m-4 how-work-shadow mb-[1rem] md:mb-0"
                 data-aos="fade-up"
                 data-aos-duration={1000}
                 data-aos-delay="1100"
@@ -359,7 +359,7 @@ function NearshoreSoftwareDevelopment() {
         
       </section>
       {/* We connect our clients with their products */}
-      <section className="flex  justify-center items-center w-full h-full md:h-[50rem] bg-black pb-10 md:pb-0">
+      <section className="flex justify-center items-center w-full h-full lg:h-[50rem] bg-black pb-10 md:pb-0">
         <div className="flex w-[75rem] items-center justify-center">
           <div
             className="w-full"
@@ -368,21 +368,21 @@ function NearshoreSoftwareDevelopment() {
             data-aos-delay="100"
             data-aos-once
           >
-            <h2 className=" hidden md:flex justify-center mt-[2rem] md:mt-[0rem] text-white text-xl text-center font-semibold leading-[1.2] ">
+            <h2 className=" hidden lg:flex justify-center mt-[2rem] md:mt-[0rem] text-white text-xl text-center font-semibold leading-[1.2] ">
               {translation.get_in_touch_section.title}
             </h2>
-            <div className="flex flex-col px-[2rem] md:px-0 md:flex-row justify-around items-start mt-[2rem] md:mt-[5rem] h-full">
+            <div className="flex flex-col px-[2rem] lg:px-0 lg:flex-row justify-around items-center lg:items-start mt-[2rem] md:mt-[5rem] h-full">
               <img 
                 src={`/images/nearshore/getInTouch.png`} 
                 alt="One of our team members"
-                className="w-full h-full object-contain"
+                className="max-w-[300px] lg:w-full h-full object-contain"
               />
-              <h2 className=" md:hidden mt-[2rem] md:mt-[0rem] text-white text-lg text-center font-semibold leading-[1.2] ">
+              <h2 className=" lg:hidden mt-[2rem] lg:mt-[0rem] text-white text-lg text-center font-semibold leading-[1.2] ">
                 {translation.get_in_touch_section.title}
               </h2> 
               <div className="flex flex-col items-start justify-start md:ml-[3rem] ">
-                <div className="blue-transparent-nearshore rounded-[0.7rem] mb-[1.5rem] mt-[2rem] md:mt-0">
-                  <div className="relative flex flex-col  md:flex-row justify-center items-center md:items-start bg-dark-blue-nearshore m-[0.4rem] p-[1rem] rounded-[0.5rem]">
+                <div className="blue-transparent-nearshore rounded-[0.7rem] mb-[1.5rem] mt-[2rem] lg:mt-0">
+                  <div className="relative flex flex-col  lg:flex-row justify-center items-center md:items-start bg-dark-blue-nearshore m-[0.4rem] p-[1rem] rounded-[0.5rem]">
                     <div className="flex justify-center items-center mr-[1rem] h-[5rem] md:h-[3rem] w-[5rem] md:w-[3rem] rounded-[50%]  blue-purple-gradient-2 "> 
                       <Boop rotation={40}>
                         <div className="flex justify-center items-center h-[5rem] md:h-[3rem] w-[5rem] md:w-[3rem] rounded-[50%]"> 
@@ -404,7 +404,7 @@ function NearshoreSoftwareDevelopment() {
                   </div>
                 </div>
                 <div className="blue-transparent-nearshore rounded-[0.7rem] mb-[1.5rem]">
-                  <div className="relative flex flex-col md:flex-row justify-center items-center md:items-start bg-dark-blue-nearshore m-[0.4rem] p-[1rem] rounded-[0.5rem]">
+                  <div className="relative flex flex-col lg:flex-row justify-center items-center md:items-start bg-dark-blue-nearshore m-[0.4rem] p-[1rem] rounded-[0.5rem]">
                     <div className="flex justify-center mr-[1rem] items-center h-[5rem] md:h-[3rem] w-[5rem] md:w-[3rem] rounded-[50%]  blue-purple-gradient-2 p-[1rem]"> 
                       <Boop rotation={40}>
                           <div className="flex justify-center items-center h-[5rem] md:h-[3rem] w-[5rem] md:w-[3rem] rounded-[50%]"> 
@@ -449,9 +449,9 @@ function NearshoreSoftwareDevelopment() {
       </section>
       {/* Let's get in touch */}
       <section className="flex flex-col justify-center items-center w-full py-6 md:py-0 md:h-[44rem] bg-white ">
-        <div className="flex md:w-[70rem] items-center justify-center">
+        <div className="flex md:max-w-[70rem] items-center justify-center">
           <div
-            className="w-[23rem] md:w-[55rem] p-6"
+            className="md:w-[35rem] lg:w-[50rem] p-6"
             data-aos="fade-right"
             data-aos-duration={1000}
             data-aos-delay="100"
@@ -503,7 +503,7 @@ function NearshoreSoftwareDevelopment() {
                     delay: 5000,
                     disableOnInteraction: false,
                   }}
-                  className="swiper-testimonials overflow-hidden md:w-[60vw]"
+                  className="swiper-testimonials overflow-hidden lg:max-w-[80vw]"
           >
             {testimonials.clients?.map((client) => (
             <SwiperSlide>
@@ -516,7 +516,7 @@ function NearshoreSoftwareDevelopment() {
                   />
                 </div>
               </div>
-              <div className="w-full lg:w-[800px] flex flex-col items-center justify-center mt-4">
+              <div className="w-full md:max-w-[70%] flex flex-col items-center justify-center mt-4">
                 <h3 className="p-2 font-Poppins-Regular text-xs md:text-base font-normal text-white text-center tracking-[1px] w-full h-auto whitespace-pre-wrap">
                   {`"${client.opinion}"`}
                 </h3>

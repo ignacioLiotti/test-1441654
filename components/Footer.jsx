@@ -21,9 +21,9 @@ function Footer() {
       className={`block relative bg-[url('/images/footer-bg.png')] w-full footer-bg-gradient
       py-16 scroll-m-20`}
     >
-      <div className="container-width flex flex-col md:flex-row items-center md:items-start justify-between gap-9">
+      <div className="container-width flex flex-col lg:flex-row items-center lg:items-start justify-between gap-9">
         {/* First column: Contact info */}
-        <div className="flex flex-col items-start w-11/12 px-8 xs:px-4 md:px-4 h-full md:w-4/12 gap-6 order-1">
+        <div className="flex flex-col items-center lg:items-start w-11/12 px-8 xs:px-4 md:px-4 h-full lg:w-4/12 gap-6 order-1">
           <img
             className="h-11 -ml-4 mb-2 md:h-[60px] object-contain mb-3"
             src="/images/logo-all-white.png"
@@ -96,8 +96,8 @@ function Footer() {
         </div>
         {/* Second column: links and social */}
         {/* TODO: make two columns when < sm (640px) */}
-        <div className="contact-form flex flex-col items-start justify-start px-12 xs:px-4 md:px-4 w-full h-full md:w-3/12 gap-6 order-3 md:order-2">
-          <h4 className="text-base md:text-sm text-white font-bold  uppercase mb-6">
+        <div className="contact-form flex flex-col items-start justify-start w-10/12 px-12 xs:px-4 md:px-4 w-full h-full lg:w-3/12 gap-6 order-3 md:order-2">
+          <h4 className=" text-base md:text-sm text-white font-bold uppercase mb-6">
             Links
           </h4>
           <ul>
@@ -149,7 +149,7 @@ function Footer() {
           </ul>
         </div>
         {/* Third column: connect */}
-        <div id="contact" className="flex flex-col items-start scroll-m-24 md:scroll-m-0 px-4 pb-12 h-full w-11/12 md:w-5/12 gap-6 order-2 md:order-3">
+        <div id="contact" className="flex flex-col items-start scroll-m-24 md:scroll-m-0 px-4 pb-12 h-full w-11/12 lg:w-5/12 gap-6 order-2 md:order-3">
           <ContactForm />
         </div>
       </div>

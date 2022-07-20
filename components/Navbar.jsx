@@ -106,7 +106,7 @@ function Navbar({ transparentScroll, whiteBackground, hasShadow }) {
         absolute top-0 left-0 right-0 w-screen -z-10 transition-all duration-300 ease-in`}
       ></div>
       <div
-        className="sm:max-w-[34rem] md:max-w-[45rem] lg:max-w-[60rem] xl:max-w-6xl w-full mx-auto
+        className="sm:max-w-[34rem] md:max-w-[50rem] lg:max-w-[60rem] xl:max-w-6xl w-full mx-auto
       flex flex-row items-center justify-between transition-all duration-300 ease-in"
       >
         <div
