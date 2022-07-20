@@ -144,7 +144,7 @@ function Navbar({ transparentScroll, whiteBackground, hasShadow }) {
                 <Link href={item.path}>
                   <a
                   className={`${whiteBackground ? "text-black" : "text-white"} 
-                  block whitespace-nowrap w-auto py-5 px-4 md:px-2 lg:px-4 text-sm md:text-md font-open-sans hover:scale-[1.20] transition-all duration-300 ease-linear`}
+                  block whitespace-nowrap w-auto py-5 px-4 md:px-2 lg:px-4 text-xs md:text-xs font-open-sans hover:scale-[1.20] transition-all duration-300 ease-linear`}
                   >
                   {item.name}
                   </a>
@@ -156,7 +156,7 @@ function Navbar({ transparentScroll, whiteBackground, hasShadow }) {
                 onChange={changeLanguage}
                 defaultValue={locale}
                 className={`${whiteBackground ? "text-black" : "text-white"} outline-none 
-                  text-shadow-sm w-auto py-5 px-4 text-sm md:text-md bg-transparent tracking-wide hover:scale-[1.20] transition-all duration-300 ease-linear`}
+                  text-shadow-sm w-auto py-5 px-4 text-xs md:text-sm bg-transparent tracking-wide hover:scale-[1.20] transition-all duration-300 ease-linear`}
               >
                 <option className="text-black" value="en">
                   EN

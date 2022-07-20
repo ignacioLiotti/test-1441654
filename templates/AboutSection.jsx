@@ -33,22 +33,22 @@ function AboutSection({ strings }) {
               className="md:hidden inline max-w-full h-full object-contain"
               alt="about us"
             />
-            <h2 className="mt-8 mb-2 text-[2rem] text-icon-blue font-aleo font-bold">
+            <h2 className="mt-8 mb-2 text-base text-icon-blue font-semibold">
               {strings.where}
             </h2>
-            <p className="text-base text-gray-body font-open-sans leading-8">
+            <p className="text-xs text-gray-body font-open-sans leading-8">
               {strings.whereDesc}
             </p>
-            <h2 className="mt-8 mb-2 text-[2rem] text-icon-blue font-aleo font-bold">
+            <h2 className="mt-8 mb-2 text-base text-icon-blue font-semibold">
               {strings.who}
             </h2>
-            <p className="text-base text-gray-body font-open-sans leading-8">
+            <p className="text-xs text-gray-body font-open-sans leading-8">
               {strings.whoDesc}
             </p>
-            <h2 className="mt-8 mb-2 text-[2rem] text-icon-blue font-aleo font-bold">
+            <h2 className="mt-8 mb-2 text-base text-icon-blue font-semibold">
               {strings.how}
             </h2>
-            <p className="text-base text-gray-body font-open-sans leading-8">
+            <p className="text-xs text-gray-body font-open-sans leading-8">
               {strings.howDesc}
             </p>
           </div>

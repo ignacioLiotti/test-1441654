@@ -36,7 +36,7 @@ function Footer() {
                   icon={faLocationDot}
                   className="text-white text-[1.5rem] mr-2 pt-1"
                 />
-                <p className="font-open-sans text-white leading-8 text-[.9rem] md:text-[1rem] md:leading-5">
+                <p className=" text-white leading-8 text-[.9rem] md:text-[1rem] md:leading-5">
                   Corrientes, Argentina. <br/> 1250 Junin st., 2nd Floor.
                 </p>
               </div>
@@ -47,7 +47,7 @@ function Footer() {
                   icon={faPhoneFlip}
                   className="text-white text-[1.2rem] mr-2"
                 />
-                <p className="font-open-sans text-white leading-5 text-[.9rem] md:text-[1rem]">
+                <p className=" text-white leading-5 text-[.9rem] md:text-[1rem]">
                   +54 (0379) 4230003
                 </p>
               </div>
@@ -58,7 +58,7 @@ function Footer() {
                   icon={faEnvelope}
                   className="text-white text-[1.2rem] mr-2 pt-1"
                 />
-                <p className="font-open-sans text-white leading-5 text-[.9rem] md:text-[1rem]">
+                <p className=" text-white leading-5 text-[.9rem] md:text-[1rem]">
                   contact@devlights.com
                 </p>
               </div>
@@ -71,7 +71,7 @@ function Footer() {
               rel="noreferrer">
               <FontAwesomeIcon
                 icon={faFacebookSquare}
-                className="text-white text-4xl"
+                className="text-white text-lg"
               />
             </a>
             <a 
@@ -80,7 +80,7 @@ function Footer() {
               rel="noreferrer">
               <FontAwesomeIcon
                 icon={faTwitterSquare}
-                className="text-white text-4xl"
+                className="text-white text-lg"
               />
             </a>
             <a 
@@ -89,7 +89,7 @@ function Footer() {
               rel="noreferrer">
               <FontAwesomeIcon
                 icon={faLinkedin}
-                className="text-white text-4xl"
+                className="text-white text-lg"
               />
             </a>
           </div>
@@ -97,7 +97,7 @@ function Footer() {
         {/* Second column: links and social */}
         {/* TODO: make two columns when < sm (640px) */}
         <div className="contact-form flex flex-col items-start justify-start px-12 xs:px-4 md:px-4 w-full h-full md:w-3/12 gap-6 order-3 md:order-2">
-          <h4 className="text-xl md:text-lg text-white font-bold font-open-sans uppercase mb-6">
+          <h4 className="text-base md:text-sm text-white font-bold  uppercase mb-6">
             Links
           </h4>
           <ul>
@@ -105,14 +105,14 @@ function Footer() {
               <Link
                 href="/nearshore-software-development"
                 >
-                <p className="text-white text-sm font-medium font-open-sans cursor-pointer">
+                <p className="text-white text-xs font-medium  cursor-pointer">
                   Nearshore software development
                 </p>
               </Link>
             </li>
             {/* <li className="mb-6">
               <a
-                className="text-white text-sm font-medium font-open-sans"
+                className="text-white text-xs font-medium "
                 href="/#"
               >
                 Referral program
@@ -122,7 +122,7 @@ function Footer() {
               <Link
                 href="/clutch-award-2022"
               >
-                <p className="text-white text-sm font-medium font-open-sans cursor-pointer" >
+                <p className="text-white text-xs font-medium  cursor-pointer" >
                   Clutch Award
                 </p>
               </Link>
@@ -132,16 +132,16 @@ function Footer() {
               <Link
                 href="https://jobs.devlights.com/"
               >
-              <p className="text-white text-sm font-medium font-open-sans cursor-pointer" >
+              <p className="text-white text-xs font-medium  cursor-pointer" >
                 Join the team
               </p>
               </Link>
             </li>
             <li className="mb-6">
               <Link
-                href="/#"
+                href="/bootcamp"
               >
-                <p className="text-white text-sm font-medium font-open-sans cursor-pointer" >
+                <p className="text-white text-xs font-medium  cursor-pointer" >
                   Bootcamps
                 </p>
               </Link>

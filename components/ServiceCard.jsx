@@ -20,13 +20,13 @@ function ServiceCard({ title, description, description2, list, image, button, li
         />
       </span>
       <h4
-        className="font-aleo font-bold text-almost-black text-xl leading-[30px] mb-6
+        className=" font-semibold text-almost-black text-sm leading-[30px] mb-6
           group-hover:text-icon-blue transition-all duration-300 ease-in-out
           "
       >
         {title}
       </h4>
-      <p className="text-gray-service text-[0.938rem] leading-[1.8]">
+      <p className="text-gray-service text-xs leading-[1.8]">
         {description}
       </p>
       <p className="text-gray-service text-[0.938rem] leading-[1.8]">

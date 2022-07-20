@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import en from "../public/i18n/En_en";
 import es from "../public/i18n/Es_es";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faCheck, faBan } from "@fortawesome/free-solid-svg-icons";
 import emailjs from "emailjs-com";
 import Boop from "./Boop";
 
@@ -112,10 +112,10 @@ function ContactForm() {
     <>
       {messageSent && (
         <div className="w-full h-full flex flex-col items-center">
-          <span className="text-4xl text-white font-bold font-open-sans my-24">
+          <span className="text-4xl text-white font-bold font-open-sans my-24 md:my-12">
             {translation.form_sent}
           </span>
-          <span className="text-lg text-white font-bold font-open-sans mb-6">
+          <span className="text-lg text-white md:text-center font-bold font-open-sans mb-6">
             {translation.form_contact}
           </span>
           <button
@@ -130,7 +130,7 @@ function ContactForm() {
       )}
       {!messageSent && (
         <div className="px-5 mt-8 md:mt-0 w-full">
-          <h4 className="text-[1.2rem] md:text-lg mb-[1.6rem] text-white font-bold font-open-sans">
+          <h4 className="text-[1.2rem] md:text-sm mb-[1.6rem] text-white font-bold font-open-sans">
             {translation.form_title}
           </h4>
           <form
@@ -141,10 +141,10 @@ function ContactForm() {
             <div className="relative">
               <div className={`${name.length > 0 ? "block" : "hidden"}`}>
                 <FontAwesomeIcon
-                  icon={nameValid ? faCheck : faXmark}
+                  icon={nameValid ? faCheck : faBan}
                   className={`${
                     nameValid ? "text-green-600" : "text-red-700"
-                  }  text-xl absolute right-2 top-2`}
+                  }  text-base absolute right-2 top-2`}
                 />
               </div>
               <input
@@ -153,7 +153,7 @@ function ContactForm() {
                 onChange={handleNameInput}
                 type="text"
                 placeholder={translation.form_name}
-                className={`w-full h-12 px-4 text-base text-gray-placeholder bg-white bg-clip-padding
+                className={`w-full h-12 px-4 text-xs text-gray-placeholder bg-white bg-clip-padding
                  rounded-xl focus:ring focus:ring-icon-blue outline-none font-aleo
                 ${
                   nameValid || name.length === 0
@@ -163,17 +163,17 @@ function ContactForm() {
                 ${nameValid ? "border-2 border-green-600" : ""}`}
               />
               {nameValid || name.length === 0 ? '' : (
-              <div className={`text-white text-sm pl-2 pt-1`}>
+              <div className={`text-white text-xs pl-2 pt-1`}>
                 {translation.form_name_error}
               </div>)}
             </div>
             <div className="relative">
               <div className={`${email.length > 0 ? "block" : "hidden"}`}>
                 <FontAwesomeIcon
-                  icon={emailValid ? faCheck : faXmark}
+                  icon={emailValid ? faCheck : faBan}
                   className={`${
                     emailValid ? "text-green-600" : "text-red-700"
-                  }  text-xl absolute right-2 top-2`}
+                  }  text-base absolute right-2 top-2`}
                 />
               </div>
               <input
@@ -182,7 +182,7 @@ function ContactForm() {
                 onChange={handleEmailInput}
                 type="email"
                 placeholder={translation.form_email}
-                className={`w-full h-12  px-4 text-base text-gray-placeholder bg-white bg-clip-padding
+                className={`w-full h-12  px-4 text-xs text-gray-placeholder bg-white bg-clip-padding
                  rounded-xl focus:ring focus:ring-icon-blue outline-none font-aleo
                 ${
                   emailValid || email.length === 0
@@ -192,7 +192,7 @@ function ContactForm() {
                 ${emailValid ? "border-2 border-green-600" : ""}`}
               />
               {emailValid || email.length === 0 ? '' : (
-              <div className={`text-white text-sm pl-2 pt-1`}>
+              <div className={`text-white text-xs pl-2 pt-1`}>
                 {translation.form_email_error}
               </div>)}
               
@@ -200,10 +200,10 @@ function ContactForm() {
             <div className="relative mb-4">
               <div className={`${message.length > 0 ? "block" : "hidden"}`}>
                 <FontAwesomeIcon
-                  icon={messageValid ? faCheck : faXmark}
+                  icon={messageValid ? faCheck : faBan}
                   className={`${
                     messageValid ? "text-green-600" : "text-red-700"
-                  }  text-xl absolute right-2 top-2`}
+                  }  text-base absolute right-2 top-2`}
                 />
               </div>
               <textarea
@@ -211,7 +211,7 @@ function ContactForm() {
                 ref={messageInput}
                 onChange={handleMessageInput}
                 placeholder={translation.form_message}
-                className={`w-full h-[8rem] px-4 pt-4 pb-1 text-base text-gray-placeholder
+                className={`w-full h-[8rem] px-4 pt-4 pb-1 text-xs text-gray-placeholder
               bg-white bg-clip-padding rounded-xl
                 overflow-auto resize-none focus:ring focus:ring-icon-blue outline-none font-aleo
                 ${
@@ -222,14 +222,14 @@ function ContactForm() {
                 ${messageValid ? "border-2 border-green-600" : ""}`}
               />
               {messageValid || message.length === 0 ? '' : (
-              <div className={`text-white text-sm pl-2 pt-1`}>
+              <div className={`text-white text-xs pl-2 pt-1`}>
                 {translation.form_message_error}
               </div>)}
               {!validForm && (
                 <div
                   className={`${
                     validForm ? "opacity-0" : "opacity-100"
-                  } text-white text-sm pl-2 pt-1`}
+                  } text-white text-xs pl-2 pt-1`}
                 >
                   {translation.form_error}
                 </div>

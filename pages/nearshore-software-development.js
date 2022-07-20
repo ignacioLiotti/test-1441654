@@ -49,20 +49,20 @@ function NearshoreSoftwareDevelopment() {
       <section className="w-full h-[750px] flex items-center justify-center bg-nearshore-landing-hero bg-working-cover md:bg-working-contain bg-center bg-no-repeat md:h-[900px] md:-mt-24  md:pt-40 md:pb-32 ">
         <div className="w-full p-8 md:w-[70rem] md:p-0 flex flex-col md:flex-row">
           <div
-            className="flex flex-col justify-center items-center md:items-start md:w-[30rem]  "
+            className="flex flex-col justify-center items-center md:items-start md:w-[32rem]  "
             data-aos="fade-right"
             data-aos-duration={1000}
             data-aos-once
           >
-            <h2 className="font-aleo text-white font-bold text-[1.7rem] text-center md:text-[3rem] md:leading-[1.4] md:text-left ">
+            <h2 className=" text-white font-bold text-base md:text-xl text-center md:leading-[1.4] md:text-left ">
               {translation.headerTitle}
             </h2>
-            <p className="font-poppins text-white font-normal text-center mt-2 mb-8 md:text-[1.2rem] md:leading-[1.4] md:mb-10 md:mt-2 md:text-left">
+            <p className="font-poppins text-white font-normal text-center mt-2 mb-8 md:text-base md:leading-[1.4] md:mb-10 md:mt-2 md:text-left">
               {translation.headerSubTitle}
             </p>
             <GoldActionButton
               text={translation.headerBtn}
-              resize={false}
+              resize={true}
               onClickAction={() =>
                 window.open(`https://calendly.com/devlights/30min`, "_blank")
               }
@@ -168,10 +168,10 @@ function NearshoreSoftwareDevelopment() {
           data-aos-once
         >
           <span className="absolute gold-gradient md:w-14 md:h-4 rounded-[1rem]"></span>
-          <h2 className="font-aleo text-light-blue font-semibold text-center text-[2rem] md:text-[2.5rem] md:text-left md:leading-[1.4] md:tracking-normal md:mt-10 md:mb-8 ">
+          <h2 className=" text-light-blue font-semibold text-center text-lg md:text-xl md:text-left md:leading-[1.4] md:tracking-normal md:mt-10 md:mb-8 ">
             {translation.why_hirinus_section.title}
           </h2>
-          <p className="text-center md:text-left mt-4 mb-8 md:text-[1.1rem] text-gray-500 md:leading-[2] md:mb-10 md:mt-2 md:pr-8 ">
+          <p className="text-center md:text-left mt-4 mb-8 md:text-sm text-gray-500 md:leading-[2] md:mb-10 md:mt-2 md:pr-8 ">
             {translation.why_hirinus_section.paragraph}
           </p>
         </div>
@@ -184,14 +184,14 @@ function NearshoreSoftwareDevelopment() {
         data-aos-delay="500"
         data-aos-once
       >
-        <h2 className="font-aleo text-light-blue font-semibold text-[2rem] text-center md:text-[2.5rem] md:text-left md:leading-[1.4] md:tracking-normal md:mt-10 md:mb-8 ">
+        <h2 className=" text-light-blue font-semibold text-lg text-center md:text-xl md:text-left md:leading-[1.4] md:tracking-normal md:mt-10 md:mb-8 ">
           {translation.our_services_section.title}
         </h2>
 
         <div className="w-full flex flex-col items-center justify-center md:mt-6 md:flex-row md:items-start">
           <div className="effect group flex flex-col items-center mt-10 md:w-[30rem] md:h-[27rem] p-[2rem] rounded-[10px] md:m-4  service-shadow">
             <div
-              className="group-hover:filter group-hover:brightness-0 group-hover:invert w-[8rem] h-[8rem] mb-4 md:w-[4rem] md:h-[4rem] md:mb-6 object-contain relative"
+              className="group-hover:filter group-hover:brightness-0 group-hover:invert w-[6rem] h-[6rem] mb-4 md:w-[4rem] md:h-[4rem] md:mb-6 object-contain relative"
               >
               <Image
                 src={`/images/nearshore/thumbsUp.svg`}
@@ -200,7 +200,7 @@ function NearshoreSoftwareDevelopment() {
               />
 
             </div>
-            <h3 className="group-hover:text-white font-aleo text-light-blue text-[1.3rem] text-center font-semibold leading-[1.4] tracking-normal mt-4">
+            <h3 className="group-hover:text-white  text-light-blue text-sm text-center font-semibold leading-[1.4] tracking-normal mt-4">
               {translation.our_services_section.cultural_fit_title}
             </h3>
             <p className="group-hover:text-white text-center text-gray-600 mt-6">
@@ -209,7 +209,7 @@ function NearshoreSoftwareDevelopment() {
           </div>
           <div className="effect bg-purple-blue-gradient md:bg-working-none group flex flex-col items-center mt-10 md:w-[30rem] md:h-[27rem] p-[2rem] rounded-[10px] md:m-4 hover:text-white service-shadow">
             <div
-              className="brightness-0 invert md:brightness-100 md:invert-0 group-hover:filter group-hover:brightness-0 group-hover:invert w-[8rem] h-[8rem] mb-4 md:w-[4rem] md:h-[4rem] md:mb-6 object-contain"
+              className="brightness-0 invert md:brightness-100 md:invert-0 group-hover:filter group-hover:brightness-0 group-hover:invert w-[6rem] h-[6rem] mb-4 md:w-[4rem] md:h-[4rem] md:mb-6 object-contain"
             >
               <Image
                 src={`/images/nearshore/piggybank.svg`}
@@ -217,7 +217,7 @@ function NearshoreSoftwareDevelopment() {
                 layout="fill"
                 />
             </div>
-            <h3 className="group-hover:text-white font-aleo text-white md:text-light-blue text-[1.3rem] text-center font-semibold leading-[1.4] tracking-normal mt-4">
+            <h3 className="group-hover:text-white  text-white md:text-light-blue text-sm text-center font-semibold leading-[1.4] tracking-normal mt-4">
               {translation.our_services_section.rates_title}
             </h3>
             <p className="group-hover:text-white text-center text-white md:text-gray-600 mt-6">
@@ -226,7 +226,7 @@ function NearshoreSoftwareDevelopment() {
           </div>
           <div className="effect group flex flex-col items-center mt-10 md:w-[30rem] md:h-[27rem] p-[2rem] rounded-[10px] md:m-4 hover:text-white service-shadow">
             <div
-              className="group-hover:filter group-hover:brightness-0 group-hover:invert w-[8rem] h-[8rem] mb-4 md:w-[4rem] md:h-[4rem] md:mb-6 object-contain relative"
+              className="group-hover:filter group-hover:brightness-0 group-hover:invert w-[6rem] h-[6rem] mb-4 md:w-[4rem] md:h-[4rem] md:mb-6 object-contain relative"
             >
               <Image
                 src={`/images/nearshore/graph.svg`}
@@ -234,7 +234,7 @@ function NearshoreSoftwareDevelopment() {
                 layout="fill"
                 />
             </div>
-            <h3 className="group-hover:text-white font-aleo text-light-blue text-[1.3rem] text-center font-semibold leading-[1.4] tracking-normal mt-4">
+            <h3 className="group-hover:text-white  text-light-blue text-sm text-center font-semibold leading-[1.4] tracking-normal mt-4">
               {translation.our_services_section.dependable_title}
             </h3>
             <p className="group-hover:text-white text-center text-gray-600 mt-6">
@@ -252,15 +252,15 @@ function NearshoreSoftwareDevelopment() {
           data-aos-delay="100"
           data-aos-once
         >
-          <h2 className="font-aleo text-light-blue text-center md:text-left text-[2.3rem] font-semibold leading-[1.3] tracking-normal ">
+          <h2 className=" text-light-blue text-center md:text-left text-lg font-semibold leading-[1.3] tracking-normal ">
             {translation.partner_up_section.title}
           </h2>
-          <p className=" md:w-[60rem] w-full text-[1.2rem] text-center text-gray-body leading-[1.5] mb-10 mt-6">
+          <p className=" md:w-[60rem] w-full text-xs text-center text-gray-body leading-[1.5] mb-10 mt-6">
             {translation.partner_up_section.paragraph}
           </p>
           <GoldActionButton
             text={translation.partner_up_section.btn}
-            resize={false}
+            resize={true}
             onClickAction={() =>
               window.open(`https://calendly.com/devlights/30min`, "_blank")
             }
@@ -275,7 +275,7 @@ function NearshoreSoftwareDevelopment() {
         data-aos-delay="500"
         data-aos-once
       >
-        <h2 className="font-aleo text-light-blue font-semibold text-[2rem] text-center md:text-[2.5rem] md:text-left md:leading-[1.4] md:tracking-normal md:mt-10 md:mb-8 ">
+        <h2 className=" text-light-blue font-semibold text-lg text-center md:text-xl md:text-left md:leading-[1.4] md:tracking-normal md:mt-10 md:mb-8 ">
           {translation.how_does_it_work_section.title}
         </h2>
 
@@ -284,7 +284,7 @@ function NearshoreSoftwareDevelopment() {
           <NearshoreCarousel>
             <NearshoreItem>
               <div className=" relative flex flex-col items-center mt-10 p-[2rem] rounded-[10px] bg-white how-work-shadow mb-[1rem] ">
-                <p className="absolute top-[-2.5rem] left-center rounded-[50%] flex items-center justify-center border-white border-[0.5rem] bg-purple-nearshore w-[5rem] h-[5rem] font-oswald font-bold text-white text-[2.8rem]">
+                <p className="absolute top-[-2.5rem] left-center rounded-[50%] flex items-center justify-center border-white border-[0.5rem] bg-purple-nearshore w-[5rem] h-[5rem] font-oswald font-bold text-white text-xl">
                   01
                 </p>
                 <p className="w-full text-clip text-center  text-gray-600 mt-6 font-open-sans whitespace-pre-wrap">
@@ -294,7 +294,7 @@ function NearshoreSoftwareDevelopment() {
             </NearshoreItem>
             <NearshoreItem>
               <div className="relative flex flex-col items-center mt-10 md:w-[30rem] md:h-[10rem] p-[2rem] rounded-[10px] bg-white md:m-4 how-work-shadow mb-[1rem] md:mb-0 ">
-                <p className="absolute top-[-2.5rem] left-center rounded-[50%] flex items-center justify-center border-white border-[0.5rem] bg-purple-nearshore w-[5rem] h-[5rem] font-oswald font-bold text-white text-[2.8rem]">
+                <p className="absolute top-[-2.5rem] left-center rounded-[50%] flex items-center justify-center border-white border-[0.5rem] bg-purple-nearshore w-[5rem] h-[5rem] font-oswald font-bold text-white text-xl">
                   02
                 </p>
                 <p className="text-center text-gray-600 mt-6 font-open-sans whitespace-pre-wrap">
@@ -304,7 +304,7 @@ function NearshoreSoftwareDevelopment() {
             </NearshoreItem>
             <NearshoreItem>
               <div className="relative flex flex-col items-center mt-10 md:w-[30rem] md:h-[10rem] p-[2rem] rounded-[10px] bg-white md:m-4 how-work-shadow mb-[1rem] md:mb-0 ">
-                <p className="absolute top-[-2.5rem] left-center rounded-[50%] flex items-center justify-center border-white border-[0.5rem] bg-purple-nearshore w-[5rem] h-[5rem] font-oswald font-bold text-white text-[2.8rem]">
+                <p className="absolute top-[-2.5rem] left-center rounded-[50%] flex items-center justify-center border-white border-[0.5rem] bg-purple-nearshore w-[5rem] h-[5rem] font-oswald font-bold text-white text-xl">
                   03
                 </p>
                 <p className="text-center text-gray-600 mt-6 font-open-sans whitespace-pre-wrap">
@@ -322,7 +322,7 @@ function NearshoreSoftwareDevelopment() {
                 data-aos-delay="500"
                 data-aos-once
               >
-                <p className="absolute top-[-2.5rem] left-center rounded-[50%] flex items-center justify-center border-white border-[0.5rem] bg-purple-nearshore w-[5rem] h-[5rem] font-oswald font-bold text-white text-[2.8rem]">
+                <p className="absolute top-[-2.5rem] left-center rounded-[50%] flex items-center justify-center border-white border-[0.5rem] bg-purple-nearshore w-[5rem] h-[5rem] font-oswald font-bold text-white text-xl">
                   01
                 </p>
                 <p className="text-center text-gray-600 mt-6 font-open-sans">
@@ -335,7 +335,7 @@ function NearshoreSoftwareDevelopment() {
                 data-aos-delay="800"
                 data-aos-once
               >
-                <p className="absolute top-[-2.5rem] left-center rounded-[50%] flex items-center justify-center border-white border-[0.5rem] bg-purple-nearshore w-[5rem] h-[5rem] font-oswald font-bold text-white text-[2.8rem]">
+                <p className="absolute top-[-2.5rem] left-center rounded-[50%] flex items-center justify-center border-white border-[0.5rem] bg-purple-nearshore w-[5rem] h-[5rem] font-oswald font-bold text-white text-xl">
                   02
                 </p>
                 <p className="text-center text-gray-600 mt-6 font-open-sans">
@@ -348,7 +348,7 @@ function NearshoreSoftwareDevelopment() {
                 data-aos-delay="1100"
                 data-aos-once
               >
-                <p className="absolute top-[-2.5rem] left-center rounded-[50%] flex items-center justify-center border-white border-[0.5rem] bg-purple-nearshore w-[5rem] h-[5rem] font-oswald font-bold text-white text-[2.8rem]">
+                <p className="absolute top-[-2.5rem] left-center rounded-[50%] flex items-center justify-center border-white border-[0.5rem] bg-purple-nearshore w-[5rem] h-[5rem] font-oswald font-bold text-white text-xl">
                   03
                 </p>
                 <p className="text-center text-gray-600 mt-6 font-open-sans">
@@ -368,7 +368,7 @@ function NearshoreSoftwareDevelopment() {
             data-aos-delay="100"
             data-aos-once
           >
-            <h2 className="font-aleo hidden md:flex justify-center mt-[2rem] md:mt-[0rem] text-white text-[2.5rem] text-center font-semibold leading-[1.2] ">
+            <h2 className=" hidden md:flex justify-center mt-[2rem] md:mt-[0rem] text-white text-xl text-center font-semibold leading-[1.2] ">
               {translation.get_in_touch_section.title}
             </h2>
             <div className="flex flex-col px-[2rem] md:px-0 md:flex-row justify-around items-start mt-[2rem] md:mt-[5rem] h-full">
@@ -377,7 +377,7 @@ function NearshoreSoftwareDevelopment() {
                 alt="One of our team members"
                 className="w-full h-full object-contain"
               />
-              <h2 className="font-aleo md:hidden mt-[2rem] md:mt-[0rem] text-white text-[2.5rem] text-center font-semibold leading-[1.2] ">
+              <h2 className=" md:hidden mt-[2rem] md:mt-[0rem] text-white text-lg text-center font-semibold leading-[1.2] ">
                 {translation.get_in_touch_section.title}
               </h2> 
               <div className="flex flex-col items-start justify-start md:ml-[3rem] ">
@@ -388,16 +388,16 @@ function NearshoreSoftwareDevelopment() {
                         <div className="flex justify-center items-center h-[5rem] md:h-[3rem] w-[5rem] md:w-[3rem] rounded-[50%]"> 
                           <FontAwesomeIcon
                             icon={faCheck}
-                            className=" text-white text-5xl md:text-2xl"
+                            className=" text-white text-xl md:text-lg"
                           />
                         </div>
                       </Boop>
                     </div>
                     <div>
-                      <h3 className="text-white text-2xl mt-[1rem] md:mt-0 font-bold text-center md:text-left">
+                      <h3 className="text-white text-base mt-[1rem] md:mt-0 font-bold text-center md:text-left">
                       {translation.get_in_touch_section.first_card_title}
                       </h3>
-                      <p className="text-white text-[1.2rem] mt-[1rem] text-center md:text-left">
+                      <p className="text-white text-sm mt-[1rem] text-center md:text-left">
                       {translation.get_in_touch_section.first_card}
                       </p>
                     </div>
@@ -410,13 +410,13 @@ function NearshoreSoftwareDevelopment() {
                           <div className="flex justify-center items-center h-[5rem] md:h-[3rem] w-[5rem] md:w-[3rem] rounded-[50%]"> 
                             <FontAwesomeIcon
                               icon={faCheck}
-                              className=" text-white text-5xl md:text-2xl"
+                              className=" text-white text-xl md:text-lg"
                             />
                           </div>
                       </Boop>
                     </div>
                     <div>
-                      <p className="text-white text-[1.2rem] mt-[1rem] md:mt-0 text-center md:text-left">
+                      <p className="text-white text-sm mt-[1rem] md:mt-0 text-center md:text-left">
                       {translation.get_in_touch_section.second_card}
 
                       </p>
@@ -430,13 +430,13 @@ function NearshoreSoftwareDevelopment() {
                           <div className="flex justify-center items-center h-[5rem] md:h-[3rem] w-[5rem] md:w-[3rem] rounded-[50%]"> 
                             <FontAwesomeIcon
                               icon={faCheck}
-                              className=" text-white text-5xl md:text-2xl"
+                              className=" text-white text-xl md:text-lg"
                             />
                           </div>
                       </Boop>
                     </div>
                     <div>
-                      <p className="text-white text-[1.2rem] mt-[1rem] md:mt-0 text-center md:text-left">
+                      <p className="text-white text-sm mt-[1rem] md:mt-0 text-center md:text-left">
                       {translation.get_in_touch_section.third_card}
                       </p>
                     </div>
@@ -483,7 +483,7 @@ function NearshoreSoftwareDevelopment() {
                       {`"${client.opinion}"`}
                     </h3>
 
-                    <p className="p-1 font-bold whitespace-pre-wrap font-aleo text-white text-center text-lg leading-8 mt-[1rem] -mb-1  tracking-[1px]">
+                    <p className="p-1 font-bold whitespace-pre-wrap  text-white text-center text-lg leading-8 mt-[1rem] -mb-1  tracking-[1px]">
                       {client.role}, {client.company}
                     </p>
                   </div>
@@ -517,17 +517,17 @@ function NearshoreSoftwareDevelopment() {
                 </div>
               </div>
               <div className="w-full lg:w-[800px] flex flex-col items-center justify-center mt-4">
-                <h3 className="p-2 font-Poppins-Regular text-md md:text-2xl font-normal text-white text-center tracking-[1px] w-full h-auto whitespace-pre-wrap">
+                <h3 className="p-2 font-Poppins-Regular text-xs md:text-base font-normal text-white text-center tracking-[1px] w-full h-auto whitespace-pre-wrap">
                   {`"${client.opinion}"`}
                 </h3>
 
-                <p className="p-1 hidden md:inline font-aleo text-white text-lg font-bold leading-8 -mb-1  tracking-[1px]">
+                <p className="p-1 hidden md:inline  text-white text-sm font-bold leading-8 -mb-1  tracking-[1px]">
                   {client.role}, {client.company}
                 </p>
-                <p className="p-1 md:hidden font-aleo text-white text-center text-lg font-bold leading-8 -mb-1  tracking-[1px]">
+                <p className="p-1 md:hidden  text-white text-center text-sm font-bold leading-8 -mb-1  tracking-[1px]">
                   {client.role}
                 </p>
-                <p className=" md:hidden font-aleo text-white text-center leading-6 text-lg font-bold leading-[24px] -mb-1  tracking-[1px]">
+                <p className=" md:hidden  text-white text-center leading-6 text-sm font-bold leading-[24px] -mb-1  tracking-[1px]">
                   {client.company}
                 </p>
               </div>
@@ -539,7 +539,7 @@ function NearshoreSoftwareDevelopment() {
       {/* meet the team */}
       <section className="w-full md:h-[800px] flex flex-col items-center justify-start bg-nearshore-landing-team bg-working-cover bg-center bg-no-repeat pt-10 md:pt-20 px-6 pb-10">
         <h2
-          className="font-aleo text-lavanda-nearshore text-[2.5rem] text-center md:text-[3rem] font-semibold leading-[1.2]"
+          className=" text-lavanda-nearshore text-lg text-center md:text-xl font-semibold leading-[1.2]"
           data-aos="fade-zoom-in"
           data-aos-easing="ease-in"
           data-aos-duration={800}

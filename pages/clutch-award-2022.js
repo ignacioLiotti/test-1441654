@@ -49,7 +49,7 @@ function ClutchAward2022() {
           data-aos-duration={1000}
           data-aos-once
         >
-          <h2 className="w-full font-aleo font-bold text-white text-left text-2xl mt-14 p-12 md:w-[740px] md:text-left md:text-[2.8rem] md:leading-[1.4] md:mt-1  ">
+          <h2 className="w-full  font-bold text-white text-left text-base mt-14 p-12 md:w-[740px] md:text-left md:text-xl md:leading-[1.4] md:mt-1  ">
             {translation.headerTitle}
           </h2>
         </div>
@@ -61,13 +61,13 @@ function ClutchAward2022() {
         data-aos-once
       >
         <div className="w-full flex flex-col p-8 md:w-[42rem] md:p-4 ">
-          <h2 className="font-aleo text-black text-[1.8rem] text-center md:text-[2.8rem] md:text-left md:leading-[1.4] ">
+          <h2 className=" text-black text-base text-center md:text-xl md:text-left md:leading-[1.4] ">
             {translation.heroParagraph3}
           </h2>
-          <p className="mt-10 font-Poppins-Regular text-[1.1rem] text-center md:text-[1.2rem] md:text-left">
+          <p className="mt-10 font-Poppins-Regular text-xs text-center md:text-sm md:text-left">
             {translation.heroParagraph1}
           </p>
-          <p className="mt-10 font-Poppins-Regular text-[1.1rem] text-center md:text-[1.2rem] md:text-left">
+          <p className="mt-10 font-Poppins-Regular text-xs text-center md:text-sm md:text-left">
             {translation.heroParagraph2}
           </p>
         </div>
@@ -97,7 +97,7 @@ function ClutchAward2022() {
               layout="fill"
             />
           </div>
-          <p className="text-center font-Poppins-Regular text-white text-[1.1rem] px-8 mt-2 md:w-[54rem] md:text-[1.4rem] md:leading-10">
+          <p className="text-center font-Poppins-Regular text-white text-xs px-8 mt-2 md:w-[54rem] md:text-base md:leading-10">
             {translation.aboutClutch}
           </p>
         </div>
@@ -109,10 +109,10 @@ function ClutchAward2022() {
           data-aos-duration={1000}
           data-aos-once
         >
-          <h2 className="font-aleo text-black text-[1.6rem] md:text-[2.8rem] md:leading-[1.4] ">
+          <h2 className=" text-black text-lg md:text-xl md:leading-[1.4] ">
             {translation.reviewsTitle}
           </h2>
-          <p className="mt-6 font-Poppins-Regular text-center md:text-[1.2rem] md:text-left">
+          <p className="mt-6 font-Poppins-Regular text-center md:text-sm md:text-left">
             {translation.reviewsParagraph}{" "}
             <strong>{translation.reviewsParagraphStrong}</strong>
           </p>
@@ -160,13 +160,13 @@ function ClutchAward2022() {
                       {`"${client.opinion}"`}
                     </h3>
 
-                    <p className="p-1 hidden md:inline font-aleo text-white text-[1rem] leading-8 -mb-1  tracking-[1px]">
+                    <p className="p-1 hidden md:inline  text-white text-[1rem] leading-8 -mb-1  tracking-[1px]">
                       {client.role}, {client.company}
                     </p>
-                    <p className="p-1 md:hidden font-aleo text-white text-[1rem] leading-8 -mb-1  tracking-[1px]">
+                    <p className="p-1 md:hidden  text-white text-[1rem] leading-8 -mb-1  tracking-[1px]">
                       {client.role}
                     </p>
-                    <p className="p-1 md:hidden font-aleo text-white text-[1rem] leading-3 -mb-1  tracking-[1px]">
+                    <p className="p-1 md:hidden  text-white text-[1rem] leading-3 -mb-1  tracking-[1px]">
                       {client.company}
                     </p>
                   </div>
@@ -200,17 +200,17 @@ function ClutchAward2022() {
                 </div>
               </div>
               <div className="w-full lg:w-[800px] flex flex-col items-center justify-center mt-4">
-                <h3 className="p-2 font-Poppins-Regular text-2xl font-normal text-white text-center tracking-[1px] w-full h-auto whitespace-pre-wrap">
+                <h3 className="p-2 font-Poppins-Regular text-base font-normal text-white text-center tracking-[1px] w-full h-auto whitespace-pre-wrap">
                   {`"${client.opinion}"`}
                 </h3>
 
-                <p className="p-1 hidden md:inline font-aleo text-white text-[1rem] leading-8 -mb-1  tracking-[1px]">
+                <p className="p-1 hidden md:inline  text-white text-xs leading-8 -mb-1  tracking-[1px]">
                   {client.role}, {client.company}
                 </p>
-                <p className="p-1 md:hidden font-aleo text-white text-center text-[1rem] leading-8 -mb-1  tracking-[1px]">
+                <p className="p-1 md:hidden  text-white text-center text-xs leading-8 -mb-1  tracking-[1px]">
                   {client.role}
                 </p>
-                <p className=" md:hidden font-aleo text-white text-center leading-6 text-[1rem] leading-[16px] -mb-1  tracking-[1px]">
+                <p className=" md:hidden  text-white text-center leading-6 text-xs leading-[16px] -mb-1  tracking-[1px]">
                   {client.company}
                 </p>
               </div>
@@ -226,10 +226,10 @@ function ClutchAward2022() {
           data-aos-duration={1000}
           data-aos-once
         >
-          <h2 className="font-aleo text-black pl-4 text-center text-[1.6rem] md:text-[2.8rem] md:leading-[1.4] md:text-left pt-6 ">
+          <h2 className=" text-black pl-4 text-center text-lg md:text-xl md:leading-[1.4] md:text-left py-6 ">
             {translation.movingForwardTitle}
           </h2>
-          <p className=" font-Poppins-Regular px-4  text-center md:text-[1.2rem] md:text-left md:mt-6">
+          <p className=" font-Poppins-Regular px-4 text-center md:text-sm md:text-left md:mt-6">
             {translation.movingForwardParagraph}
             <strong> {translation.movingForwardParagraphStrong}</strong>
           </p>

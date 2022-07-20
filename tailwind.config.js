@@ -48,6 +48,11 @@ module.exports = {
       "xl": "3rem",
       "2xl": "3.75rem",
     },
+    fontWeight: {
+      "normal": "400",
+      "semibold": "600",
+      "bold": "800",
+    },
     backgroundPosition: {
       "right-center": "right center",
       "left-center": "left center",

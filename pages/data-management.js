@@ -38,10 +38,10 @@ function Rocbird() {
               data-aos-duration={1000}
               data-aos-once
             >
-              <h2 className="font-aleo text-white font-semibold text-[3.5rem] text-center md:leading-[1.4] md:text-left ">
+              <h2 className=" text-white font-semibold text-xl md:text-2xl text-center md:leading-[1.4] md:text-left ">
                 {translation.headerTitle}
               </h2>
-              <p className="font-aleo text-transparent rocbird-text-gradient font-semibold text-left mt-2 md:mb-8 text-[1.5rem] md:text-[1.5rem] md:leading-[1.4] md:mb-1 md:mt-2">
+              <p className=" text-transparent rocbird-text-gradient font-semibold text-left mt-2 md:mb-8 text-base md:leading-[1.4] md:mb-1 md:mt-2">
                 {translation.headerSubTitle}
               </p>
             </div>
@@ -117,7 +117,7 @@ function Rocbird() {
                       alt="clients"
                   />
             </div>
-            <p className=" w-[100%] text-[1.1rem] md:text-[1.4rem] text-left text-gray font-bold md:font-normal group-hover:font-bold transition-all ease-in-out leading-[1.5] md:leading-[2] ml-[1rem]">
+            <p className=" w-[100%] text-sm md:text-base text-left text-gray font-bold md:font-normal group-hover:font-bold transition-all ease-in-out leading-[1.5] md:leading-[2] ml-[1rem]">
               {translation.this_aliance_section.first_card}
             </p>
           </div>
@@ -130,7 +130,7 @@ function Rocbird() {
                   />
 
             </div>
-            <p className=" w-[100%]  text-[1.1rem] md:text-[1.4rem] text-left text-gray group-hover:font-bold transition-all ease-in-out leading-[1.5] md:leading-[2] ml-[1rem]">
+            <p className=" w-[100%]  text-sm md:text-base text-left text-gray group-hover:font-bold transition-all ease-in-out leading-[1.5] md:leading-[2] ml-[1rem]">
               {translation.this_aliance_section.second_card}
             </p>
           </div>
@@ -145,12 +145,12 @@ function Rocbird() {
           data-aos-delay="100"
           data-aos-once
         >
-          <h2 className="font-aleo text-gray-700 text-[2.5rem] font-semibold leading-[1.5] tracking-normal ">
+          <h2 className=" text-gray-700 text-xl font-semibold leading-[1.5] tracking-normal ">
             {translation.about_section.title}
           </h2>
           <span className="h-3 w-14 gold-gradient rounded-xl">
           </span>
-          <p className="font-poppins md:w-[50rem] md:text-[1.2rem] text-center text-gray-600 leading-[1.7] md:leading-[2] mb-10 mt-6 px-[3rem] md:px-0">
+          <p className="font-poppins md:w-[50rem] md:text-sm text-center text-gray-600 leading-[1.7] md:leading-[2] mb-10 mt-6 px-[3rem] md:px-0">
             {translation.about_section.paragraph}
           </p>
         </div>
@@ -164,10 +164,10 @@ function Rocbird() {
             data-aos-delay="100"
             data-aos-once
             >
-              <h2 className="font-aleo text-gray-600 group-hover:text-white font-semibold text-left text-[1.3rem] md:text-[1.4rem] md:leading-[1] md:tracking-normal mt-5 md:mt-10 md:mb-2  transition-all ease-in-out">
+              <h2 className=" text-gray-600 group-hover:text-white font-semibold text-left text-sm md:text-base md:leading-[1] md:tracking-normal mt-5 md:mt-10 md:mb-2  transition-all ease-in-out">
                   {translation.about_section.first_card.title}
               </h2>
-              <p className="font-poppins text-left mt-4 mb-8 md:text-[0.9rem] text-gray-500 group-hover:text-white md:leading-[2] md:mb-10 md:mt-2 md:pr-8  transition-all ease-in-out">
+              <p className="font-poppins text-left mt-4 mb-8 md:text-xs text-gray-500 group-hover:text-white md:leading-[2] md:mb-10 md:mt-2 md:pr-8  transition-all ease-in-out">
                   {translation.about_section.first_card.paragraph}
               </p>
             </div>
@@ -178,10 +178,10 @@ function Rocbird() {
             data-aos-delay="100"
             data-aos-once
             >
-              <h2 className="font-aleo text-white md:text-gray-600 group-hover:text-white font-semibold text-left text-[1.3rem] md:text-[1.4rem] md:leading-[1] md:tracking-normal mt-5 md:mt-10 md:mb-2  transition-all ease-in-out">
+              <h2 className=" text-white md:text-gray-600 group-hover:text-white font-semibold text-left text-[1.3rem] md:text-[1.4rem] md:leading-[1] md:tracking-normal mt-5 md:mt-10 md:mb-2  transition-all ease-in-out">
                   {translation.about_section.second_card.title}
               </h2>
-              <p className="font-poppins text-left mt-4 mb-8 md:text-[0.9rem] text-white md:text-gray-500 group-hover:text-white md:leading-[2] md:mb-10 md:mt-2 md:pr-8  transition-all ease-in-out">
+              <p className="font-poppins text-left mt-4 mb-8 md:text-xs text-white md:text-gray-500 group-hover:text-white md:leading-[2] md:mb-10 md:mt-2 md:pr-8  transition-all ease-in-out">
                   {translation.about_section.second_card.paragraph}
               </p>
             </div>
@@ -194,10 +194,10 @@ function Rocbird() {
             data-aos-delay="100"
             data-aos-once
             >
-              <h2 className="font-aleo text-gray-600 group-hover:text-white font-semibold text-left text-[1.3rem] md:text-[1.4rem] md:leading-[1] md:tracking-normal mt-5 md:mt-10 md:mb-2  transition-all ease-in-out">
+              <h2 className=" text-gray-600 group-hover:text-white font-semibold text-left text-[1.3rem] md:text-[1.4rem] md:leading-[1] md:tracking-normal mt-5 md:mt-10 md:mb-2  transition-all ease-in-out">
                   {translation.about_section.third_card.title}
               </h2>
-              <p className="font-poppins text-left mt-4 mb-8 md:text-[0.9rem] text-gray-500 group-hover:text-white md:leading-[2] md:mb-10 md:mt-2 md:pr-8  transition-all ease-in-out">
+              <p className="font-poppins text-left mt-4 mb-8 md:text-xs text-gray-500 group-hover:text-white md:leading-[2] md:mb-10 md:mt-2 md:pr-8  transition-all ease-in-out">
                   {translation.about_section.third_card.paragraph}
               </p>
             </div>
@@ -213,10 +213,10 @@ function Rocbird() {
             data-aos-delay="100"
             data-aos-once
             >
-              <h2 className="font-aleo text-gray-600 group-hover:text-white font-semibold text-left text-[1.3rem] md:text-[1.4rem] md:leading-[1] md:tracking-normal mt-5 md:mt-10 md:mb-2  transition-all ease-in-out">
+              <h2 className=" text-gray-600 group-hover:text-white font-semibold text-left text-[1.3rem] md:text-[1.4rem] md:leading-[1] md:tracking-normal mt-5 md:mt-10 md:mb-2  transition-all ease-in-out">
                   {translation.about_section.fourth_card.title}
               </h2>
-              <p className="font-poppins text-left mt-4 mb-8 md:text-[0.9rem] text-gray-500 group-hover:text-white md:leading-[2] md:mb-10 md:mt-2 md:pr-8  transition-all ease-in-out">
+              <p className="font-poppins text-left mt-4 mb-8 md:text-xs text-gray-500 group-hover:text-white md:leading-[2] md:mb-10 md:mt-2 md:pr-8  transition-all ease-in-out">
                   {translation.about_section.fourth_card.paragraph}
               </p>
             </div>
@@ -229,10 +229,10 @@ function Rocbird() {
             data-aos-delay="100"
             data-aos-once
             >
-              <h2 className="font-aleo text-white md:text-gray-600 group-hover:text-white font-semibold text-left text-[1.3rem] md:text-[1.4rem] md:leading-[1] md:tracking-normal mt-5 md:mt-10 md:mb-2  transition-all ease-in-out">
+              <h2 className=" text-white md:text-gray-600 group-hover:text-white font-semibold text-left text-[1.3rem] md:text-[1.4rem] md:leading-[1] md:tracking-normal mt-5 md:mt-10 md:mb-2  transition-all ease-in-out">
                   {translation.about_section.fifth_card.title}
               </h2>
-              <p className="font-poppins text-left mt-4 mb-8 md:text-[0.9rem] text-white md:text-gray-500 group-hover:text-white md:leading-[2] md:mb-10 md:mt-2 md:pr-8  transition-all ease-in-out">
+              <p className="font-poppins text-left mt-4 mb-8 md:text-xs text-white md:text-gray-500 group-hover:text-white md:leading-[2] md:mb-10 md:mt-2 md:pr-8  transition-all ease-in-out">
                   {translation.about_section.fifth_card.paragraph}
               </p>
             </div>
@@ -243,10 +243,10 @@ function Rocbird() {
             data-aos-delay="100"
             data-aos-once
             >
-              <h2 className="font-aleo text-gray-600 group-hover:text-white font-semibold text-left text-[1.3rem] md:text-[1.4rem] md:leading-[1] md:tracking-normal mt-5 md:mt-10 md:mb-2  transition-all ease-in-out">
+              <h2 className=" text-gray-600 group-hover:text-white font-semibold text-left text-[1.3rem] md:text-[1.4rem] md:leading-[1] md:tracking-normal mt-5 md:mt-10 md:mb-2  transition-all ease-in-out">
                   {translation.about_section.sixth_card.title}
               </h2>
-              <p className="font-poppins text-left mt-4 mb-8 md:text-[0.9rem] text-gray-500 group-hover:text-white md:leading-[2] md:mb-10 md:mt-2 md:pr-8  transition-all ease-in-out">
+              <p className="font-poppins text-left mt-4 mb-8 md:text-xs text-gray-500 group-hover:text-white md:leading-[2] md:mb-10 md:mt-2 md:pr-8  transition-all ease-in-out">
                   {translation.about_section.sixth_card.paragraph}
               </p>
             </div>

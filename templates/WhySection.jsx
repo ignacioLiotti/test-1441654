@@ -4,7 +4,7 @@ function WhySection({ strings }) {
   return (
     <section className="w-full bg-why-section bg-no-repeat bg-size-30 bg-left-top">
       <div
-        className="sm:max-w-[34rem] md:max-w-[45rem] lg:max-w-[60rem] xl:max-w-6xl w-full mx-auto
+        className="sm:max-w-[34rem] md:max-w-[45rem] lg:max-w-[60rem] pb-[3rem] xl:max-w-6xl w-full mx-auto
         md:pt-[4.375rem] md:pb-[8.75rem]
         transition-all duration-300 ease-in"
       >
@@ -32,10 +32,10 @@ function WhySection({ strings }) {
                 />
               </div>
               <div className="flex flex-col items-start">
-                <h2 className="mt-2 xs:xs:mb-2 text-2xl xs:text-[1.9rem] text-icon-blue font-aleo font-bold">
+                <h2 className="mt-2 xs:xs:mb-2 text-base xs:text-[1.9rem] text-icon-blue font-semibold">
                   {strings.timeZone}
                 </h2>
-                <p className="text-base text-gray-body font-open-sans leading-8">
+                <p className="text-xs text-gray-body font-open-sans leading-8">
                   {strings.timeZoneDesc}
                 </p>
               </div>
@@ -54,10 +54,10 @@ function WhySection({ strings }) {
                 />
               </div>
               <div className="flex flex-col items-start">
-                <h2 className="mt-2 xs:mb-2 text-2xl xs:text-[2rem] text-icon-blue font-aleo font-bold">
+                <h2 className="mt-2 xs:mb-2 text-base xs:text-[2rem] text-icon-blue font-semibold">
                   {strings.cost}
                 </h2>
-                <p className="text-base text-gray-body font-open-sans leading-8">
+                <p className="text-xs text-gray-body font-open-sans leading-8">
                   {strings.costDesc}
                 </p>
               </div>
@@ -76,10 +76,10 @@ function WhySection({ strings }) {
                 />
               </div>
               <div className="flex flex-col items-start">
-                <h2 className="mt-2 xs:mb-2 text-2xl xs:text-[2rem] text-icon-blue font-aleo font-bold">
+                <h2 className="mt-2 xs:mb-2 text-base xs:text-[2rem] text-icon-blue font-semibold">
                   {strings.talent}
                 </h2>
-                <p className="text-base text-gray-body font-open-sans leading-8">
+                <p className="text-xs text-gray-body font-open-sans leading-8">
                   {strings.talentDesc}
                 </p>
               </div>
@@ -98,10 +98,10 @@ function WhySection({ strings }) {
                 />
               </div>
               <div className="flex flex-col items-start">
-                <h2 className="mt-2 xs:mb-2 text-2xl xs:text-[2rem] text-icon-blue font-aleo font-bold">
+                <h2 className="mt-2 xs:mb-2 text-base xs:text-[2rem] text-icon-blue font-semibold">
                   {strings.english}
                 </h2>
-                <p className="text-base text-gray-body font-open-sans leading-8">
+                <p className="text-xs text-gray-body font-open-sans leading-8">
                   {strings.englishDesc}
                 </p>
               </div>
