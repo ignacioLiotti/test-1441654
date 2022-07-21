@@ -86,7 +86,7 @@ const es = {
       },
       {
         id: 5,
-        imgSource: "compu",
+        imgSource: "comp",
         title: "Desarrollo Web",
         description:
           "¿Está pensando en llevar su proyecto / negocio a la web? Nuestro equipo desarrolla y diseña sitios web multiplataforma que son visualmente atractivos, siguiendo las últimas tendencias en UX / UI.",

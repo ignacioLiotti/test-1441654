@@ -35,8 +35,8 @@ function HeroSection({ strings }) {
   }, [isMenuOpen])
 
   return (
-    <div className="h-[50.75rem] w-full bg-hero-section bg-center-bottom bg-working-cover bg-no-repeat">
-      <section className="flex items-center justify-center w-full mx-auto pt-48 pb-64" ref={ref}>
+    <div className="lg:h-[50.75rem] w-full bg-hero-section bg-center-bottom bg-working-cover bg-no-repeat">
+      <section className="flex items-center justify-center w-full mx-auto pt-48 lg:pb-64" ref={ref}>
         {isMenuOpen ? (
             <div className="fixed left-0 top-0 opacity-1 bg-gray-500/50 z-50" >
               <div className="flex items-center justify-center h-[100vh] w-[100vw]">

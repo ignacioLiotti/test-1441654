@@ -155,8 +155,8 @@ function Rocbird() {
           </p>
         </div>
       </section>
-      <section className="w-full flex flex-col justify-center items-center bg-gray-100 overflow-hidden p-6 md:items-center md:p-0 md:bg-rocbird-logo rocbird-center bg-no-repeat">
-        <div className="w-full md:w-[90rem] flex flex-col justify-around items-center md:p-6 md:items-start md:flex-row md:mb-10 md:p-0 ">
+      <section className="w-full flex flex-col justify-center items-center bg-gray-100 overflow-hidden p-6 md:items-center md:p-0 lg:bg-rocbird-logo rocbird-center bg-no-repeat">
+        <div className="w-full md:max-w-[90rem] flex flex-col justify-around items-center md:p-6 md:items-start md:flex-row md:mb-10 md:p-0 gap-[1rem]">
             <div
             className="w-full md:w-[35rem] relative bg-white group hover:bg-purple-nearshore rocbird-shadow rounded-[1rem] px-[1rem] md:px-[2rem] mb-5 md:mb-0 drop-shadow-[-5px_0_0px_rgba(54,169,225,0.9)] transition-all ease-in-out"
             data-aos="fade-right"
@@ -186,7 +186,7 @@ function Rocbird() {
               </p>
             </div>
         </div>
-        <div className="w-full md:w-[100rem] flex flex-col gap-[3rem] md:gap-0 justify-between items-center md:p-6 md:items-start md:flex-row md:mb-10 md:p-0 ">
+        <div className="w-full md:max-w-[100rem] flex flex-col gap-[3rem] md:gap-[2rem] justify-between items-center md:p-6 md:items-start md:flex-row md:mb-10 md:p-0">
             <div
             className="w-full md:w-[35rem] relative bg-white group hover:bg-purple-nearshore rocbird-shadow rounded-[1rem] px-[1rem] md:px-[2rem] md:mb-0 drop-shadow-[-5px_0_0px_rgba(54,169,225,0.9)] transition-all ease-in-out"
             data-aos="fade-right"
@@ -203,7 +203,7 @@ function Rocbird() {
             </div>
             <img
                 src={`/images/rocbird/rocbirdlogo.png`}
-                className="w-[80%] md:hidden"
+                className="xs:w-[80%] sm:w-[50%] md:hidden"
                 alt="clients"
               />
             <div
@@ -221,7 +221,7 @@ function Rocbird() {
               </p>
             </div>
         </div>
-        <div className="w-full md:w-[90rem] flex flex-col justify-around items-center md:p-6 md:items-start md:flex-row md:mb-10 md:p-0 ">
+        <div className="w-full md:max-w-[90rem] flex flex-col justify-around items-center md:p-6 md:items-start md:flex-row md:mb-10 md:p-0 gap-[1rem]">
             <div
             className="w-full md:w-[35rem] relative bg-purple-nearshore md:bg-white group hover:bg-purple-nearshore rocbird-shadow rounded-[1rem] px-[1rem] md:px-[2rem] mb-5 md:mb-0 drop-shadow-[5px_0_0px_rgba(54,169,225,0.9)] md:drop-shadow-[-5px_0_0px_rgba(54,169,225,0.9)] transition-all ease-in-out"
             data-aos="fade-right"

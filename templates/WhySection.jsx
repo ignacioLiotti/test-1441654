@@ -26,7 +26,7 @@ function WhySection({ strings }) {
             >
               <div className="w-12 h-12 xs:w-[3.25rem]xs:h-[3.25rem] flex-shrink-0 m-4 xs:m-2">
                 <img
-                  src={`/images/icons/${strings.timeZoneImg}.png`}
+                  src={`/images/icons/${strings.timeZoneImg}.svg`}
                   className="w-full h-auto object-contain"
                   alt=""
                 />
@@ -70,7 +70,7 @@ function WhySection({ strings }) {
             >
               <div className="w-12 h-12 xs:w-[3.25rem]xs:h-[3.25rem] flex-shrink-0 m-4 xs:m-2">
                 <img
-                  src={`/images/icons/${strings.talentImg}.png`}
+                  src={`/images/icons/${strings.talentImg}.svg`}
                   className="w-full h-auto object-contain"
                   alt=""
                 />
@@ -92,7 +92,7 @@ function WhySection({ strings }) {
             >
               <div className="w-12 h-12 xs:w-[3.25rem]xs:h-[3.25rem] flex-shrink-0 m-4 xs:m-2">
                 <img
-                  src={`/images/icons/${strings.englishImg}.png`}
+                  src={`/images/icons/${strings.englishImg}.svg`}
                   className="w-full h-auto object-contain"
                   alt=""
                 />

@@ -23,7 +23,7 @@ function Footer() {
     >
       <div className="container-width flex flex-col lg:flex-row items-center lg:items-start justify-between gap-9">
         {/* First column: Contact info */}
-        <div className="flex flex-col items-center lg:items-start w-11/12 px-8 xs:px-4 md:px-4 h-full lg:w-4/12 gap-6 order-1">
+        <div className="flex flex-col items-start w-10/12 px-8 xs:px-4 md:px-4 h-full lg:w-4/12 gap-6 order-1">
           <img
             className="h-11 -ml-4 mb-2 md:h-[60px] object-contain mb-3"
             src="/images/logo-all-white.png"

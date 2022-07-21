@@ -83,7 +83,7 @@ const en = {
       },
       {
         id: 5,
-        imgSource: "compu",
+        imgSource: "comp",
         title: "Web development",
         description:
           "Thinking about taking your project/business to the net? Our team can develop and design cross platform websites that are visually engaging, following the latest trends on UX/UI.",

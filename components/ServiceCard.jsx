@@ -14,7 +14,7 @@ function ServiceCard({ title, description, description2, list, image, button, li
     >
       <span className="flex flex-col items-start justify-center w-full h-16 mt-2s mb-6">
         <img
-          src={`/images/icons/${image}.png`}
+          src={`/images/icons/${image}.svg`}
           alt=""
           className="object-contain"
         />
