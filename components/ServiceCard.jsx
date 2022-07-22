@@ -12,11 +12,11 @@ function ServiceCard({ title, description, description2, list, image, button, li
       hover:-translate-y-2 transition-all duration-300 ease-in-out select-none pb-12
     "
     >
-      <span className="flex flex-col items-start justify-center w-full h-16 mt-2s mb-6">
+      <span className="flex flex-col items-start justify-center w-full h-16 mt-2s mb-6 blue-filter">
         <img
           src={`/images/icons/${image}.svg`}
           alt=""
-          className="object-contain"
+          className="object-contain w-16 h-16"
         />
       </span>
       <h4

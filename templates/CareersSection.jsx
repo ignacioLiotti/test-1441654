@@ -10,22 +10,24 @@ import NoJobsFound from "../components/NoJobsFound";
 function CareersSection({ strings }) {
   const router = useRouter();
   const { locale } = router;
-  const [jobs, setJobs] = useState([]);
+  // const [jobs, setJobs] = useState([]);
 
-  const jobsRequest = async () => {
-    try{
-      const jobs = await axios.get(`https://jobs.devlights.com/jobs`);
-      setJobs(jobs.data.data);
-    } catch(err) {console.log(err)}
-  };
+  // const jobsRequest = async () => {
+  //   try{
+  //     const jobs = await axios.get(`https://jobs.devlights.com/jobs`);
+  //     setJobs(jobs.data.data);
+  //   } catch(err) {console.log(err)}
+  // };
 
-  useEffect(() => {
-    jobsRequest();
-  }, []);
+  // useEffect(() => {
+  //   jobsRequest();
+  // }, []);
 
-  if (jobs.length === 0) {
-    return ;
-  }
+  // if (jobs.length === 0) {
+  //   return ;
+  // }
+
+  const jobs = [{title:'tumama',typeOfJob:{name:'tumama'}},{title:'tumama',typeOfJob:{name:'tumama'}},{title:'tumama',typeOfJob:{name:'tumama'}},{title:'tumama',typeOfJob:{name:'tumama'}}]
 
   return (
     <section id="careers"
