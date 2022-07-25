@@ -46,7 +46,7 @@ function Rocbird() {
               </p>
             </div>
           </div>
-          <div className="flex flex-1 min-w-[400px]"
+          <div className="flex flex-1 md:min-w-[500px] min-w-[400px]"
               data-aos="fade-left"
               data-aos-duration={1000}
               data-aos-once> 
@@ -60,7 +60,7 @@ function Rocbird() {
         </div>
       </section>
       {/* aliance + photos */}
-      <section className="flex flex-col lg:flex-row justify-around items-center w-full md:max-w-[90rem] lg:h-[27rem] bg-white md:my-24">
+      <section className="flex flex-col lg:flex-row justify-around items-center w-full md:max-w-[90rem] lg:h-[27rem] bg-white md:mt-8 md:mb-16 lg:my-24">
         <div
           className="relative flex flex-col justify-center items-center md:w-[50%] md:h-[auto] mx-8"
           data-aos="fade-up"
@@ -70,10 +70,10 @@ function Rocbird() {
         >
             <img
                 src={`/images/rocbird/blob.svg`}
-                className="z-0 object-contain max-w-[35rem] min-w-[25rem] md:motion-safe:animate-[idle05_5s_ease-in-out_3s_infinite_alternate_none_running]"
+                className="z-0 object-contain max-w-[15rem] lg:max-w-[35rem] min-w-[25rem] md:motion-safe:animate-[idle05_5s_ease-in-out_3s_infinite_alternate_none_running]"
                 alt="clients"
                 />
-            <div className="absolute w-[10rem] lg:w-[17rem]">
+            <div className="absolute w-[10rem] md:w-[14rem] lg:w-[17rem]">
               <BoopImg y='-35' scale='1.05' rotation='-5' springConfig={{tension:'50',friction:'20'}}>
                     <img
                         src={`/images/rocbird/nahu.png`}
@@ -86,7 +86,7 @@ function Rocbird() {
               <BoopImg x='15' scale='1.05' rotation='15' springConfig={{tension:'150',friction:'10'}}>
                 <img
                   src={`/images/rocbird/nico.png`}
-                  className="object-contain w-[6rem] md:w-[8rem] lg:w-[10rem] md:motion-safe:animate-[idle05_1.7s_ease-in-out_3s_infinite_alternate_none_running]"
+                  className="object-contain w-[6rem] md:w-[9rem] lg:w-[10rem] md:motion-safe:animate-[idle05_1.7s_ease-in-out_3s_infinite_alternate_none_running]"
                   alt="clients"
                 /> 
               </BoopImg>
@@ -95,7 +95,7 @@ function Rocbird() {
               <BoopImg y='15' scale='1.05' rotation='5' springConfig={{tension:'100',friction:'5'}}>
                 <img
                   src={`/images/rocbird/yisus.png`}
-                  className=" z-10 object-contain w-[5rem] md:w-[7rem] lg:w-[10rem] md:motion-safe:animate-[idle06_3.7s_ease-in-out_0.5s_infinite_alternate_none_running]"
+                  className=" z-10 object-contain w-[5rem] md:w-[8rem] lg:w-[10rem] md:motion-safe:animate-[idle06_3.7s_ease-in-out_0.5s_infinite_alternate_none_running]"
                   alt="clients"
                 />
               </BoopImg>

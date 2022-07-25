@@ -7,6 +7,25 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        "neutral-black": "#212121",
+        "neutral-dark-grey": "#4d4d4d",
+        "neutral-grey": "#717171",
+        "neutral-light-grey": "#89939E",
+        "neutral-grey-blue": "#ABBED1",
+        "neutral-silver": "#f5f7fa",
+        "neutral-white": "#ffffff",
+
+        "primary-dark-blue": "#003BBC",
+        "primary-mid-blue": "#0289FF",
+        "primary-blue": "#0289FF",
+        "primary-light-blue": "#319FFF",
+        "primary-sky-blue": "#DBEDFF",
+        "primary-lighter-blue": "#EEF5FC",
+
+        "secondary-dark-blue": "#077AAA",
+        "secondary-blue": "#29ABE2",
+        "secondary-light-blue": "#62CEFC",
+
         "icon-blue": "#5c93ce",
         "nav-blue": "#132739",
         "primary-blue": "#007bff",
@@ -78,8 +97,13 @@ module.exports = {
       "rocbird-landing-hero": "url('/images/rocbird/background.jpg')",
       "rocbird-logo": "url('/images/rocbird/rocbird.png')",
       "portfolio-1": "url('/images/portfolio/creativeHumans/bg-portf1.png')",
+
       "purple-blue-gradient": "linear-gradient(180deg, rgba(118, 64, 204, 1), rgba(54, 169, 225, 1))",
       "working-none":"linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 225, 0))",
+
+      "gradient-primary": "linear-gradient(180deg, rgba(41, 171, 226, 1), rgba(0, 59, 188, 1))",
+      "gradient-secondary": "linear-gradient(180deg, rgba(98, 206, 252, 1), rgba(7, 122, 170, 1))",
+      "gradient-tertiary": "linear-gradient(180deg, rgba(98, 206, 252, 1), rgba(2, 137, 255, 1))",
     },
     backgroundSize: {
       "working-cover": "cover",
@@ -284,7 +308,7 @@ module.exports = {
       'xs': '448px',
       'sm': '640px',
       'md': '770px',
-      'lg': '1024px',
+      'lg': '1025px',
       'xl': '1280px',
       '2xl': '1536px'
     }

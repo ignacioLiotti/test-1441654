@@ -35,41 +35,14 @@ function HeroSection({ strings }) {
   }, [isMenuOpen])
 
   return (
-    <div className="lg:h-[50.75rem] w-full bg-hero-section bg-center-bottom bg-working-cover bg-no-repeat">
-      <section className="flex items-center justify-center w-full mx-auto pt-48 lg:pb-64" ref={ref}>
-        {isMenuOpen ? (
-            <div className="fixed left-0 top-0 opacity-1 bg-gray-500/50 z-50" >
-              <div className="flex items-center justify-center h-[100vh] w-[100vw]">
-                <div className="" >
-                  <div className="flex relative bottom-37px">
-                    <iframe
-                      className="z-50 w-[90vw] h-[30vh] md:w-[60vw] md:h-[80vh] border-0"
-                      loading="lazy"
-                      width="800"
-                      height="500"
-                      src="https://www.youtube.com/embed/2mC4zqdTWs4?&autoplay=1"
-                      title="YouTube video player"
-                      frameBorder="0"
-                      allow="accelerometer;fullscreen; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ) : null}
-        <div
-          className="flex flex-col justify-center items-center lg:items-start lg:flex-row z-10 px-4
-          w-[45rem] lg:w-[60rem] xl:w-[71.25rem] md:-translate-y-10 lg:translate-y-0 transition-all duration-300 ease-in-out"
-        >
-          <div className="flex items-center justify-center sm:w-[35rem] mb-4 order-1 lg:order-2">
-            <img
-              className="object-contain max-h-[15rem] sm:max-h-fit sm:h-[15rem] md:h-[20.5rem] lg:h-[17.25rem] xl:h-[20.5rem] transition-all duration-300 ease-in-out"
-              src="/images/intro-img.png"
-            />
-          </div>
-          <div className="sm:w-[35rem] h-[20.5rem]  lg:h-[17.25rem] xl:h-[20.5rem] mb-10 order-2 lg:order-1">
-            <h2 className="text-white text-center lg:text-left text-base sm:text-[lg] md:text-xl font-bold leading-9 sm:leading-hero-section transition-all duration-300 ease-in-out">
+    <section className="h-[90vh] w-full flex justify-center bg-hero-section bg-left-top bg-no-repeat" ref={ref}>
+      <div className="flex md:flex-row-reverse items-center justify-center w-full max-w-[1224px] gap-[20px] mx-auto" ref={ref}>
+          <img
+            className="flex-[1_1_59%] max-w-[51%] object-contain transition-all duration-300 ease-in-out"
+            src="/images/intro-img.png"
+          />
+          <div className="flex-[1_1_41%] mb-10">
+            <h2 className="text-neutral-black text-center lg:text-left text-base sm:text-[lg] md:text-xl font-semibold leading-[72px] transition-all duration-300 ease-in-out">
               {strings.title}
             </h2>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 sm:gap-10 pt-8">
@@ -80,42 +53,10 @@ function HeroSection({ strings }) {
                 padx={'6'}
                 pady={'3'}
               />
-              {/* <VideoButton text={strings.btnVideo} /> */}
-              <button
-                className="flex flex-row items-center justify-center w-30 h-15 gap-4 relative overflow-hidden rounded-full"
-                id="fl-homepage-video"
-                onClick={(e)=>{
-                  // For functionality
-                  setIsMenuOpen(oldState => !oldState)
-                }}
-              >
-                <div className="flex items-center justify-center h-12 w-12 bg-white rounded-full">
-                  <Boop x={10} springConfig={springConfig}>
-                    <span className="flex triangle "></span>
-                  </Boop>
-                </div>
-                <span className="text-white">{strings.btnVideo}</span>
-              </button>
             </div>
-          </div>
         </div>
-      </section>
-      <div className="left-[4%] top-[10%] absolute animate-idleIcon1">
-        <img src="/images/icons/icon_1.png" />
-      </div>
-      <div className="left-[5%] bottom-[35%] absolute animate-idleIcon2">
-        <img src="/images/icons/icon_2.png" />
-      </div>
-      <div className="left-[50%] bottom-[40%] absolute animate-idleIcon3">
-        <img src="/images/icons/icon_8.png" />
-      </div>
-      <div className="left-[51%] top-[13%] absolute animate-idleIcon1">
-        <img src="/images/icons/icon_7.png" />
-      </div>
-      <div className="left-[68%] top-[60%] absolute animate-idleIcon2">
-        <img src="/images/icons/icon_8.png" />
-      </div>
     </div>
+    </section>
   );
 }
 

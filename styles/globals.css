@@ -106,6 +106,15 @@ html{
   filter: invert(53%) sepia(94%) saturate(324%) hue-rotate(167deg) brightness(86%) contrast(91%);
 }
 
+.gradient-primary{
+  background:linear-gradient(235deg, rgba(41, 171, 226, 1), rgba(0, 59, 188, 1))}
+.gradient-secondary{
+  background: linear-gradient(235deg, rgba(98, 206, 252, 1), rgba(7, 122, 170, 1))
+}
+.gradient-tertiary{
+  background: linear-gradient(235deg, rgba(98, 206, 252, 1), rgba(2, 137, 255, 1))
+}
+
 .gold-gradient{
   background-image: linear-gradient(
     135deg,

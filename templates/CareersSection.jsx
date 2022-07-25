@@ -31,9 +31,9 @@ function CareersSection({ strings }) {
 
   return (
     <section id="careers"
-      className="w-full bg-technologies-section-mobile bg-size-100-50 md:bg-careers-section bg-working-cover bg-no-repeat bg-size-100 md:bg-size-100 xl:bg-size-100 relative md:pt-[6rem] md:pb-[6rem] md:mb-[4em]">
+      className="w-full bg-technologies-section-mobile bg-size-100-50 md:bg-careers-section bg-working-cover bg-no-repeat bg-size-100 md:bg-size-100 xl:bg-size-100 relative md:pt-[6rem] md:pb-[6rem] mb-[4em]">
       <div className="container-width flex flex-col-reverse justify-center items-center pt-12 md:flex-row items-center justify-around px-4 ">
-        <div className="w-80 mr-4 mt-6 md:w-96 md:mr-40">
+        <div className="w-80 mr-4 mt-6 md:w-96 lg:mr-40">
           <div data-aos="fade-up" data-aos-duration={1000} data-aos-once>
             {jobs.length > 0 ? (
               jobs.slice(-4).map((job) => {
@@ -57,7 +57,7 @@ function CareersSection({ strings }) {
         </div>
 
         <div className="flex flex-col items-center justify-end md:max-w-[40%] pt-0 md:ml-[6rem] md:items-start  ">
-          <h2 className="font-aleo font-bold text-center xs:text-left text-white text-3xl leading-tight mb-5 mt-[2rem]">
+          <h2 className="font-aleo font-bold text-center xs:text-left text-white text-xl leading-tight mb-5 mt-[2rem]">
             {strings.title}
           </h2>
           <div className="w-14 h-4 rounded-full bg-orange-pill my-5"></div>
