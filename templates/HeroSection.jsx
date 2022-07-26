@@ -35,14 +35,14 @@ function HeroSection({ strings }) {
   }, [isMenuOpen])
 
   return (
-    <section className="h-[90vh] w-full flex justify-center bg-hero-section bg-left-top bg-no-repeat" ref={ref}>
-      <div className="flex md:flex-row-reverse items-center justify-center w-full max-w-[1224px] gap-[20px] mx-auto" ref={ref}>
+    <section className="h-[90vh] w-full flex justify-center items-center bg-hero-section bg-left-top bg-no-repeat" ref={ref}>
+      <div className="flex flex-col md:flex-row-reverse items-center justify-center w-full max-w-[1224px] gap-0 md:gap-[20px] mx-[clamp(30px,0%,100%)] " ref={ref}>
           <img
-            className="flex-[1_1_59%] max-w-[51%] object-contain transition-all duration-300 ease-in-out"
+            className="flex-[1_1_59%] md:max-w-[51%] object-contain transition-all duration-300 ease-in-out"
             src="/images/intro-img.png"
           />
           <div className="flex-[1_1_41%] mb-10">
-            <h2 className="text-neutral-black text-center lg:text-left text-base sm:text-[lg] md:text-xl font-semibold leading-[72px] transition-all duration-300 ease-in-out">
+            <h2 className="text-neutral-black text-center lg:text-left text-lg sm:text-[lg] md:text-xl font-semibold md:leading-[72px] transition-all duration-300 ease-in-out">
               {strings.title}
             </h2>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 sm:gap-10 pt-8">

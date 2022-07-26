@@ -117,7 +117,7 @@ module.exports = {
       "size-30": "30% auto",
     },
     boxShadow: {
-      "generic-card": "0px 10px 30px 0px rgba(1, 84, 85, 0.2)",
+      "generic-card": "0px 7px 29px 4px rgba(0, 0, 0, 0.1)",
       "testimonial-card": "0 10px 24px 0px rgba(0, 0, 0, 0.2)",
       "white-action-btn": "0px 2px 12px 2px rgba(0, 0, 0, 0.40)",
       "work-steps-shadow": "0px 2px 4px 1px rgba(0, 0, 0, 0.40)",
