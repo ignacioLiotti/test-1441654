@@ -61,11 +61,17 @@ module.exports = {
     },
     fontSize: {
       "xs": "1rem",
+      // 16px
       "sm": "1.25rem",
+      // 20px
       "base": "1.5rem",
+      // 24px
       "lg": "2.125rem",
-      "xl": "3rem",
+      // 34px
+      "xl": "3rem", 
+      // 48px
       "2xl": "3.75rem",
+      // 60px
     },
     fontWeight: {
       "normal": "400",
@@ -83,7 +89,7 @@ module.exports = {
       "about-section": "url('/images/about_overlay.png')",
       "why-section": "url('/images/about_overlay2.png')",
       "hero-section": "url('/images/intro-bg.svg')",
-      "services-section": "url('/images/blue.png')",
+      "services-section": "url('/images/light-blue.svg')",
       "technologies-section": "url('/images/about_overlay3.png')",
       "technologies-section-mobile": "url('/images/about_overlay3-mobile.png')",
       "careers-section": "url('/images/about_overlay4.png')",

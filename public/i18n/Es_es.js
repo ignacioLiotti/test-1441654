@@ -18,8 +18,7 @@ const es = {
     btnVideo: "Intro Video",
   },
   aboutUs: {
-    srcImage: "sobre-nosotros",
-    srcImageMobile: "AboutMobileEs",
+    title: "Sobre Nosotros",
     who: "¿Quiénes somos? ",
     whoDesc:
       "Somos una compañía que provee soluciones tecnológicas a nuestros clientes, optimizando sus procesos y permitiéndoles de esta manera alcanzar su máximo potencial.",
@@ -112,9 +111,9 @@ const es = {
     title: "Portfolio",
     all: 'todo',
     tabs: [
-      { id: 1, name: "todo", category: 'all' },
-      { id: 2, name: "mobile", category: 'mobile' },
-      { id: 3, name: "web", category: 'web' },
+      { id: 1, name: "Todo", category: 'all' },
+      { id: 2, name: "Mobile", category: 'mobile' },
+      { id: 3, name: "Web", category: 'web' },
     ],
     items: [
       { id: 1, imageName: "creative-humans", name: "Creative Humans", description: "web development", link: "http://devlights.com/portfolio/creativehumans", category: "web" },

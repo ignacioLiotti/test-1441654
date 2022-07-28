@@ -1,67 +1,40 @@
 import React, { useState } from "react";
 import ClientCard from "../components/ClientCard";
-import GoldActionButton from "../components/GoldActionButton";
+import { Navigation, FreeMode, Autoplay, A11y } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 function ClientsSection({ strings }) {
-  const [show, setShow] = useState(false);
-  const [showMobile, setShowMobile] = useState(10);
 
   return (
-    <section id="clients" 
-      className="py-14 scroll-m-24">
-      <div className="container-width flex flex-col items-center justify-center w-full">
-        <h3 className="font-aleo font-bold text-lg text-center text-gray-third mb-2">
+    <section id="clients" className="w-full flex justify-center items-center bg-neutral-silver py-[80px]">
+    <div className="flex flex-col items-center justify-center w-full max-w-[1440px] gap-0 md:gap-[40px] mx-[clamp(40px,0%,100%)] ">
+        <h3 className="font-semibold text-xl text-center text-neutral-black mb-2">
           {strings.title}
         </h3>
-        <div className="w-14 h-4 rounded-full bg-orange-pill my-5"></div>
-        {/* desktop */}
-        <div className="hidden md:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {[...Array(show ? 32 : 20)].map((pos, index) => (
-            <ClientCard clientId={index + 1} key={index} />
-          ))}
+        <div className="w-full">
+          <Swiper
+            modules={[Autoplay, FreeMode]}
+            slidesPerView={6}
+            spaceBetween={30}
+            speed={5000}
+            freeMode={true}
+            loop={true}
+            autoplay={{
+              delay: 1,
+              disableOnInteraction: false,
+            }}
+            className="swiper-marquesina">
+
+            {[...Array(32)].map((pos, index) => (
+              <SwiperSlide key={index}>
+                  <ClientCard clientId={index + 1} key={index} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
-        {!show ? (
-          <div className="hidden md:block mt-11">
-            <GoldActionButton
-              text={strings.btnMore}
-              onClickAction={() => setShow(true)}
-              padx={12}
-            />
-          </div>
-        ) :(
-          <div className="hidden md:block mt-11">
-            <GoldActionButton
-              text={strings.btnLess}
-              onClickAction={() => setShow(false)}
-              padx={12}
-            />
-          </div>
-        )}
-        {/* mobile */}
-        {/* 32 is the current amount of clients, must update whenever a new client is added */}
-        {/* TODO: clearly... automate this process */}
-        <div className="md:hidden grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          {[...Array(showMobile < 32 ? showMobile : 32)].map((pos, index) => (
-            <ClientCard clientId={index + 1} key={index} />
-          ))}
-        </div>
-        {showMobile < 32 ? (
-          <div className="mt-11 md:hidden">
-            <GoldActionButton
-              text={strings.btnMore}
-              onClickAction={() => setShowMobile((prev) => prev + 10)}
-              padx={12}
-            />
-          </div>
-        ) :(
-          <div className="mt-11 md:hidden">
-            <GoldActionButton
-              text={strings.btnLess}
-              onClickAction={() => setShowMobile(10)}
-              padx={12}
-            />
-          </div>
-        )}
       </div>
     </section>
   );

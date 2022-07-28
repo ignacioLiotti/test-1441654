@@ -8,7 +8,7 @@ function ServiceCard({ title, description, description2, list, image, button, li
       data-aos="fade-up"
       data-aos-duration={1000}
       data-aos-once
-      className="group flex flex-col w-full h-fit bg-white rounded-[2.5rem] shadow-generic-card p-6
+      className="group flex flex-col w-full h-full bg-white rounded-[12px] shadow-generic-card p-6
       hover:-translate-y-2 transition-all duration-300 ease-in-out select-none pb-12
     "
     >

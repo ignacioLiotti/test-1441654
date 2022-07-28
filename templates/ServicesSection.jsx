@@ -4,31 +4,28 @@ import ServiceCard from "../components/ServiceCard";
 
 function ServicesSection({ strings }) {
   return (
-    <section id="services"
-      className="w-full bg-services-section bg-center-top md:bg-center-bottom bg-no-repeat bg-working-cover xl:bg-size-100
-        relative md:pt-[11.5rem] pb-10  md:mt-[-24rem] lg:mt-0"
-    >
-      <div className="container-width">
-        <div className="flex flex-col lg:flex-row">
-          <div className="flex flex-col items-center md:items-start w-full lg:max-w-[25%] px-4   md:mt-[10.625rem] lg:mt-0">
-            <h2 className="font-aleo font-bold text-center xs:text-left text-white text-xl leading-tight mb-5 mt-[7rem]">
+    <section className="-mt-16 w-full flex justify-center items-center bg-services-section bg-working-cover bg-left-bottom bg-no-repeat">
+      <div className="flex flex-col items-center justify-center w-full max-w-[1440px] gap-0 md:gap-[20px] mx-[clamp(40px,0%,100%)] ">
+          <div className="flex flex-col items-center w-full px-4">
+            <h2 className="font-bold text-center text-neutral-black text-xl leading-tight mb-5 mt-[7rem]">
               {strings.title}
             </h2>
-            <h4 className="font-open-sans font-bold text-center xs:text-left text-white text-sm leading-7 mb-2">
-              {strings.subtitleText1}
+            <h4 className="text-center text-neutral-black text-sm leading-7 mb-2 max-w-[870px]">
+              {strings.subtitleText1} {strings.subtitleText2}
             </h4>
-            <p className="font-open-sans text-center xs:text-left text-white text-[0.938rem] leading-[1.8] mb-2">
-              {strings.subtitleText2}
-            </p>
             <div className="flex flex-col items-center sm:items-start justify-center mt-8 sm:mt-11">
               <GoldLinkButton text={strings.btnContact} resize={false} link={'/#contact'}/>
             </div>
           </div>
-          <div className="md:columns-3 -space-y-10 lg:-space-y-5 gap-6 lg:gap-8 px-4 w-full lg:max-w-[75%] mt-[4rem] sm:mt-[6rem] lg:mt-0">
+          <div className="max-h-[100vh] grid grid-cols-3 grid-rows-[repeat(12,1fr)] gap-6 mt-16 ">
             {strings.serviceCards.map((card) => (
               <div
                 key={card.id}
-                className="break-inside-avoid overflow-visible pt-6 pb-10"
+                className={` break-inside-avoid overflow-visible
+                ${card.id==2 ? 'row-span-4' : '' }
+                ${card.id>4 ? 'row-span-5' : '' }
+                ${card.id!==2 ? 'row-span-6' : '' }
+                `}
               >
                 <ServiceCard
                   title={card.title}
@@ -40,7 +37,6 @@ function ServicesSection({ strings }) {
                 />
               </div>
             ))}
-          </div>
         </div>
       </div>
     </section>

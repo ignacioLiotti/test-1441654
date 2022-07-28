@@ -7,23 +7,23 @@ function JobsCard({ title, name }) {
     <div
       data-aos="fade-up"
       data-aos-once
-      className="group h-28 w-full bg-white p-4 m-3 shadow-generic-card rounded-[20px]
-      group-hover:scale-110 transition-all duration-300 ease-in-out"
+      className=" h-28 w-full bg-white p-[45px] m-3 rounded-[20px]
+      transition-all duration-300 ease-in-out"
     >
       <div
-        className="flex justify-between pl-2 pr-2 items-center group-hover:scale-110 transition-all duration-300 ease-in-out
+        className="flex justify-between pl-2 pr-2 items-center  transition-all duration-300 ease-in-out
       transition-all duration-200 ease-linear w-full h-full "
       >
         <div>
           <p>
-            <strong>{title}</strong>
+            <strong className="text-primary-mid-blue text-semibold text-base ">{title}</strong>
           </p>
 
-          <p>{name}</p>
+          <p className="text-neutral-dark-gray text-sm ">{name}</p>
         </div>
         <FontAwesomeIcon
           icon={faAngleRight}
-          className="text-gray-devil text-4xl ml-6 pt-1 hover:text-almost-black"
+          className="text-primary-mid-blue text-lg ml-6 pt-1"
         />
       </div>
     </div>

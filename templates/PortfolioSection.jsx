@@ -19,10 +19,9 @@ function PortfolioSection({ strings }) {
   return (
     <section id="portfolio" className="scroll-m-16">
       <div className="container-width flex flex-col items-center justify-start w-full py-16 md:min-h-[53.75rem] ">
-        <h3 className="font-aleo font-bold text-4xl text-center text-gray-third mb-2 ">
+        <h3 className="font-aleo font-semibold text-xl text-center text-gray-third mb-2 ">
           {strings.title}
         </h3>
-        <div className="w-14 h-4 rounded-full bg-orange-pill my-5"></div>
         <PortfolioTab
           initial="all"
           data={strings.tabs}

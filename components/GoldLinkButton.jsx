@@ -9,7 +9,7 @@ function GoldLinkButton({ text, resize, link, padx='6', pady='3' }) {
         <Link href={link}>
             <button
                 className={`inline-block
-                rounded-[15px] cursor-pointer font-open-sans text-white font-semibold text-xs
+                rounded-[12px] cursor-pointer font-open-sans text-white font-semibold text-xs
                 leading-normal transition-all duration-300 ease-in-out 
                 gradient-tertiary button-active px-${padx} py-${pady}
                 ${

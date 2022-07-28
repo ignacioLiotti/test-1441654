@@ -117,7 +117,7 @@ export default function Home() {
       <AboutSection strings={translation.aboutUs} />
       <WhySection strings={translation.whyUs}/>
       <ServicesSection strings={translation.services} />
-      <StatisticsSection strings={translation.projectsBanner} />
+      {/* <StatisticsSection strings={translation.projectsBanner} /> */}
       <PortfolioSection strings={translation.portfolio} />
       <TechnologiesSection strings={translation.technologies} />
       <ClutchSection strings={translation.clutch} />

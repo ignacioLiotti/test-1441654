@@ -11,13 +11,13 @@ const en = {
     { id: 6, name: "Contact Us", path: "/#contact" },
   ],
   intro: {
-    title: "We are a company dedicated to provide technological solutions.",
+    title: "Your Software Development Outsourcing Partner.",
+    typingText: ["Explore our nearshoring solutions","Build or scale up your team today","Hire top developers from Argentina"],
     btnWork: "Let's Work Together",
     btnVideo: "Intro Video",
   },
   aboutUs: {
-    srcImage: "about-extra-1",
-    srcImageMobile:"AboutMobile",
+    title: "About Us",
     who: "Who?",
     whoDesc:
       "We are a company that provides technological solutions to our customers to enhance their potencial and achieve their goals.",
@@ -51,7 +51,7 @@ const en = {
       "In Devlights, we truly understand the idea that there are no two companies alike, and that each one has its own unique needs.",
     subtitleText2:
       "That's the reason why our company also offers different services adapted to the client's specific requirements.",
-    btnContact: "Talk with us",
+    btnContact: "Let's Work Together",
     serviceCards: [
       {
         id: 1,
@@ -106,11 +106,11 @@ const en = {
   },
   portfolio: {
     title: "Portfolio",
-    all: "all",
+    all: "All",
     tabs: [
-      { id: 1, name: "all", category: "all" },
-      { id: 2, name: "mobile", category: "mobile" },
-      { id: 3, name: "web", category: "web" },
+      { id: 1, name: "All", category: "all" },
+      { id: 2, name: "Mobile", category: "mobile" },
+      { id: 3, name: "Web", category: "web" },
     ],
     items: [
       {

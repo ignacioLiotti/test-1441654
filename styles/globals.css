@@ -105,6 +105,9 @@ html{
 .blue-filter{
   filter: invert(53%) sepia(94%) saturate(324%) hue-rotate(167deg) brightness(86%) contrast(91%);
 }
+.dark-blue-filter{
+  filter: invert(18%) sepia(74%) saturate(4077%) hue-rotate(219deg) brightness(76%) contrast(109%);
+}
 
 .gradient-primary{
   background:linear-gradient(235deg, rgba(41, 171, 226, 1), rgba(0, 59, 188, 1))}
@@ -112,7 +115,18 @@ html{
   background: linear-gradient(235deg, rgba(98, 206, 252, 1), rgba(7, 122, 170, 1))
 }
 .gradient-tertiary{
+  transition: all 0.3s ease-in-out;
   background: linear-gradient(235deg, rgba(98, 206, 252, 1), rgba(2, 137, 255, 1))
+}
+.gradient-tertiary:hover{
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(235deg, rgba(2, 137, 255, 1), rgba(2, 137, 255, 1));
+}
+.text-gradient-tertiary{
+  background: linear-gradient(235deg, rgba(98, 206, 252, 1), rgba(2, 137, 255, 1));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .gold-gradient{
@@ -332,5 +346,37 @@ html{
   }
   .swiper-testimonials .swiper-button-next{
     display: none;
+  }
+}
+.swiper-custom-bullets .swiper-pagination-bullet {
+  width: 28px;
+  height: 28px;
+  bottom:0px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-custom-bullets .swiper-pagination-bullet-active {
+  color: #fff;
+  background: linear-gradient(235deg, rgba(98, 206, 252, 1), rgba(2, 137, 255, 1))
+}
+
+.blinking-cursor{
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }

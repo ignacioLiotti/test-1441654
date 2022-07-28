@@ -10,7 +10,9 @@ function AboutSection({ strings }) {
 
   return (
     <section id="about" className="h-[90vh] w-full flex justify-center items-center">
-      <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-[1224px] gap-0 md:gap-[20px] mx-[clamp(30px,0%,100%)] ">
+      <div className="flex flex-col items-center justify-center w-full max-w-[1440px] gap-0 md:gap-[20px] mx-[clamp(40px,0%,100%)] ">
+        <h1>{strings.title}</h1>
+        <div className="flex flex-row gap-0 md:gap-[20px]">
           <div className="flex flex-1 flex-col justify-start items-center shadow-generic-card md:max-w-[460px] h-[clamp(300px,450px,450px)] px-[51px] pt-[80px] gap-[10px] rounded-xl">
             <div className="flex flex-[1_1_0%] max-h-[100px] items-center justify-center bg-primary-mid-blue w-[100px] rounded-[10px]">
               <img src="/images/icons/clock.svg" alt="" className="brightness-0 invert" />
@@ -44,6 +46,8 @@ function AboutSection({ strings }) {
               {strings.howDesc}
             </p>
           </div>
+        </div>
+
         </div>
     </section>
   );
