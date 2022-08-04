@@ -188,8 +188,9 @@ function ClutchAward2022() {
                   }}
                   className="swiper-testimonials"
           >
-            {translation.clutch_Testimonials.clients?.map((client) => (
-            <SwiperSlide>
+            {translation.clutch_Testimonials.clients?.map((client, index) => (
+            <SwiperSlide
+              key={index}>
             <div className="flex flex-col items-center justify-center h-auto pb-8 pt-4 md:p-8 overflow-clip mx-10 ">
               <div className="w-full lg:w-1/3 flex items-center justify-center">
                 <div className="w-[3.5rem] h-[3.5rem] sm:w-36 sm:h-36 relative">

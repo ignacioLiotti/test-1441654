@@ -118,7 +118,7 @@ function NearshoreSoftwareDevelopment() {
         </div>
       </section>
       {/* why hiring our services */}
-      <section className="w-full flex flex-col-reverse justify-center items-center p-6 -mt-12 md:items-start lg:flex-row lg:max-w-[75rem] md:mt-28 mb-12 lg:p-0">
+      <section className="w-full flex flex-col-reverse justify-center items-center p-6 -mt-12 md:items-start lg:flex-row lg:w-[75rem] md:mt-28 mb-12 lg:p-0">
         <div
           className="grid grid-cols-3 grid-rows-2 relative mt-8 md:w-[40rem] md:mt-0"
           data-aos="fade-right"
@@ -449,7 +449,7 @@ function NearshoreSoftwareDevelopment() {
       </section>
       {/* Let's get in touch */}
       <section className="flex flex-col justify-center items-center w-full py-6 md:py-0 md:h-[44rem] bg-white ">
-        <div className="flex md:max-w-[70rem] items-center justify-center">
+        <div className="flex md:w-[70rem] items-center justify-center">
           <div
             className="md:w-[35rem] lg:w-[50rem] p-6"
             data-aos="fade-right"
@@ -505,8 +505,9 @@ function NearshoreSoftwareDevelopment() {
                   }}
                   className="swiper-testimonials overflow-hidden lg:max-w-[80vw]"
           >
-            {testimonials.clients?.map((client) => (
-            <SwiperSlide>
+            {testimonials.clients?.map((client, index) => (
+            <SwiperSlide
+              key={index}>
             <div className="flex flex-col items-center justify-center h-auto pb-8 pt-4 md:p-8 overflow-clip mx-10 ">
               <div className="w-full lg:w-1/3 flex items-center justify-center">
                 <div className="w-[3.5rem] h-[3.5rem] sm:w-36 sm:h-36 relative">
