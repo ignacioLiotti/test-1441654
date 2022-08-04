@@ -14,6 +14,7 @@ const es = {
   ],
   intro: {
     title: "Somos una compañía dedicada a proveer soluciones tecnológicas.",
+    typingText: ["Explore our nearshoring solutions","Build or scale up your team today","Hire top developers from Argentina"],
     btnWork: "Trabajemos juntos",
     btnVideo: "Intro Video",
   },
