@@ -91,11 +91,7 @@ const en = {
         id: 6,
         imgSource: "rocbird-bird-blue",
         title: "Data Management",
-        description:
-          "We are happy to announce that Devlights and ",
-        description2:"RocBird have joined forces!",
-        list:['BIG  DATA','DATA SCIENCE','DATA ANALYTICS','DATA GOVERNANCE'],
-        button: "SEE MORE",
+        description: "Thinking about taking your project/business to the net? Our team can develop and design cross platform websites that are visually engaging, following the latest trends on UX/UI.",
       },
     ],
   },

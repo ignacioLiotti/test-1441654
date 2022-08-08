@@ -16,7 +16,7 @@ module.exports = {
         "neutral-white": "#ffffff",
 
         "primary-dark-blue": "#003BBC",
-        "primary-mid-blue": "#0289FF",
+        "primary-mid-blue": "#366FFD",
         "primary-blue": "#0289FF",
         "primary-light-blue": "#319FFF",
         "primary-sky-blue": "#DBEDFF",
@@ -94,6 +94,7 @@ module.exports = {
       "technologies-section-mobile": "url('/images/about_overlay3-mobile.png')",
       "careers-section": "url('/images/about_overlay4.png')",
       "clutch-landing-hero": "url('/images/clutch-landing-hero.png')",
+      "clutch-blob": "url('/images/clutch-blob.svg')",
       "nearshore-landing-hero": "url('/images/nearshore/header_bg.png')",
       "nearshore-landing-clients": "url('/images/nearshore/clients-bg.png')",
       "nearshore-landing-team": "url('/images/nearshore/team-bg.png')",
@@ -316,6 +317,7 @@ module.exports = {
       'md': '770px',
       'lg': '1025px',
       'xl': '1280px',
+      '1-5xl': '1440px',
       '2xl': '1536px'
     }
   },

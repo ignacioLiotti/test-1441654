@@ -18,7 +18,7 @@ function PortfolioSection({ strings }) {
 
   return (
     <section id="portfolio" className="scroll-m-16">
-      <div className="container-width flex flex-col items-center justify-start w-full py-16 md:min-h-[53.75rem] ">
+      <div className="container-width flex flex-col items-center justify-start w-full py-20 md:min-h-[53.75rem] ">
         <h3 className="font-aleo font-semibold text-xl text-center text-gray-third mb-2 ">
           {strings.title}
         </h3>

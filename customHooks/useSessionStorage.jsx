@@ -9,7 +9,7 @@ export const useSessionStorage = (keyName, defaultValue) => {
           return JSON.parse(value);
         } else {
           window.sessionStorage.setItem(keyName, JSON.stringify(defaultValue));
-          return defaultValue;
+          return  ;
         }
       } catch (err) {
         return defaultValue;

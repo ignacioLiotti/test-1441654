@@ -17,14 +17,30 @@ function ClientsSection({ strings }) {
         <div className="w-full">
           <Swiper
             modules={[Autoplay, FreeMode]}
-            slidesPerView={6}
-            spaceBetween={30}
             speed={5000}
             freeMode={true}
             loop={true}
             autoplay={{
               delay: 1,
               disableOnInteraction: false,
+            }}
+            breakpoints={{
+              320: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+              },
+              480: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+              680: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+              },
+              880: {
+                slidesPerView: 6,
+                spaceBetween: 20,
+              }
             }}
             className="swiper-marquesina">
 

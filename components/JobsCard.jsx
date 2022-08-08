@@ -7,7 +7,7 @@ function JobsCard({ title, name }) {
     <div
       data-aos="fade-up"
       data-aos-once
-      className=" h-28 w-full bg-white p-[45px] m-3 rounded-[20px]
+      className=" h-28 w-full bg-white p-[45px] lg:m-3 rounded-[20px]
       transition-all duration-300 ease-in-out"
     >
       <div
@@ -16,10 +16,10 @@ function JobsCard({ title, name }) {
       >
         <div>
           <p>
-            <strong className="text-primary-mid-blue text-semibold text-base ">{title}</strong>
+            <strong className="text-primary-mid-blue text-semibold md:text-base text-xs ">{title}</strong>
           </p>
 
-          <p className="text-neutral-dark-gray text-sm ">{name}</p>
+          <p className="text-neutral-dark-gray md:text-sm text-xs ">{name}</p>
         </div>
         <FontAwesomeIcon
           icon={faAngleRight}
@@ -31,3 +31,4 @@ function JobsCard({ title, name }) {
 }
 
 export default JobsCard;
+  

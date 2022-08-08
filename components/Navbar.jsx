@@ -83,7 +83,7 @@ function Navbar({ transparentScroll, whiteBackground, hasShadow }) {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 flex flex-row items-center justify-between
+      className={`fixed top-0 left-0 right-0 flex flex-row items-center justify-center 
       transition-all duration-300 ease-in z-50`}
     >
       <div
@@ -95,7 +95,7 @@ function Navbar({ transparentScroll, whiteBackground, hasShadow }) {
         }
         ${
           whiteBackground
-            ? "bg-nav-white"
+            ? "bg-white"
             : "navbar-gradient"
         }
         ${
@@ -106,7 +106,7 @@ function Navbar({ transparentScroll, whiteBackground, hasShadow }) {
         absolute top-0 left-0 right-0 w-screen -z-10 transition-all duration-300 ease-in`}
       ></div>
       <div
-        className="sm:max-w-[34rem] md:max-w-[50rem] lg:max-w-[60rem] xl:max-w-6xl w-full mx-auto
+        className="w-full max-w-[1440px] sm:mx-[clamp(40px,0%,100%)] mx-[clamp(20px,10%,100%)]
       flex flex-row items-center justify-between transition-all duration-300 ease-in"
       >
         <div
@@ -118,7 +118,7 @@ function Navbar({ transparentScroll, whiteBackground, hasShadow }) {
         >
           <img
             className="h-9 md:h-12 object-contain"
-            src={`/images/${whiteBackground ? "logo-original" : "logo"}.png`}
+            src={`/images/${whiteBackground ? "logo-all-blue" : "logo"}.png`}
             alt="devlights logo"
           />
           {!openMenu && (
@@ -143,8 +143,8 @@ function Navbar({ transparentScroll, whiteBackground, hasShadow }) {
               <li key={item.id}>
                 <Link href={item.path}>
                   <a
-                  className={`${whiteBackground ? "text-black" : "text-white"} 
-                  block whitespace-nowrap w-auto py-5 px-4 md:px-2 lg:px-4 text-xs md:text-xs font-open-sans hover:scale-[1.20] transition-all duration-300 ease-linear`}
+                  className={`${whiteBackground ? "text-primary-blue" : "text-white"} 
+                  block whitespace-nowrap w-auto py-5 px-4 md:px-2 lg:px-4 text-xs md:text-sm font-semibold hover:scale-[1.20] transition-all duration-300 ease-linear`}
                   >
                   {item.name}
                   </a>
@@ -155,7 +155,7 @@ function Navbar({ transparentScroll, whiteBackground, hasShadow }) {
               <select
                 onChange={changeLanguage}
                 defaultValue={locale}
-                className={`${whiteBackground ? "text-black" : "text-white"} outline-none 
+                className={`${whiteBackground ? "text-primary-blue" : "text-white"} outline-none 
                   text-shadow-sm w-auto py-5 px-4 text-xs md:text-sm bg-transparent tracking-wide hover:scale-[1.20] transition-all duration-300 ease-linear`}
               >
                 <option className="text-black" value="en">

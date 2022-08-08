@@ -6,10 +6,10 @@ const TypePhase = [
   "Deleting",
 ]
 
-const TYPING_INTERVAL_MIN = 80
-const TYPING_INTERVAL_MAX = 150
+const TYPING_INTERVAL_MIN = 20
+const TYPING_INTERVAL_MAX = 35
 const TYPING_PAUSE_MS = 2000
-const DELETING_INTERVAL = 50
+const DELETING_INTERVAL = 20
 const DELETING_PAUSE_MS = 500
 
 const getRandomTypingInterval = () =>

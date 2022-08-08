@@ -15,7 +15,7 @@ function TestimonialsSection({ strings }) {
   };
 
   return (
-    <section id="clients" className="h-[90vh] w-full flex justify-center items-center bg">
+    <section id="clients" className="py-[80px] w-full flex justify-center items-center bg">
       <div className="flex flex-col items-center justify-center w-full max-w-[1140px] gap-0 md:gap-[20px] mx-[clamp(40px,0%,100%)] ">
         <h3 className="font-bold text-xl text-center text-gray-third mb-2 p-4">
           {strings.clientsText}

@@ -22,7 +22,7 @@ function BadgesSection() {
     <>
     {/* desktop */}
       <section
-          className="hidden lg:flex flex-col items-center py-8 md:flex-row md:items-center md:justify-center gap-[1rem] md:gap-[3rem] xl:gap-[5rem] w-full px-10  md:py-10 bg-gray-200"
+          className="max-w-[1440px] hidden lg:flex flex-col items-center py-8 md:flex-row md:items-center md:justify-center gap-[1rem] md:gap-[3rem] xl:gap-[100px] w-full px-10 md:py-[80px]"
           data-aos="fade-up"
           data-aos-duration={1000}
           data-aos-once
@@ -33,7 +33,7 @@ function BadgesSection() {
           />
           <img
             src={`/images/clutch.png`}
-            className="w-48 mt-8 object-fill md:w-[8rem] md:mt-1"
+            className="w-48 mt-8 object-fill md:w-[150px] md:mt-1"
           />
           <div
             className="clutch-widget w-[200px] mt-8 md:mt-1"
@@ -46,7 +46,7 @@ function BadgesSection() {
           ></div>
           <img
             src={`/images/design-rush-badge.png`}
-            className="object-fill cursor-pointer mt-8 w-48 object-fill md:w-[12rem] md:mt-1"
+            className="object-fill cursor-pointer mt-8 w-48 object-fill md:w-[200px] md:mt-1"
             onClick={() =>
               window.open(
                 "https://www.designrush.com/agency/software-development/colorado",
@@ -56,7 +56,7 @@ function BadgesSection() {
           />
           <img
             src={`/images/top-rated.png`}
-            className="object-fill cursor-pointer mt-8 w-48 object-fill md:w-[8rem] md:mt-1"
+            className="object-fill cursor-pointer mt-8 w-48 object-fill md:w-[150px] md:mt-1"
             onClick={() =>
               window.open(
                 "https://www.softwareworld.co/top-custom-software-development-companies/",
@@ -66,7 +66,7 @@ function BadgesSection() {
           />
           <img
             src={`/images/clutch-badge-2022.png`}
-            className="w-48 object-fill mt-8 md:w-[8rem] md:mt-1"
+            className="w-48 object-fill mt-8 md:w-[150px] md:mt-1"
           />
         </section>
         {/* mobile */}

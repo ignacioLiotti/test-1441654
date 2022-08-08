@@ -30,16 +30,16 @@ function CareersSection({ strings }) {
   const jobs = [{title:'AngularJs Developer',typeOfJob:{name:'Frontend developer'}},{title:'Fullstack React Dev',typeOfJob:{name:'fullstack developer'}},{title:'AngularJs Developer',typeOfJob:{name:'Frontend developer'}},{title:'Adobe XD Designer',typeOfJob:{name:'UX/UI designer'}}]
 
   return (
-    <section id="careers" className="h-[90vh] w-full flex justify-center items-center bg-neutral-silver">
-      <div className="flex items-center justify-center w-full max-w-[1440px] gap-0 md:gap-[150px] mx-[clamp(40px,0%,100%)] ">
-        <div className="flex flex-col items-center justify-end md:max-w-[700px] pt-0 md:ml-[6rem] md:items-start  ">
-          <h2 className="font-bold text-center xs:text-left text-neutral-black text-xl leading-tight mb-5 mt-[2rem]">
+    <section id="careers" className="py-[80px] w-full flex justify-center items-center bg-neutral-silver">
+      <div className="flex lg:items-center justify-center lg:flex-row flex-col w-full max-w-[1440px] gap-[40px] lg:gap-[150px] mx-[clamp(40px,0%,100%)] ">
+        <div className="flex flex-col items-start  justify-end md:max-w-[700px] pt-0 lg:ml-[6rem] md:items-start flex-[1_10_0px] ">
+          <h2 className="font-bold text-center xs:text-left text-neutral-black md:text-xl text-lg leading-tight mb-8 md:mb-16">
             {strings.title}
           </h2>
-          <h4 className="text-center xs:text-left text-neutral-dark-grey text-base  mb-2">
+          <h4 className=" xs:text-left text-neutral-dark-grey md:text-base text-xs  mb-2">
             {strings.subtitleText1}
           </h4>
-          <p className="text-center xs:text-left text-neutral-dark-grey text-base mb-2 mt-5">
+          <p className=" xs:text-left text-neutral-dark-grey md:text-base text-xs mb-2 mt-5">
             {strings.subtitleText2}
           </p>
           <div className="flex flex-col items-center sm:items-start justify-center mt-8 sm:mt-11">
@@ -52,8 +52,8 @@ function CareersSection({ strings }) {
             />
           </div>
         </div>
-        <div className="flex-1 max-w-[500px] mr-4 mt-6 ">
-          <div data-aos="fade-up" data-aos-duration={1000} data-aos-once>
+        <div className="flex-1 w-full lg:max-w-[500px] mr-4 flex-[1_1_0px]">
+          <div data-aos="fade-up" data-aos-duration={1000} data-aos-once className="flex flex-col gap-[20px]">
             {jobs.length > 0 ? (
               jobs.slice(-4).map((job) => {
                 return (
