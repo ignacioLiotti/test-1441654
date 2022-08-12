@@ -21,7 +21,8 @@ function PortfolioCard({ data }) {
         <span className="text-slate-100 uppercase select-none">
           {data.description}
         </span>
-        <a href={data.link}>
+        <a href={data.link}
+          aria-label={data.name}>
           <FontAwesomeIcon
             icon={faUpRightFromSquare}
             className="text-white w-6 h-6 m-4"

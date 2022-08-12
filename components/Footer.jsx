@@ -68,7 +68,8 @@ function Footer() {
             <a 
               href="https://www.facebook.com/devlightsok/"
               target="_blank"
-              rel="noreferrer">
+              rel="noreferrer"
+              aria-label="Devlights Facebook">
               <FontAwesomeIcon
                 icon={faFacebookSquare}
                 className="text-white text-lg"
@@ -77,7 +78,8 @@ function Footer() {
             <a 
               href="https://twitter.com/devlightsok" 
               target="_blank"
-              rel="noreferrer">
+              rel="noreferrer"
+              aria-label="Devlights Twitter">
               <FontAwesomeIcon
                 icon={faTwitterSquare}
                 className="text-white text-lg"
@@ -86,7 +88,8 @@ function Footer() {
             <a 
               href="https://www.linkedin.com/company/devlights-us"
               target="_blank"
-              rel="noreferrer">
+              rel="noreferrer"
+              aria-label="Devlights LinkedIn">
               <FontAwesomeIcon
                 icon={faLinkedin}
                 className="text-white text-lg"

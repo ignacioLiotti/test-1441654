@@ -56,7 +56,6 @@ export const useTypedSuperpower = (typedArray) => {
         )
         if (nextRemaining.length === 1) {
             nextRemaining = ' '
-            console.log('si')
         }
 
         const timeout = setTimeout(() => {
