@@ -32,8 +32,9 @@ function BadgesSection() {
             strategy="beforeInteractive"
           />
           <img
-            src={`/images/clutch.png`}
+            src={`/images/clutch.webp`}
             className="w-48 mt-8 object-fill md:w-[150px] md:mt-1"
+            alt='Clutch badge for top Outsorcing Company in Latin America 2020'
           />
           <div
             className="clutch-widget w-[200px] mt-8 md:mt-1"
@@ -47,6 +48,7 @@ function BadgesSection() {
           <img
             src={`/images/design-rush-badge.png`}
             className="object-fill cursor-pointer mt-8 w-48 object-fill md:w-[200px] md:mt-1"
+            alt='Design Rush badge'
             onClick={() =>
               window.open(
                 "https://www.designrush.com/agency/software-development/colorado",
@@ -57,6 +59,7 @@ function BadgesSection() {
           <img
             src={`/images/top-rated.png`}
             className="object-fill cursor-pointer mt-8 w-48 object-fill md:w-[150px] md:mt-1"
+            alt='Top Rated badge given by Software World'
             onClick={() =>
               window.open(
                 "https://www.softwareworld.co/top-custom-software-development-companies/",
@@ -67,6 +70,7 @@ function BadgesSection() {
           <img
             src={`/images/clutch-badge-2022.png`}
             className="w-48 object-fill mt-8 md:w-[150px] md:mt-1"
+            alt='Clutch badge for top Outsorcing Company in Argentina 2022'
           />
         </section>
         {/* mobile */}
