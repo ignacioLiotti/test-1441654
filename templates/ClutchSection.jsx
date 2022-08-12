@@ -12,7 +12,7 @@ function ClutchSection({ strings }) {
             alt="" 
             className="hidden md:flex absolute scale-[1.3]" />
           <img
-            src={`/images/clutch.png`}
+            src={`/images/clutch.webp`}
             className="flex flex-1 object-contain relative z-2"
             alt="Clutch award"
           />

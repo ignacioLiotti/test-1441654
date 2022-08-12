@@ -125,7 +125,7 @@ function Navbar({ transparentScroll, whiteBackground, hasShadow }) {
             <button className="md:hidden" onClick={onMenuPress} aria-label='Open Mobile Menu'>
               <FontAwesomeIcon
                 icon={faBars}
-                className="h-8 w-8 m-4 text-white"
+                className="h-8 w-8 m-4 text-primary-blue"
               />
             </button>
           )}

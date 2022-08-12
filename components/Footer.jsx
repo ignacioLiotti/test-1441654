@@ -26,7 +26,7 @@ function Footer() {
         <div className="flex flex-col items-start w-10/12 px-8 xs:px-4 md:px-4 h-full lg:w-4/12 gap-6 order-1">
           <img
             className="h-11 -ml-4 mb-2 md:h-[60px] object-contain mb-3"
-            src="/images/logo-all-white.png"
+            src="/images/logo-all-white.webp"
             alt="devlights logo"
           />
           <ul className="list-none">

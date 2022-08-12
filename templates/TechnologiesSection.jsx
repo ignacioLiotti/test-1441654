@@ -23,7 +23,7 @@ function TechnologiesSection({ strings }) {
         </div>
         <div data-aos="fade-up" data-aos-duration={1000} data-aos-once>
           <img
-            src={`/images/tecnologies-logos.png`}
+            src={`/images/tecnologies-logos.webp`}
             className="max-w-full mt-10 sm:h-[30rem] md:h-[35rem] object-contain"
             alt="about us"
           />
