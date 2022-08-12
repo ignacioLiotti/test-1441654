@@ -122,7 +122,7 @@ function Navbar({ transparentScroll, whiteBackground, hasShadow }) {
             alt="devlights logo"
           />
           {!openMenu && (
-            <button className="md:hidden" onClick={onMenuPress}>
+            <button className="md:hidden" onClick={onMenuPress} aria-label='Open Mobile Menu'>
               <FontAwesomeIcon
                 icon={faBars}
                 className="h-8 w-8 m-4 text-white"
@@ -214,6 +214,7 @@ function Navbar({ transparentScroll, whiteBackground, hasShadow }) {
         </div>
         <button
           className="md:hidden absolute top-0 right-0"
+          aria-label='Close Mobile Menu'
           onClick={onMenuPress}
         >
           <FontAwesomeIcon icon={faXmark} className="h-8 w-8 m-4 text-white" />
