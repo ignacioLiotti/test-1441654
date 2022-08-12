@@ -48,6 +48,7 @@ function HeroSection({ strings }) {
           <img
             className="flex-[1_1_59%] md:max-w-[51%] object-contain transition-all duration-300 ease-in-out drop-shadow-[0_0px_3px_rgba(0,0,0,0.3)]"
             src="/images/intro-img.webp"
+            alt="Astronaut Floating"
           />
           <div className="flex-[1_1_41%] mb-10">
             <h2 className="text-neutral-black text-center lg:text-left text-sm sm:text-[lg] md:text-xl font-semibold md:leading-[72px] transition-all duration-300 ease-in-out">
