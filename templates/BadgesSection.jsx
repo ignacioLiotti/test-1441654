@@ -94,7 +94,7 @@ function BadgesSection() {
             </SwiperSlide> */}
             <SwiperSlide>
               <img
-                src={`/images/clutch.png`}
+                src={`/images/clutch.webp`}
                 className="w-48 mt-8 object-fill md:w-[10rem] md:mt-1 bg-black"
                 alt='Clutch badge for top Outsorcing Company in Latin America 2020'
               />
