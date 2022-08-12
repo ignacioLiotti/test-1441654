@@ -38,7 +38,7 @@ function TestimonialsSection({ strings }) {
                   <div className="md:w-[20%] flex items-center flex-[1_0_20%]">
                       <Image
                         src={`/images/testimonials/${client.img}.png`}
-                        alt={client.name}
+                        alt={client.clientName}
                         width={120}
                         height={120}
                       />
