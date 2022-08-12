@@ -6,13 +6,13 @@ import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 function PortfolioCard({ data }) {
   return (
     <div
-      className="group w-[21.875rem] h-64 overflow-hidden place-self-center"
+      className="group w-[clamp(320px,100%,420px)] h-64 overflow-hidden place-self-center"
       data-aos="zoom-in"
       data-aos-duration={1000}
       // data-aos-once
     >
       <div
-        className="opacity-0 group-hover:opacity-80 absolute w-[21.875rem] h-64 z-30 flex flex-col items-center justify-center 
+        className="opacity-0 group-hover:opacity-80 absolute w-[clamp(320px,100%,420px)] h-64 z-30 flex flex-col items-center justify-center 
       bg-[#0f86e7] bg-opacity-90 rounded-lg transition-all duration-200 ease-linear"
       >
         <h4 className="text-white text-lg leading-6 font-bold mb-3.5 select-none">

@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import Image from "next/image";
 
 function TestimonialsSection({ strings }) {
 
@@ -35,9 +36,11 @@ function TestimonialsSection({ strings }) {
               <SwiperSlide key={client.clientId}>
                 <div className="flex flex-col md:flex-row h-auto rounded-3xl p-[20px] xs:p-[40px] md:p-[60px] md:min-w-[700px] mt-4 mb-24 mx-4 xs:mx-8 bg-white shadow-testimonial-card ">
                   <div className="md:w-[20%] flex items-center flex-[1_0_20%]">
-                      <img
+                      <Image
                         src={`/images/testimonials/${client.img}.png`}
-                        className="w-[120px] h-[120px]"
+                        alt={client.name}
+                        width={120}
+                        height={120}
                       />
                   </div>
                   <div className="w-full flex flex-col items-start justify-center">

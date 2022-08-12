@@ -6,7 +6,7 @@ function TechnologiesSection({ strings }) {
   const router = useRouter()
   return (
     <section className="w-full flex justify-center items-center bg-primary-sky-blue py-16">
-      <div className="flex items-center justify-center w-full max-w-[1440px] gap-0 md:gap-[150px] mx-[clamp(40px,0%,100%)] ">
+      <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-[1440px] gap-0 md:gap-[150px] sm:mx-[clamp(40px,0%,100%)] mx-[clamp(20px,10%,100%)] ">
         <div className="flex flex-col items-center justify-end md:max-w-[580px] md:items-start">
           <h2 className="font-bold text-center xs:text-left text-neutral-black text-xl leading-tight mb-5 mt-[4.75rem]">
             {strings.title}
@@ -24,7 +24,7 @@ function TechnologiesSection({ strings }) {
         <div data-aos="fade-up" data-aos-duration={1000} data-aos-once>
           <img
             src={`/images/tecnologies-logos.png`}
-            className="max-w-full h-[30rem] md:h-[35rem] object-contain"
+            className="max-w-full mt-10 sm:h-[30rem] md:h-[35rem] object-contain"
             alt="about us"
           />
         </div>

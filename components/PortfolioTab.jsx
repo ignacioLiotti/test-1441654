@@ -10,7 +10,7 @@ function PortfolioTab({ initial, data, onSelect }) {
   };
 
   return (
-    <div className={"flex flex-row gap-8 mt-4 mb-9"}>
+    <div className={"flex flex-row gap-0 md:gap-8 mt-4 mb-9"}>
       {data.map((item) => (
         // <button
         //   key={item.id}
@@ -31,7 +31,7 @@ function PortfolioTab({ initial, data, onSelect }) {
           onClickAction={() => selectHandler(item.category)}
           secondary={userOption === item.category ? false : true}
           text={item.name}
-          padx={10}
+          padx={6}
           />
       ))}
     </div>

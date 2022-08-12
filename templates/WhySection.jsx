@@ -5,10 +5,10 @@ function WhySection({ strings }) {
   return (
     <section id="why" className="my-[40px] w-full flex justify-center items-center ">
       <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-[1440px] gap-0 sm:mx-[clamp(40px,0%,100%)] mx-[clamp(20px,0%,100%)] flex-wrap ">
-        <div className="max-w-[600px] md:min-w-[540px] flex-1 relative z-2">
-          <img src="/images/our-team.png" className="rounded-[12px]" />
+        <div className="max-w-[680px] lg:max-w-[600px] md:min-w-[540px] flex-1 relative z-2">
+          <img src="/images/our-team.webp" className="rounded-[12px]" />
         </div>
-        <div className="flex justify-center items-center bg-primary-sky-blue gap-[60px] md:gap-[80px] h-[clamp(250px,80vh,500px)] px-[min(10%,70px)] py-8 rounded-[12px] md:min-w-[680px] flex-1 md:-ml-4 flex-wrap">
+        <div className="flex justify-center items-center bg-primary-sky-blue gap-[60px] md:gap-[clamp(20px,10%,60px)] max-w-[600px] h-[clamp(250px,80vh,500px)] px-[min(3%,70px)] py-8 rounded-[12px] md:min-w-[580px] flex-1 md:-ml-4 flex-wrap">
           <div className="flex flex-col justify-start items-start gap-[40px] md:gap-[80px] flex-1 ">
             <div className="flex flex-col items-start gap-3 md:max-w-[230px] min-w-[170px] sm:min-w-[230px]">
               <Image

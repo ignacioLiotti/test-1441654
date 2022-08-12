@@ -27,7 +27,7 @@ function ServicesSection({ strings }) {
             </div>
           </div>
         <div className="grid gap-6 mt-16 
-            grid-cols-[clamp(360px,80%,420px)] grid-rows-[repeat(6,550px)] justify-center
+            grid-cols-[clamp(290px,90%,420px)] grid-rows-[repeat(6,550px)] justify-center
             md:grid-cols-2 md:grid-rows-[50px_500px_50px_500px_50px_500px_50px]
             lg:grid-cols-3 lg:grid-rows-[50px_557px_143px_557px_50px] 
             ">
