@@ -17,7 +17,7 @@ function TestimonialsSection({ strings }) {
   return (
     <section id="clients" className="py-[80px] w-full flex justify-center items-center bg">
       <div className="flex flex-col items-center justify-center w-full max-w-[1140px] gap-0 md:gap-[20px] mx-[clamp(40px,0%,100%)] ">
-        <h3 className="font-bold text-xl text-center text-gray-third mb-2 p-4">
+        <h3 className="font-bold text-xl text-center text-gray-third mb-2 p-4 ">
           {strings.clientsText}
         </h3>
         <div className="w-full">
@@ -33,8 +33,8 @@ function TestimonialsSection({ strings }) {
 
             {strings.clients?.map((client) => (
               <SwiperSlide key={client.clientId}>
-                <div className="flex h-auto rounded-3xl p-[60px] mt-4 mb-24 mx-8 bg-white shadow-testimonial-card ">
-                  <div className="w-[20%] flex items-center">
+                <div className="flex flex-col md:flex-row h-auto rounded-3xl p-[20px] xs:p-[40px] md:p-[60px] md:min-w-[700px] mt-4 mb-24 mx-4 xs:mx-8 bg-white shadow-testimonial-card ">
+                  <div className="md:w-[20%] flex items-center flex-[1_0_20%]">
                       <img
                         src={`/images/testimonials/${client.img}.png`}
                         className="w-[120px] h-[120px]"

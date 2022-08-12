@@ -71,7 +71,7 @@ function BadgesSection() {
         </section>
         {/* mobile */}
       <section
-        className=" flex lg:hidden items-center justify-center pt-4 pb-8 md:items-center md:justify-center gap-[1rem] md:gap-[5rem] w-full  md:py-10 bg-gray-200"
+        className=" flex lg:hidden items-center justify-center pt-4 pb-8 md:items-center md:justify-center gap-[1rem] md:gap-[5rem] w-full  md:py-10 "
       >
           <Swiper
                   modules={[Autoplay, FreeMode]}

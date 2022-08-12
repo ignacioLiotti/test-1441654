@@ -37,10 +37,8 @@ function HeroSection({ strings }) {
     
     const typedArray = strings.typingText
     let typedText = useTypedSuperpower(typedArray)
-    console.log(typedText)
 
     if (!typedText) {
-      console.log('vacio')
       typedText = <span className="invisible -ml-12">|</span>
     }
 
@@ -49,7 +47,6 @@ function HeroSection({ strings }) {
       <div className="flex flex-col md:flex-row-reverse items-center justify-center w-full max-w-[1440px] gap-0 md:gap-[20px] mx-[clamp(40px,0%,100%)]">
           <img
             className="flex-[1_1_59%] md:max-w-[51%] object-contain transition-all duration-300 ease-in-out drop-shadow-[0_0px_3px_rgba(0,0,0,0.3)]"
-            style={{imageRendering: ''}}
             src="/images/intro-img.png"
           />
           <div className="flex-[1_1_41%] mb-10">

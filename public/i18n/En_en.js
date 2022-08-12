@@ -178,7 +178,7 @@ const en = {
   },
 
   clients: {
-    title: "Clients",
+    title: "More than 40 clients trust Devlights",
     btnMore: "Show more",
     btnLess: "Show less",
   },

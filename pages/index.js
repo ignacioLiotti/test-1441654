@@ -95,8 +95,8 @@ export default function Home() {
 
   useEffect(() => {
     Aos.init();
-    if(router.isReady){ //The router doesn't load until the page is loaded so it can cause problems reading undefined, must wait till .isReady=true
-    socialCounter();
+    //The router doesn't load until the page is loaded so it can cause problems reading undefined, must wait till .isReady=true
+    if(router.isReady){
     }
 
     // eslint-disable-next-line react-hooks/exhaustive-deps

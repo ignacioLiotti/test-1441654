@@ -10,7 +10,7 @@ function ClutchSection({ strings }) {
           <img 
             src="/images/clutch-blob.svg" 
             alt="" 
-            className="absolute scale-[1.3]" />
+            className="hidden md:flex absolute scale-[1.3]" />
           <img
             src={`/images/clutch.png`}
             className="flex flex-1 object-contain relative z-2"

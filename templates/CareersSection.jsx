@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useId, useState } from "react";
 import { useRouter } from "next/router";
 import axios from "axios";
 import GoldActionButton from "../components/GoldActionButton";
@@ -58,6 +58,7 @@ function CareersSection({ strings }) {
               jobs.slice(-4).map((job) => {
                 return (
                   <div
+                    key={useId()}
                     onClick={() =>
                       window.open(
                         `http://localhost:3000/jobs/${job.slug}`,

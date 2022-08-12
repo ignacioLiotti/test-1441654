@@ -10,7 +10,7 @@ function WhySection({ strings }) {
         </div>
         <div className="flex justify-center items-center bg-primary-sky-blue gap-[60px] md:gap-[80px] h-[clamp(250px,80vh,500px)] px-[min(10%,70px)] py-8 rounded-[12px] md:min-w-[680px] flex-1 md:-ml-4 flex-wrap">
           <div className="flex flex-col justify-start items-start gap-[40px] md:gap-[80px] flex-1 ">
-            <div className="flex flex-col items-start gap-3 md:max-w-[230px] sm:min-w-[230px]">
+            <div className="flex flex-col items-start gap-3 md:max-w-[230px] min-w-[170px] sm:min-w-[230px]">
               <Image
                 src={`/images/icons/${strings.timeZoneImg}.svg`}
                 className="dark-blue-filter"
@@ -25,7 +25,7 @@ function WhySection({ strings }) {
                 {strings.timeZoneDesc}
               </p>
             </div>
-            <div className="flex flex-col items-start gap-3 md:max-w-[230px] sm:min-w-[230px]">
+            <div className="flex flex-col items-start gap-3 md:max-w-[230px] min-w-[170px] sm:min-w-[230px]">
               <Image
                 src={`/images/icons/${strings.costImg}.png`}
                 className="dark-blue-filter"
@@ -42,7 +42,7 @@ function WhySection({ strings }) {
             </div>
           </div>
           <div className="flex flex-col justify-start items-start gap-[40px] md:gap-[80px] flex-1">
-            <div className="flex flex-col items-start gap-3 md:max-w-[350px] sm:min-w-[270px] md:min-w-[100px]">
+            <div className="flex flex-col items-start gap-3 md:max-w-[350px] min-w-[170px] sm:min-w-[270px] md:min-w-[100px]">
               <Image
                 src={`/images/icons/${strings.talentImg}.svg`}
                 className="dark-blue-filter"
@@ -57,7 +57,7 @@ function WhySection({ strings }) {
                 {strings.talentDesc}
               </p>
             </div>
-            <div className="flex flex-col items-start gap-3 md:max-w-[350px] sm:min-w-[270px] md:min-w-[100px]">
+            <div className="flex flex-col items-start gap-3 md:max-w-[350px] min-w-[170px] sm:min-w-[270px] md:min-w-[100px]">
               <Image
                 src={`/images/icons/${strings.englishImg}.svg`}
                 className="dark-blue-filter"

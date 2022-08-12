@@ -15,7 +15,7 @@ function AboutSection({ strings }) {
           {strings.title}
         </h1>
         <div className="flex flex-row justify-center items-center gap-10 md:gap-[20px] flex-wrap ">
-          <div className="flex flex-1 flex-col justify-start items-center shadow-generic-card max-w-[460px] min-h-[350px] md:h-[450px] sm:px-[51px] py-14 md:pt-[80px] gap-[10px] rounded-xl sm:min-w-[370px] min-w-[290px]">
+          <div className="flex flex-1 flex-col justify-start items-center shadow-generic-card max-w-[460px] min-h-[350px] md:h-[450px] sm:px-[51px] px-[15px] py-14 md:pt-[80px] gap-[10px] rounded-xl sm:min-w-[370px] min-w-[290px]">
             <div className="flex h-[100px] items-center justify-center bg-primary-mid-blue w-[100px] rounded-[10px]">
               <img src="/images/icons/clock.svg" alt="" className="brightness-0 invert" />
             </div>
@@ -26,7 +26,7 @@ function AboutSection({ strings }) {
               {strings.whereDesc}
             </p>
           </div>
-          <div className="flex flex-1 flex-col justify-start items-center shadow-generic-card max-w-[460px] md:h-[450px] sm:px-[51px] py-14 md:pt-[80px] gap-[10px] rounded-xl sm:min-w-[370px] min-w-[290px]">
+          <div className="flex flex-1 flex-col justify-start items-center shadow-generic-card max-w-[460px] md:h-[450px] sm:px-[51px] px-[15px] py-14 md:pt-[80px] gap-[10px] rounded-xl sm:min-w-[370px] min-w-[290px]">
             <div className="flex h-[100px] items-center justify-center bg-primary-mid-blue w-[100px] rounded-[10px]">
               <img src="/images/icons/clock.svg" alt="" className="brightness-0 invert" />
             </div>
@@ -37,7 +37,7 @@ function AboutSection({ strings }) {
               {strings.whoDesc}
             </p>
           </div>
-          <div className="flex flex-1 flex-col justify-start items-center shadow-generic-card max-w-[460px] md:h-[450px] sm:px-[51px] py-14 md:pt-[80px] gap-[10px] rounded-xl sm:min-w-[370px] min-w-[290px]">
+          <div className="flex flex-1 flex-col justify-start items-center shadow-generic-card max-w-[460px] md:h-[450px] sm:px-[51px] px-[15px] py-14 md:pt-[80px] gap-[10px] rounded-xl sm:min-w-[370px] min-w-[290px]">
             <div className="flex h-[100px] items-center justify-center bg-primary-mid-blue w-[100px] rounded-[10px]">
               <img src="/images/icons/clock.svg" alt="" className="brightness-0 invert" />
             </div>
