@@ -137,6 +137,7 @@ module.exports = {
       idleIcon4: "idle04 9s ease-in-out 1s infinite alternate none running",
       idleIcon5: "idle05 3s ease-in-out 1s infinite alternate none running",
       hoveringArrow: "hoveringArrow 3s ease-in-out infinite alternate",
+      hoveringAstronaut: "hoveringAstronaut 3s ease-in-out infinite alternate",
       slideLeft: "slide_Left 0.5s ease-in-out normal none running"
     },
     keyframes: {
@@ -286,6 +287,16 @@ module.exports = {
         "100%": {
           transform:
             "rotate(10deg) scale(0.95); opacity: 0.7",
+        },
+      },
+      hoveringAstronaut: {
+        "0%": {
+          transform:
+            "rotate(0deg) scale(1) translateY(0px) translateX(0px) ",
+        },
+        "100%": {
+          transform:
+            "rotate(10deg) scale(0.95) translateY(10px) translateX(15px) ",
         },
       },
       ripple: {

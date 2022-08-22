@@ -121,7 +121,7 @@ export default function Home() {
       <PortfolioSection strings={translation.portfolio} />
       <TechnologiesSection strings={translation.technologies} />
       <ClutchSection strings={translation.clutch} />
-      <ClientsSection strings={translation.clients} />
+      {/* <ClientsSection strings={translation.clients} /> */}
       <TestimonialsSection strings={translation.testimonials} />
       <CareersSection strings={translation.careers}  />
       <BadgesSection />

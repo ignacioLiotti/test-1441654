@@ -169,13 +169,13 @@ const es = {
       },
       {
         clientId: "3",
-        clientName: "Darlene Liebman", company: "Creative Humans", role: "Founder", img: 'darlene',
-        opinion: "Trabajar con el equipo de Devlights ha sido una gran experiencia. El equipo tiene los conocimientos, responde y son muy amables. Realmente los recomiendo para cualquier tipo de proyecto ya sea grande o pequeño."
+        clientName: "Lindsay Insco", company: "Millenium Digital Technologies", role: "Lead Developer", img: 'lindsay',
+        opinion: "El equipo de Devlights ha sido de gran ayuda, los considero casi familia. Amplia experiencia y conocimientos técnicos, siempre tienen el personal adecuado para encarar cualquier tipo de proyecto. Incluirlos en proyectos a largo plazo fue una excelente decisión, no lo habría hecho de otra manera."
       },
       {
         clientId: "4",
-        clientName: "Lindsay Insco", company: "Millenium Digital Technologies", role: "Lead Developer", img: 'lindsay',
-        opinion: "El equipo de Devlights ha sido de gran ayuda, los considero casi familia. Amplia experiencia y conocimientos técnicos, siempre tienen el personal adecuado para encarar cualquier tipo de proyecto. Incluirlos en proyectos a largo plazo fue una excelente decisión, no lo habría hecho de otra manera."
+        clientName: "Darlene Liebman", company: "Creative Humans", role: "Founder", img: 'darlene',
+        opinion: "Trabajar con el equipo de Devlights ha sido una gran experiencia. El equipo tiene los conocimientos, responde y son muy amables. Realmente los recomiendo para cualquier tipo de proyecto ya sea grande o pequeño."
       },
     ]
   },

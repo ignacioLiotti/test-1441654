@@ -2,7 +2,7 @@ import React from "react";
 import Boop from "./Boop";
 import Link from "next/link";
 
-function GoldLinkButton({ text, resize, link, padx='6', pady='3' }) {
+function LinkButton({ text, resize, link, padx='6', pady='3' }) {
 
   return (
     <Boop scale='1.05' >
@@ -25,4 +25,4 @@ function GoldLinkButton({ text, resize, link, padx='6', pady='3' }) {
   );
 }
 
-export default GoldLinkButton;
+export default LinkButton;

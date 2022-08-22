@@ -1,6 +1,7 @@
 import React from "react";
-import GoldLinkButton from "../components/GoldLinkButton";
+import GoldLinkButton from "../components/LinkButton";
 import ServiceCard from "../components/ServiceCard";
+import { Mobile, Monitor, RocBird, Software, User2, UX } from "../components/IconsComp";
 
 function ServicesSection({ strings }) {
 
@@ -38,7 +39,7 @@ function ServicesSection({ strings }) {
               title={card1.title}
               description={card1.description}
               description2={card1.description2}
-              image={card1.imgSource}
+              image={<User2 color="#fff"/>}
               list={card1.list}
               button={card1.button}
             />
@@ -50,7 +51,7 @@ function ServicesSection({ strings }) {
               title={card2.title}
               description={card2.description}
               description2={card2.description2}
-              image={card2.imgSource}
+              image={<Monitor color="#fff"/>}
               list={card2.list}
               button={card2.button}
             />
@@ -62,7 +63,7 @@ function ServicesSection({ strings }) {
               title={card3.title}
               description={card3.description}
               description2={card3.description2}
-              image={card3.imgSource}
+              image={<Software color="#fff"/>}
               list={card3.list}
               button={card3.button}
             />
@@ -74,7 +75,7 @@ function ServicesSection({ strings }) {
               title={card4.title}
               description={card4.description}
               description2={card4.description2}
-              image={card4.imgSource}
+              image={<Mobile color="#fff"/>}
               list={card4.list}
               button={card4.button}
             />
@@ -86,7 +87,7 @@ function ServicesSection({ strings }) {
               title={card5.title}
               description={card5.description}
               description2={card5.description2}
-              image={card5.imgSource}
+              image={<UX color="#fff"/>}
               list={card5.list}
               button={card5.button}
             />
@@ -98,7 +99,7 @@ function ServicesSection({ strings }) {
               title={card6.title}
               description={card6.description}
               description2={card6.description2}
-              image={card6.imgSource}
+              image={<RocBird color="#fff"/>}
               list={card6.list}
               button={card6.button}
             />

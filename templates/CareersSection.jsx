@@ -1,10 +1,8 @@
 import React, { useEffect, useId, useState } from "react";
 import { useRouter } from "next/router";
 import axios from "axios";
-import GoldActionButton from "../components/GoldActionButton";
+import GoldActionButton from "../components/ActionButton";
 import JobsCard from "../components/JobsCard";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import NoJobsFound from "../components/NoJobsFound";
 
 function CareersSection({ strings }) {

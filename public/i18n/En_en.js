@@ -55,41 +55,36 @@ const en = {
     serviceCards: [
       {
         id: 1,
-        imgSource: "team",
         title: "Staff augmentation",
         description:
           "Recruiting specialized members for your team is an exhausting and time-consuming process? Our outsourcing team can help you with that providing specialized human resources to satisfy your requirements. We count with a wide variety of qualified professional profiles in our records.",
       },
       {
+        id: 5,
+        title: "Web development",
+        description:
+        "Thinking about taking your project/business to the net? Our team can develop and design cross platform websites that are visually engaging, following the latest trends on UX/UI.",
+      },
+      {
+        id: 3,
+        title: "Software development",
+        description:
+        "We develop software aimed to different business segments and sectors based on technological platforms. Furthermore, we offer a wide range of software tools to provide speed in the obtaining of added value.",
+      },
+      {
         id: 2,
-        imgSource: "phone",
         title: "Mobile development",
         description:
           "Want a Mobile App? We can develop and design cross platform Apps that are visually appealing, following the latest trends on UX/UI.",
       },
       {
-        id: 3,
-        imgSource: "code",
-        title: "Software development",
-        description:
-          "We develop software aimed to different business segments and sectors based on technological platforms. Furthermore, we offer a wide range of software tools to provide speed in the obtaining of added value.",
-      },
-      {
         id: 4,
-        imgSource: "ux",
         title: "UX/UI Design",
         description:
-          "Want to refresh the look and functionality of your site/app? Our highly skilled team of designers and developers can give your project a smooth and engaging user experience that will increase traffic, style, and performance in order to reach more users.",
+        "Want to refresh the look and functionality of your site/app? Our highly skilled team of designers and developers can give your project a smooth and engaging user experience that will increase traffic, style, and performance in order to reach more users.",
       },
       {
-        id: 5,
-        imgSource: "comp",
-        title: "Web development",
-        description:
-          "Thinking about taking your project/business to the net? Our team can develop and design cross platform websites that are visually engaging, following the latest trends on UX/UI.",
-      },{
         id: 6,
-        imgSource: "rocbird-bird-blue",
         title: "Data Management",
         description: "Thinking about taking your project/business to the net? Our team can develop and design cross platform websites that are visually engaging, following the latest trends on UX/UI.",
       },
@@ -205,21 +200,21 @@ const en = {
       },
       {
         clientId: "3",
-        clientName: "Darlene Liebman",
-        company: "Creative Humans",
-        role: "Founder",
-        img: "darlene",
-        opinion:
-          "Working with the team at Devlights has been a great experience. The Team is knowledgeable, responsive and gracious. I highly recommend them, for any project large or small.",
-      },
-      {
-        clientId: "4",
         clientName: "Lindsay Insco",
         company: "Millenium Digital Technologies",
         role: "Lead Developer",
         img: "lindsay",
         opinion:
           "Devlights has been such a useful team, I've come to look at them like family. With the variety of experience everyone has, it seems there's always a great fit for a variety of projects. I've loved working with the team so much, I have brought them on to long-term projects with me and I wouldn't have it any other way.",
+      },
+      {
+        clientId: "4",
+        clientName: "Darlene Liebman",
+        company: "Creative Humans",
+        role: "Founder",
+        img: "darlene",
+        opinion:
+          "Working with the team at Devlights has been a great experience. The Team is knowledgeable, responsive and gracious. I highly recommend them, for any project large or small.",
       },
     ],
   },

@@ -12,7 +12,7 @@ import { CarouselItem } from "../components/ClutchCarousel";
 import NearshoreCarousel from "../components/NearshoreCarousel";
 import {CarouselItem as NearshoreItem} from "../components/NearshoreCarousel";
 import ExtraLayout from "../layouts/ExtraLayout";
-import GoldActionButton from "../components/GoldActionButton";
+import ActionButton from "../components/ActionButton";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Boop from "../components/Boop";
@@ -60,7 +60,7 @@ function NearshoreSoftwareDevelopment() {
             <p className="font-poppins text-white font-normal text-center mt-2 mb-8 md:text-base md:leading-[1.4] md:mb-10 md:mt-2 md:text-left">
               {translation.headerSubTitle}
             </p>
-            <GoldActionButton
+            <ActionButton
               text={translation.headerBtn}
               resize={true}
               onClickAction={() =>
@@ -258,7 +258,7 @@ function NearshoreSoftwareDevelopment() {
           <p className=" md:max-w-[60rem] w-full text-xs text-center text-gray-body leading-[1.5] mb-10 mt-6">
             {translation.partner_up_section.paragraph}
           </p>
-          <GoldActionButton
+          <ActionButton
             text={translation.partner_up_section.btn}
             resize={true}
             onClickAction={() =>

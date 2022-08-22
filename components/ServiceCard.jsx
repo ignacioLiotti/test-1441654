@@ -1,8 +1,10 @@
 import React from "react";
-import GoldLinkButton from "../components/GoldLinkButton";
+import GoldLinkButton from "./LinkButton";
 
 function ServiceCard({ title, description, description2, list, image, button, link }) {
   
+  const Icon = () => image
+
   return (
     <article
       data-aos="fade-up"
@@ -12,11 +14,7 @@ function ServiceCard({ title, description, description2, list, image, button, li
       hover:-translate-y-2 transition-all duration-300 ease-in-out select-none px-[clamp(20px,10%,90px)]"
     >
       <span className="flex flex-col items-center justify-center bg-primary-blue w-[115px] h-[115px] mt-2s mb-6 rounded-[12px]">
-        <img
-          src={`/images/icons/${image}.svg`}
-          alt=""
-          className="object-contain h-[35px] brightness-0 invert "
-        />
+        <Icon/>
       </span>
       <h4
         className=" font-semibold text-neutral-black text-center text-lg leading-[51px] mb-6

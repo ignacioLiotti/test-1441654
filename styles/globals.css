@@ -380,3 +380,38 @@ html{
     opacity: 0;
   }
 }
+
+.why-image{
+  animation: moveUp 1s  forwards;
+  z-index: 10;
+}
+
+@keyframes moveUp {
+  0% {
+    opacity: 0.5;
+    transform: translateY(5%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.why-content{
+  animation: moveLeft 1s  1s both;
+  z-index: 5;
+}
+
+@keyframes moveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  10%{
+    opacity: 1;
+    transform: translateX(-90%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

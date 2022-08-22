@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import GoldActionButton from "./GoldActionButton";
+import ActionButton from "./ActionButton";
 
 function PortfolioTab({ initial, data, onSelect }) {
   const [userOption, setUserOption] = useState(initial);
@@ -26,7 +26,7 @@ function PortfolioTab({ initial, data, onSelect }) {
         // >
         //   <span className="p-2 uppercase">{item.name}</span>
         // </button>
-        <GoldActionButton 
+        <ActionButton 
           key={item.id}
           onClickAction={() => selectHandler(item.category)}
           secondary={userOption === item.category ? false : true}

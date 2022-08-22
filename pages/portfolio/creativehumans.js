@@ -6,7 +6,7 @@
 // import en from "/public/i18n/En_en";
 // import es from "/public/i18n/Es_es";
 // import ExtraLayout from "../../layouts/ExtraLayout";
-// import GoldActionButton from "../../components/GoldActionButton";
+// import ActionButton from "../../components/ActionButton";
 
 
 // export function creativehumans() {
@@ -51,7 +51,7 @@
 //                         <p className="font-poppins text-white font-normal text-center mt-2 mb-8 md:text-[1.2rem] md:leading-[1.4] md:mb-10 md:mt-2 md:text-left">
 //                         {translation.headerSubTitle}
 //                         </p>
-//                         <GoldActionButton
+//                         <ActionButton
 //                         text={translation.headerBtn}
 //                         resize={false}
 //                         onClickAction={() =>

@@ -45,7 +45,7 @@ function ClientsSection({ strings }) {
             className="swiper-marquesina">
 
             {[...Array(32)].map((pos, index) => (
-              <SwiperSlide key={pos}>
+              <SwiperSlide key={index+1}>
                   <ClientCard clientId={index + 1} />
               </SwiperSlide>
             ))}

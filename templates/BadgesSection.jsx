@@ -99,7 +99,7 @@ function BadgesSection() {
             <SwiperSlide>
               <img
                 src={`/images/clutch.webp`}
-                className="w-48 mt-8 object-fill md:w-[10rem] md:mt-1 bg-black"
+                className="w-48 mt-8 object-fill md:w-[10rem] md:mt-1 "
                 alt='Clutch badge for top Outsorcing Company in Latin America 2020'
               />
             </SwiperSlide>
@@ -118,7 +118,7 @@ function BadgesSection() {
               <img
                 src={`/images/design-rush-badge.png`}
                 alt='Design Rush badge'
-                className="object-fill cursor-pointer bg-black mt-8 w-48 object-fill md:w-[15rem] md:mt-1"
+                className="object-fill cursor-pointer  mt-8 w-48 object-fill md:w-[15rem] md:mt-1"
                 onClick={() =>
                   window.open(
                     "https://www.designrush.com/agency/software-development/colorado",

@@ -144,7 +144,7 @@ function Navbar({ transparentScroll, whiteBackground, hasShadow }) {
                 <Link href={item.path}>
                   <a
                   className={`${whiteBackground ? "text-primary-blue" : "text-white"} 
-                  block whitespace-nowrap w-auto py-5 px-4 md:px-2 lg:px-4 text-xs md:text-sm font-semibold hover:scale-[1.20] transition-all duration-300 ease-linear`}
+                  block whitespace-nowrap w-auto py-5 px-4 md:px-2 lg:px-4 text-xs md:text-[clamp(0.8rem,1.5vw,1.5rem)] font-semibold hover:scale-[1.20] transition-all duration-300 ease-linear`}
                   >
                   {item.name}
                   </a>

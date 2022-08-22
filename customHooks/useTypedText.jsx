@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const TypePhase = [
   "Typing",
@@ -6,42 +6,45 @@ const TypePhase = [
   "Deleting",
 ]
 
+// default values for the typing interval
+
 const TYPING_INTERVAL_MIN = 20
 const TYPING_INTERVAL_MAX = 35
 const TYPING_PAUSE_MS = 2000
 const DELETING_INTERVAL = 20
 const DELETING_PAUSE_MS = 500
 
-const getRandomTypingInterval = () =>
-  Math.floor(Math.random() * (TYPING_INTERVAL_MAX - TYPING_INTERVAL_MIN + 1)) +
-  TYPING_INTERVAL_MIN
+const getRandomTypingInterval = () => {
+  return Math.floor(Math.random() * (TYPING_INTERVAL_MAX - TYPING_INTERVAL_MIN + 1)) + TYPING_INTERVAL_MIN
+}
 
-export const useTypedSuperpower = (typedArray) => {
+export const useTypedText = (typedArray) => {
+  
   const [selectedIndex, setSelectedIndex] = useState(0)
   const [phase, setPhase] = useState(TypePhase[0])
-  const [typedSuperpower, setTypedSuperpower] = useState(' ')
+  const [typedText, setTypedText] = useState(' ')
 
   useEffect(() => {
     switch (phase) {
       case "Typing" : {
-        const nextTypedSuperPower = typedArray[selectedIndex].slice(
+        const nextTypedText = typedArray[selectedIndex].slice(
           0,
-          typedSuperpower.length + 1
+          typedText.length + 1
         )
 
-        if (nextTypedSuperPower === typedSuperpower) {
+        if (nextTypedText === typedText) {
           setPhase("Pausing")
           return
         }
 
         const timeout = setTimeout(() => {
-          setTypedSuperpower(nextTypedSuperPower)
+          setTypedText(nextTypedText)
         }, getRandomTypingInterval())
 
         return () => clearTimeout(timeout)
       }
       case "Deleting": {
-        if (!typedSuperpower ) {
+        if (!typedText ) {
           const timeout = setTimeout(() => {
             const nextIndex = selectedIndex + 1
             setSelectedIndex(typedArray[nextIndex] ? nextIndex : 0)
@@ -52,14 +55,14 @@ export const useTypedSuperpower = (typedArray) => {
 
         const nextRemaining = typedArray[selectedIndex].slice(
           0,
-          typedSuperpower.length - 1
+          typedText.length - 1
         )
         if (nextRemaining.length === 1) {
             nextRemaining = ' '
         }
 
         const timeout = setTimeout(() => {
-          setTypedSuperpower(nextRemaining)
+          setTypedText(nextRemaining)
         }, DELETING_INTERVAL)
 
         return () => clearTimeout(timeout)
@@ -72,11 +75,11 @@ export const useTypedSuperpower = (typedArray) => {
 
         return () => clearTimeout(timeout)
     }
-  }, [typedArray, typedSuperpower, selectedIndex, phase])
+  }, [typedArray, typedText, selectedIndex, phase])
 
   if (!typedArray.length) {
     return ' '
   }
 
-  return typedSuperpower
+  return typedText
 }

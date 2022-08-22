@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import GoldLinkButton from "../components/GoldLinkButton";
+import GoldLinkButton from "../components/LinkButton";
 
 function ClutchSection({ strings }) {
   return (
