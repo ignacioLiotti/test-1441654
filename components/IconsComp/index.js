@@ -4,7 +4,7 @@ export {default as Bars} from "./Bars";
 export {default as Chat} from "./Chat";
 export {default as Facebook} from "./Facebook";
 export {default as Instagram} from "./Instagram";
-export {default as Linkedin} from "./Linkedin";
+export {default as LinkedIn} from "./LinkedIn";
 export {default as FacebookBox} from "./FacebookBox";
 export {default as InstagramBox} from "./InstagramBox";
 export {default as LinkedinBox} from "./LinkedInBox";
