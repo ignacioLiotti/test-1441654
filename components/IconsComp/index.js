@@ -7,7 +7,7 @@ export {default as Instagram} from "./Instagram";
 export {default as Linkedin} from "./Linkedin";
 export {default as FacebookBox} from "./FacebookBox";
 export {default as InstagramBox} from "./InstagramBox";
-export {default as LinkedinBox} from "./LinkedinBox";
+export {default as LinkedinBox} from "./LinkedInBox";
 export {default as LineChart} from "./LineChart";
 export {default as MagnifyingGlass} from "./MagnifyingGlass";
 export {default as MessageGlobe} from "./MessageGlobe";
