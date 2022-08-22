@@ -22,7 +22,7 @@ function HeroSection({ strings }) {
           />
           <div className="flex-[1_1_41%] mb-10">
             <h2 className="text-neutral-black text-center lg:text-left text-[clamp(1.25rem,5vw,2.125rem)] sm:text-[clamp(2.125rem,5vw,3rem)] md:text-[clamp(2rem,5vw,3rem)] font-semibold md:leading-[min(72px,5vw)] transition-all duration-300 ease-in-out">
-              {strings.title}
+              {strings.title}asdasd
             </h2>
             <TypedText typedArray={strings?.typingText}/>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 sm:gap-10 pt-8">
